@@ -7,27 +7,33 @@
 .home-content{
     position: relative;
     
-    /* background-color: #2f3542; */
+
     background-color: #000000;
  
     color: #ffffff;
     height: 100vh;
     min-width: 100vw;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-   flex-direction: column;
+   flex-direction: column; */
     font-stretch:extra-expanded;
+    display: flex;
+
+   align-items: center;
+
+
+    flex-direction: column;
 }
 .home-title{   
     font-size: 160px;
     font-family: "Madena";
     font-stretch:extra-expanded;
-    margin-top:150px;
-    transition: font-weight .5s linear;
-    transition: font-size .5s linear;
-    /* text-shadow: 3px -8px 4px rgba(255, 255, 255, 0.111); */
-    height: 250px;
+    margin-top:250px;
+    transition: font-weight .8s ease-in-out;
+    transition: font-size .8s ease-in-out;
+    text-shadow: 3px -8px 4px rgba(255, 255, 255, 0.111);
+    height: 200px;
     
 }
 .span-home-title{
@@ -41,10 +47,13 @@
     
 }
 .home-name{
-    font-size: 60px;
+    font-size: 90px;
     font-family: "Madena";
+    margin-top: 80px;
     /* font-stretch:condensed; */
+    transition: transform 0.4s ease-in-out;
 }
+
 
 
 
@@ -56,13 +65,15 @@
     /* width: 400px; */
     margin: 0 auto;
     background-color: #000000;
+  
+   
    
   }
   
   /* Animation de glitch */
-  @keyframes noise-anim {
-    0% {
-      clip: rect(100px, 9999px, 10px, 0);
+  /* @keyframes noise-anim {
+    0%, 100% {
+      clip: rect(28px, 9999px, 38px, 0);
     }
     5% {
       clip: rect(46px, 9999px, 15px, 0);
@@ -70,11 +81,59 @@
     10% {
       clip: rect(64px, 9999px, 29px, 0);
     }
- 
-    100% {
-      clip: rect(28px, 9999px, 38px, 0);
+    15% {
+      clip: rect(34px, 9999px, 30px, 0);
     }
-  }
+    20% {
+      clip: rect(10px, 9999px, 42px, 0);
+    }
+    25% {
+      clip: rect(36px, 9999px, 56px, 0);
+    }
+    30% {
+      clip: rect(44px, 9999px, 98px, 0);
+    }
+    35% {
+      clip: rect(14px, 9999px, 36px, 0);
+    }
+    40% {
+      clip: rect(50px, 9999px, 84px, 0);
+    }
+    45% {
+      clip: rect(18px, 9999px, 62px, 0);
+    }
+    50% {
+      clip: rect(90px, 9999px, 92px, 0);
+    }
+    55% {
+      clip: rect(38px, 9999px, 42px, 0);
+    }
+    60% {
+      clip: rect(84px, 9999px, 28px, 0);
+    }
+    65% {
+      clip: rect(20px, 9999px, 20px, 0);
+    }
+    70% {
+      clip: rect(64px, 9999px, 16px, 0);
+    }
+    75% {
+      clip: rect(22px, 9999px, 14px, 0);
+    }
+    80% {
+      clip: rect(34px, 9999px, 82px, 0);
+    }
+    85% {
+      clip: rect(74px, 9999px, 32px, 0);
+    }
+    90% {
+      clip: rect(80px, 9999px, 46px, 0);
+    }
+    95% {
+      clip: rect(70px, 9999px, 28px, 0);
+    }
+  } */
+  
   
   /* Style de la lettre animée avec l'effet de glitch */
   .glitch::after {
@@ -93,7 +152,7 @@
   /* Animation de glitch 2 */
   @keyframes noise-anim-2 {
     0% {
-      clip: rect(10px, 9999px, 42px, 0);
+      clip: rect(42px, 9999px, 18px, 0);
     }
     5% {
       clip: rect(64px, 9999px, 28px, 0);
@@ -101,11 +160,59 @@
     10% {
       clip: rect(44px, 9999px, 72px, 0);
     }
- 
-    100% {
-      clip: rect(42px, 9999px, 18px, 0);
+    15% {
+      clip: rect(30px, 9999px, 86px, 0);
+    }
+    20% {
+      clip: rect(70px, 9999px, 46px, 0);
+    }
+    25% {
+      clip: rect(50px, 9999px, 16px, 0);
+    }
+    30% {
+      clip: rect(22px, 9999px, 26px, 0);
+    }
+    35% {
+      clip: rect(56px, 9999px, 52px, 0);
+    }
+    40% {
+      clip: rect(16px, 9999px, 86px, 0);
+    }
+    45% {
+      clip: rect(90px, 9999px, 64px, 0);
+    }
+    50% {
+      clip: rect(62px, 9999px, 44px, 0);
+    }
+    55% {
+      clip: rect(82px, 9999px, 74px, 0);
+    }
+    60% {
+      clip: rect(28px, 9999px, 98px, 0);
+    }
+    65% {
+      clip: rect(42px, 9999px, 58px, 0);
+    }
+    70% {
+      clip: rect(12px, 9999px, 16px, 0);
+    }
+    75% {
+      clip: rect(68px, 9999px, 12px, 0);
+    }
+    80% {
+      clip: rect(42px, 9999px, 26px, 0);
+    }
+    85% {
+      clip: rect(82px, 9999px, 64px, 0);
+    }
+    90% {
+      clip: rect(14px, 9999px, 14px, 0);
+    }
+    95% {
+      clip: rect(40px, 9999px, 16px, 0);
     }
   }
+  
   
   /* Style de la lettre animée avec un autre effet de glitch */
   .glitch::before {
@@ -118,24 +225,25 @@
     background-color: #030303;
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
-    animation: noise-anim-2 3s infinite linear alternate-reverse;
+    animation: noise-anim-2 5s infinite linear alternate-reverse;
+    
   }
   .home-cards{
     width: 100%;
     height: 320px;
     /* background-color: aqua; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   
   }
   .home-card{
-    width: 33%;
-    height: 100%;
-    /* background-color: rgb(255, 81, 0); */
+    width: 50%;
+      height: 100%;
+    /* background-color: rgb(255, 81, 0);  */ 
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
+    font-size: 30px;
     font-family: "Madena";
   
   }
@@ -143,4 +251,12 @@
     width: 250px;
    
   }
+.home-card-content{
+  font-size: 140px;
+ 
+}
+.home-name:hover{
+  transform: scale(1.1);
+}
+
 

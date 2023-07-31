@@ -27,8 +27,8 @@ transition: height,1.4s ease;
 
 
 }
-.home-popup h1{
-  margin-Top:200px;
+.home-popup-tilte{
+  margin-Top:250px;
   min-height: 150px;
   min-width: 50px;
   font-size: 160px;
@@ -40,8 +40,8 @@ transition: height,1.4s ease;
 
   min-height: 95px;
   min-width: 5px;
-  margin-top: 90px;
-  font-size: 58px;
+  margin-top: 120px;
+  font-size: 90px;
 
   font-family: "Madena";
   font-stretch:extra-expanded;

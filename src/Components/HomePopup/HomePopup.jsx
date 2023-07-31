@@ -89,11 +89,11 @@ export default function HomePopup({ animHomeTitle }) {
   };
   return (
     <div className="home-popup" style={popupHeight}>
-      <h1 className={changeTitleClass}>{activeAnimTitle && "Portfolio"}</h1>
+      <h1 className={`home-popup-tilte ${changeTitleClass}`}>{activeAnimTitle && "Developer"}</h1>
       {/* <h1 className={`${activeAnimTitle && !buttonAnim && !activeAnimBreath ? "fadeIn" : ""} ${buttonAnim ? "fadeOut" : ""} ${activeAnimBreath && !buttonAnim && "breath"}`}>
         {activeAnimTitle && "Portfolio"}
       </h1> */}
-      <h2 className={changeTitleClass}>{activeAnimTitle && "Hugo Gouzy"}</h2>
+      <h2 className={changeTitleClass}>{activeAnimTitle && "Frontend"}</h2>
 
       <div
         className={`button ${!buttonAnim && "animFadeDown"}  ${buttonAnim ? "flipOutX" : ""}`}

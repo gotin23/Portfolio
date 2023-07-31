@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'Madena'; /* Le nom que vous souhaitez donner à votre police */
     src: url('./assets/fonts/Merchant/Variable-TT/Merchant-VF.ttf') ;
@@ -612,4 +614,35 @@
                     transform: scale(1);
                   }
                 }
+                .slideInUp {
+                  -webkit-animation-name: slideInUp;
+                  animation-name: slideInUp;
+                  -webkit-animation-duration: 1s;
+                  animation-duration: 1s;
+                  -webkit-animation-fill-mode: ease-in-out;
+                  animation-fill-mode: ease-in-out;
+                  }
+                  @-webkit-keyframes slideInUp {
+                  0% {
+                  -webkit-transform: translateY(100%);
+                  transform: translateY(100%);
+                  visibility: visible;
+                  }
+                  100% {
+                  -webkit-transform: translateY(0);
+                  transform: translateY(0);
+                  }
+                  }
+                  @keyframes slideInUp {
+                  0% {
+                  -webkit-transform: translateY(100%);
+                  transform: translateY(100%);
+                  visibility: visible;
+                  }
+                  100% {
+                  -webkit-transform: translateY(0);
+                  transform: translateY(0);
+                  }
+                  } 
+                
                 
