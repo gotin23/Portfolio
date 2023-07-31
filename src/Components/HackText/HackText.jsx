@@ -8,7 +8,7 @@ export default function HackText({ state }) {
   const [displayText, setDisplayText] = useState(text);
 
   const matrixText = (i = 0) => {
-    if (i < 70) {
+    if (i < 75) {
       setTimeout(() => {
         const random = () => Math.floor(Math.random() * arr.length);
 

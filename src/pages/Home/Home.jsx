@@ -11,18 +11,38 @@ export default function Home() {
   const [animHeader, setAnimHeader] = useState(false);
   const [newStyle, setNewStyle] = useState({});
   const [classCard, setclassCard] = useState("");
+  const [polygon1, setPolygon1] = useState(false);
+  const [polygon2, setPolygon2] = useState(false);
+  const [polygon3, setPolygon3] = useState(false);
+  const [polygon4, setPolygon4] = useState(false);
+  const [polygon5, setPolygon5] = useState(false);
   const handleAnimHeader = () => {
-    console.log("oki");
     const newTitleStyle = { fontSize: "260px", fontWeight: "900" };
     setTimeout(() => {
       setAnimHeader(!animHeader);
     }, 2000);
     setTimeout(() => {
       setclassCard("slideInUp");
-    }, 4200);
+    }, 4300);
+
+    setTimeout(() => {
+      setPolygon1(true);
+    }, 2100);
+    setTimeout(() => {
+      setPolygon2(true);
+    }, 2100);
+    setTimeout(() => {
+      setPolygon3(true);
+    }, 2500);
+    setTimeout(() => {
+      setPolygon4(true);
+    }, 2900);
+    setTimeout(() => {
+      setPolygon5(true);
+    }, 3100);
     setTimeout(() => {
       setclassCard("glitch");
-    }, 5200);
+    }, 7100);
     setTimeout(() => {
       setNewStyle(newTitleStyle);
     }, 300);
@@ -33,6 +53,11 @@ export default function Home() {
       {animHeader && <Header />}
 
       <div className="home-content">
+        {polygon1 && <div className="polygon1"></div>}
+        {polygon2 && <div className="polygon2"></div>}
+        {polygon3 && <div className="polygon3"></div>}
+        {polygon4 && <div className="polygon4"></div>}
+        {polygon5 && <div className="polygon5"></div>}
         <h1 className="home-title" style={newStyle}>
           <span className="span-home-title">D</span>
           <span className="span-home-title">e</span>
@@ -58,7 +83,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <About />
+      {/* <About /> */}
     </div>
   );
 }

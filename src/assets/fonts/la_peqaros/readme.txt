@@ -1,0 +1,7 @@
+La Peqaros is a display type inspired by old wine bottle etiquettes. It has really warm and elegant feeling. It's perfect for logos, magazine headlines, restaurant menus, posters, and such.
+
+This font is a demo version with a limited character set for personal use. Full version for commercial use is available on Creative Market:
+https://creativemarket.com/NikoTersa/31340538-La-Peqaros-Antique-Display-Font
+
+Supported languages:
+Afrikaans, Albanian, Asu, Basque, Bemba, Bena, Breton, Catalan, Chiga, Cornish, Croatian, Czech, Danish, Dutch, Embu, English, Estonian, Faroese, Filipino, Finnish, French, Friulian, Galician, Ganda, Gusii, Hungarian, Icelandic, InariSami, Indonesian, Irish, Italian, Jola-Fonyi, Kabuverdianu, Kalenjin, Kamba, Kikuyu, Kinyarwanda, Latvian, Lithuanian, LowerSorbian, Luo, Luxembourgish, Luyia, Machame, Makhuwa-Meetto, Makonde, Malagasy, Maltese, Manx, Meru, Morisyen, NorthernSami, NorthNdebele, NorwegianBokmål, NorwegianNynorsk, Nyankole, Oromo, Polish, Portuguese, Quechua, Romanian, Romansh, Rombo, Rundi, Rwa, Samburu, Sango, Sangu, ScottishGaelic, Sena, Serbian, Shambala, Shona, Slovak, Soga, Somali, Spanish, Swahili, Swedish, SwissGerman, Taita, Teso, Turkish, UpperSorbian, Uzbek(Latin), Volapük, Vunjo, Walser, Welsh, WesternFrisian, Yoruba, Zulu

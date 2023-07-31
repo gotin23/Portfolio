@@ -1,8 +1,13 @@
 
 
 @font-face {
-    font-family: 'Madena'; /* Le nom que vous souhaitez donner à votre police */
+    font-family: 'Madena'; 
     src: url('./assets/fonts/Merchant/Variable-TT/Merchant-VF.ttf') ;
+    /* Vous pouvez également inclure d'autres formats de police ici pour une meilleure compatibilité avec les navigateurs */
+  }
+@font-face {
+    font-family: 'welcome'; /* Le nom que vous souhaitez donner à votre police */
+    src: url('./assets/fonts/welcome_home/Welcome\ Home.otf') ;
     /* Vous pouvez également inclure d'autres formats de police ici pour une meilleure compatibilité avec les navigateurs */
   }
 .App{
@@ -642,6 +647,101 @@
                   100% {
                   -webkit-transform: translateY(0);
                   transform: translateY(0);
+                  }
+                  } 
+                  .polygon1 {
+                    -webkit-animation-name: polygon1;
+                    animation-name: polygon1;
+                    -webkit-animation-duration: 1s;
+                    animation-duration: 1s;
+                    -webkit-animation-fill-mode: ease-in-out;
+                    animation-fill-mode: ease-in-out;
+                    }
+                  @keyframes polygon1 {
+                  0% {
+                 
+                  transform:translateX(-300px) translateY(380px) perspective(1000px) rotate(100deg) rotateY(0deg);
+                  
+                  }
+                  100% {
+                    transform:translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg);
+                   
+                  }
+                  } 
+                  .polygon2 {
+                    -webkit-animation-name: polygon2;
+                    animation-name: polygon2;
+                    -webkit-animation-duration: 1.2s;
+                    animation-duration: 1.2s;
+                    -webkit-animation-fill-mode: ease-in-out;
+                    animation-fill-mode: ease-in-out;
+                    }
+                  @keyframes polygon2 {
+                  0% {
+                 
+                  transform:translateX(-200px) translateY(380px) perspective(1000px) rotate(100deg) rotateY(0deg);
+                  
+                  }
+                  100% {
+                    transform:translateX(0) translateY(0) perspective(1000px) rotate(100deg) rotateY(30deg);
+                   
+                  }
+                  } 
+                  .polygon3 {
+                    -webkit-animation-name: polygon3;
+                    animation-name: polygon3;
+                    -webkit-animation-duration: 1.2s;
+                    animation-duration: 1.2s;
+                    -webkit-animation-fill-mode: ease-in-out;
+                    animation-fill-mode: ease-in-out;
+                    }
+                  @keyframes polygon3 {
+                  0% {
+                 
+                    transform:translateX(600px) translateY(200px) perspective(1000px) rotate(-30deg) rotateY(0deg);
+                  
+                  }
+                  100% {
+                    transform:translateX(0) translateY(0) perspective(1000px) rotate(-80deg) rotateY(30deg);
+                   
+                  }
+                  } 
+                  .polygon4 {
+                    -webkit-animation-name: polygon4;
+                    animation-name: polygon4;
+                    -webkit-animation-duration: 1.2s;
+                    animation-duration: 1.2s;
+                    -webkit-animation-fill-mode: ease-in-out;
+                    animation-fill-mode: ease-in-out;
+                    }
+                  @keyframes polygon4 {
+                  0% {
+                 
+                    transform:translateX(-500px) translateY(-200px) perspective(1000px) rotate(-60deg) rotateY(0deg);
+                  
+                  }
+                  100% {
+                    transform:translateX(0) translateY(0) perspective(1000px) rotate(-20deg) rotateY(30deg);;
+                   
+                  }
+                  } 
+                  .polygon5 {
+                    -webkit-animation-name: polygon5;
+                    animation-name: polygon5;
+                    -webkit-animation-duration: 1.2s;
+                    animation-duration: 1.2s;
+                    -webkit-animation-fill-mode: ease-in-out;
+                    animation-fill-mode: ease-in-out;
+                    }
+                  @keyframes polygon5 {
+                  0% {
+                 
+                    transform:translateX(-100px) translateY(-600px) perspective(1000px) rotate(-150deg) rotateY(20deg);
+                  
+                  }
+                  100% {
+                    transform:translateX(0) translateY(0) perspective(1000px) rotate(-60deg) rotateY(30deg);;
+                   
                   }
                   } 
                 

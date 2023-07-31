@@ -6,6 +6,7 @@ nav{
     height: 40px;
     min-width: 350px;
     z-index: 10;
+ 
 
 }
 nav ul{
@@ -29,13 +30,15 @@ min-width: 120px;
 }
 nav a{
 margin-right: 30px;
-font-size: 20px;
-font-weight: 300;
+font-size: 30px;
+
 font-family: "Madena";
 text-decoration: none;
 color: #ffffff;
 
 position: relative;
+font-family: 'welcome';
+font-weight: 100;
 
 }
 nav a::before {
@@ -48,6 +51,7 @@ nav a::before {
     background-color: #ffffff; /* Couleur du soulignement */
    
     transition: width 0.2s ease-in-out;
+   
   }
   
   /* Style pour afficher le soulignement lorsqu'on survole le lien */
