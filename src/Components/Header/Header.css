@@ -1,0 +1,59 @@
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    height: 40px;
+    min-width: 350px;
+    z-index: 10;
+
+}
+nav ul{
+display: flex;
+justify-content:flex-end;
+align-items: center;
+margin-top: 10px;
+/* background-color: aqua; */
+}
+nav li{
+/* margin-right: 30px; */
+font-size: 15px;
+font-family: "Madena";
+list-style-type: none;
+/* background-color: green; */
+display: flex;
+justify-content: center;
+align-items: center;
+
+min-width: 120px;
+}
+nav a{
+margin-right: 30px;
+font-size: 20px;
+font-weight: 300;
+font-family: "Madena";
+text-decoration: none;
+color: #ffffff;
+
+position: relative;
+
+}
+nav a::before {
+    content: ""; /* Obligatoire pour que le pseudo-élément soit affiché */
+    position: absolute; /* Position absolue pour le pseudo-élément */
+    bottom: -3px; /* Positionnez le pseudo-élément sous le lien */
+    left: 0; /* Alignez le pseudo-élément avec le début du lien */
+    width: 0%; /* Largeur du pseudo-élément pour couvrir tout le lien */
+    height: 2px; /* Épaisseur du soulignement */
+    background-color: #ffffff; /* Couleur du soulignement */
+   
+    transition: width 0.2s ease-in-out;
+  }
+  
+  /* Style pour afficher le soulignement lorsqu'on survole le lien */
+  nav li:hover a::before {
+     width: 100%;
+    
+  
+  }
+ 

@@ -1,0 +1,18 @@
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+   
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    pointer-events: none; /* Empêche le curseur personnalisé de bloquer les interactions du contenu sous-jacent. */
+    z-index: 9999; /* Place le curseur au-dessus de tout le contenu. */
+    transform: translate(-50%, -50%); /* Pour centrer le curseur sur la position de la souris. */
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.33);
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  }
