@@ -11,49 +11,57 @@ export default function HomePopup({ animHomeTitle }) {
   const [buttonAnim, setButtonAnim] = useState(false);
   const [arrowAnim, setArrowAnim] = useState(false);
   // const [activeAnimArrow, setActiveAnimArrow] = useState(false);
-  const [activeAnimTitle, setActiveAnimTitle] = useState(false);
+  const [activeButtonHome, setActiveButtonHome] = useState(false);
   // const [activeAnimBreath, setActiveAnimBreath] = useState(false);
   const [changeTitleClass, setChangeTitleClass] = useState("");
 
   const buttonRef = useRef(null);
 
-  const [spanLetter2, setSpanletter2] = useState("");
-  const [spanLetter3, setSpanletter3] = useState("");
-  const [spanLetter4, setSpanletter4] = useState("");
-  const [spanLetter5, setSpanletter5] = useState("");
+  // const [spanLetter2, setSpanletter2] = useState("");
+  // const [spanLetter3, setSpanletter3] = useState("");
+  // const [spanLetter4, setSpanletter4] = useState("");
+  // const [spanLetter5, setSpanletter5] = useState("");
+  const [spanLetters, setSpanLetters] = useState(["", "", "", ""]);
 
   //effet sur chaque lettre du bouton en decalé
   useEffect(() => {
-    setTimeout(() => {
-      setSpanletter2("n");
-    }, 400);
-    setTimeout(() => {
-      setSpanletter3("t");
-    }, 800);
-    setTimeout(() => {
-      setSpanletter4("e");
-    }, 1200);
-    setTimeout(() => {
-      setSpanletter5("r");
-    }, 1600);
+    const letters = ["n", "t", "e", "r"];
+
+    letters.forEach((letter, index) => {
+      setTimeout(() => {
+        setSpanLetters((prevLetters) => {
+          const newLetters = [...prevLetters];
+          newLetters[index] = letter;
+          return newLetters;
+        });
+      }, 300 * (index + 1));
+    });
+    // setTimeout(() => {
+    //   setSpanletter2("n");
+    // }, 300);
+    // setTimeout(() => {
+    //   setSpanletter3("t");
+    // }, 600);
+    // setTimeout(() => {
+    //   setSpanletter4("e");
+    // }, 900);
+    // setTimeout(() => {
+    //   setSpanletter5("r");
+    // }, 1200);
 
     setTimeout(() => {
       setArrowAnim(true);
     }, 1000);
     setTimeout(() => {
-      setActiveAnimTitle(true);
-    }, 3000);
+      setActiveButtonHome(true);
+    }, 2000);
     setTimeout(() => {
-      setChangeTitleClass("fadeIn");
-    }, 3000);
+      setChangeTitleClass("active-home");
+    }, 2000);
 
     setTimeout(() => {
-      setChangeTitleClass("breath");
+      setChangeTitleClass("active-home breath");
     }, 4000);
-
-    // setTimeout(() => {
-    //   setActiveAnimBreath(true);
-    // }, 4800);
   }, []);
   const handlePopup = () => {
     setChangeTitleClass("fadeOut");
@@ -89,14 +97,12 @@ export default function HomePopup({ animHomeTitle }) {
   };
   return (
     <div className="home-popup" style={popupHeight}>
-      <h1 className={`home-popup-tilte ${changeTitleClass}`}>{activeAnimTitle && "Developer"}</h1>
-      {/* <h1 className={`${activeAnimTitle && !buttonAnim && !activeAnimBreath ? "fadeIn" : ""} ${buttonAnim ? "fadeOut" : ""} ${activeAnimBreath && !buttonAnim && "breath"}`}>
-        {activeAnimTitle && "Portfolio"}
-      </h1> */}
-      <h2 className={changeTitleClass}>{activeAnimTitle && "Frontend"}</h2>
+      <h1 className={`home-popup-tilte ${changeTitleClass}`}>Developer</h1>
+
+      <h2 className={`home-popup-title2 ${changeTitleClass}`}>Frontend</h2>
 
       <div
-        className={`button ${!buttonAnim && "animFadeDown"}  ${buttonAnim ? "flipOutX" : ""}`}
+        className={`button-home ${activeButtonHome && "active-home"}  ${buttonAnim ? "flipOutX" : ""}`}
         onClick={handlePopup}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseOut}
@@ -104,10 +110,10 @@ export default function HomePopup({ animHomeTitle }) {
       >
         {arrowAnim && <img src={ArrowDown} className={`icon-arrow-popup fadeInDown`} alt="arrow-down" />}
         <span className="flipInX  span-anim">E</span>
-        {spanLetter2 && <span className="flipInX  span-anim2">{spanLetter2} </span>}
-        {spanLetter3 && <span className="flipInX  span-anim3">{spanLetter3}</span>}
-        {spanLetter4 && <span className="flipInX  span-anim4">{spanLetter4}</span>}
-        {spanLetter5 && <span className="flipInX  span-anim5">{spanLetter5}</span>}
+        {spanLetters[0] && <span className="flipInX  span-anim2">{spanLetters[0]} </span>}
+        {spanLetters[1] && <span className="flipInX  span-anim3">{spanLetters[1]}</span>}
+        {spanLetters[2] && <span className="flipInX  span-anim4">{spanLetters[2]}</span>}
+        {spanLetters[3] && <span className="flipInX  span-anim5">{spanLetters[3]}</span>}
       </div>
     </div>
   );

@@ -1,39 +1,37 @@
 .home-container{
     display: flex;
     flex-direction: row;
-    max-height: 100vh;
-    min-width: 100vw;
+    /* justify-content: center;
+    align-items: center; */
+    /* height: 100vh;
+    width: 100vw; */
+
 }
 .home-content{
     position: relative;
     overflow: hidden;
 
-    background-color: #000000;
+    background-color: rgb(0, 0, 0);
  
     color: #ffffff;
-    height: 100vh;
+    min-height: 100vh;
     min-width: 100vw;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-   flex-direction: column; */
     font-stretch:extra-expanded;
     display: flex;
-
    align-items: center;
-
-
     flex-direction: column;
+ 
 }
 .home-title{   
     font-size: 160px;
     font-family: "Madena";
-    font-stretch:extra-expanded;
+   
     margin-top:250px;
-    transition: font-weight .8s ease-in-out;
-    transition: font-size .8s ease-in-out;
+    
+  
+    transition: font-size .7s ease-in-out,font-weight .7s ease-in-out;
     text-shadow: 3px -8px 4px rgba(255, 255, 255, 0.111);
-    height: 200px;
+  
     
 }
 .span-home-title{
@@ -43,15 +41,18 @@
 
 }
 .span-home-title:hover{
-       font-size: 275px;
+       font-size: 285px;
     
 }
 .home-name{
-    font-size: 90px;
-    font-family: "Madena";
-    margin-top: 80px;
-    /* font-stretch:condensed; */
-    transition: transform 0.4s ease-in-out;
+  margin-top: 120px;
+  font-size: 90px;
+  font-family: "Madena";
+  font-stretch:extra-expanded;
+    font-weight: 400;
+
+    transition: font-weight 0.8s ease-in-out;
+    color: #ffffff85;
 }
 
 
@@ -143,7 +144,7 @@
     text-shadow: -1px 0 red;
     top: 0;
     color: white;
-    background-color: #030303;
+    background-color: #000000;
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
     animation: noise-anim 3s infinite linear alternate-reverse;
@@ -222,7 +223,7 @@
     text-shadow: 1px 0 blue;
     top: 0;
     color: white;
-    background-color: #030303;
+    background-color: #000000;
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
     animation: noise-anim-2 5s infinite linear alternate-reverse;
@@ -253,11 +254,14 @@
   }
 .home-card-content{
   font-size: 140px;
-  font-family: 'welcome';
+  font-family: 'Madena';
+  font-stretch:semi-condensed;
+  font-weight:600;
  
 }
 .home-name:hover{
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
+  font-weight: 900;
 }
 /* .home-card-content:hover{
   transform: scale(1.1);
@@ -266,7 +270,7 @@
   height: 180px;
   width: 260px;
   background: rgba(39, 35, 35, 0);
-background: linear-gradient(146deg,rgba(39, 35, 35, 0) 50%, #ffffff 50%);
+background: linear-gradient(146deg,rgba(39, 35, 35, 0) 50%, #ffffff85 50%);
 position: absolute;
 bottom: 130px;
 left: 140px;
@@ -342,7 +346,7 @@ transition: transform 0.4s ease-in;
   height: 170px;
   width: 260px;
   background: rgba(39, 35, 35, 0);
-background: linear-gradient(33deg,rgba(39, 35, 35, 0) 50%, #ffffff 50%);
+background: linear-gradient(33deg,rgba(39, 35, 35, 0) 50%, #ffffff85 50%);
 position: absolute;
 top: 120px;
 right: 400px;
@@ -356,6 +360,15 @@ transition: transform 0.4s ease-in;
   transform: perspective(1000px) rotate(-55deg) rotateY(40deg);
 
 
+}
+.scrolling-element {
+  /* Ajoutez les styles de votre élément */
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+ transform: translateY(-100px);
+
+  transition: transform 0.3s ease;
 }
 
 

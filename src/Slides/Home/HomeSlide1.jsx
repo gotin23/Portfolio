@@ -1,13 +1,11 @@
 import React from "react";
-import "./Home.css";
+import "./HomeSlide1.css";
 import HomePopup from "../../Components/HomePopup/HomePopup";
 
-import About from "../About/About";
 import Header from "../../Components/Header/Header";
 import { useState } from "react";
-import CircleLogo1 from "../../assets/icons/ArvinDeco-Frame-7.svg";
 
-export default function Home() {
+export default function HomeSlide1() {
   const [animHeader, setAnimHeader] = useState(false);
   const [newStyle, setNewStyle] = useState({});
   const [classCard, setclassCard] = useState("");
@@ -23,7 +21,7 @@ export default function Home() {
     }, 2000);
     setTimeout(() => {
       setclassCard("slideInUp");
-    }, 4300);
+    }, 4350);
 
     setTimeout(() => {
       setPolygon1(true);
@@ -49,7 +47,7 @@ export default function Home() {
   };
 
   return (
-    <div className="home-container">
+    <div className="home-container slide">
       {animHeader && <Header />}
 
       <div className="home-content">
@@ -83,7 +81,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* <About /> */}
     </div>
   );
 }

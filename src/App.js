@@ -1,15 +1,19 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home/Home";
+import "./animations.css";
 import CustomCursor from "./Components/CustomCursor/CustomCursor";
+import HomeSlide1 from "./Slides/Home/HomeSlide1";
+import AboutSlide1 from "./Slides/About/AboutSlide1";
+import AboutSlides2 from "./Slides/About/AboutSlides2";
 
 function App() {
   return (
     <div className="App">
+      {/* <div className="slides-container"> */}
       <CustomCursor />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <HomeSlide1 />
+      <AboutSlide1 />
+      <AboutSlides2 />
+      {/* </div> */}
     </div>
   );
 }

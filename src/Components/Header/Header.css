@@ -27,18 +27,19 @@ justify-content: center;
 align-items: center;
 
 min-width: 120px;
+transition: transform 0.4s ease-in-out;
 }
 nav a{
 margin-right: 30px;
-font-size: 30px;
+font-size: 24px;
 
-font-family: "Madena";
+font-family: "welcome";
 text-decoration: none;
 color: #ffffff;
 
 position: relative;
-font-family: 'welcome';
-font-weight: 100;
+
+
 
 }
 nav a::before {
@@ -57,6 +58,11 @@ nav a::before {
   /* Style pour afficher le soulignement lorsqu'on survole le lien */
   nav li:hover a::before {
      width: 100%;
+    
+  
+  }
+  nav li:hover {
+     transform: scale(1.1);
     
   
   }

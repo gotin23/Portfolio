@@ -13,68 +13,73 @@
 background: rgba(255, 255, 255, 0.22);
 
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(9.1px);
--webkit-backdrop-filter: blur(9.1px);
-border: 1px solid rgba(255, 255, 255, 0.4);
+backdrop-filter: blur(5.1px);
+-webkit-backdrop-filter: blur(5.1px);
+
 display: flex;
 /* justify-content: center; */
 align-items: center;
 
 
 flex-direction: column;
-transition: height,1.4s ease;
+transition: height,1s ease-in-out;
+/* justify-content: center; */
 
 
 
 }
 .home-popup-tilte{
   margin-Top:250px;
-  min-height: 150px;
-  min-width: 50px;
+
   font-size: 160px;
 
   font-family: "Madena";
-  font-stretch:extra-expanded;
-}
-.home-popup h2{
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 
-  min-height: 95px;
-  min-width: 5px;
+}
+.home-popup-title2{
+
+  font-weight: 400;
+
   margin-top: 120px;
   font-size: 90px;
 
   font-family: "Madena";
-  font-stretch:extra-expanded;
+  
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
-.button {
+.button-home {
   padding: 10px;
   border: none;
  background-color: #507aae00;
 
-  border-radius: 20px;
+ 
   width: 300px;
   height: 120px;
   font-size: 100px;
   cursor: pointer;
   margin-top: 80px;
-  font-family: "madena";
-  font-stretch:extra-expanded;
+  font-family: "Madena";
+
   color: #ffffffbf;
   position: relative;
   z-index:30;
   font-weight: 300;
-  transition: background-color 0.8s ease-in-out;
-  transition: border 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+
+  transform: translateY(-200px);
   
   }
 
-.button:hover {
+.button-home:hover {
 
   color: #ffffff;
  
   }
-  .button span{
+  .button-home span{
    
     z-index: -1;
     position: absolute;
@@ -167,6 +172,10 @@ transition: height,1.4s ease;
  
   transition: transform 0.4s ease-in-out;
  
+  }
+  .active-home{
+    opacity: 1;
+    transform: translate(0);
   }
   
 
