@@ -8,12 +8,12 @@ import AboutSlides2 from "./Slides/About/AboutSlides2";
 function App() {
   return (
     <div className="App">
-      {/* <div className="slides-container"> */}
-      <CustomCursor />
-      <HomeSlide1 />
-      <AboutSlide1 />
-      <AboutSlides2 />
-      {/* </div> */}
+      <div className="slides-container">
+        <CustomCursor />
+        <HomeSlide1 />
+        <AboutSlide1 />
+        <AboutSlides2 />
+      </div>
     </div>
   );
 }
