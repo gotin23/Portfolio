@@ -5,22 +5,18 @@ import { useEffect } from "react";
 import { useRef } from "react";
 import ArrowDown from "../../assets/icons/iconmonstr-arrow-down-thin.svg";
 
-export default function HomePopup({ animHomeTitle }) {
+export default function HomePopup({ animHomeTitle, activeHeader }) {
   const [popupHeight, setPopupHeight] = useState({});
 
   const [buttonAnim, setButtonAnim] = useState(false);
   const [arrowAnim, setArrowAnim] = useState(false);
-  // const [activeAnimArrow, setActiveAnimArrow] = useState(false);
+
   const [activeButtonHome, setActiveButtonHome] = useState(false);
-  // const [activeAnimBreath, setActiveAnimBreath] = useState(false);
+
   const [changeTitleClass, setChangeTitleClass] = useState("");
 
   const buttonRef = useRef(null);
 
-  // const [spanLetter2, setSpanletter2] = useState("");
-  // const [spanLetter3, setSpanletter3] = useState("");
-  // const [spanLetter4, setSpanletter4] = useState("");
-  // const [spanLetter5, setSpanletter5] = useState("");
   const [spanLetters, setSpanLetters] = useState(["", "", "", ""]);
 
   //effet sur chaque lettre du bouton en decalé
@@ -63,6 +59,7 @@ export default function HomePopup({ animHomeTitle }) {
       setChangeTitleClass("active-home breath");
     }, 4000);
   }, []);
+
   const handlePopup = () => {
     setChangeTitleClass("fadeOut");
     setTimeout(() => {
@@ -76,6 +73,9 @@ export default function HomePopup({ animHomeTitle }) {
 
       // Ajoutez d'autres propriétés CSS que vous souhaitez modifier ici
     };
+    setTimeout(() => {
+      activeHeader();
+    }, 1600);
 
     setTimeout(() => {
       setPopupHeight(newStylesPopup);

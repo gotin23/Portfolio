@@ -2,10 +2,10 @@ import React from "react";
 import "./HomeSlide1.css";
 import HomePopup from "../../Components/HomePopup/HomePopup";
 
-import Header from "../../Components/Header/Header";
+// import Spiral from "../../assets/icons/304729.svg";
 import { useState } from "react";
 
-export default function HomeSlide1() {
+export default function HomeSlide1({ state }) {
   const [animHeader, setAnimHeader] = useState(false);
   const [newStyle, setNewStyle] = useState({});
   const [classCard, setclassCard] = useState("");
@@ -14,6 +14,7 @@ export default function HomeSlide1() {
   const [polygon3, setPolygon3] = useState(false);
   const [polygon4, setPolygon4] = useState(false);
   const [polygon5, setPolygon5] = useState(false);
+
   const handleAnimHeader = () => {
     const newTitleStyle = { fontSize: "260px", fontWeight: "900" };
     setTimeout(() => {
@@ -48,9 +49,8 @@ export default function HomeSlide1() {
 
   return (
     <div className="home-container slide">
-      {animHeader && <Header />}
-
       <div className="home-content">
+        {/* <img src={Spiral} /> */}
         {polygon1 && <div className="polygon1"></div>}
         {polygon2 && <div className="polygon2"></div>}
         {polygon3 && <div className="polygon3"></div>}
@@ -68,7 +68,7 @@ export default function HomeSlide1() {
           <span className="span-home-title">r</span>
         </h1>
 
-        {!animHeader && <HomePopup animHomeTitle={handleAnimHeader} />}
+        {!animHeader && <HomePopup animHomeTitle={handleAnimHeader} activeHeader={state} />}
         <h2 className="home-name">Frontend</h2>
 
         <div className="home-cards">

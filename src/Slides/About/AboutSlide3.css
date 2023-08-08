@@ -1,0 +1,103 @@
+.about-slide3{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-slide3-titles-container{
+
+ width: 60%;
+ height: 90%;
+ display: flex;
+ /* align-items: center; */
+ justify-content: center;
+ flex-direction: column;
+ opacity: 0;
+ transform: translateY(500px);
+ transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+ position: relative;
+}
+.about-slide3-arrow-logo{
+    position: absolute;
+    opacity:0;
+    width: 100px;
+    bottom:40px;
+    right: 40px;
+    transform: rotateX(360deg) translateX(-100px);
+    transition: opacity 0.8s ease-in-out,transform 0.8s ease-in-out
+    
+   
+}
+/* .active-scroll-animation{
+    transform: translateY(0);
+   opacity: 1;
+  
+  } */
+.about-slide3-img-container{
+/* background-color: blueviolet; */
+width: 30%;
+height: 70%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.about-slide3-title-container{
+    width: fit-content;
+    position: relative;
+  padding: 10px;
+  margin: 10px;
+   
+    background-color: #000000;
+}
+.about-slide3-title{
+    font-size: 120px;
+    margin-top: 20px;
+    color: #ffffff;
+    /* font-stretch:condensed; */
+   font-variation-settings:"wdth" 90;
+   transition:font-variation-settings 0.8s ease-in-out,font-weight 0.8s ease-in-out  ;
+}
+.about-slide3-title-container:hover .about-slide3-title{
+    font-weight: 300;
+    font-variation-settings:"wdth" 100;
+}
+.hide-about-slide3-title1,.hide-about-slide3-title2,.hide-about-slide3-title3{
+    position: absolute;
+  inset:0;
+    background-color: #000000;
+    transition: right 0.8s ease-in-out;
+}
+.icon-skill{
+    width: 150px;
+    transition: opacity 0.8s ease-in-out,transform 0.8s ease-in-out;
+   
+   
+}
+.icon-skill:hover{
+ transform: scale(1.05);
+   
+   
+}
+/* s */
+.html-icon, .css-icon, .javascript-icon{
+    opacity: 0;
+    transform: translateY(-100px);
+}
+.react-icon{
+    opacity: 0;
+    transform: translateX(-100px);
+}
+.next-icon{
+    /* width: 160px; */
+    opacity: 0;
+    transform: translateX(100px);
+}
+.redux-icon, .figma-icon,.github-icon{
+    opacity: 0;
+    transform: translateY(100px);
+}
+.typescript-icon{
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}

@@ -19,16 +19,12 @@ export default function AboutSlide1() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
+          console.log(entries);
           if (entry.isIntersecting) {
             const newStyle = {
               right: "100%",
             };
-            // const newStyleHideAboutMe = {
-            //   bottom: "100%",
-            // };
-            // const newAboutMeStyle = {
-            //   height:
-            // };
+
             if (entry.target.classList.value === "hide-about-title1") {
               setNewStyleTitle1(newStyle);
             }
@@ -97,7 +93,7 @@ export default function AboutSlide1() {
     };
   }, []);
   return (
-    <div className="about-slide1 slide">
+    <div className="about-slide1 slide" id="page1">
       <div className="about-titles-container" ref={activeAboutTitles}>
         <div className="about-title-container">
           <h2 className="about-title">I'M</h2>

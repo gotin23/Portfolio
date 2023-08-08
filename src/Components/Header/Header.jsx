@@ -3,7 +3,7 @@ import "./Header.css";
 import HackText from "../HackText/HackText";
 // import { useState } from "react";
 
-export default function Header() {
+export default function Header({ handleActiveOtherSide }) {
   //   const [activeAnimLinks, setActiveAnimLinks] = useState({ link1: false, link2: false, link3: false, link4: false });
 
   //   const handleMouseEnter = (link) => {
@@ -18,25 +18,25 @@ export default function Header() {
   //     }, 500);
   //   };
   return (
-    <nav className="fadeIn">
+    <nav className="fadeIn header">
       <ul className="nav-links">
         <li>
-          <a href="#">
+          <a href="#Home">
             <HackText state={{ content: `Home` }} />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#page1">
             <HackText state={{ content: `About me` }} />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#page2" onClick={handleActiveOtherSide}>
             <HackText state={{ content: `Works` }} />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#Contact">
             <HackText state={{ content: `Contact` }} />
           </a>
         </li>

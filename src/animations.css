@@ -787,5 +787,10 @@
                       transform: translateX(0);
                       }
                       } 
+                      .active-scroll-animation{
+                        transform: translateY(0);
+                       opacity: 1;
+                      
+                      }
                 
                 

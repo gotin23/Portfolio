@@ -26,7 +26,7 @@
 .about-title-container{
     height: 25%;
     width: fit-content;
-background-color: aqua;
+
     display: flex;
     
     align-items: center;
@@ -136,7 +136,7 @@ font-weight: 900;
    
 }
 .active-scroll-animation{
-    transform: translatey(0);
+    transform: translateY(0);
    opacity: 1;
   
   }

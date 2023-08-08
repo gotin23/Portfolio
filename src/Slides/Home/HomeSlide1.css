@@ -30,7 +30,7 @@
     
   
     transition: font-size .7s ease-in-out,font-weight .7s ease-in-out;
-    text-shadow: 3px -8px 4px rgba(255, 255, 255, 0.111);
+    /* text-shadow: 3px -8px 4px rgba(255, 255, 255, 0.111); */
   
     
 }
@@ -267,13 +267,13 @@
   transform: scale(1.1);
 } */
 .polygon1{
-  height: 180px;
-  width: 260px;
+  height: 90px;
+  width: 130px;
   background: rgba(39, 35, 35, 0);
 background: linear-gradient(146deg,rgba(39, 35, 35, 0) 50%, #ffffff85 50%);
 position: absolute;
-bottom: 130px;
-left: 140px;
+bottom: 180px;
+left: 210px;
 
 transform: perspective(1000px) rotate(150deg) rotateY(30deg);
 transition: transform 0.4s ease-in;
@@ -286,13 +286,13 @@ transform: perspective(1000px) rotate(145deg) rotateY(35deg) ;
 
 }
 .polygon2{
-  height: 100px;
-  width: 150px;
+  height: 50px;
+  width: 75px;
   background: rgba(39, 35, 35, 0);
 background: linear-gradient(146deg,rgba(39, 35, 35, 0) 50%, #ffffff 50%);
 position: absolute;
-bottom: 130px;
-left: 300px;
+bottom: 180px;
+left: 320px;
 
 transform: perspective(1000px) rotate(100deg) rotateY(30deg);
 transition: transform 0.4s ease-in;
@@ -305,13 +305,13 @@ transform: perspective(1000px) rotate(95deg) rotateY(35deg) ;
 
 }
 .polygon3{
-  height: 300px;
-  width: 300px;
+  height: 150px;
+  width: 150px;
   background: rgba(39, 35, 35, 0);
 background: linear-gradient(135deg,rgba(39, 35, 35, 0) 50%, #ffffff 50%);
 position: absolute;
-bottom: 120px;
-right: 180px;
+bottom: 180px;
+right: 230px;
 
 transform: perspective(1000px) rotate(-80deg) rotateY(30deg);
 transition: transform 0.4s ease-in;
@@ -324,12 +324,12 @@ transition: transform 0.4s ease-in;
 
 }
 .polygon4{
-  height: 220px;
-  width: 400px;
+  height: 110px;
+  width: 200px;
   background: rgba(39, 35, 35, 0);
 background: linear-gradient(28deg,rgba(39, 35, 35, 0) 50%, #ffffff 50%);
 position: absolute;
-top: 90px;
+top: 120px;
 left: 250px;
 
 transform: perspective(1000px) rotate(-20deg) rotateY(30deg);
@@ -343,12 +343,12 @@ transition: transform 0.4s ease-in;
 
 }
 .polygon5{
-  height: 170px;
-  width: 260px;
+  height: 85px;
+  width: 130px;
   background: rgba(39, 35, 35, 0);
 background: linear-gradient(33deg,rgba(39, 35, 35, 0) 50%, #ffffff85 50%);
 position: absolute;
-top: 120px;
+top: 150px;
 right: 400px;
 
 transform: perspective(1000px) rotate(-60deg) rotateY(30deg);
