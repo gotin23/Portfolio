@@ -3,10 +3,11 @@
     background-size: cover; */
     
 
-background: #ffffff;
-background: linear-gradient(144deg,#ffffff 80%, #000000 20%);
-background: -webkit-linear-gradient(144deg,#ffffff 80%, #000000 20%);
-background: -moz-linear-gradient(144deg,#ffffff 80%, #000000 20%);
+background: #000000;
+/* background: linear-gradient(144deg,#ffffff 80%, #000000 20%); */
+/* background: linear-gradient(149deg,#ffffff 45%, #000000 0%); */
+/* background: -webkit-linear-gradient(144deg,#ffffff 80%, #000000 20%);
+background: -moz-linear-gradient(144deg,#ffffff 80%, #000000 20%); */
 display: flex;
 justify-content: center;
 align-items: center;
@@ -14,6 +15,7 @@ align-items: center;
 .about-slide4-container{
    display: flex;
     /* max-height: 400px; */
+    background-color: #ffffff;
     border: 3px solid black;
    
 }
@@ -47,8 +49,10 @@ align-items: center;
  
   
 }
+
 .active-scroll-animation{
     transform: translate(0);
    opacity: 1;
   
   }
+ 

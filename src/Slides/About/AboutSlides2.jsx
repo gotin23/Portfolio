@@ -2,12 +2,12 @@ import React from "react";
 import "./AboutSlide2.css";
 import { useState } from "react";
 import { useEffect, useRef } from "react";
-import Spiky from "../../assets/icons/Spiky-Shape-Silhouette.svg";
+// import Spiky from "../../assets/icons/Spiky-Shape-Silhouette.svg";
 
 export default function AboutSlides2({ state }) {
   const [newStyleHideAbout, setNewStyleHideAbout] = useState({});
   const [newStyleHideAboutContent, setNewStyleHideAboutContent] = useState({});
-  const [activeSpikyText, setActiveSpikyText] = useState(false);
+  // const [activeSpikyText, setActiveSpikyText] = useState(false);
 
   const activeAboutMeHide = useRef();
 
@@ -29,9 +29,9 @@ export default function AboutSlides2({ state }) {
               setTimeout(() => {
                 state();
               }, 1200);
-              setTimeout(() => {
-                setActiveSpikyText(true);
-              }, 1200);
+              // setTimeout(() => {
+              //   setActiveSpikyText(true);
+              // }, 1200);
             }
             observer.unobserve(entry.target);
           }

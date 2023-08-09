@@ -31,7 +31,8 @@
    color: #000000;
   
   white-space: nowrap;
-  overflow: visible;
+  letter-spacing: 5px;
+  /* overflow: visible; */
  
 }
 /* .about-me-content-title::after{
@@ -79,6 +80,7 @@
 .about-me-content-title-container:hover .about-me-content-title {
 font-weight: 200;
 font-size: 240px;
+
 /* border-bottom: 2px solid black; */
   }
   .span-title-slide2{

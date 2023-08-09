@@ -59,6 +59,7 @@ flex-wrap: wrap;
     font-family: "Madena";
     font-stretch:condensed;
    font-variation-settings:"wdth" 94;
+   letter-spacing: 10px;
    /* font-variation-settings: 'YTAS' 720, 'YTDE' -300; */
    transition:font-variation-settings 0.8s ease-in-out,font-weight 0.8s ease-in-out  ;
 }
@@ -105,3 +106,9 @@ flex-wrap: wrap;
     opacity: 0;
     
 }
+.moving-text-about-slide3{
+    opacity: 0;
+    width: 100%;
+    transform: translateY(10px);
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  }

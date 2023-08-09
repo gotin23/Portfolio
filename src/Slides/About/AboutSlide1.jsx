@@ -113,7 +113,14 @@ export default function AboutSlide1() {
           <div className="hide-about-title3" style={newStyleTitle3} ref={activeAboutTitleHide3}></div>
         </div>
 
-        <div className="about-lets-talk-container" ref={activeLetsTalk}>
+        {/* <div className="about-lets-talk-container" ref={activeLetsTalk}>
+          <p className="about-lets-talk-content slideInDown">Let's Talk</p>
+
+          <img className="about-lets-talk-arrow slideInUp" src={RightArrow} alt="right-arrow" />
+        </div> */}
+      </div>
+      <div className="about-lets-talk-container">
+        <div className="about-lets-talk" ref={activeLetsTalk}>
           <p className="about-lets-talk-content slideInDown">Let's Talk</p>
 
           <img className="about-lets-talk-arrow slideInUp" src={RightArrow} alt="right-arrow" />

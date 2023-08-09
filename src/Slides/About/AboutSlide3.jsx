@@ -14,13 +14,13 @@ import GitHubIcon from "../../assets/icons/icons8-github.svg";
 // import GitIcon from "../../assets/icons/icons8-git.svg";
 import ReduxIcon from "../../assets/icons/icons8-redux.svg";
 import Typescript from "../../assets/icons/icons8-typescript.svg";
-import ArrowLogo from "../../assets/icons/304729.svg";
+// import ArrowLogo from "../../assets/icons/304729.svg";
 
 export default function AboutSlide3() {
   const [newStyleTitle1, setNewStyleTitle1] = useState({});
   const [newStyleTitle2, setNewStyleTitle2] = useState({});
   const [newStyleTitle3, setNewStyleTitle3] = useState({});
-  //   const [activeArrowLogo, setActiveArrowLogo] = useState(false);
+  // const [activeMovingText, setActiveMovingText] = useState();
 
   const activeAboutTitlesSlide3 = useRef();
   const activeAboutTitleHide1 = useRef();
@@ -36,6 +36,7 @@ export default function AboutSlide3() {
   const activeNextIcon = useRef();
   const activeFigmaIcon = useRef();
   const activeArrowlogo = useRef();
+  const activeMovingtext = useRef();
   //   const [
   //     activeAboutTitlesSlide3,
   //     activeAboutTitleHide1,
@@ -97,6 +98,9 @@ export default function AboutSlide3() {
               entry.target.classList.add("active-scroll-animation");
             }
             if (entry.target.classList.value === "about-slide3-arrow-logo") {
+              entry.target.classList.add("active-scroll-animation");
+            }
+            if (entry.target.classList.value === "moving-text-about-slide3") {
               console.log("yepou");
               entry.target.classList.add("active-scroll-animation");
             }
@@ -121,7 +125,7 @@ export default function AboutSlide3() {
       activeTypeScriptIcon.current,
       activeGithubIcon.current,
       activeJavascriptIcon.current,
-      // activeNextIcon.current,
+      activeMovingtext.current,
       activeFigmaIcon.current,
       activeArrowlogo.current,
     ];
@@ -147,7 +151,12 @@ export default function AboutSlide3() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("active-scroll-animation");
+            if (entry.target.classList.value === "about-slide3-titles-container") {
+              entry.target.classList.add("active-scroll-animation");
+            }
+            if (entry.target.classList.value === "icon-skill next-icon") {
+              entry.target.classList.add("active-scroll-animation");
+            }
             observer.unobserve(entry.target);
           }
         });
@@ -205,7 +214,9 @@ export default function AboutSlide3() {
 
         <img src={FigmaIcon} alt="html icon" className="icon-skill figma-icon" ref={activeFigmaIcon} />
       </div>
-      <Movingtext />
+      <div className="moving-text-about-slide3" ref={activeMovingtext}>
+        <Movingtext state={"HTML - CSS - Javascript - React - Next - Typescript - Redux - Github - Figma - "} />
+      </div>
     </div>
   );
 }

@@ -10,14 +10,17 @@
 .moving-text-span{
     /* color: #ffffff; */
     font-size: 35px;
+    font-weight: 500;
     white-space: nowrap;
-    letter-spacing: 10px;
-    transition: font-weight 0.8s ease-in-out, opacity 0.8s ease-in-out;
+    letter-spacing: 15px;
+    transition: font-weight 0.4s ease-in-out,font-variation-settings 0.4s ease-in-out;
     animation: MovingText 15s linear infinite;
     text-transform: uppercase;
+    font-variation-settings:"wdth" 90;
 }
 .moving-text-container:hover .moving-text-span{
-   font-weight: 700;
+   font-weight: 600;
+   font-variation-settings:"wdth" 100;
    
 }
 @keyframes MovingText  {
