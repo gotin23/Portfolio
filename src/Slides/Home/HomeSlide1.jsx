@@ -48,7 +48,7 @@ export default function HomeSlide1({ state }) {
   };
 
   return (
-    <div className="home-container slide">
+    <div className="home-container slide" id="home">
       <div className="home-content">
         {/* <img src={Spiral} /> */}
         {polygon1 && <div className="polygon1"></div>}
@@ -71,15 +71,11 @@ export default function HomeSlide1({ state }) {
         {!animHeader && <HomePopup animHomeTitle={handleAnimHeader} activeHeader={state} />}
         <h2 className="home-name">Frontend</h2>
 
-        <div className="home-cards">
-          <div className="home-card">
-            {classCard && (
-              <h2 className={`home-card-content ${classCard}`} data-text="Portfolio">
-                Portfolio
-              </h2>
-            )}
-          </div>
-        </div>
+        {classCard && (
+          <h2 className={`home-portfolio ${classCard}`} data-text="Portfolio">
+            Portfolio
+          </h2>
+        )}
       </div>
     </div>
   );

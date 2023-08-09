@@ -20,6 +20,11 @@
     src: url('./assets/fonts/Petrona/Petrona-Italic-VariableFont_wght.ttf') ;
     /* Vous pouvez également inclure d'autres formats de police ici pour une meilleure compatibilité avec les navigateurs */
   }
+@font-face {
+    font-family: 'geologica'; /* Le nom que vous souhaitez donner à votre police */
+    src: url('./assets/fonts/RL MADENA/RL\ Madena\ Variable.ttf') ;
+    /* Vous pouvez également inclure d'autres formats de police ici pour une meilleure compatibilité avec les navigateurs */
+  }
 .App{
 position: relative;
 height: 100vh;
@@ -67,17 +72,6 @@ overflow: hidden;
  opacity: 1;
 
 } */
-.bo{
-  min-width: 100%;
-  height: 50px;
-  background-color: aqua;
-  position: fixed;
-  top: 50%; /* Ajustez cette valeur pour centrer verticalement */
-  left: 50%; /* Ajustez cette valeur pour centrer horizontalement */
-  z-index: 2000;
- 
-  /* transform: rotate(-180deg)translateX(-100vw); */
-  transform: rotate(0deg) translateY(-100vw) ;
-  transform-origin:center ;
-
-}
+/* .color-span{
+  color: #ffffff;
+} */

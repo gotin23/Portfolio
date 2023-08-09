@@ -2,8 +2,10 @@ import React from "react";
 import "./AboutSlide3.css";
 import { useState } from "react";
 import { useEffect, useRef } from "react";
+import Movingtext from "../../Components/MovingText/Movingtext";
 import HtmlIcon from "../../assets/icons/icons8-html.svg";
 import JavascriptIcon from "../../assets/icons/icons8-javascript.svg";
+// import JavascriptIcon from "../../assets/icons/icons8-javascript-color.svg";
 import ReactIcon from "../../assets/icons/icons8-react-native.svg";
 import FigmaIcon from "../../assets/icons/icons8-figma.svg";
 import NextIcon from "../../assets/icons/icons8-nextjs.svg";
@@ -85,9 +87,9 @@ export default function AboutSlide3() {
             if (entry.target.classList.value === "icon-skill javascript-icon") {
               entry.target.classList.add("active-scroll-animation");
             }
-            if (entry.target.classList.value === "icon-skill next-icon") {
-              entry.target.classList.add("active-scroll-animation");
-            }
+            // if (entry.target.classList.value === "icon-skill next-icon") {
+            //   entry.target.classList.add("active-scroll-animation");
+            // }
             if (entry.target.classList.value === "icon-skill github-icon") {
               entry.target.classList.add("active-scroll-animation");
             }
@@ -119,7 +121,7 @@ export default function AboutSlide3() {
       activeTypeScriptIcon.current,
       activeGithubIcon.current,
       activeJavascriptIcon.current,
-      activeNextIcon.current,
+      // activeNextIcon.current,
       activeFigmaIcon.current,
       activeArrowlogo.current,
     ];
@@ -155,7 +157,7 @@ export default function AboutSlide3() {
       }
     );
 
-    const elementsToObserve = [activeAboutTitlesSlide3.current];
+    const elementsToObserve = [activeAboutTitlesSlide3.current, activeNextIcon.current];
     elementsToObserve.forEach((element) => {
       if (element) {
         observer.observe(element);
@@ -178,22 +180,24 @@ export default function AboutSlide3() {
           <div className="hide-about-slide3-title1" style={newStyleTitle1} ref={activeAboutTitleHide1}></div>
         </div>
         <div className="about-slide3-title-container">
-          <h2 className="about-slide3-title">Loving These</h2>
+          <h2 className="about-slide3-title">Loving these</h2>
           <div className="hide-about-slide3-title2" style={newStyleTitle2} ref={activeAboutTitleHide2}></div>
         </div>
         <div className="about-slide3-title-container">
-          <h2 className="about-slide3-title">TECHNOLOGIES</h2>
+          <h2 className="about-slide3-title">
+            <span className="color-span">Technologies</span>
+          </h2>
           <div className="hide-about-slide3-title3" style={newStyleTitle3} ref={activeAboutTitleHide3}></div>
         </div>
       </div>
       <div className="about-slide3-img-container">
-        <img src={ArrowLogo} alt="arrow logo" className="about-slide3-arrow-logo" ref={activeArrowlogo} />
+        {/* <img src={ArrowLogo} alt="arrow logo" className="about-slide3-arrow-logo" ref={activeArrowlogo} /> */}
         <img src={HtmlIcon} alt="html icon" className="icon-skill html-icon" ref={activeHtmlIcon} />
         <img src={CssIcon} alt="Css icon" className="icon-skill css-icon" ref={activeCssIcon} />
-        <img src={JavascriptIcon} alt="Javascript icon" className="icon-skill javascript-icon" ref={activeJavascriptIcon} />
+        <img src={Typescript} alt="html icon" className="icon-skill typescript-icon" ref={activeTypeScriptIcon} />
 
         <img src={ReactIcon} alt="html icon" className="icon-skill react-icon" ref={activeReactIcon} />
-        <img src={Typescript} alt="html icon" className="icon-skill typescript-icon" ref={activeTypeScriptIcon} />
+        <img src={JavascriptIcon} alt="Javascript icon" className="icon-skill javascript-icon" ref={activeJavascriptIcon} />
         <img src={NextIcon} alt="html icon" className="icon-skill next-icon" ref={activeNextIcon} />
         <img src={ReduxIcon} alt="html icon" className="icon-skill redux-icon" ref={activeReduxIcon} />
 
@@ -201,6 +205,7 @@ export default function AboutSlide3() {
 
         <img src={FigmaIcon} alt="html icon" className="icon-skill figma-icon" ref={activeFigmaIcon} />
       </div>
+      <Movingtext />
     </div>
   );
 }

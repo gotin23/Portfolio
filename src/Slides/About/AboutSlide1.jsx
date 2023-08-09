@@ -2,7 +2,7 @@ import React from "react";
 import "./AboutSlide1.css";
 import { useState } from "react";
 import { useEffect, useRef } from "react";
-import RightArrow from "../../assets/icons/iconmonstr-arrow-right-thin.svg";
+import RightArrow from "../../assets/icons/iconmonstr-arrow-18.svg";
 
 export default function AboutSlide1() {
   const [newStyleTitle1, setNewStyleTitle1] = useState({});
@@ -93,7 +93,7 @@ export default function AboutSlide1() {
     };
   }, []);
   return (
-    <div className="about-slide1 slide" id="page1">
+    <div className="about-slide1 slide" id="about-me">
       <div className="about-titles-container" ref={activeAboutTitles}>
         <div className="about-title-container">
           <h2 className="about-title">I'M</h2>
@@ -106,7 +106,10 @@ export default function AboutSlide1() {
         </div>
 
         <div className="about-title-container">
-          <h2 className="about-title">Welcome</h2>
+          <h2 className="about-title">
+            {" "}
+            <span className="color-span">Welcome</span>
+          </h2>
           <div className="hide-about-title3" style={newStyleTitle3} ref={activeAboutTitleHide3}></div>
         </div>
 

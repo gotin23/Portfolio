@@ -63,7 +63,6 @@ function App() {
     setActiveHeader(true);
   };
   const handleActiveSide3 = () => {
-    console.log("oki", activeAboutSlide3);
     setActiveAboutSlide3(true);
   };
   return (

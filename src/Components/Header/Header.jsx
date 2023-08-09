@@ -21,17 +21,17 @@ export default function Header({ handleActiveOtherSide }) {
     <nav className="fadeIn header">
       <ul className="nav-links">
         <li>
-          <a href="#Home">
+          <a href="#home">
             <HackText state={{ content: `Home` }} />
           </a>
         </li>
         <li>
-          <a href="#page1">
+          <a href="#about-me">
             <HackText state={{ content: `About me` }} />
           </a>
         </li>
         <li>
-          <a href="#page2" onClick={handleActiveOtherSide}>
+          <a href="#works" onClick={handleActiveOtherSide}>
             <HackText state={{ content: `Works` }} />
           </a>
         </li>

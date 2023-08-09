@@ -97,10 +97,10 @@ font-size: 240px;
   }
   .about-me-spiky-text {
   
-    color: #ffffff;
-    font-size: 30px;
+    /* color: #ffffff; */
+    font-size: 40px;
     font-family: "funever";
- 
+   font-weight: 600;
     height: 160px;
     width: 240px;
     z-index: 3;
@@ -123,7 +123,7 @@ font-size: 240px;
   }
   .about-me-spiky-text:hover  {
 
-    font-size: 35px;
+    font-size: 45px;
    
        }
   /* .about-me-spiky-text:hover .about-me-spiky-container{

@@ -74,7 +74,7 @@ export default function AboutSlides2({ state }) {
             {" "}
             <div className="about-me-content-title-container">
               <h2 className="about-me-content-title">
-                <span className="span-title-slide2">Passionate</span> about
+                <span className="span-title-slide2 color-span">Passionate</span> about
               </h2>
               <div className="about-me-hover-title"></div>
             </div>
@@ -84,16 +84,19 @@ export default function AboutSlides2({ state }) {
             </div>
             <div className="about-me-content-title-container">
               <h2 className="about-me-content-title">
-                Web <span className="span-title-slide2">Development</span>
+                Web{" "}
+                <span className="span-title-slide2">
+                  <span className="color-span">Development</span>
+                </span>
               </h2>
               <div className="about-me-hover-title"></div>
             </div>
           </div>
 
-          <div className="about-me-spiky-container">
+          {/* <div className="about-me-spiky-container">
             {activeSpikyText && <img className="about-me-spiky fadeIn" src={Spiky} alt="spiky svg" />}
-            <p className="about-me-spiky-text">Be Creative</p>
-          </div>
+            <p className="about-me-spiky-text color-span">Be Creative</p>
+          </div> */}
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutSlide4.css";
 import Picture from "../../assets/icons/pp.jpeg";
+import Movingtext from "../../Components/MovingText/Movingtext";
 import { useEffect, useRef } from "react";
 export default function AboutSlide4() {
   // const [newStyle, setNewStyle] = useState({});
@@ -38,7 +39,8 @@ export default function AboutSlide4() {
   }, []);
   return (
     <div className="about-slide4 slide" id="page2">
-      <div className="about-slide4-container">
+      {/* <Movingtext /> */}
+      {/* <div className="about-slide4-container">
         <div className="about-slide4-img-container">
           <img className="about-slide4-img" src={Picture} ref={activeImage} alt="profilePicture" />
         </div>
@@ -48,7 +50,7 @@ export default function AboutSlide4() {
             magnam harum voluptatibus nulla quidem optio.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

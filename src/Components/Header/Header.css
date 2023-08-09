@@ -13,13 +13,13 @@ nav ul{
 display: flex;
 justify-content:flex-end;
 align-items: center;
-margin-top: 10px;
+margin-top: 20px;
 /* background-color: aqua; */
 }
 nav li{
 /* margin-right: 30px; */
-font-size: 15px;
-font-family: "Madena";
+
+
 list-style-type: none;
 /* background-color: green; */
 display: flex;
@@ -31,11 +31,12 @@ transition: transform 0.4s ease-in-out;
 }
 nav a{
 margin-right: 30px;
-font-size: 24px;
-
-font-family: "welcome";
+font-size: 18px;
+font-weight: 600;
+font-family: "Madena";
 text-decoration: none;
 color: #000000;
+/* color: #ffe70d; */
 
 position: relative;
 
@@ -43,13 +44,14 @@ position: relative;
 
 }
 nav a::before {
-    content: ""; /* Obligatoire pour que le pseudo-élément soit affiché */
-    position: absolute; /* Position absolue pour le pseudo-élément */
-    bottom: -3px; /* Positionnez le pseudo-élément sous le lien */
-    left: 0; /* Alignez le pseudo-élément avec le début du lien */
-    width: 0%; /* Largeur du pseudo-élément pour couvrir tout le lien */
-    height: 2px; /* Épaisseur du soulignement */
-    background-color: #000000; /* Couleur du soulignement */
+    content: ""; 
+    position: absolute; 
+    bottom: -3px;
+    left: 0; 
+    width: 0%; 
+    height: 2px; 
+    background-color: #000000; 
+    /* background-color:  #ffe70d;  */
    
     transition: width 0.2s ease-in-out;
    
