@@ -9,6 +9,7 @@ import AboutSlides2 from "./Slides/About/AboutSlides2";
 import AboutSlide3 from "./Slides/About/AboutSlide3";
 import AboutSlide4 from "./Slides/About/AboutSlide4";
 import Header from "./Components/Header/Header";
+import WorksSlide1 from "./Slides/Works/WorksSlide1";
 
 function App() {
   const [activeAboutSlide3, setActiveAboutSlide3] = useState(false);
@@ -22,11 +23,6 @@ function App() {
         console.log(entries);
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // const newStyleHideAboutMe = {
-            //   bottom: "100%",
-            // };
-            console.log("11");
-
             if (entry.target.classList.value === "about-slide2-observer") {
               console.log("actif");
               // setTimeout(() => {
@@ -81,7 +77,8 @@ function App() {
           )}
 
           {activeAboutSlide3 && <AboutSlide3 />}
-          {activeAboutSlide3 && <AboutSlide4 />}
+          {/* {activeAboutSlide3 && <AboutSlide4 />} */}
+          {activeAboutSlide3 && <WorksSlide1 />}
         </div>
       </div>
     </div>

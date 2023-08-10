@@ -458,8 +458,8 @@
         .fadeIn {
           -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-          -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
           -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
           }
@@ -633,12 +633,9 @@
                   }
                   } 
                   .polygon1 {
-                    -webkit-animation-name: polygon1;
-                    animation-name: polygon1;
-                    -webkit-animation-duration: 1s;
-                    animation-duration: 1s;
-                    -webkit-animation-fill-mode: ease-in-out;
-                    animation-fill-mode: ease-in-out;
+                    
+                    animation:polygon1b 10s infinite ease-in-out ,polygon1 1s  ease-in-out;
+   
                     }
                   @keyframes polygon1 {
                   0% {
@@ -650,14 +647,28 @@
                     transform:translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg);
                    
                   }
+                }
+                @keyframes polygon1b {
+                  0% {
+                 
+                    transform:translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg);
+                  
+                  }
+                  50% {
+                    transform:translateX(-10px) translateY(0) perspective(1000px) rotate(140deg) rotateY(36deg);
+                   
+                  }
+                  90% {
+                    transform:translateX(-5px) translateY(-5px) perspective(1000px) rotate(153deg) rotateY(39deg);
+                   
+                  }
+                  100% {
+                    transform:translateX(0) translateY(-0px) perspective(1000px) rotate(150deg) rotateY(30deg);
+                   
+                  }
                   } 
                   .polygon2 {
-                    -webkit-animation-name: polygon2;
-                    animation-name: polygon2;
-                    -webkit-animation-duration: 1.2s;
-                    animation-duration: 1.2s;
-                    -webkit-animation-fill-mode: ease-in-out;
-                    animation-fill-mode: ease-in-out;
+                    animation:polygon2 1.2s  ease-in-out;
                     }
                   @keyframes polygon2 {
                   0% {
