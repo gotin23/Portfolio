@@ -1,9 +1,7 @@
 .moving-text-container{
    width: 100%;
-
     display: flex;
-    align-items: center;
-   
+    align-items: center;  
     overflow: hidden;
 }
 .moving-text-span{
