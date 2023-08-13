@@ -6,7 +6,10 @@ const CustomCursor = () => {
 
   // Gérer le mouvement de la souris.
   const handleMouseMove = (event) => {
-    setCursorPosition({ x: event.pageX, y: event.pageY });
+    setTimeout(() => {
+      setCursorPosition({ x: event.pageX, y: event.pageY });
+    }, 50);
+    // setCursorPosition({ x: event.pageX, y: event.pageY });
   };
 
   useEffect(() => {

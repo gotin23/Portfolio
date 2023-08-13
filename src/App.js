@@ -12,7 +12,7 @@ import Header from "./Components/Header/Header";
 import WorksSlide1 from "./Slides/Works/WorksSlide1";
 
 function App() {
-  const [activeAboutSlide3, setActiveAboutSlide3] = useState(true);
+  const [activeAboutSlide3, setActiveAboutSlide3] = useState(false);
   const [activeHeader, setActiveHeader] = useState(false);
 
   const observeEndAboutSlide2 = useRef();
@@ -67,14 +67,14 @@ function App() {
       <CustomCursor />
       <div className="all-content">
         <div className="slides-container">
-          {/* <HomeSlide1 state={handleActiveHeader} />
+          <HomeSlide1 state={handleActiveHeader} />
           {activeHeader && <AboutSlide1 />}
 
           {activeHeader && (
             <div className="about-slide2-observer" ref={observeEndAboutSlide2} onChange={() => handleActiveHeader()}>
               <AboutSlides2 state={handleActiveSide3} />
             </div>
-          )} */}
+          )}
 
           {activeAboutSlide3 && <AboutSlide3 />}
           {/* {activeAboutSlide3 && <AboutSlide4 />} */}

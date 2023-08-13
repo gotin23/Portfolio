@@ -16,13 +16,13 @@ export default function HomeSlide1({ state }) {
   const [polygon5, setPolygon5] = useState(false);
 
   const handleAnimHeader = () => {
-    const newTitleStyle = { fontSize: "260px", fontWeight: "900" };
+    const newTitleStyle = { fontSize: "260px", fontWeight: "700" };
     setTimeout(() => {
       setAnimHeader(!animHeader);
     }, 2000);
     setTimeout(() => {
       setclassCard("slideInUp");
-    }, 4350);
+    }, 4000);
 
     setTimeout(() => {
       setPolygon1(true);
@@ -41,7 +41,7 @@ export default function HomeSlide1({ state }) {
     }, 3100);
     setTimeout(() => {
       setclassCard("glitch");
-    }, 7100);
+    }, 6100);
     setTimeout(() => {
       setNewStyle(newTitleStyle);
     }, 300);
@@ -69,7 +69,7 @@ export default function HomeSlide1({ state }) {
         </h1>
 
         {!animHeader && <HomePopup animHomeTitle={handleAnimHeader} activeHeader={state} />}
-        <h2 className="home-name">Frontend</h2>
+        {/* <h2 className="home-name">Frontend</h2> */}
 
         {classCard && (
           <h2 className={`home-portfolio ${classCard}`} data-text="Portfolio">
