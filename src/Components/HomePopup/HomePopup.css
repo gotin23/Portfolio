@@ -32,10 +32,10 @@ transition: height,1s ease-in-out;
   margin-Top:250px;
 
   font-size: 160px;
-
-  font-family: "Madena";
+/* 
+  font-family: "Madena"; */
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.8s linear;
 
 }
 .home-popup-title2{
@@ -45,7 +45,7 @@ transition: height,1s ease-in-out;
   margin-top: 60px;
   font-size: 90px;
 
-  font-family: "Madena";
+  /* font-family: "Madena"; */
   
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -62,7 +62,7 @@ transition: height,1s ease-in-out;
   font-size: 100px;
   cursor: pointer;
   margin-top: 80px;
-  font-family: "Madena";
+  /* font-family: "Madena"; */
 
   color: #ffffffbf;
   position: relative;

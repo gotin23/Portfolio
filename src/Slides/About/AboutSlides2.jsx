@@ -19,8 +19,8 @@ export default function AboutSlides2({ state }) {
             const newStyleHideAboutMe = {
               top: "50%",
               bottom: "50%",
-              left: "50%",
-              right: "50%",
+              left: "40%",
+              right: "40%",
               // borderRadius: "50%",
             };
             const newStyleHideAboutContent = {

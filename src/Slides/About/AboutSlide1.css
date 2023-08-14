@@ -41,7 +41,7 @@
     font-size: 230px;
     font-weight: 100;
     transition: font-weight 0.8s ease-in-out;
-    font-family: "Madena";
+    /* font-family: "Madena"; */
     display: flex;
 
     align-items: center;
@@ -59,7 +59,7 @@
 
 }
 
-.hide-about-title1 {
+.hide-about-title1,.hide-about-title2,.hide-about-title3{
     position: absolute;
     top: 0;
     left: 0;
@@ -69,7 +69,7 @@
     transition: right 0.8s ease-in-out;
 }
 
-.hide-about-title2 {
+/* .hide-about-title2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -87,7 +87,7 @@
     bottom: 0;
     background-color: #ffffff;
     transition: right 0.8s ease-in-out;
-}
+} */
 
 .about-lets-talk-container {
     /* background-color: aqua; */
@@ -107,7 +107,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transform: translatey(-300px);
+    transform: translateY(-200px);
     opacity: 0;
     transition:
         transform 0.8s ease-in-out,

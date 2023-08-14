@@ -22,7 +22,7 @@ const CustomCursor = () => {
     };
   }, []);
 
-  return <div className="custom-cursor" style={{ left: cursorPosition.x, top: cursorPosition.y }}></div>;
+  return <div className="custom-cursor" style={{ left: cursorPosition.x - 5, top: cursorPosition.y - 10 }}></div>;
 };
 
 export default CustomCursor;

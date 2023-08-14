@@ -1,9 +1,11 @@
 import React from "react";
 import "./Header.css";
+import { useState } from "react";
 import HackText from "../HackText/HackText";
 // import { useState } from "react";
 
 export default function Header({ handleActiveOtherSide }) {
+  const [activeAboutTransition, setActiveAboutTransition] = useState(false);
   //   const [activeAnimLinks, setActiveAnimLinks] = useState({ link1: false, link2: false, link3: false, link4: false });
 
   //   const handleMouseEnter = (link) => {
@@ -17,8 +19,20 @@ export default function Header({ handleActiveOtherSide }) {
   //       setActiveAnimLinks({ link1: false, link2: false, link3: false, link4: false });
   //     }, 500);
   //   };
+  const handleAboutTransition = () => {
+    console.log("ok");
+    setActiveAboutTransition(true);
+    setTimeout(() => {
+      setActiveAboutTransition(false);
+    }, 1000);
+  };
   return (
     <nav className="fadeIn header">
+      {activeAboutTransition && (
+        <div className="about-transition">
+          <h2>About Me</h2>
+        </div>
+      )}
       <ul className="nav-links">
         <li>
           <a href="#home">
@@ -26,7 +40,7 @@ export default function Header({ handleActiveOtherSide }) {
           </a>
         </li>
         <li>
-          <a href="#about-me">
+          <a href="#about-me" onClick={handleAboutTransition}>
             <HackText state={{ content: `About me` }} />
           </a>
         </li>

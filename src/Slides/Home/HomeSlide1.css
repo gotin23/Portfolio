@@ -24,7 +24,7 @@
 }
 .home-title{   
     font-size: 160px;
-    font-family: "Madena";
+    /* font-family: "Madena"; */
    
     margin-top:250px;
     
@@ -50,7 +50,7 @@
 .home-name{
   margin-top: 60px;
   font-size: 90px;
-  font-family: "Madena";
+  /* font-family: "Madena"; */
   font-stretch:extra-expanded;
     font-weight: 400;
 
@@ -128,13 +128,13 @@
       clip: rect(34px, 9999px, 82px, 0);
     }
     85% {
-      clip: rect(74px, 9999px, 32px, 0);
+      /* clip: rect(74px, 9999px, 32px, 0); */
     }
     90% {
-      clip: rect(80px, 9999px, 46px, 0);
+      /* clip: rect(80px, 9999px, 46px, 0); */
     }
     95% {
-      clip: rect(70px, 9999px, 28px, 0);
+      /* clip: rect(70px, 9999px, 28px, 0); */
     }
   }
   
@@ -204,16 +204,16 @@
       clip: rect(68px, 9999px, 12px, 0);
     }
     80% {
-      clip: rect(42px, 9999px, 26px, 0);
+      /* clip: rect(42px, 9999px, 26px, 0); */
     }
     85% {
-      clip: rect(82px, 9999px, 64px, 0);
+      /* clip: rect(82px, 9999px, 64px, 0); */
     }
     90% {
-      clip: rect(14px, 9999px, 14px, 0);
+      /* clip: rect(14px, 9999px, 14px, 0); */
     }
     95% {
-      clip: rect(40px, 9999px, 16px, 0);
+      /* clip: rect(40px, 9999px, 16px, 0); */
     }
   }
   
@@ -254,11 +254,11 @@
  
 .home-portfolio{
   font-size: 120px;
-  font-family: 'Madena';
+  /* font-family: 'Madena'; */
   /* font-stretch:semi-condensed; */
   font-weight:600;
   margin-top: 80px;
-  letter-spacing: 4px;
+  letter-spacing: 7px;
  
 }
 .home-name:hover{
@@ -273,7 +273,7 @@
   width: 130px;
   background: rgba(39, 35, 35, 0);
 /* background: linear-gradient(146deg,rgba(39, 35, 35, 0) 50%,  #ffe70d 50%); */
-background: linear-gradient(146deg,rgba(39, 35, 35, 0) 50%, #ffffff85 50%);
+background: linear-gradient(146deg,rgba(39, 35, 35, 0) 50%, #ffffff 50%);
 position: absolute;
 bottom: 180px;
 left: 210px;
@@ -350,7 +350,7 @@ transition: transform 0.4s ease-in-out;
   width: 130px;
   background: rgba(39, 35, 35, 0);
 /* background: linear-gradient(33deg,rgba(39, 35, 35, 0) 50%,  #ffe70d 50%); */
-background: linear-gradient(33deg,rgba(39, 35, 35, 0) 50%, #ffffff85 50%);
+background: linear-gradient(33deg,rgba(39, 35, 35, 0) 50%, #ffffff 50%);
 position: absolute;
 top: 150px;
 right: 400px;

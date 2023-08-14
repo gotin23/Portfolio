@@ -21,8 +21,13 @@
     /* Vous pouvez également inclure d'autres formats de police ici pour une meilleure compatibilité avec les navigateurs */
   }
 @font-face {
-    font-family: 'geologica'; /* Le nom que vous souhaitez donner à votre police */
-    src: url('./assets/fonts/RL MADENA/RL\ Madena\ Variable.ttf') ;
+    font-family: 'Geologica'; /* Le nom que vous souhaitez donner à votre police */
+    src: url('./assets/fonts/geologica/fonts/variable/Geologica[CRSV\,SHRP\,slnt\,wght].ttf') ;
+    /* Vous pouvez également inclure d'autres formats de police ici pour une meilleure compatibilité avec les navigateurs */
+  }
+@font-face {
+    font-family: 'Grotesk'; /* Le nom que vous souhaitez donner à votre police */
+    src: url('./assets/fonts/BDO_grotesk/fonts/variable/BDOGrotesk-VF.ttf') ;
     /* Vous pouvez également inclure d'autres formats de police ici pour une meilleure compatibilité avec les navigateurs */
   }
 .App{

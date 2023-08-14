@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d019487b.css",
+    "main.js": "/static/js/main.37d2a845.js",
+    "static/media/Geologica[CRSV,SHRP,slnt,wght].ttf": "/static/media/Geologica[CRSV,SHRP,slnt,wght].648066ca340f092deaae.ttf",
+    "static/media/BDOGrotesk-VF.ttf": "/static/media/BDOGrotesk-VF.bfa882bfca7ea6b4fce6.ttf",
+    "static/media/Petrona-Italic-VariableFont_wght.ttf": "/static/media/Petrona-Italic-VariableFont_wght.dcfc4364a27f80004241.ttf",
+    "static/media/Merchant-VF.ttf": "/static/media/Merchant-VF.b4af22dc918277fe2e00.ttf",
+    "static/media/MADEVoyagerPERSONALUSE-Regular.otf": "/static/media/MADEVoyagerPERSONALUSE-Regular.bc7ebf03c59374bef8f9.otf",
+    "static/media/Welcome Home.otf": "/static/media/Welcome Home.471412bcf1338607d294.otf",
+    "static/media/icons8-react-native.svg": "/static/media/icons8-react-native.c099739d19ff38be3cbb1f025c310863.svg",
+    "static/media/deal-svgrepo-com.svg": "/static/media/deal-svgrepo-com.1d572d1cf8ba11109ae3588e80ee653e.svg",
+    "static/media/skills-svgrepo-com.svg": "/static/media/skills-svgrepo-com.8cf0846f0dd2412d2e9c62faa22375b9.svg",
+    "static/media/icons8-redux.svg": "/static/media/icons8-redux.089adbf60bd872d96a7906a807b1afeb.svg",
+    "static/media/icons8-github.svg": "/static/media/icons8-github.6aafde907a97ac05ed917ee181ba93ae.svg",
+    "static/media/icons8-javascript.svg": "/static/media/icons8-javascript.027782a49392f3beeedbf7edf53050fd.svg",
+    "static/media/icons8-html.svg": "/static/media/icons8-html.91e8b6251bdb5b1ad874bc5314caff20.svg",
+    "index.html": "/index.html",
+    "static/media/icons8-typescript.svg": "/static/media/icons8-typescript.b1bac6528beda9451328a65502185039.svg",
+    "static/media/icons8-nextjs.svg": "/static/media/icons8-nextjs.5ddd4b72494c19489fd90c27f1231973.svg",
+    "static/media/icons8-css.svg": "/static/media/icons8-css.02c8db2a8b493cdc872fa8e77df3f720.svg",
+    "static/media/icons8-figma.svg": "/static/media/icons8-figma.2cf3967c30f84d8436d8e9029d29cd3d.svg",
+    "static/media/iconmonstr-arrow-down-thin.svg": "/static/media/iconmonstr-arrow-down-thin.49faa658e3b5d5e6ed9602b02665eedb.svg",
+    "static/media/iconmonstr-arrow-18.svg": "/static/media/iconmonstr-arrow-18.e547dc3706fdfb4df166dd44cb436363.svg",
+    "main.d019487b.css.map": "/static/css/main.d019487b.css.map",
+    "main.37d2a845.js.map": "/static/js/main.37d2a845.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d019487b.css",
+    "static/js/main.37d2a845.js"
+  ]
+}

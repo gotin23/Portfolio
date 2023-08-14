@@ -29,11 +29,7 @@
     
    
 }
-/* .active-scroll-animation{
-    transform: translateY(0);
-   opacity: 1;
-  
-  } */
+
 .about-slide3-img-container{
 /* background-color: blueviolet; */
 width: 26%;
@@ -57,7 +53,7 @@ flex-wrap: wrap;
     font-size: 140px;
     margin-top: 20px;
     color: #ffffff;
-    font-family: "Madena";
+    /* font-family: "Madena"; */
     font-stretch:condensed;
    font-variation-settings:"wdth" 94;
    letter-spacing: 10px;

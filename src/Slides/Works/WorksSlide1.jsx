@@ -10,6 +10,7 @@ import Coding from "../../assets/icons/icons8-code-24.png";
 import Project from "../../assets/icons/icons8-projet-24.png";
 import Developer from "../../assets/icons/icons8-ordinateur-24.png";
 import Exceptional from "../../assets/icons/icons8-étoile-30.png";
+import ArrowRight from "../../assets/icons/icons8-arrow-right-100.png";
 
 export default function WorksSlide1() {
   const activeWorksTitle = useRef();
@@ -34,7 +35,7 @@ export default function WorksSlide1() {
             if (entry.target.classList.value === "box-container") {
               setTimeout(() => {
                 setActiveBoxs(true);
-              }, 4000);
+              }, 1000);
             }
             entry.target.classList.add("active-scroll-animation");
             observer.unobserve(entry.target);
@@ -218,6 +219,7 @@ export default function WorksSlide1() {
           </div>
         </div>
         <div className="work-slide1-container3">
+          {/* <img src={ArroRight} /> */}
           <div className="box-container3" ref={activeCircle3}>
             <div class="box">
               <img className="skill-img circle-img" src={Skill} />

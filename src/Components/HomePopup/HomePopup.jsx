@@ -8,7 +8,7 @@ import ArrowDown from "../../assets/icons/iconmonstr-arrow-down-thin.svg";
 export default function HomePopup({ animHomeTitle, activeHeader }) {
   const [popupHeight, setPopupHeight] = useState({});
 
-  const [buttonAnim, setButtonAnim] = useState(false);
+  const [animButtonEnter, setAnimButtonEnter] = useState(false);
   const [arrowAnim, setArrowAnim] = useState(false);
 
   const [activeButtonHome, setActiveButtonHome] = useState(false);
@@ -32,39 +32,27 @@ export default function HomePopup({ animHomeTitle, activeHeader }) {
         });
       }, 300 * (index + 1));
     });
-    // setTimeout(() => {
-    //   setSpanletter2("n");
-    // }, 300);
-    // setTimeout(() => {
-    //   setSpanletter3("t");
-    // }, 600);
-    // setTimeout(() => {
-    //   setSpanletter4("e");
-    // }, 900);
-    // setTimeout(() => {
-    //   setSpanletter5("r");
-    // }, 1200);
 
     setTimeout(() => {
       setArrowAnim(true);
     }, 1000);
     setTimeout(() => {
       setActiveButtonHome(true);
-    }, 2000);
+    }, 1500);
     setTimeout(() => {
       setChangeTitleClass("active-home");
     }, 2000);
 
     setTimeout(() => {
       setChangeTitleClass("active-home breath");
-    }, 4000);
+    }, 3500);
   }, []);
 
   const handlePopup = () => {
     setChangeTitleClass("fadeOut");
     setTimeout(() => {
-      setButtonAnim(true);
-    }, 170);
+      setAnimButtonEnter(true);
+    }, 100);
 
     animHomeTitle();
     // on donne 0 pour enlever le popup
@@ -82,32 +70,26 @@ export default function HomePopup({ animHomeTitle, activeHeader }) {
     }, 800);
   };
   // gestion da l'anim au survol du bouton
-  const handleMouseEnter = () => {
-    if (buttonRef.current) {
-      buttonRef.current.classList.add("pulse");
-      buttonRef.current.classList.remove("animFadeDown");
-    }
-  };
-  const handleMouseOut = () => {
-    if (buttonRef.current) {
-      setTimeout(() => {
-        buttonRef.current.classList.remove("pulse");
-      }, 800);
-    }
-  };
+  // const handleMouseEnter = () => {
+  //   if (buttonRef.current) {
+  //     buttonRef.current.classList.add("pulse");
+  //     buttonRef.current.classList.remove("animFadeDown");
+  //   }
+  // };
+  // const handleMouseOut = () => {
+  //   if (buttonRef.current) {
+  //     setTimeout(() => {
+  //       buttonRef.current.classList.remove("pulse");
+  //     }, 800);
+  //   }
+  // };
   return (
     <div className="home-popup" style={popupHeight}>
       <h1 className={`home-popup-tilte ${changeTitleClass}`}>Developer</h1>
 
       <h2 className={`home-popup-title2 ${changeTitleClass}`}>Frontend</h2>
 
-      <div
-        className={`button-home ${activeButtonHome && "active-home"}  ${buttonAnim ? "flipOutX" : ""}`}
-        onClick={handlePopup}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseOut}
-        ref={buttonRef}
-      >
+      <div className={`button-home ${activeButtonHome && "active-home"}  ${animButtonEnter ? "flipOutX" : ""}`} onClick={handlePopup} ref={buttonRef}>
         {arrowAnim && <img src={ArrowDown} className={`icon-arrow-popup fadeInDown`} alt="arrow-down" />}
         <span className="flipInX  span-anim">E</span>
         {spanLetters[0] && <span className="flipInX  span-anim2">{spanLetters[0]} </span>}
