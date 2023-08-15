@@ -1,5 +1,5 @@
 .about-slide1 {
-    background-color: #000000;
+    background-color:var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: #ffffff;
+    background-color: var(--color-secondary);
 }
 
 .about-title {
@@ -37,7 +37,7 @@
 
     /* margin-top: 10px; */
     width: fit-content;
-    color: #000000;
+    color: var(--color-primary);
     font-size: 230px;
     font-weight: 100;
     transition: font-weight 0.8s ease-in-out;
@@ -65,7 +65,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ffffff;
+    background-color:var(--color-secondary);
     transition: right 0.8s ease-in-out;
 }
 
@@ -99,7 +99,7 @@
 }
 
 .about-lets-talk {
-    background-color: white;
+    background-color:var(--color-secondary);
     height: 300px;
     width: 350px;
     padding: 20px;
@@ -116,6 +116,7 @@
 
 .about-lets-talk-content {
     font-size: 60px;
+    color: var(--color-primary);
     transition: font-style, font-weight 0.4s ease-in-out;
     font-weight: 200;
 }

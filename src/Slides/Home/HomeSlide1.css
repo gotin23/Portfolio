@@ -4,16 +4,21 @@
     /* justify-content: center;
     align-items: center; */
     /* height: 100vh;
+    
     width: 100vw; */
+    /* background-color: #3A405A; */
+    
+    /* background-color: rgb(14, 5, 18); */
+    background-color: var(--color-primary);
 
 }
 .home-content{
     position: relative;
     overflow: hidden;
-
-    background-color: rgb(0, 0, 0);
+/* 
+    background-color: rgb(0, 0, 0); */
  
-    color: #ffffff;
+    color: var(--color-secondary);
     min-height: 100vh;
     min-width: 100vw;
     font-stretch:extra-expanded;
@@ -26,7 +31,7 @@
     font-size: 160px;
     /* font-family: "Madena"; */
    
-    margin-top:250px;
+    margin-top:280px;
     
   
     transition: font-size .7s ease-in-out,font-weight .7s ease-in-out;
@@ -68,7 +73,7 @@
     position: relative;
     /* width: 400px; */
     margin: 0 auto;
-    background-color: #000000;
+    background-color:var(--color-primary);
   
    
    
@@ -147,7 +152,7 @@
     text-shadow: -1px 0 red;
     top: 0;
     color: white;
-    background-color: #000000;
+    background-color: var(--color-primary);
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
     animation: noise-anim 2s infinite linear alternate-reverse;
@@ -226,7 +231,7 @@
     text-shadow: 1px 0 blue;
     top: 0;
     color: white;
-    background-color: #000000;
+    background-color: var(--color-primary);
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
     animation: noise-anim-2 3s infinite linear alternate-reverse;
@@ -254,8 +259,9 @@
  
 .home-portfolio{
   font-size: 120px;
-  /* font-family: 'Madena'; */
+  font-family: 'Geologica';
   /* font-stretch:semi-condensed; */
+  color: var(--color-secondary);
   font-weight:600;
   margin-top: 80px;
   letter-spacing: 7px;

@@ -10,7 +10,7 @@ import Coding from "../../assets/icons/icons8-code-24.png";
 import Project from "../../assets/icons/icons8-projet-24.png";
 import Developer from "../../assets/icons/icons8-ordinateur-24.png";
 import Exceptional from "../../assets/icons/icons8-étoile-30.png";
-import ArrowRight from "../../assets/icons/icons8-arrow-right-100.png";
+// import ArrowRight from "../../assets/icons/icons8-arrow-right-100.png";
 
 export default function WorksSlide1() {
   const activeWorksTitle = useRef();
@@ -147,7 +147,7 @@ export default function WorksSlide1() {
     }
   };
   return (
-    <div className="works-slide1 slide">
+    <div className="works-slide1 slide" id="works">
       <div className="works-slide1-all-content">
         <div className="work-slide1-container2">
           <div className="box-container2" ref={activeCircle2}>

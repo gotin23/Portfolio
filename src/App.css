@@ -1,4 +1,10 @@
+:root{
+   
+    --color-primary:  #0e0f16;
+    --color-secondary:  #ffffff;
+    --color-tertiary:  #A3AEFF;
 
+}
 
 @font-face {
     font-family: 'Madena'; 

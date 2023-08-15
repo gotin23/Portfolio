@@ -22,7 +22,7 @@ export default function HomeSlide1({ state }) {
     }, 2000);
     setTimeout(() => {
       setPortfolioClass("slideInUp");
-    }, 3000);
+    }, 2800);
 
     // setTimeout(() => {
     //   setPolygon1(true);

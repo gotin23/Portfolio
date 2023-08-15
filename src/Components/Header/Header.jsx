@@ -24,7 +24,7 @@ export default function Header({ handleActiveOtherSide }) {
     setActiveAboutTransition(true);
     setTimeout(() => {
       setActiveAboutTransition(false);
-    }, 1000);
+    }, 1500);
   };
   return (
     <nav className="fadeIn header">

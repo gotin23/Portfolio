@@ -10,6 +10,7 @@ import AboutSlide3 from "./Slides/About/AboutSlide3";
 // import AboutSlide4 from "./Slides/About/AboutSlide4";
 import Header from "./Components/Header/Header";
 import WorksSlide1 from "./Slides/Works/WorksSlide1";
+import WorksSlide2 from "./Slides/Works/WorksSlide2";
 
 function App() {
   const [activeAboutSlide3, setActiveAboutSlide3] = useState(false);
@@ -79,6 +80,7 @@ function App() {
           {activeAboutSlide3 && <AboutSlide3 />}
           {/* {activeAboutSlide3 && <AboutSlide4 />} */}
           {activeAboutSlide3 && <WorksSlide1 />}
+          {activeAboutSlide3 && <WorksSlide2 />}
         </div>
       </div>
     </div>

@@ -35,7 +35,7 @@ font-size: 18px;
 font-weight: 600;
 font-family: "Madena";
 text-decoration: none;
-color: #000000;
+color: var(--color-tertiary);
 /* color: #ffe70d; */
 
 position: relative;
@@ -50,7 +50,7 @@ nav a::before {
     left: 0; 
     width: 0%; 
     height: 2px; 
-    background-color: #000000; 
+    background-color:var(--color-tertiary);
     /* background-color:  #ffe70d;  */
    
     transition: width 0.2s ease-in-out;
@@ -73,7 +73,7 @@ nav a::before {
   inset: 0;
    background-color: rgb(255, 255, 255);
    z-index: 11;
-   animation: aboutAnim 1s ease-in forwards;
+   animation: aboutAnim 1.5s ease-in ;
    display: flex;
    justify-content: center;
    align-items: center;
