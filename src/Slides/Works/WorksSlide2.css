@@ -9,7 +9,7 @@
 .works-slide2-title{
     /* margin-top: 130px; */
     color: var(--color-secondary);
-    font-size: 100px;
+    font-size: 120px;
     font-weight:300 ;
     transition: font-weight 0.4s ease-in;
     font-family: "Geologica";
@@ -34,7 +34,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transform: translateY(100px);
+    transform: translateY(50px);
     opacity: 0;
     transition: opacity .4s ease-in, transform .4s ease-in;
     /* background-color: aliceblue; */
@@ -47,18 +47,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 2px solid white; */
+    padding: 10px;
+    
 }
-.logo-project{
+
+/* .logo-project{
    width: 100px;
    height: 100px;
-}
+} */
 .button-project-name{
     color: var(--color-secondary);
     font-family: "Geologica";
     white-space: nowrap;
     font-size: 20px;
     cursor: pointer;
+    opacity: 0.3;
 }
+.active-button-project{
+    opacity: 1;
+   }
 .all-projects-container{
     height: 50%;
     width: 80%;
@@ -75,14 +83,14 @@
  
 }
 .project-img-container{
-    width: 47%;
-    height: 100%;
+    width: 45%;
+    height: 72%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* background-color: aqua; */
+    /* background-color: rgb(255, 255, 255); */
    
 
 }
@@ -90,8 +98,9 @@
 .project-img{
     width: 100%;
     height: 100%;
-   object-fit: cover;
+   object-fit:cover;
    /* filter: grayscale(0%); */
+
    transition: filter 0.4s ease-in,transform 0.4s ease-in;
    
 }
@@ -117,19 +126,23 @@
 .project-description-container{
   
     height: 100%;
-    width: 50%;
+    width: 55%;
     padding: 35px;
     /* background-color: aqua; */
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    overflow: hidden;
 }
 .project-description{
     color: var(--color-secondary);
     font-family: "Geologica";
-    font-size: 26px;
+    font-size: 25px;
     line-height: 40px;
+    font-weight: 200;
     letter-spacing: 1px;
+
   
 }
 .project-github-link{

@@ -6,19 +6,21 @@ import { data } from "../../assets/Data/Data";
 import GithubLogo from "../../assets/icons/icons8-github-white.svg";
 
 export default function WorksSlide2() {
-  console.log(data.techno);
   const activeSpan1 = useRef();
   const activeSpan2 = useRef();
   const activeSpan3 = useRef();
   const activeButtonsProjects = useRef();
   const activeContainerAllProjects = useRef();
+  const allProjectsBtns = useRef();
+  const animProjectImage = useRef();
+  const animProjectDescription = useRef();
+  const animGitHubLogo = useRef();
 
   const [styleSpan1, setStyleSpan1] = useState({});
   const [styleSpan2, setStyleSpan2] = useState({});
   const [styleSpan3, setStyleSpan3] = useState({});
 
   const [activeProject, setActiveProject] = useState(data[0]);
-  console.log(activeProject);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -58,7 +60,6 @@ export default function WorksSlide2() {
         observer.observe(element);
       }
     });
-
     return () => {
       elementsToObserve.forEach((element) => {
         if (element) {
@@ -67,6 +68,32 @@ export default function WorksSlide2() {
       });
     };
   }, []);
+
+  const handleActiveProject = (e) => {
+    if (e.target.id !== activeProject.id) {
+      const prevActiveButton = document.querySelector(".active-button-project");
+      prevActiveButton.classList.remove("active-button-project");
+      const newActiveProject = data.filter((el) => el.id === e.target.id);
+      // animation de l'image et de la description du projet
+      animProjectImage.current.classList.add("slideOutDown");
+      animProjectDescription.current.classList.add("slideOutRight");
+      animGitHubLogo.current.classList.add("bounceIn");
+      e.target.classList.add("active-button-project");
+      setTimeout(() => {
+        animProjectImage.current.classList.remove("slideOutDown");
+        animProjectDescription.current.classList.remove("slideOutRight");
+        animProjectImage.current.classList.add("slideInUp");
+        animProjectDescription.current.classList.add("slideInLeft");
+        animGitHubLogo.current.classList.remove("bounceIn");
+
+        //Je set le projet actif
+        setActiveProject(newActiveProject[0]);
+      }, 410);
+    } else {
+      return;
+    }
+  };
+
   return (
     <div className="works-slide2 slide">
       <h1 className="works-slide2-title">
@@ -81,17 +108,19 @@ export default function WorksSlide2() {
         </span>
       </h1>
       <div className="buttons-projects-container" ref={activeButtonsProjects}>
-        {data.map((el) => (
-          <div className="button-project">
+        {data.map((el, index) => (
+          <div className={`button-project`} key={index}>
             {/* <img src={el.logo} className="logo-project" /> */}
-            <p className="button-project-name">{el.name}</p>
+            <p className={`button-project-name ${el.name === "Css generator" && "active-button-project"}`} onClick={handleActiveProject} id={index + 1}>
+              {el.name}
+            </p>
           </div>
         ))}
       </div>
 
       <div className="all-projects-container" ref={activeContainerAllProjects}>
         <div className="project-img-container">
-          <img src={activeProject.image} className="project-img" />
+          <img src={activeProject.image} className="project-img" ref={animProjectImage} />
           <div className="techno-container">
             {activeProject.techno.map((tec) => (
               <img src={tec} className="techno-logo" />
@@ -99,10 +128,12 @@ export default function WorksSlide2() {
           </div>
         </div>
         <div className="project-description-container">
-          <p className="project-description">{activeProject.description}</p>
+          <p className="project-description" ref={animProjectDescription}>
+            {activeProject.description}
+          </p>
         </div>
-        <a href={activeProject.github}>
-          <img src={GithubLogo} className="project-github-link" />
+        <a href={activeProject.github} target="_blank">
+          <img src={GithubLogo} className="project-github-link" ref={animGitHubLogo} />
         </a>
       </div>
     </div>
