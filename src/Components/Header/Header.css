@@ -33,9 +33,9 @@ nav a{
 margin-right: 30px;
 font-size: 18px;
 font-weight: 600;
-font-family: "Madena";
+font-family: "Grotesk";
 text-decoration: none;
-color: var(--color-tertiary);
+color: var(--color-secondary);
 /* color: #ffe70d; */
 
 position: relative;
@@ -50,7 +50,7 @@ nav a::before {
     left: 0; 
     width: 0%; 
     height: 2px; 
-    background-color:var(--color-tertiary);
+    background-color:var(--color-secondary);
     /* background-color:  #ffe70d;  */
    
     transition: width 0.2s ease-in-out;

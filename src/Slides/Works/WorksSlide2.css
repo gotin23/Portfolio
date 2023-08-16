@@ -21,6 +21,7 @@
 .works-slide2-span1,.works-slide2-span2,.works-slide2-span3{
     opacity: 0.30;
     transition: opacity 0.4s ease-in,;
+ 
 }
 
 .works-slide2-title:hover{
@@ -62,7 +63,10 @@
     white-space: nowrap;
     font-size: 20px;
     cursor: pointer;
-    opacity: 0.3;
+    opacity: 0.45;
+}
+.button-project-name:hover{
+   opacity:1;
 }
 .active-button-project{
     opacity: 1;
@@ -104,11 +108,35 @@
    transition: filter 0.4s ease-in,transform 0.4s ease-in;
    
 }
-.project-img:hover{
+.project-img-container:hover .project-img{ 
 
    filter: grayscale(100%);
    transform: scale(1.15);
 }
+.visit-website-link{
+    position: absolute;
+   cursor: pointer;
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    border: 3px solid var(--color-primary);
+    font-family: "Geologica";
+    padding: 15px;
+    font-size: 28px;
+    color: var(--color-primary);
+    opacity: 0;
+    transition: opacity 0.4s ease-in,font-size 0.4s ease-in;
+    text-decoration: none;
+
+}
+.visit-website-link:hover{
+    font-size: 33px;
+
+}
+.project-img-container:hover .visit-website-link{
+    opacity: 1;
+    
+   
+ }
 .techno-container{
     position: absolute;
     bottom: 5px;

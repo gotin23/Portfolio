@@ -11,7 +11,6 @@ export default function WorksSlide2() {
   const activeSpan3 = useRef();
   const activeButtonsProjects = useRef();
   const activeContainerAllProjects = useRef();
-  const allProjectsBtns = useRef();
   const animProjectImage = useRef();
   const animProjectDescription = useRef();
   const animGitHubLogo = useRef();
@@ -36,12 +35,12 @@ export default function WorksSlide2() {
             }
             if (entry.target.classList.value === "works-slide2-span3") {
               setStyleSpan3(newStyleSpan);
-            }
-            if (entry.target.classList.value === "buttons-projects-container") {
-              entry.target.classList.add("active-scroll-animation");
-            }
-            if (entry.target.classList.value === "all-projects-container") {
-              entry.target.classList.add("active-scroll-animation");
+              setTimeout(() => {
+                activeButtonsProjects.current.classList.add("active-scroll-animation");
+              }, 400);
+              setTimeout(() => {
+                activeContainerAllProjects.current.classList.add("active-scroll-animation");
+              }, 600);
             }
 
             observer.unobserve(entry.target);
@@ -54,7 +53,7 @@ export default function WorksSlide2() {
     );
 
     // const elementsToObserve = [activeWorksTitle.current, activeCircle2.current, activeCircle3.current];
-    const elementsToObserve = [activeSpan1.current, activeSpan2.current, activeSpan3.current, activeButtonsProjects.current, activeContainerAllProjects.current];
+    const elementsToObserve = [activeSpan1.current, activeSpan2.current, activeSpan3.current];
     elementsToObserve.forEach((element) => {
       if (element) {
         observer.observe(element);
@@ -70,25 +69,32 @@ export default function WorksSlide2() {
   }, []);
 
   const handleActiveProject = (e) => {
+    // si le projet choisis est different du projet affiche
     if (e.target.id !== activeProject.id) {
+      // Je retire la classe active sur le bouton precedent pour l'ajouter au suivant
       const prevActiveButton = document.querySelector(".active-button-project");
       prevActiveButton.classList.remove("active-button-project");
+      e.target.classList.add("active-button-project");
+
+      //je fitre ma data pour afficher le nouveau projet actif
       const newActiveProject = data.filter((el) => el.id === e.target.id);
+
       // animation de l'image et de la description du projet
       animProjectImage.current.classList.add("slideOutDown");
       animProjectDescription.current.classList.add("slideOutRight");
       animGitHubLogo.current.classList.add("bounceIn");
-      e.target.classList.add("active-button-project");
+
       setTimeout(() => {
         animProjectImage.current.classList.remove("slideOutDown");
         animProjectDescription.current.classList.remove("slideOutRight");
+        animGitHubLogo.current.classList.remove("bounceIn");
         animProjectImage.current.classList.add("slideInUp");
         animProjectDescription.current.classList.add("slideInLeft");
-        animGitHubLogo.current.classList.remove("bounceIn");
 
         //Je set le projet actif
         setActiveProject(newActiveProject[0]);
-      }, 410);
+      }, 401);
+      //si le projet choisis est le mm je fais rien
     } else {
       return;
     }
@@ -121,6 +127,10 @@ export default function WorksSlide2() {
       <div className="all-projects-container" ref={activeContainerAllProjects}>
         <div className="project-img-container">
           <img src={activeProject.image} className="project-img" ref={animProjectImage} />
+          <a className="visit-website-link" href={activeProject.website ? activeProject.website : activeProject.github} target="_blank">
+            {activeProject.website ? "Visit website" : "Visit github"}
+          </a>
+
           <div className="techno-container">
             {activeProject.techno.map((tec) => (
               <img src={tec} className="techno-logo" />
