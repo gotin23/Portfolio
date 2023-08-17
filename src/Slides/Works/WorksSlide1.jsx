@@ -103,7 +103,7 @@ export default function WorksSlide1() {
   //   setStyleCircle3(newStyle);
   // };
   const handleSpansMouseEnter = (e) => {
-    const newStyle = { backgroundColor: "#ffffff" };
+    const newStyle = { backgroundColor: "var(--color-secondary)" };
     // setStyleCircle3(newStyle);
     if (e.target.classList.contains("span-hover1")) {
       setStyleCircle2(newStyle);
@@ -125,7 +125,7 @@ export default function WorksSlide1() {
     }
   };
   const handleSpansMouseLeave = (e) => {
-    const newStyle = { backgroundColor: "#000000" };
+    const newStyle = { backgroundColor: "var(--color-primary)" };
     // setStyleCircle3(newStyle);
     if (e.target.classList.contains("span-hover1")) {
       setStyleCircle2(newStyle);

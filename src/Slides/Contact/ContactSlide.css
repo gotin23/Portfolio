@@ -1,0 +1,34 @@
+.contact-slide{
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    background-color: aqua;
+}
+.contact-title{
+    color: var(--color-secondary);
+    font-size:60px ;
+   
+
+}
+.contact-btn-send{
+    background-color: var(--color-secondary);
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+   
+}
+.footer{
+    height: 40px;
+    width: 100%;
+    background-color: aliceblue;
+}

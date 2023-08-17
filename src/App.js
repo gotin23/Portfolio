@@ -11,51 +11,52 @@ import AboutSlide3 from "./Slides/About/AboutSlide3";
 import Header from "./Components/Header/Header";
 import WorksSlide1 from "./Slides/Works/WorksSlide1";
 import WorksSlide2 from "./Slides/Works/WorksSlide2";
+import ContactSlide from "./Slides/Contact/ContactSlide";
 
 function App() {
   const [activeAboutSlide3, setActiveAboutSlide3] = useState(false);
   const [activeHeader, setActiveHeader] = useState(false);
 
-  const observeEndAboutSlide2 = useRef();
-  useEffect(() => {
-    console.log("yep");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        console.log(entries);
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            if (entry.target.classList.value === "about-slide2-observer") {
-              console.log("actif");
-              // setTimeout(() => {
-              //   setActiveAboutSlide3(true);
-              // }, 1500);
-            }
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-      }
-    );
+  // const observeEndAboutSlide2 = useRef();
+  // useEffect(() => {
+  //   console.log("yep");
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       console.log(entries);
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           if (entry.target.classList.value === "about-slide2-observer") {
+  //             console.log("actif");
+  //             // setTimeout(() => {
+  //             //   setActiveAboutSlide3(true);
+  //             // }, 1500);
+  //           }
+  //           observer.unobserve(entry.target);
+  //         }
+  //       });
+  //     },
+  //     {
+  //       threshold: 0.1,
+  //     }
+  //   );
 
-    const elementsToObserve = [observeEndAboutSlide2.current];
+  //   const elementsToObserve = [observeEndAboutSlide2.current];
 
-    elementsToObserve.forEach((element) => {
-      if (element) {
-        observer.observe(element);
-      }
-    });
+  //   elementsToObserve.forEach((element) => {
+  //     if (element) {
+  //       observer.observe(element);
+  //     }
+  //   });
 
-    return () => {
-      // Nettoyage : arrêter l'observation lorsque le composant est démonté
-      elementsToObserve.forEach((element) => {
-        if (element) {
-          observer.unobserve(element);
-        }
-      });
-    };
-  }, []);
+  //   return () => {
+  //     // Nettoyage : arrêter l'observation lorsque le composant est démonté
+  //     elementsToObserve.forEach((element) => {
+  //       if (element) {
+  //         observer.unobserve(element);
+  //       }
+  //     });
+  //   };
+  // }, []);
   const handleActiveHeader = () => {
     setActiveHeader(true);
   };
@@ -71,16 +72,13 @@ function App() {
           <HomeSlide1 state={handleActiveHeader} />
           {activeHeader && <AboutSlide1 />}
 
-          {activeHeader && (
-            <div className="about-slide2-observer" ref={observeEndAboutSlide2} onChange={() => handleActiveHeader()}>
-              <AboutSlides2 state={handleActiveSide3} />
-            </div>
-          )}
+          {activeHeader && <AboutSlides2 state={handleActiveSide3} />}
 
           {activeAboutSlide3 && <AboutSlide3 />}
           {/* {activeAboutSlide3 && <AboutSlide4 />} */}
           {activeAboutSlide3 && <WorksSlide1 />}
           {activeAboutSlide3 && <WorksSlide2 />}
+          {activeAboutSlide3 && <ContactSlide />}
         </div>
       </div>
     </div>

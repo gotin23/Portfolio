@@ -71,33 +71,39 @@ export default function WorksSlide2() {
   const handleActiveProject = (e) => {
     // si le projet choisis est different du projet affiche
     if (e.target.id !== activeProject.id) {
-      // Je retire la classe active sur le bouton precedent pour l'ajouter au suivant
-      const prevActiveButton = document.querySelector(".active-button-project");
-      prevActiveButton.classList.remove("active-button-project");
-      e.target.classList.add("active-button-project");
+      handleActiveBtnProject(e);
+      animProjectElements();
 
-      //je fitre ma data pour afficher le nouveau projet actif
       const newActiveProject = data.filter((el) => el.id === e.target.id);
 
-      // animation de l'image et de la description du projet
-      animProjectImage.current.classList.add("slideOutDown");
-      animProjectDescription.current.classList.add("slideOutRight");
-      animGitHubLogo.current.classList.add("bounceIn");
-
       setTimeout(() => {
-        animProjectImage.current.classList.remove("slideOutDown");
-        animProjectDescription.current.classList.remove("slideOutRight");
-        animGitHubLogo.current.classList.remove("bounceIn");
-        animProjectImage.current.classList.add("slideInUp");
-        animProjectDescription.current.classList.add("slideInLeft");
-
         //Je set le projet actif
         setActiveProject(newActiveProject[0]);
-      }, 401);
+      }, 400);
       //si le projet choisis est le mm je fais rien
     } else {
       return;
     }
+  };
+
+  const animProjectElements = () => {
+    // animation de l'image , de la description du projet...
+    animProjectImage.current.classList.add("slideOutDown");
+    animProjectDescription.current.classList.add("slideOutRight");
+    animGitHubLogo.current.classList.add("bounceIn");
+
+    setTimeout(() => {
+      animProjectImage.current.classList.remove("slideOutDown");
+      animProjectDescription.current.classList.remove("slideOutRight");
+      animGitHubLogo.current.classList.remove("bounceIn");
+      animProjectImage.current.classList.add("slideInUp");
+      animProjectDescription.current.classList.add("slideInLeft");
+    }, 400);
+  };
+  const handleActiveBtnProject = (e) => {
+    const prevActiveButton = document.querySelector(".active-button-project");
+    prevActiveButton.classList.remove("active-button-project");
+    e.target.classList.add("active-button-project");
   };
 
   return (
@@ -110,7 +116,7 @@ export default function WorksSlide2() {
           look about
         </span>{" "}
         <span className="works-slide2-span3" ref={activeSpan3} style={styleSpan3}>
-          my projects
+          my works
         </span>
       </h1>
       <div className="buttons-projects-container" ref={activeButtonsProjects}>

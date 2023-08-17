@@ -32,7 +32,7 @@ transition: transform 0.4s ease-in-out;
 nav a{
 margin-right: 30px;
 font-size: 18px;
-font-weight: 600;
+font-weight: 300;
 font-family: "Grotesk";
 text-decoration: none;
 color: var(--color-secondary);

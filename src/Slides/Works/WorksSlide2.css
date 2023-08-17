@@ -70,6 +70,7 @@
 }
 .active-button-project{
     opacity: 1;
+ 
    }
 .all-projects-container{
     height: 50%;
@@ -79,16 +80,17 @@
     margin-top: 20px;
     padding: 40px;
     display: flex;
-    border: 2px solid white;
+    border: 2px solid var(--color-tertiary);
     align-items: center;
-    transform: translateY(100px);
+    justify-content: center;
+    transform: translateY(50px);
     opacity: 0;
     transition: transform 0.4s ease-in, opacity 0.4s ease-in;
  
 }
 .project-img-container{
-    width: 45%;
-    height: 72%;
+    width: 520px;
+    height: 280px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -111,25 +113,28 @@
 .project-img-container:hover .project-img{ 
 
    filter: grayscale(100%);
-   transform: scale(1.15);
+   transform: scale(1.45);
 }
 .visit-website-link{
     position: absolute;
    cursor: pointer;
-    background-color: var(--color-secondary);
+    background-color: var(--color-tertiary);
     border-radius: 10px;
-    border: 3px solid var(--color-primary);
+    /* border: 3px solid var(--color-secondary); */
     font-family: "Geologica";
     padding: 15px;
-    font-size: 28px;
-    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 200;
+    color: var(--color-secondary);
     opacity: 0;
     transition: opacity 0.4s ease-in,font-size 0.4s ease-in;
     text-decoration: none;
+    text-transform: uppercase;
+
 
 }
 .visit-website-link:hover{
-    font-size: 33px;
+    font-size: 28px;
 
 }
 .project-img-container:hover .visit-website-link{
@@ -166,7 +171,7 @@
 .project-description{
     color: var(--color-secondary);
     font-family: "Geologica";
-    font-size: 25px;
+    font-size: 22px;
     line-height: 40px;
     font-weight: 200;
     letter-spacing: 1px;

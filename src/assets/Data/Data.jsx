@@ -36,7 +36,7 @@ export const data = [
     image: ArgentBank,
     name: "Argent Bank",
     description:
-      "During my training, I collaborated on 'Argent Bank,' a dynamic React and Redux project. This application seamlessly integrates API calls and user authentication, offering a comprehensive banking experience. With a focus on user interaction and data management, this project showcases my ability to work with React, Redux, and API integrations to create a feature-rich web application.",
+      "During my OpenClassrooms training, I worked on 'Argent Bank,' a dynamic React and Redux project. This application seamlessly integrates API calls and user authentication, offering a comprehensive banking experience. With a focus on user interaction and data management, this project showcases my ability to work with React, Redux, and API integrations to create a feature-rich web application.",
     techno: [ReactLogo, ReduxLogo],
     github: "https://github.com/gotin23/ArgentBank-ProjectOC",
     website: "",
@@ -47,7 +47,7 @@ export const data = [
     image: Debug77,
     name: "77event Debug",
     description:
-      "As part of my training, I undertook a debugging and testing challenge. I tackled a React project that was plagued with issues, working diligently to identify and resolve bugs. Beyond debugging, I also implemented comprehensive tests using Jest to ensure the stability and reliability of the application. This experience reinforced my problem-solving skills, deepened my understanding of React, and showcased my ability to create resilient and thoroughly tested code.",
+      "During my OpenClassrooms training, I tackled a React project riddled with issues. My focus was on meticulous bug identification, resolution, and bolstering application stability. By implementing extensive Jest tests, I ensured reliability. This experience honed my problem-solving, deepened my React expertise, and showcased my knack for creating robust, rigorously tested code.",
     github: "https://github.com/gotin23/77event-debug",
     website: "",
     techno: [ReactLogo, JestLogo],
