@@ -40,7 +40,7 @@ export default function WorksSlide2() {
               }, 400);
               setTimeout(() => {
                 activeContainerAllProjects.current.classList.add("active-scroll-animation");
-              }, 600);
+              }, 800);
             }
 
             observer.unobserve(entry.target);

@@ -11,20 +11,43 @@
     align-items: center;
     flex-direction: column;
     margin: auto;
-    background-color: aqua;
+    /* background-color: aqua; */
+    font-family: "Geologica";
 }
 .contact-title{
     color: var(--color-secondary);
-    font-size:60px ;
+    font-size:80px ;
    
 
 }
 .contact-btn-send{
-    background-color: var(--color-secondary);
+    background-color: var(--color-tertiary);
+    color: var(--color-secondary);
+    font-family: "Geologica";
+    font-size: 20px;
     cursor: pointer;
-    padding: 20px;
+    padding: 18px;
     border-radius: 20px;
     margin-top: 30px;
+    opacity: 0.70;
+  
+   
+}
+/* 
+@keyframes movingBtn {
+    0%,10%,100%{
+        transform: scale(1);
+    }
+    50%,60%,70%{
+        transform: scale(1.1);
+    } 
+    
+}*/
+
+
+.contact-btn-send:hover{
+ 
+    opacity: 1;
    
 }
 .footer{

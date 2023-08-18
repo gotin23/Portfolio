@@ -14,7 +14,7 @@
     animation: MovingText 15s linear infinite;
     text-transform: uppercase;
     font-variation-settings:"wdth" 90;
-    background-color: var(--color-tertiary);
+    /* background-color: var(--color-tertiary); */
     padding-top: 3px;
 }
 .moving-text-container:hover .moving-text-span{

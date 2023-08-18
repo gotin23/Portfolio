@@ -15,9 +15,6 @@
 .home-content{
     position: relative;
     overflow: hidden;
-/* 
-    background-color: rgb(0, 0, 0); */
- 
     color: var(--color-secondary);
     min-height: 100vh;
     min-width: 100vw;
@@ -46,7 +43,7 @@
 
 }
 .span-home-title:hover{
-       font-size: 285px;
+       font-size: 250px;
       
 
        
@@ -278,7 +275,7 @@
   height: 90px;
   width: 130px;
   background: rgba(39, 35, 35, 0);
-/* background: linear-gradient(146deg,rgba(39, 35, 35, 0) 50%,  #ffe70d 50%); */
+
 background: linear-gradient(146deg,rgba(39, 35, 35, 0) 50%, #ffffff 50%);
 position: absolute;
 bottom: 180px;
@@ -298,7 +295,7 @@ transform: perspective(1000px) rotate(145deg) rotateY(35deg) ;
   height: 50px;
   width: 75px;
   background: rgba(39, 35, 35, 0);
-background: linear-gradient(146deg,rgba(39, 35, 35, 0) 50%, #ffffff 50%);
+background: linear-gradient(146deg,rgba(39, 35, 35, 0) 50%, var(--color-tertiary) 50%);
 position: absolute;
 bottom: 180px;
 left: 320px;

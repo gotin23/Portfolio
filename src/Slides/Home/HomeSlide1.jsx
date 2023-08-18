@@ -16,7 +16,7 @@ export default function HomeSlide1({ state }) {
   // const [polygon5, setPolygon5] = useState(false);
   const [polygons, setPolygons] = useState([false, false, false, false, false]);
   const handleAnimHeader = () => {
-    const newTitleStyle = { fontSize: "260px", fontWeight: "700" };
+    const newTitleStyle = { fontSize: "230px", fontWeight: "700" };
     setTimeout(() => {
       setAnimHeader(!animHeader);
     }, 2000);
