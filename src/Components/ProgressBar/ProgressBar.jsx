@@ -4,7 +4,7 @@ import "./ProgressBar.css";
 export default function Progressbar({ props }) {
   console.log(props);
   return (
-    <div className="container-progress-bar">
+    <div className="container-progress-bar fadeIn">
       <h2 className="progress-bar-title">Send your email in 3 steps</h2>
       <div className="progress-steps-container">
         <div

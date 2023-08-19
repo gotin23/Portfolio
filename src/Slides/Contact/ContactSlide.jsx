@@ -2,6 +2,7 @@ import React from "react";
 import "./ContactSlide.css";
 import { useState } from "react";
 import Progressbar from "../../Components/ProgressBar/ProgressBar";
+import Footer from "../../Components/Footer/Footer";
 import emailjs from "emailjs-com";
 
 export default function Contact() {
@@ -9,7 +10,7 @@ export default function Contact() {
   const [formStep, setFormStep] = useState(1);
   const [emailValue, setEmailValue] = useState("");
   const [nameValue, setNameValue] = useState("");
-  const [objectValue, setObjectValue] = useState("");
+  // const [objectValue, setObjectValue] = useState("");
   const [messageValue, setMessageValue] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
 
@@ -80,7 +81,7 @@ export default function Contact() {
         </div>
       ) : (
         <div className="contact-form-container">
-          <Progressbar props={formStep} />
+          {form && <Progressbar props={formStep} />}
           <form>
             {formStep === 1 && (
               <div className="form-step form-step1">
@@ -90,7 +91,7 @@ export default function Contact() {
                 <input type="email" className="contact-inputs flipInX" value={emailValue} onChange={(e) => setEmailValue(e.target.value)} />
                 <p className="error-message">{errorMsg && errorMsg}</p>
                 <div className="contact-btns-container">
-                  <button className="contact-btns" onClick={() => setForm(false)}>
+                  <button className="contact-btns" onClick={() => setForm(false) + setErrorMsg("")}>
                     Cancel
                   </button>
                   <button className="contact-btns" onClick={handleFormEmail}>
@@ -155,7 +156,7 @@ export default function Contact() {
         </div>
       )}
 
-      {/* <div className="footer"></div> */}
+      <Footer />
     </div>
   );
 }
