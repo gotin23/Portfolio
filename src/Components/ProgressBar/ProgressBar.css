@@ -1,0 +1,71 @@
+.container-progress-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+   
+   
+}
+.progress-bar-title{
+    color: var(--color-secondary);
+    font-family: "Geologica";
+    font-size: 35px;
+    font-weight: 400;
+}
+.progress-steps-container{
+    display: flex;
+    flex-wrap: nowrap;
+   justify-content: space-between;
+    position: relative;
+    max-width: 100%;
+    width: 250px;
+    margin: 15px 0;
+   
+   
+}
+.progress-steps-container .step-number{
+    width: 30px;
+    height: 30px;
+    border: 3px solid grey;
+    border-radius: 50%;
+    font-size: 16px;
+    font-family: "Geologica";
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-tertiary);
+    z-index: 1;
+    transition: border 0.4s ease-in, color 0.4s ease-in;
+    color: grey;
+   
+ 
+}
+.step-number.active{
+    border: 3px solid var(--color-secondary);
+    color: var(--color-secondary);
+   
+}
+.progress-steps-container::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background-color: grey;
+    z-index: -1;
+}
+.step-progression {
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background-color:var(--color-secondary);
+    transition: width 0.4s ease-in;
+    z-index: 1;
+}

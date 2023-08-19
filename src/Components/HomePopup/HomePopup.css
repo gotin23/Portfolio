@@ -10,7 +10,7 @@
    
     position: absolute;
 
-background: rgba(255, 255, 255, 0.057);
+background: rgba(4, 2, 23, 0.057);
 
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5.1px);
@@ -23,6 +23,7 @@ align-items: center;
 
 flex-direction: column;
 transition: height,1s ease-in-out;
+overflow: hidden;
 /* justify-content: center; */
 
 

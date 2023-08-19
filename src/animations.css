@@ -52,8 +52,8 @@
       backface-visibility: visible !important;
       -webkit-animation-name: flipInX;
       animation-name: flipInX;
-      -webkit-animation-duration: 2s;
-      animation-duration: 2s;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
       -webkit-animation-fill-mode: both;
       animation-fill-mode: both;
       }
@@ -502,8 +502,8 @@
             .fadeOut {
               -webkit-animation-name: fadeOut;
               animation-name: fadeOut;
-              -webkit-animation-duration: 0.8s;
-              animation-duration: 0.8s;
+              -webkit-animation-duration: 0.4s;
+              animation-duration: 0.4s;
               -webkit-animation-fill-mode: both;
               animation-fill-mode: both;
               }

@@ -67,7 +67,7 @@ export default function HomePopup({ animHomeTitle, activeHeader }) {
 
     setTimeout(() => {
       setPopupHeight(newStylesPopup);
-    }, 800);
+    }, 1000);
   };
   // gestion da l'anim au survol du bouton
   // const handleMouseEnter = () => {
