@@ -7,16 +7,11 @@ import ArrowDown from "../../assets/icons/iconmonstr-arrow-down-thin.svg";
 
 export default function HomePopup({ animHomeTitle, activeHeader }) {
   const [popupHeight, setPopupHeight] = useState({});
-
   const [animButtonEnter, setAnimButtonEnter] = useState(false);
   const [arrowAnim, setArrowAnim] = useState(false);
-
   const [activeButtonHome, setActiveButtonHome] = useState(false);
-
   const [changeTitleClass, setChangeTitleClass] = useState("");
-
   const buttonRef = useRef(null);
-
   const [spanLetters, setSpanLetters] = useState(["", "", "", ""]);
 
   //effet sur chaque lettre du bouton en decalé
@@ -53,14 +48,14 @@ export default function HomePopup({ animHomeTitle, activeHeader }) {
     setTimeout(() => {
       setAnimButtonEnter(true);
     }, 100);
-
+    // on lance les animations de la page d'accueil
     animHomeTitle();
+
     // on donne 0 pour enlever le popup
     const newStylesPopup = {
       height: "0",
-
-      // Ajoutez d'autres propriétés CSS que vous souhaitez modifier ici
     };
+    // on affiche le header
     setTimeout(() => {
       activeHeader();
     }, 1600);
@@ -69,26 +64,11 @@ export default function HomePopup({ animHomeTitle, activeHeader }) {
       setPopupHeight(newStylesPopup);
     }, 1000);
   };
-  // gestion da l'anim au survol du bouton
-  // const handleMouseEnter = () => {
-  //   if (buttonRef.current) {
-  //     buttonRef.current.classList.add("pulse");
-  //     buttonRef.current.classList.remove("animFadeDown");
-  //   }
-  // };
-  // const handleMouseOut = () => {
-  //   if (buttonRef.current) {
-  //     setTimeout(() => {
-  //       buttonRef.current.classList.remove("pulse");
-  //     }, 800);
-  //   }
-  // };
+
   return (
     <div className="home-popup" style={popupHeight}>
       <h1 className={`home-popup-tilte ${changeTitleClass}`}>Developer</h1>
-
       <h2 className={`home-popup-title2 ${changeTitleClass}`}>Frontend</h2>
-
       <div className={`button-home ${activeButtonHome && "active-home"}  ${animButtonEnter ? "flipOutX" : ""}`} onClick={handlePopup} ref={buttonRef}>
         {arrowAnim && <img src={ArrowDown} className={`icon-arrow-popup fadeInDown`} alt="arrow-down" />}
         <span className="flipInX  span-anim">E</span>

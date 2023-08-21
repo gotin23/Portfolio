@@ -20,7 +20,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <h4 className="footer-title"> Site powered by Hugo Gouzy 2023</h4>
+      {/* <h4 className="footer-title"> Site powered by Hugo Gouzy 2023</h4> */}
     </footer>
   );
 }

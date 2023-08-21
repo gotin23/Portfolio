@@ -1,7 +1,7 @@
 import "./App.css";
 import "./animations.css";
 import { useState } from "react";
-import { useEffect, useRef } from "react";
+// import { useEffect, useRef } from "react";
 import CustomCursor from "./Components/CustomCursor/CustomCursor";
 import HomeSlide1 from "./Slides/Home/HomeSlide1";
 import AboutSlide1 from "./Slides/About/AboutSlide1";
@@ -17,46 +17,6 @@ function App() {
   const [activeAboutSlide3, setActiveAboutSlide3] = useState(false);
   const [activeHeader, setActiveHeader] = useState(false);
 
-  // const observeEndAboutSlide2 = useRef();
-  // useEffect(() => {
-  //   console.log("yep");
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       console.log(entries);
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           if (entry.target.classList.value === "about-slide2-observer") {
-  //             console.log("actif");
-  //             // setTimeout(() => {
-  //             //   setActiveAboutSlide3(true);
-  //             // }, 1500);
-  //           }
-  //           observer.unobserve(entry.target);
-  //         }
-  //       });
-  //     },
-  //     {
-  //       threshold: 0.1,
-  //     }
-  //   );
-
-  //   const elementsToObserve = [observeEndAboutSlide2.current];
-
-  //   elementsToObserve.forEach((element) => {
-  //     if (element) {
-  //       observer.observe(element);
-  //     }
-  //   });
-
-  //   return () => {
-  //     // Nettoyage : arrêter l'observation lorsque le composant est démonté
-  //     elementsToObserve.forEach((element) => {
-  //       if (element) {
-  //         observer.unobserve(element);
-  //       }
-  //     });
-  //   };
-  // }, []);
   const handleActiveHeader = () => {
     setActiveHeader(true);
   };
