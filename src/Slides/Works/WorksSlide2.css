@@ -1,34 +1,31 @@
-.works-slide2{
+.works-slide2 {
     background-color: var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  
 }
-.works-slide2-title{
-    /* margin-top: 130px; */
+
+.works-slide2-title {
     color: var(--color-secondary);
     font-size: 120px;
-    font-weight:300 ;
+    font-weight: 300;
     transition: font-weight 0.4s ease-in;
     font-family: "Geologica";
- 
-    /* opacity: 0.30; */
-  
-
 }
-.works-slide2-span1,.works-slide2-span2,.works-slide2-span3{
+
+.works-slide2-span1,
+.works-slide2-span2,
+.works-slide2-span3 {
     opacity: 0.30;
-    transition: opacity 0.2s ease-in,;
- 
+    transition: opacity 0.2s ease-in, ;
 }
 
-.works-slide2-title:hover{
- 
+.works-slide2-title:hover {
     font-weight: 500;
 }
-.buttons-projects-container{
+
+.buttons-projects-container {
     width: 90%;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -38,26 +35,16 @@
     transform: translateY(50px);
     opacity: 0;
     transition: opacity .4s ease-in, transform .4s ease-in;
-    /* background-color: aliceblue; */
-    
 }
-.button-project{
 
-    /* width:100px;
-    height: 100px; */
+.button-project {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid white; */
     padding: 10px;
-    
 }
 
-/* .logo-project{
-   width: 100px;
-   height: 100px;
-} */
-.button-project-name{
+.button-project-name {
     color: var(--color-secondary);
     font-family: "Geologica";
     white-space: nowrap;
@@ -65,18 +52,20 @@
     cursor: pointer;
     opacity: 0.45;
 }
-.button-project-name:hover{
-   opacity:1;
-}
-.active-button-project{
+
+.button-project-name:hover {
     opacity: 1;
- 
-   }
-.all-projects-container{
+}
+
+.active-button-project {
+    opacity: 1;
+
+}
+
+.all-projects-container {
     height: 50%;
     width: 80%;
     position: relative;
-    /* background-color: var(--color-secondary); */
     margin-top: 20px;
     padding: 40px;
     display: flex;
@@ -86,9 +75,9 @@
     transform: translateY(50px);
     opacity: 0;
     transition: transform 0.4s ease-in, opacity 0.4s ease-in;
- 
 }
-.project-img-container{
+
+.project-img-container {
     width: 520px;
     height: 280px;
     position: relative;
@@ -96,103 +85,93 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* background-color: rgb(255, 255, 255); */
-   
-
 }
 
-.project-img{
+.project-img {
     width: 100%;
     height: 100%;
-   object-fit:cover;
-   /* filter: grayscale(0%); */
-
-   transition: filter 0.4s ease-in,transform 0.4s ease-in;
-   
+    object-fit: cover;
+    transition: filter 0.4s ease-in, transform 0.4s ease-in;
 }
-.project-img-container:hover .project-img{ 
 
-   filter: grayscale(100%);
-   transform: scale(1.45);
+.project-img-container:hover .project-img {
+    filter: grayscale(100%);
+    transform: scale(1.45);
 }
-.visit-website-link{
+
+.visit-website-link {
     position: absolute;
-   cursor: pointer;
+    cursor: pointer;
     background-color: var(--color-tertiary);
     border-radius: 10px;
-    /* border: 3px solid var(--color-secondary); */
     font-family: "Geologica";
     padding: 15px;
     font-size: 20px;
     font-weight: 200;
     color: var(--color-secondary);
     opacity: 0;
-    transition: opacity 0.4s ease-in,font-size 0.4s ease-in;
+    transition: opacity 0.4s ease-in, font-size 0.4s ease-in;
     text-decoration: none;
     text-transform: uppercase;
-
-
 }
-.visit-website-link:hover{
+
+.visit-website-link:hover {
     font-size: 28px;
-
 }
-.project-img-container:hover .visit-website-link{
+
+.project-img-container:hover .visit-website-link {
     opacity: 1;
-    
-   
- }
-.techno-container{
+}
+
+.techno-container {
     position: absolute;
     bottom: 5px;
     left: 5px;
-    /* height: 40px; */
-    /* background-color: aqua; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.techno-logo{
+
+.techno-logo {
     width: 30px;
-   margin: 2px;
+    margin: 2px;
 }
-.project-description-container{
-  
+
+.project-description-container {
+
     height: 100%;
     width: 55%;
     padding: 35px;
-    /* background-color: aqua; */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     overflow: hidden;
 }
-.project-description{
+
+.project-description {
     color: var(--color-secondary);
     font-family: "Geologica";
     font-size: 22px;
     line-height: 40px;
     font-weight: 200;
     letter-spacing: 1px;
-
-  
 }
-.project-github-link{
+
+.project-github-link {
     position: absolute;
     width: 60px;
     bottom: 20px;
     right: 20px;
     transition: transform 0.4s ease-in;
-
-}
-.project-github-link:hover{
-  
- transform: scale(1.2);
 }
 
+.project-github-link:hover {
+    transform: scale(1.2);
+}
 
-.active-scroll-animation{
+
+.active-scroll-animation {
     opacity: 1;
     transform: translate(0);
 }

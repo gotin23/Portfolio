@@ -10,11 +10,10 @@
     font-weight: 500;
     white-space: nowrap;
     letter-spacing: 15px;
-    transition: font-weight 0.4s ease-in-out,font-variation-settings 0.4s ease-in-out;
+    transition: font-weight 1s ease-in-out,font-variation-settings 1s ease-in-out;
     animation: MovingText 15s linear infinite;
     text-transform: uppercase;
     font-variation-settings:"wdth" 90;
-    /* background-color: var(--color-tertiary); */
     padding-top: 3px;
 }
 .moving-text-container:hover .moving-text-span{

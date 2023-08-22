@@ -10,16 +10,15 @@ export default function AboutSlide1() {
   const [newStyleTitle3, setNewStyleTitle3] = useState({});
 
   const activeAboutTitles = useRef();
-  const activeLetsTalk = useRef();
   const activeAboutTitleHide1 = useRef();
   const activeAboutTitleHide2 = useRef();
   const activeAboutTitleHide3 = useRef();
+  const activeLetsTalk = useRef();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          console.log(entries);
           if (entry.isIntersecting) {
             const newStyle = {
               right: "100%",
@@ -112,17 +111,10 @@ export default function AboutSlide1() {
           </h2>
           <div className="hide-about-title3" style={newStyleTitle3} ref={activeAboutTitleHide3}></div>
         </div>
-
-        {/* <div className="about-lets-talk-container" ref={activeLetsTalk}>
-          <p className="about-lets-talk-content slideInDown">Let's Talk</p>
-
-          <img className="about-lets-talk-arrow slideInUp" src={RightArrow} alt="right-arrow" />
-        </div> */}
       </div>
       <div className="about-lets-talk-container">
         <div className="about-lets-talk" ref={activeLetsTalk}>
           <p className="about-lets-talk-content slideInDown">Let's Talk</p>
-
           <img className="about-lets-talk-arrow slideInUp" src={RightArrow} alt="right-arrow" />
         </div>
       </div>

@@ -51,8 +51,6 @@ export default function WorksSlide2() {
         threshold: 1,
       }
     );
-
-    // const elementsToObserve = [activeWorksTitle.current, activeCircle2.current, activeCircle3.current];
     const elementsToObserve = [activeSpan1.current, activeSpan2.current, activeSpan3.current];
     elementsToObserve.forEach((element) => {
       if (element) {
@@ -89,15 +87,15 @@ export default function WorksSlide2() {
   const animProjectElements = () => {
     // animation de l'image , de la description du projet...
     animProjectImage.current.classList.add("slideOutDown");
-    animProjectDescription.current.classList.add("slideOutRight");
+    animProjectDescription.current.classList.add("fadeOut");
     animGitHubLogo.current.classList.add("bounceIn");
 
     setTimeout(() => {
       animProjectImage.current.classList.remove("slideOutDown");
-      animProjectDescription.current.classList.remove("slideOutRight");
+      animProjectDescription.current.classList.remove("fadeOut");
       animGitHubLogo.current.classList.remove("bounceIn");
       animProjectImage.current.classList.add("slideInUp");
-      animProjectDescription.current.classList.add("slideInLeft");
+      animProjectDescription.current.classList.add("fadeIn");
     }, 400);
   };
   const handleActiveBtnProject = (e) => {
@@ -122,7 +120,6 @@ export default function WorksSlide2() {
       <div className="buttons-projects-container" ref={activeButtonsProjects}>
         {data.map((el, index) => (
           <div className={`button-project`} key={index}>
-            {/* <img src={el.logo} className="logo-project" /> */}
             <p className={`button-project-name ${el.name === "Css generator" && "active-button-project"}`} onClick={handleActiveProject} id={index + 1}>
               {el.name}
             </p>

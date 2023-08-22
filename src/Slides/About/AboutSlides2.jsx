@@ -2,12 +2,10 @@ import React from "react";
 import "./AboutSlide2.css";
 import { useState } from "react";
 import { useEffect, useRef } from "react";
-// import Spiky from "../../assets/icons/Spiky-Shape-Silhouette.svg";
 
 export default function AboutSlides2({ state }) {
   const [newStyleHideAbout, setNewStyleHideAbout] = useState({});
   const [newStyleHideAboutContent, setNewStyleHideAboutContent] = useState({});
-  // const [activeSpikyText, setActiveSpikyText] = useState(false);
 
   const activeAboutMeHide = useRef();
 
@@ -21,7 +19,6 @@ export default function AboutSlides2({ state }) {
               bottom: "50%",
               left: "40%",
               right: "40%",
-              // borderRadius: "50%",
             };
             const newStyleHideAboutContent = {
               fontSize: "600px",
@@ -30,12 +27,10 @@ export default function AboutSlides2({ state }) {
             if (entry.target.classList.value === "hide-about-me-content") {
               setNewStyleHideAbout(newStyleHideAboutMe);
               setNewStyleHideAboutContent(newStyleHideAboutContent);
+              // ici on active toute les autres slides
               setTimeout(() => {
                 state();
               }, 1200);
-              // setTimeout(() => {
-              //   setActiveSpikyText(true);
-              // }, 1200);
             }
             observer.unobserve(entry.target);
           }
@@ -55,7 +50,6 @@ export default function AboutSlides2({ state }) {
     });
 
     return () => {
-      // Nettoyage : arrêter l'observation lorsque le composant est démonté
       elementsToObserve.forEach((element) => {
         if (element) {
           observer.unobserve(element);
@@ -80,11 +74,9 @@ export default function AboutSlides2({ state }) {
               <h2 className="about-me-content-title">
                 <span className="span-title-slide2 color-span">Passionate</span> about
               </h2>
-              <div className="about-me-hover-title"></div>
             </div>
             <div className="about-me-content-title-container">
               <h2 className="about-me-content-title">front-end</h2>
-              <div className="about-me-hover-title"></div>
             </div>
             <div className="about-me-content-title-container">
               <h2 className="about-me-content-title">
@@ -93,14 +85,8 @@ export default function AboutSlides2({ state }) {
                   <span className="color-span">Development</span>
                 </span>
               </h2>
-              <div className="about-me-hover-title"></div>
             </div>
           </div>
-
-          {/* <div className="about-me-spiky-container">
-            {activeSpikyText && <img className="about-me-spiky fadeIn" src={Spiky} alt="spiky svg" />}
-            <p className="about-me-spiky-text color-span">Be Creative</p>
-          </div> */}
         </div>
       </div>
     </div>

@@ -5,22 +5,18 @@ import { useEffect, useRef } from "react";
 import Movingtext from "../../Components/MovingText/Movingtext";
 import HtmlIcon from "../../assets/icons/icons8-html.svg";
 import JavascriptIcon from "../../assets/icons/icons8-javascript.svg";
-// import JavascriptIcon from "../../assets/icons/icons8-javascript-color.svg";
 import ReactIcon from "../../assets/icons/icons8-react-native.svg";
 import FigmaIcon from "../../assets/icons/icons8-figma.svg";
 import NextIcon from "../../assets/icons/icons8-nextjs.svg";
 import CssIcon from "../../assets/icons/icons8-css.svg";
 import GitHubIcon from "../../assets/icons/icons8-github.svg";
-// import GitIcon from "../../assets/icons/icons8-git.svg";
 import ReduxIcon from "../../assets/icons/icons8-redux.svg";
-import Typescript from "../../assets/icons/icons8-typescript.svg";
-// import ArrowLogo from "../../assets/icons/304729.svg";
+import TypescriptIcon from "../../assets/icons/icons8-typescript.svg";
 
 export default function AboutSlide3() {
   const [newStyleTitle1, setNewStyleTitle1] = useState({});
   const [newStyleTitle2, setNewStyleTitle2] = useState({});
   const [newStyleTitle3, setNewStyleTitle3] = useState({});
-  // const [activeMovingText, setActiveMovingText] = useState();
 
   const activeAboutTitlesSlide3 = useRef();
   const activeAboutTitleHide1 = useRef();
@@ -37,17 +33,18 @@ export default function AboutSlide3() {
   const activeFigmaIcon = useRef();
   const activeArrowlogo = useRef();
   const activeMovingtext = useRef();
-  //   const [
-  //     activeAboutTitlesSlide3,
-  //     activeAboutTitleHide1,
-  //     activeAboutTitleHide2,
-  //     activeAboutTitleHide3,
-  //     activeHtmlIcon,
-  //     activeReactIcon,
-  //     activeReduxIcon,
-  //     activeCssIcon,
-  //     activeTypeScriptIcon,
-  //   ] = useRef();
+
+  const allIcons = [
+    { img: HtmlIcon, name: "html", ref: activeHtmlIcon },
+    { img: CssIcon, name: "css", ref: activeCssIcon },
+    { img: TypescriptIcon, name: "typescript", ref: activeTypeScriptIcon },
+    { img: ReactIcon, name: "react", ref: activeReactIcon },
+    { img: JavascriptIcon, name: "javascript", ref: activeJavascriptIcon },
+    { img: NextIcon, name: "next", ref: activeNextIcon },
+    { img: ReduxIcon, name: "redux", ref: activeReduxIcon },
+    { img: GitHubIcon, name: "github", ref: activeGithubIcon },
+    { img: FigmaIcon, name: "figma", ref: activeFigmaIcon },
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -200,22 +197,12 @@ export default function AboutSlide3() {
         </div>
       </div>
       <div className="about-slide3-img-container">
-        {/* <img src={ArrowLogo} alt="arrow logo" className="about-slide3-arrow-logo" ref={activeArrowlogo} /> */}
-        <img src={HtmlIcon} alt="html icon" className="icon-skill html-icon" ref={activeHtmlIcon} />
-        <img src={CssIcon} alt="Css icon" className="icon-skill css-icon" ref={activeCssIcon} />
-        <img src={Typescript} alt="html icon" className="icon-skill typescript-icon" ref={activeTypeScriptIcon} />
-
-        <img src={ReactIcon} alt="html icon" className="icon-skill react-icon" ref={activeReactIcon} />
-        <img src={JavascriptIcon} alt="Javascript icon" className="icon-skill javascript-icon" ref={activeJavascriptIcon} />
-        <img src={NextIcon} alt="html icon" className="icon-skill next-icon" ref={activeNextIcon} />
-        <img src={ReduxIcon} alt="html icon" className="icon-skill redux-icon" ref={activeReduxIcon} />
-
-        <img src={GitHubIcon} alt="html icon" className="icon-skill github-icon" ref={activeGithubIcon} />
-
-        <img src={FigmaIcon} alt="html icon" className="icon-skill figma-icon" ref={activeFigmaIcon} />
+        {allIcons.map((icon) => (
+          <img src={icon.img} alt={icon.name + " icon"} className={`icon-skill ${icon.name + "-icon"}`} ref={icon.ref} />
+        ))}
       </div>
       <div className="moving-text-about-slide3" ref={activeMovingtext}>
-        <Movingtext state={"HTML - CSS - Javascript - React - Next - Typescript - Redux - Github - Figma - "} />
+        <Movingtext state={"HTML - CSS - Javascript - React - Next - TypescriptIcon - Redux - Github - Figma - "} />
       </div>
     </div>
   );

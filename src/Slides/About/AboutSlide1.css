@@ -1,5 +1,5 @@
 .about-slide1 {
-    background-color:var(--color-primary);
+    background-color: var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,64 +33,36 @@
 }
 
 .about-title {
-
-
-    /* margin-top: 10px; */
     width: fit-content;
     color: var(--color-primary);
     font-size: 200px;
     font-weight: 100;
     transition: font-weight 0.8s ease-in-out;
-    /* font-family: "Madena"; */
     display: flex;
-
     align-items: center;
     justify-content: center;
     margin-top: 40px;
     padding: 30px;
 
-
 }
 
 .about-title:hover {
-
     font-weight: 900;
-    /* color: aqua; */
-
 }
 
-.hide-about-title1,.hide-about-title2,.hide-about-title3{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color:var(--color-secondary);
-    transition: right 0.8s ease-in-out;
-}
-
-/* .hide-about-title2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ffffff;
-    transition: right 0.8s ease-in-out;
-}
-
+.hide-about-title1,
+.hide-about-title2,
 .hide-about-title3 {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ffffff;
+    background-color: var(--color-secondary);
     transition: right 0.8s ease-in-out;
-} */
+}
 
 .about-lets-talk-container {
-    /* background-color: aqua; */
     width: 20%;
     height: 80%;
     display: flex;
@@ -99,7 +71,7 @@
 }
 
 .about-lets-talk {
-    background-color:var(--color-secondary);
+    background-color: var(--color-secondary);
     height: 300px;
     width: 350px;
     padding: 20px;

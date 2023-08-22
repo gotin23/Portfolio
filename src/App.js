@@ -14,31 +14,28 @@ import WorksSlide2 from "./Slides/Works/WorksSlide2";
 import ContactSlide from "./Slides/Contact/ContactSlide";
 
 function App() {
-  const [activeAboutSlide3, setActiveAboutSlide3] = useState(false);
+  const [activeAllSlides, setActiveAllSlides] = useState(false);
   const [activeHeader, setActiveHeader] = useState(false);
 
   const handleActiveHeader = () => {
     setActiveHeader(true);
   };
-  const handleActiveSide3 = () => {
-    setActiveAboutSlide3(true);
+  const handleActiveAllSlides = () => {
+    setActiveAllSlides(true);
   };
   return (
     <div className="App">
-      {activeHeader && <Header handleActiveOtherSide={handleActiveSide3} />}
+      {activeHeader && <Header handleActiveOtherSide={handleActiveAllSlides} />}
       <CustomCursor />
       <div className="all-content">
         <div className="slides-container">
           <HomeSlide1 state={handleActiveHeader} />
           {activeHeader && <AboutSlide1 />}
-
-          {activeHeader && <AboutSlides2 state={handleActiveSide3} />}
-
-          {activeAboutSlide3 && <AboutSlide3 />}
-          {/* {activeAboutSlide3 && <AboutSlide4 />} */}
-          {activeAboutSlide3 && <WorksSlide1 />}
-          {activeAboutSlide3 && <WorksSlide2 />}
-          {activeAboutSlide3 && <ContactSlide />}
+          {activeHeader && <AboutSlides2 state={handleActiveAllSlides} />}
+          {activeAllSlides && <AboutSlide3 />}
+          {activeAllSlides && <WorksSlide1 />}
+          {activeAllSlides && <WorksSlide2 />}
+          {activeAllSlides && <ContactSlide />}
         </div>
       </div>
     </div>

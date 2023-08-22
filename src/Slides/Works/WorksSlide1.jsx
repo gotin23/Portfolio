@@ -68,43 +68,19 @@ export default function WorksSlide1() {
     };
   }, []);
 
-  const handleTitleIn = () => {
+  const handleTitleMouseIn = () => {
     setTimeout(() => {
       setContentTitleHide(true);
     }, 200);
   };
-  const handleTitleOut = () => {
+  const handleTitleMouseOut = () => {
     setTimeout(() => {
       setContentTitleHide(false);
     }, 200);
   };
-  // const handleSpan1MouseEnter = () => {
-  //   const newStyle = { backgroundColor: "#ffffff" };
-  //   setStyleCircle2(newStyle);
-  // };
-  // const handleSpan1MouseLeave = () => {
-  //   const newStyle = { backgroundColor: "#000000" };
-  //   setStyleCircle2(newStyle);
-  // };
-  // const handleSpan2MouseEnter = () => {
-  //   const newStyle = { backgroundColor: "#ffffff" };
-  //   setStyleCircle6(newStyle);
-  // };
-  // const handleSpan2MouseLeave = () => {
-  //   const newStyle = { backgroundColor: "#000000" };
-  //   setStyleCircle6(newStyle);
-  // };
-  // const handleSpan3MouseEnter = () => {
-  //   const newStyle = { backgroundColor: "#ffffff" };
-  //   setStyleCircle3(newStyle);
-  // };
-  // const handleSpan3MouseLeave = () => {
-  //   const newStyle = { backgroundColor: "#000000" };
-  //   setStyleCircle3(newStyle);
-  // };
+
   const handleSpansMouseEnter = (e) => {
     const newStyle = { backgroundColor: "var(--color-secondary)" };
-    // setStyleCircle3(newStyle);
     if (e.target.classList.contains("span-hover1")) {
       setStyleCircle2(newStyle);
     }
@@ -152,17 +128,17 @@ export default function WorksSlide1() {
         <div className="work-slide1-container2">
           <div className="box-container2" ref={activeCircle2}>
             <div class="box">
-              <img className="welcome-img circle-img" src={Welcome} />
+              <img className="welcome-img circle-img" src={Welcome} alt="welcome icon" />
               <div class="circle circle2" style={styleCircle2}></div>
             </div>
           </div>
         </div>
         <div className="work-slide1-container">
-          <div className="box-container" ref={activeWorksTitle} onMouseEnter={handleTitleIn} onMouseLeave={handleTitleOut}>
+          <div className="box-container" ref={activeWorksTitle} onMouseEnter={handleTitleMouseIn} onMouseLeave={handleTitleMouseOut}>
             {activeBoxs && (
               <div className="box-container5">
                 <div class="box">
-                  <img className="circle-img" src={Coding} />
+                  <img className="circle-img" src={Coding} alt="coding icon" />
                   <div class="circle circle5" style={styleCircle5}></div>
                 </div>
               </div>
@@ -170,7 +146,7 @@ export default function WorksSlide1() {
             {activeBoxs && (
               <div className="box-container6">
                 <div class="box">
-                  <img className="circle-img" src={Project} />
+                  <img className="circle-img" src={Project} alt="project icon" />
                   <div class="circle circle6" style={styleCircle6}></div>
                 </div>
               </div>
@@ -178,7 +154,7 @@ export default function WorksSlide1() {
             {activeBoxs && (
               <div className="box-container7">
                 <div class="box">
-                  <img className="circle-img" src={Developer} />
+                  <img className="circle-img" src={Developer} alt="developer icon" />
                   <div class="circle circle7" style={styleCircle7}></div>
                 </div>
               </div>
@@ -190,19 +166,22 @@ export default function WorksSlide1() {
                   <span className="work-slide1-span span-hover1" onMouseEnter={handleSpansMouseEnter} onMouseLeave={handleSpansMouseLeave}>
                     Welcome{" "}
                   </span>
+                  <br />
                   to my collection of{" "}
                   <span className="work-slide1-span span-hover2" onMouseEnter={handleSpansMouseEnter} onMouseLeave={handleSpansMouseLeave}>
                     web development
                   </span>{" "}
+                  <br />
                   projects. Each project is a unique showcase of my{" "}
                   <span className="work-slide1-span span-hover3" onMouseEnter={handleSpansMouseEnter} onMouseLeave={handleSpansMouseLeave}>
                     skills
                   </span>
-                  , creativity, and passion for building{" "}
+                  , creativity, and passion for building exceptional
+                  <br />
                   <span className="work-slide1-span span-hover4" onMouseEnter={handleSpansMouseEnter} onMouseLeave={handleSpansMouseLeave}>
-                    exceptional
+                    web experiences
                   </span>{" "}
-                  web experiences. Explore the diverse range of <br />{" "}
+                  Explore the diverse range of <br />{" "}
                   <span className="work-slide1-span span-hover5" onMouseEnter={handleSpansMouseEnter} onMouseLeave={handleSpansMouseLeave}>
                     projects
                   </span>{" "}
@@ -219,17 +198,16 @@ export default function WorksSlide1() {
           </div>
         </div>
         <div className="work-slide1-container3">
-          {/* <img src={ArroRight} /> */}
           <div className="box-container3" ref={activeCircle3}>
             <div class="box">
-              <img className="skill-img circle-img" src={Skill} />
+              <img className="skill-img circle-img" src={Skill} alt="skill icon" />
               <div class="circle circle3" style={styleCircle3}></div>
             </div>
           </div>
           {activeBoxs && (
             <div className="box-container4">
               <div class="box">
-                <img className="circle-img" src={Exceptional} />
+                <img className="circle-img" src={Exceptional} alt="exceptional icon" />
                 <div class="circle circle4" style={styleCircle4}></div>
               </div>
             </div>
