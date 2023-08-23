@@ -15,7 +15,7 @@
   align-items: center;
   flex-direction: column;
   transition: height, 1s ease-in-out;
-  overflow: hidden;
+
 }
 
 .home-popup-tilte {

@@ -20,7 +20,6 @@ export default function Header({ handleActiveOtherSide }) {
   //     }, 500);
   //   };
   const handleAboutTransition = () => {
-    console.log("ok");
     setActiveAboutTransition(true);
     setTimeout(() => {
       setActiveAboutTransition(false);
@@ -50,8 +49,8 @@ export default function Header({ handleActiveOtherSide }) {
           </a>
         </li>
         <li>
-          <a href="#Contact">
-            <HackText state={{ content: `Contact` }} />
+          <a href="#contact">
+            <HackText state={{ content: `Contact` }} onClick={handleActiveOtherSide} />
           </a>
         </li>
         {/* <li onMouseEnter={() => handleMouseEnter({ link1: true })} onMouseLeave={handleMouseLeave}>

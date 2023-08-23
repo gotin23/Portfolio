@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomeSlide1.css";
 import HomePopup from "../../Components/HomePopup/HomePopup";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function HomeSlide1({ state }) {
   const [animHomePopup, setAnimHomePopup] = useState(false);
@@ -16,6 +16,9 @@ export default function HomeSlide1({ state }) {
     }, 2000);
     setTimeout(() => {
       setPortfolioClass("slideInUp");
+    }, 2800);
+    setTimeout(() => {
+      state();
     }, 2800);
 
     const timeouts = [];
@@ -49,7 +52,7 @@ export default function HomeSlide1({ state }) {
     <div className="home-container slide" id="home">
       <div className="home-content">
         {polygons.map((polygon, index) => (
-          <div key={index} className={polygon && `polygon${index + 1}`} />
+          <div key={index} className={polygon ? `polygon${index + 1}` : ""} />
         ))}
         <h1 className="home-title" style={newStyle}>
           <span className="span-home-title">D</span>
@@ -63,7 +66,7 @@ export default function HomeSlide1({ state }) {
           <span className="span-home-title">r</span>
         </h1>
 
-        {!animHomePopup && <HomePopup animHomeTitle={handleAnimHeader} activeHeader={state} />}
+        {!animHomePopup && <HomePopup animHomeTitle={handleAnimHeader} />}
 
         {portfolioClass && (
           <h2 className={`home-portfolio ${portfolioClass}`} data-text="Portfolio">

@@ -135,8 +135,8 @@ export default function WorksSlide2() {
           </a>
 
           <div className="techno-container">
-            {activeProject.techno.map((tec) => (
-              <img src={tec} className="techno-logo" />
+            {activeProject.techno.map((tec, index) => (
+              <img src={tec} key={index} className="techno-logo" />
             ))}
           </div>
         </div>

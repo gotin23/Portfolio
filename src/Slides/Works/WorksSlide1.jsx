@@ -127,9 +127,9 @@ export default function WorksSlide1() {
       <div className="works-slide1-all-content">
         <div className="work-slide1-container2">
           <div className="box-container2" ref={activeCircle2}>
-            <div class="box">
+            <div className="box">
               <img className="welcome-img circle-img" src={Welcome} alt="welcome icon" />
-              <div class="circle circle2" style={styleCircle2}></div>
+              <div className="circle circle2" style={styleCircle2}></div>
             </div>
           </div>
         </div>
@@ -137,29 +137,29 @@ export default function WorksSlide1() {
           <div className="box-container" ref={activeWorksTitle} onMouseEnter={handleTitleMouseIn} onMouseLeave={handleTitleMouseOut}>
             {activeBoxs && (
               <div className="box-container5">
-                <div class="box">
+                <div className="box">
                   <img className="circle-img" src={Coding} alt="coding icon" />
-                  <div class="circle circle5" style={styleCircle5}></div>
+                  <div className="circle circle5" style={styleCircle5}></div>
                 </div>
               </div>
             )}
             {activeBoxs && (
               <div className="box-container6">
-                <div class="box">
+                <div className="box">
                   <img className="circle-img" src={Project} alt="project icon" />
-                  <div class="circle circle6" style={styleCircle6}></div>
+                  <div className="circle circle6" style={styleCircle6}></div>
                 </div>
               </div>
             )}
             {activeBoxs && (
               <div className="box-container7">
-                <div class="box">
+                <div className="box">
                   <img className="circle-img" src={Developer} alt="developer icon" />
-                  <div class="circle circle7" style={styleCircle7}></div>
+                  <div className="circle circle7" style={styleCircle7}></div>
                 </div>
               </div>
             )}
-            <div class="box">
+            <div className="box">
               {!contentTitleHide && <h2 className="works-slide1-box-title wst1 fadeIn">My Works</h2>}
               {contentTitleHide && (
                 <p className="works-slide1-box-title wst2 fadeIn">
@@ -193,22 +193,22 @@ export default function WorksSlide1() {
                   .
                 </p>
               )}
-              <div class="circle circle1"></div>
+              <div className="circle circle1"></div>
             </div>
           </div>
         </div>
         <div className="work-slide1-container3">
           <div className="box-container3" ref={activeCircle3}>
-            <div class="box">
+            <div className="box">
               <img className="skill-img circle-img" src={Skill} alt="skill icon" />
-              <div class="circle circle3" style={styleCircle3}></div>
+              <div className="circle circle3" style={styleCircle3}></div>
             </div>
           </div>
           {activeBoxs && (
             <div className="box-container4">
-              <div class="box">
+              <div className="box">
                 <img className="circle-img" src={Exceptional} alt="exceptional icon" />
-                <div class="circle circle4" style={styleCircle4}></div>
+                <div className="circle circle4" style={styleCircle4}></div>
               </div>
             </div>
           )}

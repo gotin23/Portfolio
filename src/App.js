@@ -1,7 +1,7 @@
 import "./App.css";
 import "./animations.css";
 import { useState } from "react";
-// import { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import CustomCursor from "./Components/CustomCursor/CustomCursor";
 import HomeSlide1 from "./Slides/Home/HomeSlide1";
 import AboutSlide1 from "./Slides/About/AboutSlide1";
@@ -12,30 +12,34 @@ import Header from "./Components/Header/Header";
 import WorksSlide1 from "./Slides/Works/WorksSlide1";
 import WorksSlide2 from "./Slides/Works/WorksSlide2";
 import ContactSlide from "./Slides/Contact/ContactSlide";
+// import useIntersectionObserver from "./Hook/IntersectionObserver";
 
 function App() {
-  const [activeAllSlides, setActiveAllSlides] = useState(false);
   const [activeHeader, setActiveHeader] = useState(false);
+  // const [activeAllSlides, setActiveAllSlides] = useState(false);
 
   const handleActiveHeader = () => {
     setActiveHeader(true);
   };
-  const handleActiveAllSlides = () => {
-    setActiveAllSlides(true);
-  };
+  // const handleActiveAllSlides = () => {
+  //   setActiveAllSlides(true);
+  // };
+
   return (
     <div className="App">
-      {activeHeader && <Header handleActiveOtherSide={handleActiveAllSlides} />}
+      {activeHeader && <Header />}
       <CustomCursor />
       <div className="all-content">
         <div className="slides-container">
           <HomeSlide1 state={handleActiveHeader} />
-          {activeHeader && <AboutSlide1 />}
-          {activeHeader && <AboutSlides2 state={handleActiveAllSlides} />}
-          {activeAllSlides && <AboutSlide3 />}
-          {activeAllSlides && <WorksSlide1 />}
-          {activeAllSlides && <WorksSlide2 />}
-          {activeAllSlides && <ContactSlide />}
+          <div className={activeHeader ? "others-active" : "other"}>
+            <AboutSlide1 />
+            <AboutSlides2 />
+            <AboutSlide3 />
+            <WorksSlide1 />
+            <WorksSlide2 />
+            <ContactSlide />
+          </div>
         </div>
       </div>
     </div>

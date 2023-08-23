@@ -2,7 +2,8 @@
    
     --color-primary:  #030514;
     --color-secondary:  #ffffff;
-    --color-tertiary:  #507cff;
+    --color-tertiary:  #f46cd2;
+
 
 }
 
@@ -36,6 +37,7 @@
     src: url('./assets/fonts/BDO_grotesk/fonts/variable/BDOGrotesk-VF.ttf') ;
     /* Vous pouvez également inclure d'autres formats de police ici pour une meilleure compatibilité avec les navigateurs */
   }
+ 
 .App{
 position: relative;
 height: 100vh;
@@ -78,11 +80,11 @@ overflow: hidden;
  
 
 }
-/* .active-scroll-animation{
-  transform: translatey(0);
- opacity: 1;
 
-} */
-/* .color-span{
-  color: #ffffff;
-} */
+.other{
+  display: none
+}
+.others-active{
+  display: flex;
+  width: 600vw;
+}

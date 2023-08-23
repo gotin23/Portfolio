@@ -2,6 +2,7 @@ import React from "react";
 import "./AboutSlide1.css";
 import { useState } from "react";
 import { useEffect, useRef } from "react";
+import useIntersectionObserver from "../../Hook/IntersectionObserver";
 import RightArrow from "../../assets/icons/iconmonstr-arrow-18.svg";
 
 export default function AboutSlide1() {
@@ -15,82 +16,108 @@ export default function AboutSlide1() {
   const activeAboutTitleHide3 = useRef();
   const activeLetsTalk = useRef();
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const newStyle = {
-              right: "100%",
-            };
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           const newStyle = {
+  //             right: "100%",
+  //           };
 
-            if (entry.target.classList.value === "hide-about-title1") {
-              setNewStyleTitle1(newStyle);
-            }
-            if (entry.target.classList.value === "hide-about-title2") {
-              setNewStyleTitle2(newStyle);
-            }
-            if (entry.target.classList.value === "hide-about-title3") {
-              setNewStyleTitle3(newStyle);
-            }
+  //           if (entry.target.classList.value === "hide-about-title1") {
+  //             setNewStyleTitle1(newStyle);
+  //           }
+  //           if (entry.target.classList.value === "hide-about-title2") {
+  //             setNewStyleTitle2(newStyle);
+  //           }
+  //           if (entry.target.classList.value === "hide-about-title3") {
+  //             setNewStyleTitle3(newStyle);
+  //           }
 
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.97,
-      }
-    );
+  //           observer.unobserve(entry.target);
+  //         }
+  //       });
+  //     },
+  //     {
+  //       threshold: 0.97,
+  //     }
+  //   );
 
-    const elementsToObserve = [activeAboutTitleHide1.current, activeAboutTitleHide2.current, activeAboutTitleHide3.current];
+  //   const elementsToObserve = [activeAboutTitleHide1.current, activeAboutTitleHide2.current, activeAboutTitleHide3.current];
 
-    elementsToObserve.forEach((element) => {
-      if (element) {
-        observer.observe(element);
-      }
-    });
-
-    return () => {
-      // Nettoyage : arrêter l'observation lorsque le composant est démonté
-      elementsToObserve.forEach((element) => {
-        if (element) {
-          observer.unobserve(element);
-        }
-      });
+  //   elementsToObserve.forEach((element) => {
+  //     if (element) {
+  //       observer.observe(element);
+  //     }
+  //   });
+  const callback = (entry) => {
+    const newStyle = {
+      right: "100%",
     };
-  }, []);
+    console.log("Salut");
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("active-scroll-animation");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-      }
-    );
+    if (entry.target.classList.value === "about-lets-talk") {
+      entry.target.classList.add("active-scroll-animation");
+    }
+    if (entry.target.classList.value === "about-titles-container") {
+      console.log("oki");
+      entry.target.classList.add("active-scroll-animation");
+    }
+    if (entry.target.className === "hide-about-title1") {
+      console.log("ohohoh");
+      setNewStyleTitle1(newStyle);
+    }
+    if (entry.target.classList.value === "hide-about-title2") {
+      setNewStyleTitle2(newStyle);
+    }
+    if (entry.target.classList.value === "hide-about-title3") {
+      setNewStyleTitle3(newStyle);
+    }
+  };
+  useIntersectionObserver([activeAboutTitles.current, activeLetsTalk.current], { threshold: 0.1 }, callback);
+  useIntersectionObserver([activeAboutTitleHide1.current, activeAboutTitleHide2.current, activeAboutTitleHide3.current], { threshold: 1 }, callback);
 
-    const elementsToObserve = [activeAboutTitles.current, activeLetsTalk.current];
-    elementsToObserve.forEach((element) => {
-      if (element) {
-        observer.observe(element);
-      }
-    });
+  //   return () => {
+  //     // Nettoyage : arrêter l'observation lorsque le composant est démonté
+  //     elementsToObserve.forEach((element) => {
+  //       if (element) {
+  //         observer.unobserve(element);
+  //       }
+  //     });
+  //   };
+  // }, []);
 
-    return () => {
-      elementsToObserve.forEach((element) => {
-        if (element) {
-          observer.unobserve(element);
-        }
-      });
-    };
-  }, []);
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           entry.target.classList.add("active-scroll-animation");
+  //           observer.unobserve(entry.target);
+  //         }
+  //       });
+  //     },
+  //     {
+  //       threshold: 0.1,
+  //     }
+  //   );
+
+  //   const elementsToObserve = [activeAboutTitles.current, activeLetsTalk.current];
+  //   elementsToObserve.forEach((element) => {
+  //     if (element) {
+  //       observer.observe(element);
+  //     }
+  //   });
+
+  //   return () => {
+  //     elementsToObserve.forEach((element) => {
+  //       if (element) {
+  //         observer.unobserve(element);
+  //       }
+  //     });
+  //   };
+  // }, []);
   return (
     <div className="about-slide1 slide" id="about-me">
       <div className="about-titles-container" ref={activeAboutTitles}>

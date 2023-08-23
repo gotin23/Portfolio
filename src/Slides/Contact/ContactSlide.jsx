@@ -1,4 +1,6 @@
-import React from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useRef, useEffect } from "react";
+import useIntersectionObserver from "../../Hook/IntersectionObserver";
 import "./ContactSlide.css";
 import { useState } from "react";
 import Progressbar from "../../Components/ProgressBar/ProgressBar";
@@ -10,9 +12,24 @@ export default function Contact() {
   const [formStep, setFormStep] = useState(1);
   const [emailValue, setEmailValue] = useState("");
   const [nameValue, setNameValue] = useState("");
-  // const [objectValue, setObjectValue] = useState("");
   const [messageValue, setMessageValue] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
+
+  const activeButtonSend = useRef();
+  const activeLogo = useRef();
+
+  const callback = (entry) => {
+    console.log("on rentre dans le callback");
+    if (entry.target.className === "contact-btn-send") {
+      entry.target.style = { color: "red" };
+    }
+    if (entry.target.className === "contact-title") {
+      entry.target.style = { color: "red" };
+    }
+  };
+
+  useIntersectionObserver([activeButtonSend.current, activeLogo.current], { threshold: 1 }, callback);
+  // useIntersectionObserver([activeLogo.current], { threshold: 0.1 }, callback);
 
   //fonction pour afficher le formulaire
   const showForm = () => {
@@ -39,17 +56,7 @@ export default function Contact() {
       setErrorMsg("Your name should have minimum 3 characters");
     }
   };
-  //fonction pour passer a l'etape 4
-  // const handleFormObject = (e) => {
-  //   e.preventDefault();
-  //   console.log("kk");
-  //   if (objectValue.length > 2) {
-  //     setFormStep(4);
-  //     setErrorMsg("");
-  //   } else {
-  //     setErrorMsg("Your object should have minimum 3 characters");
-  //   }
-  // };
+
   const handleFormMessage = (e) => {
     e.preventDefault();
     console.log("kk");
@@ -74,8 +81,10 @@ export default function Contact() {
     <div className="contact-slide slide" id="contact">
       {!form ? (
         <div className="contact-content">
-          <h2 className="contact-title">Drop me an email anytime</h2>
-          <div className="contact-btn-send" onClick={showForm}>
+          <h2 className="contact-title" ref={activeLogo}>
+            Drop me an email anytime
+          </h2>
+          <div className="contact-btn-send" onClick={showForm} ref={activeButtonSend}>
             Send Email
           </div>
         </div>
@@ -117,23 +126,7 @@ export default function Contact() {
                 </div>
               </div>
             )}
-            {/* {formStep === 3 && (
-              <div className="form-step form-step2">
-                <label htmlFor="object" className="contact-labels">
-                  Enter your object
-                </label>
-                <input type="text" className="contact-inputs flipInX" id="object" value={objectValue} onChange={(e) => setObjectValue(e.target.value)} />
-                <p className="error-message">{errorMsg && errorMsg}</p>
-                <div className="contact-btns-container">
-                  <button className="contact-btns" onClick={() => setFormStep(2) + setErrorMsg("")}>
-                    Previous
-                  </button>
-                  <button className="contact-btns " onClick={handleFormObject}>
-                    Next
-                  </button>
-                </div>
-              </div>
-            )} */}
+
             {formStep === 3 && (
               <div className="form-step">
                 <label htmlFor="message" className="contact-labels">

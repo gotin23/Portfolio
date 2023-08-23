@@ -28,9 +28,9 @@ export default function AboutSlides2({ state }) {
               setNewStyleHideAbout(newStyleHideAboutMe);
               setNewStyleHideAboutContent(newStyleHideAboutContent);
               // ici on active toute les autres slides
-              setTimeout(() => {
-                state();
-              }, 1200);
+              // setTimeout(() => {
+              //   state();
+              // }, 1200);
             }
             observer.unobserve(entry.target);
           }
@@ -62,11 +62,11 @@ export default function AboutSlides2({ state }) {
   return (
     <div className="about-slide2 slide">
       <div className="about-me-container">
-        <div className="hide-about-me-content" style={newStyleHideAbout} ref={activeAboutMeHide}>
+        {/* <div className="hide-about-me-content" style={newStyleHideAbout} ref={activeAboutMeHide}>
           <h2 className="hide-about-me-content-title" style={newStyleHideAboutContent}>
             About me
           </h2>
-        </div>
+        </div> */}
         <div className="about-me-slide2-all-content">
           <div className="about-me-slide2-all-titles">
             {" "}

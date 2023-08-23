@@ -56,20 +56,29 @@ export default function HomePopup({ animHomeTitle, activeHeader }) {
       height: "0",
     };
     // on affiche le header
-    setTimeout(() => {
-      activeHeader();
-    }, 1600);
+    // setTimeout(() => {
+    //   activeHeader();
+    // }, 1600);
 
     setTimeout(() => {
       setPopupHeight(newStylesPopup);
     }, 1000);
   };
+  // useEffect(() => {
+  //   // Désactiver le défilement lorsque le composant est monté
+  //   document.body.style.overflow = "hidden";
+
+  //   // Réactiver le défilement lorsque le composant est démonté
+  //   return () => {
+  //     document.body.style.overflow = "auto";
+  //   };
+  // }, []);
 
   return (
     <div className="home-popup" style={popupHeight}>
       <h1 className={`home-popup-tilte ${changeTitleClass}`}>Developer</h1>
       <h2 className={`home-popup-title2 ${changeTitleClass}`}>Frontend</h2>
-      <div className={`button-home ${activeButtonHome && "active-home"}  ${animButtonEnter ? "flipOutX" : ""}`} onClick={handlePopup} ref={buttonRef}>
+      <div className={`button-home ${activeButtonHome ? "active-home" : ""}  ${animButtonEnter ? "flipOutX" : ""}`} onClick={handlePopup} ref={buttonRef}>
         {arrowAnim && <img src={ArrowDown} className={`icon-arrow-popup fadeInDown`} alt="arrow-down" />}
         <span className="flipInX  span-anim">E</span>
         {spanLetters[0] && <span className="flipInX  span-anim2">{spanLetters[0]} </span>}

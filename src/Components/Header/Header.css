@@ -35,7 +35,7 @@ font-size: 18px;
 font-weight: 300;
 font-family: "Grotesk";
 text-decoration: none;
-color: var(--color-secondary);
+color: var(--color-tertiary);
 /* color: #ffe70d; */
 
 position: relative;
