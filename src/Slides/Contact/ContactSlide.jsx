@@ -1,5 +1,4 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import useIntersectionObserver from "../../Hook/IntersectionObserver";
 import "./ContactSlide.css";
 import { useState } from "react";
@@ -19,17 +18,12 @@ export default function Contact() {
   const activeLogo = useRef();
 
   const callback = (entry) => {
-    console.log("on rentre dans le callback");
-    if (entry.target.className === "contact-btn-send") {
-      entry.target.style = { color: "red" };
-    }
     if (entry.target.className === "contact-title") {
       activeButtonSend.current.classList.add("active-scroll-animation");
     }
   };
 
   useIntersectionObserver([activeButtonSend.current, activeLogo.current], { threshold: 1 }, callback);
-  // useIntersectionObserver([activeLogo.current], { threshold: 0.1 }, callback);
 
   //fonction pour afficher le formulaire
   const showForm = () => {
@@ -49,17 +43,16 @@ export default function Contact() {
   //fonction pour passer a l'etape 3
   const handleFormName = (e) => {
     e.preventDefault();
-    if (nameValue.length > 2) {
+    if (nameValue.length > 1) {
       setFormStep(3);
       setErrorMsg("");
     } else {
-      setErrorMsg("Your name should have minimum 3 characters");
+      setErrorMsg("Your name should have minimum 2 characters");
     }
   };
 
   const handleFormMessage = (e) => {
     e.preventDefault();
-    console.log("kk");
     if (messageValue.length > 50) {
       emailjs.init("f3KuKVvDEF9BbmQS_");
       setFormStep(4);

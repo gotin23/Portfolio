@@ -1,67 +1,13 @@
 import React from "react";
 import "./AboutSlide2.css";
-import { useState } from "react";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import useIntersectionObserver from "../../Hook/IntersectionObserver";
 
 export default function AboutSlides2({ state }) {
-  // const [newStyleHideAbout, setNewStyleHideAbout] = useState({});
-  // const [newStyleHideAboutContent, setNewStyleHideAboutContent] = useState({});
-
   const activeAboutMeHide = useRef();
 
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           const newStyleHideAboutMe = {
-  //             // top: "50%",
-  //             // bottom: "50%",
-  //             left: "100%",
-  //             // right: "40%",
-  //           };
-  //           const newStyleHideAboutContent = {
-  //             fontSize: "600px",
-  //           };
-
-  //           if (entry.target.classList.value === "hide-about-me-content") {
-  //             setNewStyleHideAbout(newStyleHideAboutMe);
-  //             setNewStyleHideAboutContent(newStyleHideAboutContent);
-  //             // ici on active toute les autres slides
-  //             // setTimeout(() => {
-  //             //   state();
-  //             // }, 1200);
-  //           }
-  //           observer.unobserve(entry.target);
-  //         }
-  //       });
-  //     },
-  //     {
-  //       threshold: 0.97,
-  //     }
-  //   );
-
-  //   const elementsToObserve = [activeAboutMeHide.current];
-
-  //   elementsToObserve.forEach((element) => {
-  //     if (element) {
-  //       observer.observe(element);
-  //     }
-  //   });
-
-  //   return () => {
-  //     elementsToObserve.forEach((element) => {
-  //       if (element) {
-  //         observer.unobserve(element);
-  //       }
-  //     });
-  //   };
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, []);
   const callback = (entry) => {
     if (entry.target.classList.value === "hide-about-me-content") {
-      console.log("yepou");
       entry.target.classList.add("active-hide-about-me-content");
     }
   };

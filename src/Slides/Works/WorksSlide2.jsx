@@ -1,6 +1,6 @@
 import React from "react";
 import "./WorksSlide2.css";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useState } from "react";
 import { data } from "../../assets/Data/Data";
 import GithubLogo from "../../assets/icons/icons8-github-white.svg";
@@ -16,59 +16,9 @@ export default function WorksSlide2() {
   const animProjectDescription = useRef();
   const animGitHubLogo = useRef();
 
-  const [styleSpan1, setStyleSpan1] = useState({});
-  const [styleSpan2, setStyleSpan2] = useState({});
-  const [styleSpan3, setStyleSpan3] = useState({});
-
   const [activeProject, setActiveProject] = useState(data[0]);
 
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           const newStyleSpan = { opacity: 1 };
-  //           if (entry.target.classList.value === "works-slide2-span1") {
-  //             setStyleSpan1(newStyleSpan);
-  //           }
-  //           if (entry.target.classList.value === "works-slide2-span2") {
-  //             setStyleSpan2(newStyleSpan);
-  //           }
-  //           if (entry.target.classList.value === "works-slide2-span3") {
-  //             setStyleSpan3(newStyleSpan);
-  //             setTimeout(() => {
-  //               activeButtonsProjects.current.classList.add("active-scroll-animation");
-  //             }, 400);
-  //             setTimeout(() => {
-  //               activeContainerAllProjects.current.classList.add("active-scroll-animation");
-  //             }, 800);
-  //           }
-
-  //           observer.unobserve(entry.target);
-  //         }
-  //       });
-  //     },
-  //     {
-  //       threshold: 1,
-  //     }
-  //   );
-  //   const elementsToObserve = [activeSpan1.current, activeSpan2.current, activeSpan3.current];
-  //   elementsToObserve.forEach((element) => {
-  //     if (element) {
-  //       observer.observe(element);
-  //     }
-  //   });
-  //   return () => {
-  //     elementsToObserve.forEach((element) => {
-  //       if (element) {
-  //         observer.unobserve(element);
-  //       }
-  //     });
-  //   };
-  // }, []);
-
   const callback = (entry) => {
-    console.log("youpi");
     if (entry.target.classList.value === "works-slide2-span1") {
       entry.target.classList.add("active-span-works-slide2");
     }
@@ -129,13 +79,13 @@ export default function WorksSlide2() {
   return (
     <div className="works-slide2 slide">
       <h1 className="works-slide2-title">
-        <span className="works-slide2-span1" ref={activeSpan1} style={styleSpan1}>
+        <span className="works-slide2-span1" ref={activeSpan1}>
           Take a
         </span>{" "}
-        <span className="works-slide2-span2" ref={activeSpan2} style={styleSpan2}>
+        <span className="works-slide2-span2" ref={activeSpan2}>
           look about
         </span>{" "}
-        <span className="works-slide2-span3" ref={activeSpan3} style={styleSpan3}>
+        <span className="works-slide2-span3" ref={activeSpan3}>
           my works
         </span>
       </h1>
@@ -151,14 +101,14 @@ export default function WorksSlide2() {
 
       <div className="all-projects-container" ref={activeContainerAllProjects}>
         <div className="project-img-container">
-          <img src={activeProject.image} className="project-img" ref={animProjectImage} />
+          <img src={activeProject.image} className="project-img" ref={animProjectImage} alt={activeProject.name} />
           <a className="visit-website-link" href={activeProject.website ? activeProject.website : activeProject.github} target="_blank">
             {activeProject.website ? "Visit website" : "Visit github"}
           </a>
 
           <div className="techno-container">
             {activeProject.techno.map((tec, index) => (
-              <img src={tec} key={index} className="techno-logo" />
+              <img src={tec} key={index} className="techno-logo" alt="technologie" />
             ))}
           </div>
         </div>
@@ -168,7 +118,7 @@ export default function WorksSlide2() {
           </p>
         </div>
         <a href={activeProject.github} target="_blank">
-          <img src={GithubLogo} className="project-github-link" ref={animGitHubLogo} />
+          <img src={GithubLogo} className="project-github-link" ref={animGitHubLogo} alt="github logo" />
         </a>
       </div>
     </div>

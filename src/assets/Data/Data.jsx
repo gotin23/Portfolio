@@ -3,7 +3,7 @@ import Pokedex from "../../assets/image/pokedex.png";
 import ArgentBank from "../../assets/image/Argent-Bank.png";
 import Debug77 from "../../assets/image/debug77.png";
 // import CssLogo from "../../assets/icons/icons8-nextjs.svg";
-import PokedexLogo from "../../assets/icons/skills-svgrepo-com.svg";
+// import PokedexLogo from "../../assets/icons/skills-svgrepo-com.svg";
 import ReactLogo from "../../assets/icons/icons8-react-native.svg";
 import ReduxLogo from "../../assets/icons/icons8-redux.svg";
 import JestLogo from "../../assets/icons/jest-svgrepo-com.svg";

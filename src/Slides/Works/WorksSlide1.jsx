@@ -1,7 +1,7 @@
 import React from "react";
 import "./WorksSlide1.css";
 import useIntersectionObserver from "../../Hook/IntersectionObserver";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useState } from "react";
 
 import Welcome from "../../assets/icons/deal-svgrepo-com.svg";
@@ -10,7 +10,6 @@ import Coding from "../../assets/icons/icons8-code-24.png";
 import Project from "../../assets/icons/icons8-projet-24.png";
 import Developer from "../../assets/icons/icons8-ordinateur-24.png";
 import Exceptional from "../../assets/icons/icons8-étoile-30.png";
-// import ArrowRight from "../../assets/icons/icons8-arrow-right-100.png";
 
 export default function WorksSlide1() {
   const activeWorksTitle = useRef();
@@ -26,47 +25,6 @@ export default function WorksSlide1() {
   const [styleCircle5, setStyleCircle5] = useState({});
   const [styleCircle6, setStyleCircle6] = useState({});
   const [styleCircle7, setStyleCircle7] = useState({});
-
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           if (entry.target.classList.value === "box-container") {
-  //             setTimeout(() => {
-  //               setActiveBoxs(true);
-  //             }, 1000);
-  //           }
-  //           entry.target.classList.add("active-scroll-animation");
-  //           observer.unobserve(entry.target);
-  //         }
-  //       });
-  //     },
-  //     {
-  //       threshold: 1,
-  //     }
-  //   );
-
-  //   // const elementsToObserve = [activeWorksTitle.current, activeCircle2.current, activeCircle3.current];
-  //   const elementsToObserve = [
-  //     { element: activeWorksTitle.current, threshold: 0.95 },
-  //     { element: activeCircle2.current, threshold: 1 },
-  //     { element: activeCircle3.current, threshold: 1 },
-  //   ];
-  //   elementsToObserve.forEach((element) => {
-  //     if (element) {
-  //       observer.observe(element.element, element.threshold);
-  //     }
-  //   });
-
-  //   return () => {
-  //     elementsToObserve.forEach((element) => {
-  //       if (element) {
-  //         observer.unobserve(element.element);
-  //       }
-  //     });
-  //   };
-  // }, []);
 
   const callback = (entry) => {
     console.log("titi");

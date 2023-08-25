@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomeSlide1.css";
 import HomePopup from "../../Components/HomePopup/HomePopup";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function HomeSlide1({ state }) {
   const [animHomePopup, setAnimHomePopup] = useState(false);

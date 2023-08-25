@@ -1,7 +1,6 @@
 import React from "react";
 import "./AboutSlide3.css";
-import { useState } from "react";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import useIntersectionObserver from "../../Hook/IntersectionObserver";
 import Movingtext from "../../Components/MovingText/Movingtext";
 import HtmlIcon from "../../assets/icons/icons8-html.svg";
@@ -15,10 +14,6 @@ import ReduxIcon from "../../assets/icons/icons8-redux.svg";
 import TypescriptIcon from "../../assets/icons/icons8-typescript.svg";
 
 export default function AboutSlide3() {
-  const [newStyleTitle1, setNewStyleTitle1] = useState({});
-  const [newStyleTitle2, setNewStyleTitle2] = useState({});
-  const [newStyleTitle3, setNewStyleTitle3] = useState({});
-
   const activeAboutTitlesSlide3 = useRef();
   const activeAboutTitleHide1 = useRef();
   const activeAboutTitleHide2 = useRef();
@@ -47,188 +42,36 @@ export default function AboutSlide3() {
     { img: FigmaIcon, name: "figma", ref: activeFigmaIcon },
   ];
 
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           const newStyle = {
-  //             right: "100%",
-  //           };
-
-  //           if (entry.target.classList.value === "hide-about-slide3-title1") {
-  //             setNewStyleTitle1(newStyle);
-  //           }
-  //           if (entry.target.classList.value === "hide-about-slide3-title2") {
-  //             setNewStyleTitle2(newStyle);
-  //           }
-  //           if (entry.target.classList.value === "hide-about-slide3-title3") {
-  //             setNewStyleTitle3(newStyle);
-  //           }
-  //           if (entry.target.classList.value === "icon-skill html-icon") {
-  //             entry.target.classList.add("active-scroll-animation");
-  //           }
-  //           if (entry.target.classList.value === "icon-skill react-icon") {
-  //             entry.target.classList.add("active-scroll-animation");
-  //           }
-  //           if (entry.target.classList.value === "icon-skill redux-icon") {
-  //             entry.target.classList.add("active-scroll-animation");
-  //           }
-  //           if (entry.target.classList.value === "icon-skill css-icon") {
-  //             entry.target.classList.add("active-scroll-animation");
-  //           }
-  //           if (entry.target.classList.value === "icon-skill typescript-icon") {
-  //             entry.target.classList.add("active-scroll-animation");
-  //           }
-  //           if (entry.target.classList.value === "icon-skill javascript-icon") {
-  //             entry.target.classList.add("active-scroll-animation");
-  //           }
-  //           // if (entry.target.classList.value === "icon-skill next-icon") {
-  //           //   entry.target.classList.add("active-scroll-animation");
-  //           // }
-  //           if (entry.target.classList.value === "icon-skill github-icon") {
-  //             entry.target.classList.add("active-scroll-animation");
-  //           }
-  //           if (entry.target.classList.value === "icon-skill figma-icon") {
-  //             entry.target.classList.add("active-scroll-animation");
-  //           }
-  //           if (entry.target.classList.value === "about-slide3-arrow-logo") {
-  //             entry.target.classList.add("active-scroll-animation");
-  //           }
-  //           if (entry.target.classList.value === "moving-text-about-slide3") {
-  //             entry.target.classList.add("active-scroll-animation");
-  //           }
-
-  //           observer.unobserve(entry.target);
-  //         }
-  //       });
-  //     },
-  //     {
-  //       threshold: 0.97,
-  //     }
-  //   );
-
-  //   const elementsToObserve = [
-  //     activeAboutTitleHide1.current,
-  //     activeAboutTitleHide2.current,
-  //     activeAboutTitleHide3.current,
-  //     activeHtmlIcon.current,
-  //     activeReactIcon.current,
-  //     activeReduxIcon.current,
-  //     activeCssIcon.current,
-  //     activeTypeScriptIcon.current,
-  //     activeGithubIcon.current,
-  //     activeJavascriptIcon.current,
-  //     activeMovingtext.current,
-  //     activeFigmaIcon.current,
-  //     activeArrowlogo.current,
-  //   ];
-
-  //   elementsToObserve.forEach((element) => {
-  //     if (element) {
-  //       observer.observe(element);
-  //     }
-  //   });
-
-  //   return () => {
-  //     // Nettoyage : arrêter l'observation lorsque le composant est démonté
-  //     elementsToObserve.forEach((element) => {
-  //       if (element) {
-  //         observer.unobserve(element);
-  //       }
-  //     });
-  //   };
-  // }, []);
-
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           if (entry.target.classList.value === "about-slide3-titles-container") {
-  //             entry.target.classList.add("active-scroll-animation");
-  //           }
-  //           if (entry.target.classList.value === "icon-skill next-icon") {
-  //             entry.target.classList.add("active-scroll-animation");
-  //           }
-  //           observer.unobserve(entry.target);
-  //         }
-  //       });
-  //     },
-  //     {
-  //       threshold: 0.01,
-  //     }
-  //   );
-
-  //   const elementsToObserve = [activeAboutTitlesSlide3.current, activeNextIcon.current];
-  //   elementsToObserve.forEach((element) => {
-  //     if (element) {
-  //       observer.observe(element);
-  //     }
-  //   });
-
-  //   return () => {
-  //     elementsToObserve.forEach((element) => {
-  //       if (element) {
-  //         observer.unobserve(element);
-  //       }
-  //     });
-  //   };
-  // }, []);
-
   const callback = (entry) => {
-    console.log("on rentre dans le callback");
+    const classValue = entry.target.classList.value;
 
-    if (entry.target.classList.value === "hide-about-slide3-title1") {
-      entry.target.classList.add("active-hide-about-title");
-    }
-    if (entry.target.classList.value === "hide-about-slide3-title2") {
-      entry.target.classList.add("active-hide-about-title");
-    }
-    if (entry.target.classList.value === "hide-about-slide3-title3") {
-      entry.target.classList.add("active-hide-about-title");
-    }
-    if (entry.target.classList.value === "icon-skill html-icon") {
-      entry.target.classList.add("active-scroll-animation");
-    }
-    if (entry.target.classList.value === "icon-skill react-icon") {
-      entry.target.classList.add("active-scroll-animation");
-    }
-    if (entry.target.classList.value === "icon-skill redux-icon") {
-      entry.target.classList.add("active-scroll-animation");
-    }
-    if (entry.target.classList.value === "icon-skill css-icon") {
-      entry.target.classList.add("active-scroll-animation");
-    }
-    if (entry.target.classList.value === "icon-skill typescript-icon") {
-      entry.target.classList.add("active-scroll-animation");
-    }
-    if (entry.target.classList.value === "icon-skill javascript-icon") {
-      entry.target.classList.add("active-scroll-animation");
-    }
-    // if (entry.target.classList.value === "icon-skill next-icon") {
-    //   entry.target.classList.add("active-scroll-animation");
-    // }
-    if (entry.target.classList.value === "icon-skill github-icon") {
-      entry.target.classList.add("active-scroll-animation");
-    }
-    if (entry.target.classList.value === "icon-skill figma-icon") {
-      entry.target.classList.add("active-scroll-animation");
-    }
-    if (entry.target.classList.value === "about-slide3-arrow-logo") {
-      entry.target.classList.add("active-scroll-animation");
-    }
-    if (entry.target.classList.value === "moving-text-about-slide3") {
-      entry.target.classList.add("active-scroll-animation");
-    }
-    if (entry.target.classList.value === "about-slide3-titles-container") {
-      entry.target.classList.add("active-scroll-animation");
-    }
-    if (entry.target.classList.value === "icon-skill next-icon") {
-      entry.target.classList.add("active-scroll-animation");
-    }
-    if (entry.target.classList.value === "moving-text-about-slide3") {
-      entry.target.classList.add("active-scroll-animation");
+    switch (classValue) {
+      case "hide-about-slide3-title1":
+      case "hide-about-slide3-title2":
+      case "hide-about-slide3-title3":
+        entry.target.classList.add("active-hide-about-title");
+        break;
+
+      case "icon-skill html-icon":
+      case "icon-skill react-icon":
+      case "icon-skill redux-icon":
+      case "icon-skill css-icon":
+      case "icon-skill typescript-icon":
+      case "icon-skill javascript-icon":
+      case "icon-skill github-icon":
+      case "icon-skill figma-icon":
+      case "icon-skill next-icon":
+        entry.target.classList.add("active-scroll-animation");
+        break;
+
+      case "about-slide3-arrow-logo":
+      case "moving-text-about-slide3":
+      case "about-slide3-titles-container":
+        entry.target.classList.add("active-scroll-animation");
+        break;
+
+      default:
+        break;
     }
   };
 
@@ -257,17 +100,17 @@ export default function AboutSlide3() {
       <div className="about-slide3-titles-container" ref={activeAboutTitlesSlide3}>
         <div className="about-slide3-title-container">
           <h2 className="about-slide3-title">I'm</h2>
-          <div className="hide-about-slide3-title1" style={newStyleTitle1} ref={activeAboutTitleHide1}></div>
+          <div className="hide-about-slide3-title1" ref={activeAboutTitleHide1}></div>
         </div>
         <div className="about-slide3-title-container">
           <h2 className="about-slide3-title">Loving these</h2>
-          <div className="hide-about-slide3-title2" style={newStyleTitle2} ref={activeAboutTitleHide2}></div>
+          <div className="hide-about-slide3-title2" ref={activeAboutTitleHide2}></div>
         </div>
         <div className="about-slide3-title-container">
           <h2 className="about-slide3-title">
             <span className="color-span">Technologies</span>
           </h2>
-          <div className="hide-about-slide3-title3" style={newStyleTitle3} ref={activeAboutTitleHide3}></div>
+          <div className="hide-about-slide3-title3" ref={activeAboutTitleHide3}></div>
         </div>
       </div>
       <div className="about-slide3-img-container">

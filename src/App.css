@@ -3,39 +3,23 @@
     --color-primary:  #030514;
     --color-secondary:  #ffffff;
     --color-tertiary:  #f82cbb;
-
-
 }
 
 @font-face {
     font-family: 'Madena'; 
     src: url('./assets/fonts/Merchant/Variable-TT/Merchant-VF.ttf') ;
-    /* Vous pouvez également inclure d'autres formats de police ici pour une meilleure compatibilité avec les navigateurs */
+
   }
+
 @font-face {
-    font-family: 'welcome'; /* Le nom que vous souhaitez donner à votre police */
-    src: url('./assets/fonts/welcome_home/Welcome\ Home.otf') ;
-    /* Vous pouvez également inclure d'autres formats de police ici pour une meilleure compatibilité avec les navigateurs */
-  }
-@font-face {
-    font-family: 'voyage'; /* Le nom que vous souhaitez donner à votre police */
-    src: url('./assets/fonts/MADE_voyager/MADEVoyagerPERSONALUSE-Regular.otf') ;
-    /* Vous pouvez également inclure d'autres formats de police ici pour une meilleure compatibilité avec les navigateurs */
-  }
-@font-face {
-    font-family: 'funever'; /* Le nom que vous souhaitez donner à votre police */
-    src: url('./assets/fonts/Petrona/Petrona-Italic-VariableFont_wght.ttf') ;
-    /* Vous pouvez également inclure d'autres formats de police ici pour une meilleure compatibilité avec les navigateurs */
-  }
-@font-face {
-    font-family: 'Geologica'; /* Le nom que vous souhaitez donner à votre police */
+    font-family: 'Geologica'; 
     src: url('./assets/fonts/geologica/fonts/variable/Geologica[CRSV\,SHRP\,slnt\,wght].ttf') ;
-    /* Vous pouvez également inclure d'autres formats de police ici pour une meilleure compatibilité avec les navigateurs */
+   
   }
 @font-face {
-    font-family: 'Grotesk'; /* Le nom que vous souhaitez donner à votre police */
+    font-family: 'Grotesk'; 
     src: url('./assets/fonts/BDO_grotesk/fonts/variable/BDOGrotesk-VF.ttf') ;
-    /* Vous pouvez également inclure d'autres formats de police ici pour une meilleure compatibilité avec les navigateurs */
+
   }
  
 .App{
