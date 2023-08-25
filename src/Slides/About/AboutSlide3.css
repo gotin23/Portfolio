@@ -105,5 +105,15 @@
 .moving-text-about-slide3 {
     opacity: 0;
     width: 100%;
+    /* background-color: var(--color-primary); */
+    padding: 3px;
     transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+.active-hide-about-title{
+    right: 100%;
+}
+.active-scroll-animation {
+    transform: translate(0);
+    opacity: 1;
+
 }

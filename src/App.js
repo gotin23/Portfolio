@@ -32,6 +32,7 @@ function App() {
       <div className="all-content">
         <div className="slides-container">
           <HomeSlide1 state={handleActiveHeader} />
+          {/* <AboutSlide1 /> */}
           <div className={activeHeader ? "others-active" : "other"}>
             <AboutSlide1 />
             <AboutSlides2 />

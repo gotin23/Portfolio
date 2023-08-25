@@ -15,6 +15,8 @@ export default function AboutSlide1() {
   const activeAboutTitleHide2 = useRef();
   const activeAboutTitleHide3 = useRef();
   const activeLetsTalk = useRef();
+  const activeRightArrow = useRef();
+  const rightArrowAnim = useRef();
 
   // useEffect(() => {
   //   const observer = new IntersectionObserver(
@@ -55,7 +57,6 @@ export default function AboutSlide1() {
     const newStyle = {
       right: "100%",
     };
-    console.log("Salut");
 
     if (entry.target.classList.value === "about-lets-talk") {
       entry.target.classList.add("active-scroll-animation");
@@ -66,17 +67,23 @@ export default function AboutSlide1() {
     }
     if (entry.target.className === "hide-about-title1") {
       console.log("ohohoh");
-      setNewStyleTitle1(newStyle);
+      entry.target.classList.add("animation-hide-title");
     }
     if (entry.target.classList.value === "hide-about-title2") {
-      setNewStyleTitle2(newStyle);
+      entry.target.classList.add("animation-hide-title");
     }
     if (entry.target.classList.value === "hide-about-title3") {
-      setNewStyleTitle3(newStyle);
+      // setNewStyleTitle3(newStyle);
+      entry.target.classList.add("animation-hide-title");
+      console.log("yep");
+    }
+    if (entry.target.classList.contains("about-slide1")) {
+      console.log("super");
+      rightArrowAnim.current.classList.add("active-right-arrow");
     }
   };
   useIntersectionObserver([activeAboutTitles.current, activeLetsTalk.current], { threshold: 0.1 }, callback);
-  useIntersectionObserver([activeAboutTitleHide1.current, activeAboutTitleHide2.current, activeAboutTitleHide3.current], { threshold: 1 }, callback);
+  useIntersectionObserver([activeAboutTitleHide1.current, activeAboutTitleHide2.current, activeAboutTitleHide3.current, activeRightArrow.current], { threshold: 0.97 }, callback);
 
   //   return () => {
   //     // Nettoyage : arrêter l'observation lorsque le composant est démonté
@@ -119,7 +126,7 @@ export default function AboutSlide1() {
   //   };
   // }, []);
   return (
-    <div className="about-slide1 slide" id="about-me">
+    <div className="about-slide1 slide" ref={activeRightArrow} id="about-me">
       <div className="about-titles-container" ref={activeAboutTitles}>
         <div className="about-title-container">
           <h2 className="about-title">I'M</h2>
@@ -142,7 +149,7 @@ export default function AboutSlide1() {
       <div className="about-lets-talk-container">
         <div className="about-lets-talk" ref={activeLetsTalk}>
           <p className="about-lets-talk-content slideInDown">Let's Talk</p>
-          <img className="about-lets-talk-arrow slideInUp" src={RightArrow} alt="right-arrow" />
+          <img className="about-lets-talk-arrow slideInUp" ref={rightArrowAnim} src={RightArrow} alt="right-arrow" />
         </div>
       </div>
     </div>

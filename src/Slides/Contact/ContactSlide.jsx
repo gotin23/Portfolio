@@ -24,7 +24,7 @@ export default function Contact() {
       entry.target.style = { color: "red" };
     }
     if (entry.target.className === "contact-title") {
-      entry.target.style = { color: "red" };
+      activeButtonSend.current.classList.add("active-scroll-animation");
     }
   };
 
@@ -77,6 +77,15 @@ export default function Contact() {
       setErrorMsg("Your message should have minimum 50 characters");
     }
   };
+
+  const handleCancelForm = () => {
+    setForm(false);
+    setErrorMsg("");
+    setTimeout(() => {
+      console.log(activeButtonSend.current.className);
+      activeButtonSend.current.classList.add("active-scroll-animation");
+    }, 10);
+  };
   return (
     <div className="contact-slide slide" id="contact">
       {!form ? (
@@ -100,10 +109,10 @@ export default function Contact() {
                 <input type="email" className="contact-inputs flipInX" value={emailValue} onChange={(e) => setEmailValue(e.target.value)} />
                 <p className="error-message">{errorMsg && errorMsg}</p>
                 <div className="contact-btns-container">
-                  <button className="contact-btns" onClick={() => setForm(false) + setErrorMsg("")}>
+                  <button className="contact-btns pulse" onClick={handleCancelForm}>
                     Cancel
                   </button>
-                  <button className="contact-btns" onClick={handleFormEmail}>
+                  <button className="contact-btns pulse" onClick={handleFormEmail}>
                     Next
                   </button>
                 </div>
@@ -132,13 +141,13 @@ export default function Contact() {
                 <label htmlFor="message" className="contact-labels">
                   Enter your message
                 </label>
-                <textarea id="message" className="contact-inputs contact-message flipInX" value={messageValue} onChange={(e) => setMessageValue(e.target.value)} />
+                <textarea id="message" className="contact-inputs contact-message pulse" value={messageValue} onChange={(e) => setMessageValue(e.target.value)} />
                 <p className="error-message">{errorMsg && errorMsg}</p>
                 <div className="contact-btns-container">
-                  <button className="contact-btns" onClick={() => setFormStep(2) + setErrorMsg("")}>
+                  <button className="contact-btns pulse" onClick={() => setFormStep(2) + setErrorMsg("")}>
                     Previous
                   </button>
-                  <button className="contact-btns" onClick={handleFormMessage}>
+                  <button className="contact-btns pulse" onClick={handleFormMessage}>
                     Send!
                   </button>
                 </div>

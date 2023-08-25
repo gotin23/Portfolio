@@ -178,18 +178,15 @@ export default function AboutSlide3() {
 
   const callback = (entry) => {
     console.log("on rentre dans le callback");
-    const newStyle = {
-      right: "100%",
-    };
 
     if (entry.target.classList.value === "hide-about-slide3-title1") {
-      setNewStyleTitle1(newStyle);
+      entry.target.classList.add("active-hide-about-title");
     }
     if (entry.target.classList.value === "hide-about-slide3-title2") {
-      setNewStyleTitle2(newStyle);
+      entry.target.classList.add("active-hide-about-title");
     }
     if (entry.target.classList.value === "hide-about-slide3-title3") {
-      setNewStyleTitle3(newStyle);
+      entry.target.classList.add("active-hide-about-title");
     }
     if (entry.target.classList.value === "icon-skill html-icon") {
       entry.target.classList.add("active-scroll-animation");
@@ -230,6 +227,9 @@ export default function AboutSlide3() {
     if (entry.target.classList.value === "icon-skill next-icon") {
       entry.target.classList.add("active-scroll-animation");
     }
+    if (entry.target.classList.value === "moving-text-about-slide3") {
+      entry.target.classList.add("active-scroll-animation");
+    }
   };
 
   useIntersectionObserver(
@@ -248,7 +248,7 @@ export default function AboutSlide3() {
       activeFigmaIcon.current,
       activeArrowlogo.current,
     ],
-    { threshold: 1 },
+    { threshold: 0.97 },
     callback
   );
   useIntersectionObserver([activeAboutTitlesSlide3.current, activeNextIcon.current], { threshold: 0.1 }, callback);
@@ -276,7 +276,7 @@ export default function AboutSlide3() {
         ))}
       </div>
       <div className="moving-text-about-slide3" ref={activeMovingtext}>
-        <Movingtext state={"HTML - CSS - Javascript - React - Next - TypescriptIcon - Redux - Github - Figma - "} />
+        <Movingtext state={"HTML - CSS - Javascript - React - Next - Typescript - Redux - Github - Figma - "} />
       </div>
     </div>
   );

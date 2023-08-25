@@ -65,22 +65,24 @@
 
 .about-lets-talk-container {
     width: 20%;
-    height: 80%;
+    height: 50%;
     display: flex;
+    /* background-color: antiquewhite; */
     justify-content: center;
-    padding-top: 80px;
+    /* align-items: center; */
+    /* padding-top: 80px; */
 }
 
 .about-lets-talk {
     background-color: var(--color-secondary);
-    height: 300px;
+    height: 160px;
     width: 350px;
     padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     flex-direction: column;
-    transform: translateY(-200px);
+    transform: translateY(-100px);
     opacity: 0;
     transition:
         transform 0.8s ease-in-out,
@@ -96,7 +98,10 @@
 
 .about-lets-talk-arrow {
     width: 70px;
-    transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out, transform 0.8s ease-in-out;
+}
+.active-right-arrow {
+    transform: translateX(220px);  
 }
 
 .about-lets-talk-container:hover .about-lets-talk-arrow {
@@ -108,7 +113,10 @@
 }
 
 .active-scroll-animation {
-    transform: translateY(0);
+    transform: translate(0);
     opacity: 1;
 
 }
+.animation-hide-title{
+    right: 100%;
+  }

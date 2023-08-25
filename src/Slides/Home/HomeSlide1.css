@@ -337,3 +337,23 @@
 .polygon5:hover {
   transform: perspective(1000px) rotate(-55deg) rotateY(40deg);
 }
+
+.home-scroll{
+
+  position: absolute;
+  right: -40px;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  top: 50%;
+ 
+
+}
+.home-scroll-content{
+  color: var(--color-secondary);
+  letter-spacing: 2px;
+  
+}
+/* .active-scroll-animation {
+  transform: translateY(0);
+  opacity: 1;
+
+} */

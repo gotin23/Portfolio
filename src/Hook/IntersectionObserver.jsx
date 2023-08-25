@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 
 function useIntersectionObserver(targets, options, callback) {
-  console.log("hook perso", targets, options);
-
+  console.log("ici le hook", targets);
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -26,7 +25,7 @@ function useIntersectionObserver(targets, options, callback) {
         }
       });
     };
-  }, [targets, options, callback]);
+  }, [targets]);
 }
 
 export default useIntersectionObserver;

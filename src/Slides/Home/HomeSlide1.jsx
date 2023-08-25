@@ -50,12 +50,15 @@ export default function HomeSlide1({ state }) {
 
   return (
     <div className="home-container slide" id="home">
+      <div className="home-scroll">
+        <p className="home-scroll-content flash">SCROLL</p>
+      </div>
       <div className="home-content">
         {polygons.map((polygon, index) => (
           <div key={index} className={polygon ? `polygon${index + 1}` : ""} />
         ))}
         <h1 className="home-title" style={newStyle}>
-          <span className="span-home-title">D</span>
+          <span className="span-home-title ">D</span>
           <span className="span-home-title">e</span>
           <span className="span-home-title">v</span>
           <span className="span-home-title">e</span>

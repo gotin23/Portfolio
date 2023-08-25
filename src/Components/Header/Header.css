@@ -31,11 +31,11 @@ transition: transform 0.4s ease-in-out;
 }
 nav a{
 margin-right: 30px;
-font-size: 18px;
-font-weight: 300;
+font-size: 20px;
+font-weight: 400;
 font-family: "Grotesk";
 text-decoration: none;
-color: var(--color-tertiary);
+color: var(--color-secondary);
 /* color: #ffe70d; */
 
 position: relative;

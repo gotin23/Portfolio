@@ -102,8 +102,15 @@
   overflow: hidden;
 }
 
+.active-hide-about-me-content {
+ 
+  right: 100%;
+  
+ 
+}
+
 .hide-about-me-content-title {
-  color: #ffffff;
+  color: var(--color-secondary);
   font-size: 190px;
   font-family: 'funever';
   white-space: nowrap;

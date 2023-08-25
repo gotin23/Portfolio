@@ -2,7 +2,7 @@
    
     --color-primary:  #030514;
     --color-secondary:  #ffffff;
-    --color-tertiary:  #f46cd2;
+    --color-tertiary:  #f82cbb;
 
 
 }
@@ -88,3 +88,8 @@ overflow: hidden;
   display: flex;
   width: 600vw;
 }
+/* .active-scroll-animation {
+  transform: translate(0);
+  opacity: 1;
+
+} */

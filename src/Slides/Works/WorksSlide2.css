@@ -45,12 +45,13 @@
 }
 
 .button-project-name {
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
     font-family: "Geologica";
     white-space: nowrap;
     font-size: 20px;
     cursor: pointer;
-    opacity: 0.45;
+    opacity: 0.25;
+    font-weight: 200;
 }
 
 .button-project-name:hover {
@@ -69,7 +70,7 @@
     margin-top: 20px;
     padding: 40px;
     display: flex;
-    border: 2px solid var(--color-tertiary);
+    border: 2px solid var(--color-secondary);
     align-items: center;
     justify-content: center;
     transform: translateY(50px);
@@ -138,7 +139,6 @@
 }
 
 .project-description-container {
-
     height: 100%;
     width: 55%;
     padding: 35px;
@@ -170,7 +170,9 @@
     transform: scale(1.2);
 }
 
-
+.active-span-works-slide2{
+    opacity: 1;
+}
 .active-scroll-animation {
     opacity: 1;
     transform: translate(0);

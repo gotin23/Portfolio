@@ -41,10 +41,14 @@
     padding: 15px;
     border-radius: 20px;
     
-    opacity: 0.70;
+    /* opacity: 0.70; */
     border: none;
     /* min-width: 150px; */
     margin-top: 40px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.4s ease-in, opacity 0.4s ease-in;
+    
   
    
 }
@@ -56,8 +60,8 @@
     cursor: pointer;
     padding: 15px;
     border-radius: 20px;
-    
-    opacity: 0.70;
+    transition: transform 0.4s ease-in;
+    /* opacity: 0.70; */
     border: none;
     min-width: 150px;
   
@@ -77,8 +81,7 @@
 
 .contact-btn-send:hover,.contact-btns:hover{
  
-    opacity: 1;
-   
+transform: scale(1.07);   
 }
 .contact-form-container{
     display: flex;
@@ -137,8 +140,9 @@ width: 100%;
     color: var(--color-secondary);
     font-size: 40px;
 }
-/* .footer{
-    height: 40px;
-    width: 100%;
-    background-color: aliceblue;
-} */
+
+.active-scroll-animation {
+    transform: translate(0);
+    opacity: 1;
+
+}

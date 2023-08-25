@@ -249,6 +249,22 @@
             10px 0 0 #0c046c,
     }
 } */
+/* @keyframes boxMagic {
+    from {
+        box-shadow: 
+        0 0 0 #e761c3,
+        0 0 0 #ff02d5,
+        0 0 0 #f891ff,
+        0 0 0 #c700c0;
+    }
+    to {
+        box-shadow: 
+        0 -2px 0 #e761c3,
+        -4px 0 0 #ff02d5,
+        0 2px 0 #f891ff,
+        4px 0 0 #c700c0;
+    }
+} */
 
 @keyframes spinning {
 
@@ -287,9 +303,8 @@
         }
     }
 } */
-
 .active-scroll-animation {
-    transform: translateY(0);
+    transform: translate(0);
     opacity: 1;
 
 }

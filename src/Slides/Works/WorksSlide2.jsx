@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { useState } from "react";
 import { data } from "../../assets/Data/Data";
 import GithubLogo from "../../assets/icons/icons8-github-white.svg";
+import useIntersectionObserver from "../../Hook/IntersectionObserver";
 
 export default function WorksSlide2() {
   const activeSpan1 = useRef();
@@ -21,50 +22,71 @@ export default function WorksSlide2() {
 
   const [activeProject, setActiveProject] = useState(data[0]);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const newStyleSpan = { opacity: 1 };
-            if (entry.target.classList.value === "works-slide2-span1") {
-              setStyleSpan1(newStyleSpan);
-            }
-            if (entry.target.classList.value === "works-slide2-span2") {
-              setStyleSpan2(newStyleSpan);
-            }
-            if (entry.target.classList.value === "works-slide2-span3") {
-              setStyleSpan3(newStyleSpan);
-              setTimeout(() => {
-                activeButtonsProjects.current.classList.add("active-scroll-animation");
-              }, 400);
-              setTimeout(() => {
-                activeContainerAllProjects.current.classList.add("active-scroll-animation");
-              }, 800);
-            }
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           const newStyleSpan = { opacity: 1 };
+  //           if (entry.target.classList.value === "works-slide2-span1") {
+  //             setStyleSpan1(newStyleSpan);
+  //           }
+  //           if (entry.target.classList.value === "works-slide2-span2") {
+  //             setStyleSpan2(newStyleSpan);
+  //           }
+  //           if (entry.target.classList.value === "works-slide2-span3") {
+  //             setStyleSpan3(newStyleSpan);
+  //             setTimeout(() => {
+  //               activeButtonsProjects.current.classList.add("active-scroll-animation");
+  //             }, 400);
+  //             setTimeout(() => {
+  //               activeContainerAllProjects.current.classList.add("active-scroll-animation");
+  //             }, 800);
+  //           }
 
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 1,
-      }
-    );
-    const elementsToObserve = [activeSpan1.current, activeSpan2.current, activeSpan3.current];
-    elementsToObserve.forEach((element) => {
-      if (element) {
-        observer.observe(element);
-      }
-    });
-    return () => {
-      elementsToObserve.forEach((element) => {
-        if (element) {
-          observer.unobserve(element);
-        }
-      });
-    };
-  }, []);
+  //           observer.unobserve(entry.target);
+  //         }
+  //       });
+  //     },
+  //     {
+  //       threshold: 1,
+  //     }
+  //   );
+  //   const elementsToObserve = [activeSpan1.current, activeSpan2.current, activeSpan3.current];
+  //   elementsToObserve.forEach((element) => {
+  //     if (element) {
+  //       observer.observe(element);
+  //     }
+  //   });
+  //   return () => {
+  //     elementsToObserve.forEach((element) => {
+  //       if (element) {
+  //         observer.unobserve(element);
+  //       }
+  //     });
+  //   };
+  // }, []);
+
+  const callback = (entry) => {
+    console.log("youpi");
+    if (entry.target.classList.value === "works-slide2-span1") {
+      entry.target.classList.add("active-span-works-slide2");
+    }
+    if (entry.target.classList.value === "works-slide2-span2") {
+      entry.target.classList.add("active-span-works-slide2");
+    }
+    if (entry.target.classList.value === "works-slide2-span3") {
+      entry.target.classList.add("active-span-works-slide2");
+      setTimeout(() => {
+        activeButtonsProjects.current.classList.add("active-scroll-animation");
+      }, 400);
+      setTimeout(() => {
+        activeContainerAllProjects.current.classList.add("active-scroll-animation");
+      }, 800);
+    }
+  };
+
+  useIntersectionObserver([activeSpan1.current, activeSpan2.current, activeSpan3.current], { threshold: 0.97 }, callback);
 
   const handleActiveProject = (e) => {
     // si le projet choisis est different du projet affiche

@@ -1,6 +1,6 @@
 import React from "react";
 import "./WorksSlide1.css";
-
+import useIntersectionObserver from "../../Hook/IntersectionObserver";
 import { useEffect, useRef } from "react";
 import { useState } from "react";
 
@@ -27,46 +27,58 @@ export default function WorksSlide1() {
   const [styleCircle6, setStyleCircle6] = useState({});
   const [styleCircle7, setStyleCircle7] = useState({});
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            if (entry.target.classList.value === "box-container") {
-              setTimeout(() => {
-                setActiveBoxs(true);
-              }, 1000);
-            }
-            entry.target.classList.add("active-scroll-animation");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 1,
-      }
-    );
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           if (entry.target.classList.value === "box-container") {
+  //             setTimeout(() => {
+  //               setActiveBoxs(true);
+  //             }, 1000);
+  //           }
+  //           entry.target.classList.add("active-scroll-animation");
+  //           observer.unobserve(entry.target);
+  //         }
+  //       });
+  //     },
+  //     {
+  //       threshold: 1,
+  //     }
+  //   );
 
-    // const elementsToObserve = [activeWorksTitle.current, activeCircle2.current, activeCircle3.current];
-    const elementsToObserve = [
-      { element: activeWorksTitle.current, threshold: 0.95 },
-      { element: activeCircle2.current, threshold: 1 },
-      { element: activeCircle3.current, threshold: 1 },
-    ];
-    elementsToObserve.forEach((element) => {
-      if (element) {
-        observer.observe(element.element, element.threshold);
-      }
-    });
+  //   // const elementsToObserve = [activeWorksTitle.current, activeCircle2.current, activeCircle3.current];
+  //   const elementsToObserve = [
+  //     { element: activeWorksTitle.current, threshold: 0.95 },
+  //     { element: activeCircle2.current, threshold: 1 },
+  //     { element: activeCircle3.current, threshold: 1 },
+  //   ];
+  //   elementsToObserve.forEach((element) => {
+  //     if (element) {
+  //       observer.observe(element.element, element.threshold);
+  //     }
+  //   });
 
-    return () => {
-      elementsToObserve.forEach((element) => {
-        if (element) {
-          observer.unobserve(element.element);
-        }
-      });
-    };
-  }, []);
+  //   return () => {
+  //     elementsToObserve.forEach((element) => {
+  //       if (element) {
+  //         observer.unobserve(element.element);
+  //       }
+  //     });
+  //   };
+  // }, []);
+
+  const callback = (entry) => {
+    console.log("titi");
+    if (entry.target.classList.value === "box-container") {
+      setTimeout(() => {
+        setActiveBoxs(true);
+      }, 1000);
+    }
+    entry.target.classList.add("active-scroll-animation");
+  };
+
+  useIntersectionObserver([activeWorksTitle.current, activeCircle2.current, activeCircle3.current], { threshold: 0.97 }, callback);
 
   const handleTitleMouseIn = () => {
     setTimeout(() => {
