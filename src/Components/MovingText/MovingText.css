@@ -30,3 +30,14 @@
     }
   
 }
+@media screen and (max-width: 950px) {
+  
+    .moving-text-span{
+      
+        font-size: 18px;
+        
+    }
+       
+      
+  
+  }

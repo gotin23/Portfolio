@@ -245,6 +245,9 @@
   font-weight: 600;
   margin-top: 80px;
   letter-spacing: 7px;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.4s ease-in;
 }
 
 .home-name:hover {
@@ -341,7 +344,7 @@
 .home-scroll{
 
   position: absolute;
-  right: -40px;
+  right: 0px;
   transform: translate(-50%, -50%) rotate(-90deg);
   top: 50%;
  
@@ -357,3 +360,103 @@
   opacity: 1;
 
 } */
+@media screen and (max-width: 950px) {
+  .home-content {
+    position: relative;
+    overflow: hidden;
+    color: var(--color-secondary);
+    min-height: 100vh;
+    min-width: 100vw;
+    font-stretch: extra-expanded;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+  }
+
+        
+    
+  .home-title {
+    margin-Top: 0px;
+    font-size:55px;
+
+   
+  }
+  .span-home-title:hover {
+    font-size: 63px;
+  }
+  .home-portfolio {
+    font-size: 50px;
+    font-family: 'Geologica';
+    color: var(--color-secondary);
+    font-weight: 600;
+    margin-top: 80px;
+    letter-spacing: 7px;
+  }
+  .home-scroll{
+  
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 90%;
+    transform:  rotate(0deg);
+   
+   
+  
+  }
+  .home-scroll-content{
+   width: 30px;
+    
+  }
+  .polygon1 {
+    height: 45px;
+    width: 65px;
+
+
+    bottom: 140px;
+    left: 40px;
+
+  }
+  .polygon2 {
+    height: 20px;
+    width: 32px;
+ 
+    bottom:140px;
+    left: 90px;
+  
+  }
+  .polygon3 {
+    height: 75px;
+    width: 75px;
+   
+    bottom:120px;
+    right: 60px;
+ 
+  }
+  .polygon4 {
+    height: 55px;
+    width: 100px;
+
+    top: 170px;
+    left: 50px;
+   
+  }
+  .polygon5 {
+    height: 40px;
+    width: 60px;
+   
+    top: 170px;
+    right: 50px;
+  
+
+  }
+ 
+
+
+  
+ 
+ 
+    
+
+}

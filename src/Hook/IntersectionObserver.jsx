@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 
 function useIntersectionObserver(targets, options, callback) {
-  console.log("ici le hook", targets);
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {

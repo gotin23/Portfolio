@@ -12,7 +12,7 @@
     align-items: center;
     flex-direction: column;
     margin: auto;
-    /* background-color: rgb(255, 0, 68); */
+
     font-family: "Geologica";
     width: 80%;
 }
@@ -31,6 +31,7 @@
     align-items: center;
     width: 50%;
     margin-top: 10px;
+
 }
 .contact-btn-send{
     background-color: var(--color-tertiary);
@@ -139,10 +140,81 @@ width: 100%;
 .email-confirmation-send{
     color: var(--color-secondary);
     font-size: 40px;
+    text-align: center;
 }
 
 .active-scroll-animation {
     transform: translate(0);
     opacity: 1;
 
+}
+@media screen and (max-width: 950px) {
+
+    
+    .contact-title{
+        color: var(--color-secondary);
+        font-size:45px ;
+        text-align: center;
+       
+    
+    }
+    .contact-btns-container{
+      
+        width: 100%;
+   
+    }
+    .contact-form-container{
+        display: flex;
+        
+        width: 100%;
+      
+       
+    }
+    form{
+        width: 100%;
+       
+        display: flex;
+        justify-content: center;
+    }
+    .form-step{
+     
+        width: 90%;
+     
+ 
+        height: 100%;
+    }
+    .contact-btns{
+      
+        font-size: 15px;
+     
+   
+        padding: 12px;
+    
+        min-width: 120px;
+      
+       
+    }
+    .contact-labels{
+   
+        font-size: 18px;
+        margin-bottom: 10px;
+
+    
+    }
+    .contact-inputs{
+      
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 10px;
+    
+    }
+    .error-message{
+ font-size: 14px;
+    
+    }
+    .contact-message{
+        width: 90%;
+        height:270px;
+    }
+    
 }

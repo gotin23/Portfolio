@@ -2,21 +2,30 @@ import React from "react";
 import "./HomeSlide1.css";
 import HomePopup from "../../Components/HomePopup/HomePopup";
 import { useState } from "react";
+import RightArrow from "../../assets/icons/iconmonstr-arrow-down-thin.svg";
+import { useMediaQuery } from "react-responsive";
 
 export default function HomeSlide1({ state }) {
+  const isMobile = useMediaQuery({ maxWidth: 950 }); // Par exemple, considérons < 767px comme mobile
+
   const [animHomePopup, setAnimHomePopup] = useState(false);
+  const [activeArrow, setActiveArrow] = useState(false);
   const [newStyle, setNewStyle] = useState({});
   const [portfolioClass, setPortfolioClass] = useState("");
   const [polygons, setPolygons] = useState([false, false, false, false, false]);
 
   const handleAnimHeader = () => {
-    const newTitleStyle = { fontSize: "230px", fontWeight: "700" };
+    const newTitleStyle = isMobile ? { fontSize: "57px", fontWeight: "700" } : { fontSize: "230px", fontWeight: "700" };
     setTimeout(() => {
       setAnimHomePopup(!animHomePopup);
     }, 2000);
     setTimeout(() => {
-      setPortfolioClass("slideInUp");
-    }, 2800);
+      setPortfolioClass("active-scroll-animation");
+    }, 3000);
+    setTimeout(() => {
+      setActiveArrow(true);
+    }, 5000);
+
     setTimeout(() => {
       state();
     }, 2800);
@@ -36,7 +45,7 @@ export default function HomeSlide1({ state }) {
     }
 
     setTimeout(() => {
-      setPortfolioClass("glitch");
+      setPortfolioClass("active-scroll-animation glitch");
     }, 6100);
 
     setTimeout(() => {
@@ -50,9 +59,7 @@ export default function HomeSlide1({ state }) {
 
   return (
     <div className="home-container slide" id="home">
-      <div className="home-scroll">
-        <p className="home-scroll-content flash">SCROLL</p>
-      </div>
+      <div className="home-scroll">{activeArrow && <img src={RightArrow} className="home-scroll-content flash" alt="logo arrow" />}</div>
       <div className="home-content">
         {polygons.map((polygon, index) => (
           <div key={index} className={polygon ? `polygon${index + 1}` : ""} />
@@ -71,11 +78,11 @@ export default function HomeSlide1({ state }) {
 
         {!animHomePopup && <HomePopup animHomeTitle={handleAnimHeader} />}
 
-        {portfolioClass && (
+        {
           <h2 className={`home-portfolio ${portfolioClass}`} data-text="Portfolio">
             Portfolio
           </h2>
-        )}
+        }
       </div>
     </div>
   );

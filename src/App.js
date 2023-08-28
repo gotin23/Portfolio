@@ -1,7 +1,7 @@
 import "./App.css";
 import "./animations.css";
 import { useState } from "react";
-import { useEffect, useRef } from "react";
+// import {  useRef } from "react";
 import CustomCursor from "./Components/CustomCursor/CustomCursor";
 import HomeSlide1 from "./Slides/Home/HomeSlide1";
 import AboutSlide1 from "./Slides/About/AboutSlide1";
@@ -12,18 +12,13 @@ import Header from "./Components/Header/Header";
 import WorksSlide1 from "./Slides/Works/WorksSlide1";
 import WorksSlide2 from "./Slides/Works/WorksSlide2";
 import ContactSlide from "./Slides/Contact/ContactSlide";
-// import useIntersectionObserver from "./Hook/IntersectionObserver";
 
 function App() {
   const [activeHeader, setActiveHeader] = useState(false);
-  // const [activeAllSlides, setActiveAllSlides] = useState(false);
 
   const handleActiveHeader = () => {
     setActiveHeader(true);
   };
-  // const handleActiveAllSlides = () => {
-  //   setActiveAllSlides(true);
-  // };
 
   return (
     <div className="App">
@@ -32,7 +27,6 @@ function App() {
       <div className="all-content">
         <div className="slides-container">
           <HomeSlide1 state={handleActiveHeader} />
-          {/* <AboutSlide1 /> */}
           <div className={activeHeader ? "others-active" : "other"}>
             <AboutSlide1 />
             <AboutSlides2 />

@@ -51,7 +51,7 @@ export default function Contact() {
     }
   };
 
-  const handleFormMessage = (e) => {
+  const handleSendEmail = (e) => {
     e.preventDefault();
     if (messageValue.length > 50) {
       emailjs.init("f3KuKVvDEF9BbmQS_");
@@ -66,6 +66,13 @@ export default function Contact() {
         setFormStep(1);
         setForm(false);
       }, 3000);
+      setTimeout(() => {
+        activeButtonSend.current.classList.add("active-scroll-animation");
+        setEmailValue("");
+        setErrorMsg("");
+        setMessageValue("");
+        setNameValue("");
+      }, 3100);
     } else {
       setErrorMsg("Your message should have minimum 50 characters");
     }
@@ -74,8 +81,10 @@ export default function Contact() {
   const handleCancelForm = () => {
     setForm(false);
     setErrorMsg("");
+    setEmailValue("");
+    setNameValue("");
+    setMessageValue("");
     setTimeout(() => {
-      console.log(activeButtonSend.current.className);
       activeButtonSend.current.classList.add("active-scroll-animation");
     }, 10);
   };
@@ -92,7 +101,7 @@ export default function Contact() {
         </div>
       ) : (
         <div className="contact-form-container">
-          {form && <Progressbar props={formStep} />}
+          {form && formStep < 4 && <Progressbar props={formStep} />}
           <form>
             {formStep === 1 && (
               <div className="form-step form-step1">
@@ -140,13 +149,13 @@ export default function Contact() {
                   <button className="contact-btns pulse" onClick={() => setFormStep(2) + setErrorMsg("")}>
                     Previous
                   </button>
-                  <button className="contact-btns pulse" onClick={handleFormMessage}>
+                  <button className="contact-btns pulse" onClick={handleSendEmail}>
                     Send!
                   </button>
                 </div>
               </div>
             )}
-            {formStep === 4 && <p className="email-confirmation-send">Thank you, your email he's send! </p>}
+            {formStep === 4 && <p className="email-confirmation-send rubberBand">Thank you, your email he's send! </p>}
           </form>
         </div>
       )}

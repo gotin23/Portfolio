@@ -1,32 +1,77 @@
 import React from "react";
 import "./Header.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import HackText from "../HackText/HackText";
-// import { useState } from "react";
 
 export default function Header({ handleActiveOtherSide }) {
   const [activeAboutTransition, setActiveAboutTransition] = useState(false);
-  //   const [activeAnimLinks, setActiveAnimLinks] = useState({ link1: false, link2: false, link3: false, link4: false });
+  const [backgroundBrightness, setBackgroundBrightness] = useState(0);
+  // function getBrightness(r, g, b) {
+  //   return (r * 299 + g * 587 + b * 114) / 1000;
+  // }
+  // const updateBackgroundBrightness = () => {
+  //   console.log(backgroundBrightness);
+  //   const backgroundColor = getComputedStyle(document.documentElement).getPropertyValue("--background-color");
+  //   const rgb = backgroundColor.match(/\d+/g);
+  //   if (rgb) {
+  //     const brightness = getBrightness(+rgb[0], +rgb[1], +rgb[2]);
+  //     setBackgroundBrightness(brightness);
+  //   }
+  // };
 
-  //   const handleMouseEnter = (link) => {
-  //     // setActiveAnimLinks(true);
-  //     console.log(link);
-  //     setActiveAnimLinks((state) => ({ ...state, ...link }));
+  // useEffect(() => {
+  //   console.log(backgroundBrightness, "youpi");
+
+  //   window.addEventListener("scroll", updateBackgroundBrightness());
+
+  //   return () => {
+  //     window.removeEventListener("scroll", updateBackgroundBrightness());
   //   };
-  //   const handleMouseLeave = () => {
-  //     console.log("ya");
-  //     setTimeout(() => {
-  //       setActiveAnimLinks({ link1: false, link2: false, link3: false, link4: false });
-  //     }, 500);
+  // }, [backgroundBrightness]);
+  // const [s, setS] = useState(0);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const value = window.scrollY;
+  //     setS(value);
+  //     console.log(s, "ggg");
   //   };
+
+  //   window.addEventListener("scroll", () => handleScroll);
+
+  //   return () => {
+  //     // Nettoyer les événements lorsque le composant est démonté
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [s]);
+  // function getTextColor(background) {
+  //   // Convertir la couleur RVB en luminosité (0-255)
+  //   const brightness = (background[0] * 299 + background[1] * 587 + background[2] * 114) / 1000;
+
+  //   // Choisir la couleur du texte en fonction de la luminosité
+  //   return brightness > 125 ? "white" : "black";
+  // }
+
+  // // Exemple d'utilisation
+  // const backgroundColor = [255, 255, 255]; // Couleur de fond au format RVB (blanc)
+  // const textColor = getTextColor(backgroundColor);
+
+  // // Appliquer la couleur de texte inversée à votre élément HTML
+
+  // setTimeout(() => {
+  //   const textElement = document.querySelector(".tes");
+  //   console.log(textElement, textColor);
+  //   textElement.style.color = textColor;
+  // }, 100);
+
   const handleAboutTransition = () => {
     setActiveAboutTransition(true);
     setTimeout(() => {
       setActiveAboutTransition(false);
     }, 1500);
   };
+
   return (
-    <nav className="fadeIn header">
+    <nav className={`fadeIn header`}>
       {activeAboutTransition && (
         <div className="about-transition">
           <h2>About Me</h2>
@@ -53,18 +98,6 @@ export default function Header({ handleActiveOtherSide }) {
             <HackText state={{ content: `Contact` }} onClick={handleActiveOtherSide} />
           </a>
         </li>
-        {/* <li onMouseEnter={() => handleMouseEnter({ link1: true })} onMouseLeave={handleMouseLeave}>
-          <a href="#">{activeAnimLinks.link1 ? <HackText state={{ content: `Home` }} /> : "Home"}</a>
-        </li>
-        <li onMouseEnter={() => handleMouseEnter({ link2: true })} onMouseLeave={handleMouseLeave}>
-          <a href="#">{activeAnimLinks.link2 ? <HackText state={{ content: `About me` }} /> : "About me"}</a>
-        </li>
-        <li onMouseEnter={() => handleMouseEnter({ link3: true })} onMouseLeave={handleMouseLeave}>
-          <a href="#">{activeAnimLinks.link3 ? <HackText state={{ content: `Works` }} /> : "Works"}</a>
-        </li>
-        <li onMouseEnter={() => handleMouseEnter({ link4: true })} onMouseLeave={handleMouseLeave}>
-          <a href="#">{activeAnimLinks.link4 ? <HackText state={{ content: `Contact` }} /> : "Contact"}</a>
-        </li> */}
       </ul>
     </nav>
   );

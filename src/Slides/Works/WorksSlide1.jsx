@@ -2,7 +2,7 @@ import React from "react";
 import "./WorksSlide1.css";
 import useIntersectionObserver from "../../Hook/IntersectionObserver";
 import { useRef } from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Welcome from "../../assets/icons/deal-svgrepo-com.svg";
 import Skill from "../../assets/icons/skills-svgrepo-com.svg";
@@ -27,7 +27,6 @@ export default function WorksSlide1() {
   const [styleCircle7, setStyleCircle7] = useState({});
 
   const callback = (entry) => {
-    console.log("titi");
     if (entry.target.classList.value === "box-container") {
       setTimeout(() => {
         setActiveBoxs(true);
@@ -92,6 +91,7 @@ export default function WorksSlide1() {
       setStyleCircle7(newStyle);
     }
   };
+
   return (
     <div className="works-slide1 slide" id="works">
       <div className="works-slide1-all-content">
