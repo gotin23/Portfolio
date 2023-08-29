@@ -350,6 +350,10 @@
  
 
 }
+.active-home-title{
+  font-weight: 700;
+  font-size: 220px;
+}
 .home-scroll-content{
   color: var(--color-secondary);
   letter-spacing: 2px;
@@ -360,7 +364,9 @@
   opacity: 1;
 
 } */
-@media screen and (max-width: 950px) {
+
+
+@media screen and (max-width: 1680px) {
   .home-content {
     position: relative;
     overflow: hidden;
@@ -374,14 +380,240 @@
     flex-direction: column;
   
   }
+  .home-title{
+    margin-top: 0;
+  }
+
+        
+    
+ 
+  .active-home-title{
+    font-weight: 700;
+    font-size: 150px;
+  }
+  .span-home-title:hover {
+    font-size: 63px;
+  }
+  .home-portfolio {
+    font-size: 80px;
+    margin-top: 40px;
+
+  }
+  /* .home-scroll{
+  
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 90%;
+    transform:  rotate(0deg);
+   
+   
+  
+  } */
+  .home-scroll-content{
+   width: 30px;
+    
+  }
+  .polygon1 {
+    height: 90px;
+    width: 130px;
+
+
+    bottom: 140px;
+    left: 80px;
+
+  }
+  .polygon2 {
+    height: 40px;
+    width: 64px;
+ 
+    bottom:140px;
+    left: 180px;
+  
+  }
+  .polygon3 {
+    height: 150px;
+    width: 150px;
+   
+    bottom:120px;
+    right: 120px;
+ 
+  }
+  .polygon4 {
+    height: 110px;
+    width: 200px;
+
+    top: 130px;
+    left: 100px;
+   
+  }
+  .polygon5 {
+    height: 80px;
+    width: 120px;
+   
+    top: 170px;
+    right: 100px;
+  
+
+  }
+ 
+
+
+  
+ 
+ 
+    
+
+}
+
+@media screen and (max-width: 1280px) {
+
+
+  .home-title {
+    margin-Top: 0px;
+    font-size:100px;
+
+   
+  }
+  .active-home-title{
+    font-weight: 700;
+    font-size:120px;
+  }
+  .span-home-title:hover {
+    font-size: 130px;
+  }
+  .home-portfolio {
+    font-size: 70px;
+    font-family: 'Geologica';
+    color: var(--color-secondary);
+    font-weight: 600;
+    margin-top: 80px;
+    letter-spacing: 7px;
+  }
+  /* .home-scroll{
+  
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 90%;
+    transform:  rotate(0deg);
+   
+   
+  
+  }
+  .home-scroll-content{
+   width: 30px;
+    
+  } */
+  /* .polygon1 {
+    height: 90px;
+    width: 130px;
+
+
+    bottom: 140px;
+    left: 80px;
+
+  }
+  .polygon2 {
+    height: 40px;
+    width: 64px;
+ 
+    bottom:140px;
+    left: 180px;
+  
+  } */
+  .polygon3 {
+    height: 130px;
+    width: 130px;
+   
+    bottom:100px;
+    right: 100px;
+ 
+  }
+  .polygon4 {
+    height: 90px;
+    width: 172px;
+
+    top: 70px;
+    left: 50px;
+   
+  }
+  .polygon5 {
+    height: 80px;
+    width: 120px;
+   
+    top: 90px;
+    right: 30px;
+  
+
+  }
+
+
+  
+ 
+ 
+    
+
+}
+@media screen and (max-width: 950px) {
+
+
+  .home-title {
+    margin-Top: 0px;
+    font-size:100px;
+
+   
+  }
+  .active-home-title{
+    font-weight: 700;
+    font-size:120px;
+  }
+  .span-home-title:hover {
+    font-size: 130px;
+  }
+  .home-portfolio {
+    font-size: 75px;
+    
+  }
+   .home-scroll{
+  
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 90%;
+    transform:  rotate(0deg);
+   
+   
+  
+  }
+  /*
+  .home-scroll-content{
+   width: 30px;
+    
+  } */
+
+
+  
+ 
+ 
+    
+
+}
+
+@media screen and (max-width: 800px) {
+
 
         
     
   .home-title {
     margin-Top: 0px;
-    font-size:55px;
+    font-size:70px;
 
    
+  }
+  .active-home-title{
+    font-weight: 700;
+    font-size: 90px;
   }
   .span-home-title:hover {
     font-size: 63px;
@@ -451,6 +683,100 @@
   
 
   }
+
+ 
+
+
+  
+ 
+ 
+    
+
+}
+@media screen and (max-width: 700px) {
+
+
+        
+    
+  .home-title {
+    margin-Top: 0px;
+    font-size:55px;
+
+   
+  }
+  .active-home-title{
+    font-weight: 700;
+    font-style: 80px;
+  }
+  .span-home-title:hover {
+    font-size: 63px;
+  }
+  .home-portfolio {
+    font-size: 50px;
+    font-family: 'Geologica';
+    color: var(--color-secondary);
+    font-weight: 600;
+    margin-top: 80px;
+    letter-spacing: 7px;
+  }
+  .home-scroll{
+  
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 90%;
+    transform:  rotate(0deg);
+   
+   
+  
+  }
+  .home-scroll-content{
+   width: 30px;
+    
+  }
+  .polygon1 {
+    height: 45px;
+    width: 65px;
+
+
+    bottom: 140px;
+    left: 40px;
+
+  }
+  .polygon2 {
+    height: 20px;
+    width: 32px;
+ 
+    bottom:140px;
+    left: 90px;
+  
+  }
+  .polygon3 {
+    height: 75px;
+    width: 75px;
+   
+    bottom:120px;
+    right: 60px;
+ 
+  }
+  .polygon4 {
+    height: 55px;
+    width: 100px;
+
+    top: 170px;
+    left: 50px;
+   
+  }
+  .polygon5 {
+    height: 40px;
+    width: 60px;
+   
+    top: 170px;
+    right: 50px;
+  
+
+  }
+
  
 
 
