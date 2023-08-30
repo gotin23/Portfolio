@@ -49,6 +49,7 @@
   transition: transform 0.8s ease-in-out;
   transform: translateY(-200px);
 
+
 }
 
 .button-home:hover {
@@ -103,7 +104,8 @@
 .icon-arrow-popup {
   position: absolute;
   top: -15%;
-  left: 43%;
+  left: 45%;
+
   transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;

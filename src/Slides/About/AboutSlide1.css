@@ -285,7 +285,7 @@
         height: 50%;
 
         justify-content: space-around;
-        /* align-items: center; */
+     transform: translateY(100px);
         padding-left: 10px;
         /* background-color: aqua; */
     
@@ -321,6 +321,7 @@
         /* background-color: antiquewhite; */
         justify-content: center;
         align-items: center;
+     
         
         /* padding-top: 80px; */
     }
@@ -339,7 +340,7 @@
         transform: translateX(0px);  
     } */
     .about-lets-talk {
-        
+        transform: translateY(100px);
         justify-content: center;
         align-items: center;
         

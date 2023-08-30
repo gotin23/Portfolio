@@ -634,7 +634,7 @@
                   } 
                   .polygon1 {
                     
-                    animation:polygon1b 10s infinite ease-in-out ,polygon1 1s  ease-in-out;
+                    animation:polygon1 1s  ease-in-out;
    
                     }
                   @keyframes polygon1 {
@@ -648,7 +648,7 @@
                    
                   }
                 }
-                @keyframes polygon1b {
+                /* @keyframes polygon1b {
                   0% {
                  
                     transform:translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg);
@@ -666,7 +666,7 @@
                     transform:translateX(0) translateY(-0px) perspective(1000px) rotate(150deg) rotateY(30deg);
                    
                   }
-                  } 
+                  }  */
                   .polygon2 {
                     animation:polygon2 1.2s  ease-in-out;
                     }

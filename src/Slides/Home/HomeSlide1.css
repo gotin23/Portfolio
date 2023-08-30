@@ -494,7 +494,6 @@
   
     position: absolute;
     left: 50%;
-    right: 50%;
     top: 90%;
     transform:  rotate(0deg);
    
@@ -579,7 +578,7 @@
   
     position: absolute;
     left: 50%;
-    right: 50%;
+    right: 45%;
     top: 90%;
     transform:  rotate(0deg);
    
@@ -626,17 +625,16 @@
     margin-top: 80px;
     letter-spacing: 7px;
   }
-  .home-scroll{
+  /* .home-scroll{
   
-    position: absolute;
     left: 50%;
-    right: 50%;
-    top: 90%;
-    transform:  rotate(0deg);
+    right: 45%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
    
    
   
-  }
+  } */
   .home-scroll-content{
    width: 30px;
     
@@ -719,17 +717,17 @@
     margin-top: 80px;
     letter-spacing: 7px;
   }
-  .home-scroll{
-  
-    position: absolute;
+  /* .home-scroll{
+
     left: 50%;
-    right: 50%;
-    top: 90%;
-    transform:  rotate(0deg);
+    right: 45%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+  
    
    
   
-  }
+  } */
   .home-scroll-content{
    width: 30px;
     
