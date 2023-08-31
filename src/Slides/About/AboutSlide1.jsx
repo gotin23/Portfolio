@@ -12,7 +12,7 @@ export default function AboutSlide1() {
   const activeLetsTalk = useRef();
   const activeRightArrow = useRef();
   const rightArrowAnim = useRef();
-
+  console.log(rightArrowAnim.current, "tt");
   const callback = (entry) => {
     const classValue = entry.target.classList.value;
 

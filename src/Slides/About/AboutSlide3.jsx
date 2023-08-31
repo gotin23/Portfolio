@@ -91,7 +91,7 @@ export default function AboutSlide3() {
       activeFigmaIcon.current,
       activeArrowlogo.current,
     ],
-    { threshold: 0.97 },
+    { threshold: 0.95 },
     callback
   );
   useIntersectionObserver([activeAboutTitlesSlide3.current, activeNextIcon.current], { threshold: 0.1 }, callback);

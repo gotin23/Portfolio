@@ -12,7 +12,7 @@ export default function AboutSlides2({ state }) {
     }
   };
 
-  useIntersectionObserver([activeAboutMeHide.current], { threshold: 0.97 }, callback);
+  useIntersectionObserver([activeAboutMeHide.current], { threshold: 0.9 }, callback);
 
   return (
     <div className="about-slide2 slide">

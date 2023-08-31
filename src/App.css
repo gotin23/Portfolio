@@ -82,14 +82,14 @@ background-color: var(--color-primary);
     position: relative;
     height: 100vh;
     min-width: 100vw;
-    overflow:visible;
+    overflow:auto;
     background-color: var(--color-primary);
        
     }
     .all-content{
       min-width:100vw;
       max-height: 100vh;
-     
+     height: auto;
        overflow-x:scroll;
        overflow-y: hidden;
        
