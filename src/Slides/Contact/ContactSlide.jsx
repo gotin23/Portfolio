@@ -16,6 +16,9 @@ export default function Contact() {
 
   const activeButtonSend = useRef();
   const activeLogo = useRef();
+  const emailInput = useRef();
+  const nameInput = useRef();
+  const messageInput = useRef();
 
   const callback = (entry) => {
     if (entry.target.className === "contact-title") {
@@ -37,6 +40,11 @@ export default function Contact() {
       setFormStep(2);
       setErrorMsg("");
     } else {
+      emailInput.current.classList.remove("flipInX");
+      emailInput.current.classList.add("shake");
+      setTimeout(() => {
+        emailInput.current.classList.remove("shake");
+      }, 800);
       setErrorMsg("Please enter correct email");
     }
   };
@@ -47,6 +55,11 @@ export default function Contact() {
       setFormStep(3);
       setErrorMsg("");
     } else {
+      nameInput.current.classList.remove("flipInX");
+      nameInput.current.classList.add("shake");
+      setTimeout(() => {
+        nameInput.current.classList.remove("shake");
+      }, 800);
       setErrorMsg("Your name should have minimum 2 characters");
     }
   };
@@ -74,6 +87,11 @@ export default function Contact() {
         setNameValue("");
       }, 3100);
     } else {
+      messageInput.current.classList.remove("pulse");
+      messageInput.current.classList.add("shake");
+      setTimeout(() => {
+        messageInput.current.classList.remove("shake");
+      }, 800);
       setErrorMsg("Your message should have minimum 50 characters");
     }
   };
@@ -108,7 +126,7 @@ export default function Contact() {
                 <label htmlFor="email" className="contact-labels">
                   Enter your adress email
                 </label>
-                <input type="email" className="contact-inputs flipInX" value={emailValue} onChange={(e) => setEmailValue(e.target.value)} />
+                <input type="email" ref={emailInput} className="contact-inputs flipInX" value={emailValue} onChange={(e) => setEmailValue(e.target.value)} />
                 <p className="error-message">{errorMsg && errorMsg}</p>
                 <div className="contact-btns-container">
                   <button className="contact-btns pulse" onClick={handleCancelForm}>
@@ -125,7 +143,7 @@ export default function Contact() {
                 <label htmlFor="name" className="contact-labels">
                   Enter your name
                 </label>
-                <input type="text" className="contact-inputs flipInX" id="name" value={nameValue} onChange={(e) => setNameValue(e.target.value)} />
+                <input type="text" ref={nameInput} className="contact-inputs flipInX" id="name" value={nameValue} onChange={(e) => setNameValue(e.target.value)} />
                 <p className="error-message">{errorMsg && errorMsg}</p>
                 <div className="contact-btns-container">
                   <button className="contact-btns pulse" onClick={() => setFormStep(1) + setErrorMsg("")}>
@@ -143,7 +161,7 @@ export default function Contact() {
                 <label htmlFor="message" className="contact-labels">
                   Enter your message
                 </label>
-                <textarea id="message" className="contact-inputs contact-message pulse" value={messageValue} onChange={(e) => setMessageValue(e.target.value)} />
+                <textarea id="message" ref={messageInput} className="contact-inputs contact-message pulse" value={messageValue} onChange={(e) => setMessageValue(e.target.value)} />
                 <p className="error-message">{errorMsg && errorMsg}</p>
                 <div className="contact-btns-container">
                   <button className="contact-btns pulse" onClick={() => setFormStep(2) + setErrorMsg("")}>
