@@ -21,6 +21,7 @@
 .contact-title {
     color: var(--color-secondary);
     font-size: 80px;
+    user-select: none;
 
 
 }
@@ -109,6 +110,7 @@
 form {
 
     width: 100%;
+    user-select: none;
 }
 
 .form-step {
@@ -141,6 +143,7 @@ form {
 .contact-message {
     width: 80%;
     height: 300px;
+    user-select: none;
 }
 
 .error-message {
@@ -149,6 +152,7 @@ form {
     height: 30px;
     text-align: center;
     margin-top: 20px;
+    user-select: none;
     /* background-color: aqua; */
 
 }

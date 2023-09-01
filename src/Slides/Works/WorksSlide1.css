@@ -107,6 +107,7 @@
     position: relative;
     color: var(--color-secondary);
     transition: transform 0.8s cubic-bezier(0.23, 1.83, 0.42, 1.19);
+    user-select: none;
 }
 
 .works-slide1-box-title {
@@ -120,6 +121,8 @@
     text-align: center;
     z-index: 5;
     transition: color 0.4s ease-in;
+    user-select: none;
+
 }
 
 .circle-img {
@@ -132,10 +135,12 @@
 
 .welcome-img {
     width: 100px;
+    user-select: none;
 }
 
 .skill-img {
     width: 60px;
+    user-select: none;
 }
 
 

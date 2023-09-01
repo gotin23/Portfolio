@@ -1,76 +1,82 @@
-:root{
-   
-    --color-primary:  #030514;
-    --color-secondary:  #ffffff;
-    --color-tertiary:  hsl(324, 80%, 50%);
+:root {
+
+  --color-primary: #030514;
+  --color-secondary: #ffffff;
+  --color-tertiary: hsl(324, 80%, 50%);
 
 }
 
 @font-face {
-    font-family: 'Madena'; 
-    src: url('./assets/fonts/Merchant/Variable-TT/Merchant-VF.ttf') ;
+  font-family: 'Madena';
+  src: url('./assets/fonts/Merchant/Variable-TT/Merchant-VF.ttf');
 
-  }
-
-@font-face {
-    font-family: 'Geologica'; 
-    src: url('./assets/fonts/geologica/fonts/variable/Geologica[CRSV\,SHRP\,slnt\,wght].ttf') ;
-   
-  }
-@font-face {
-    font-family: 'Grotesk'; 
-    src: url('./assets/fonts/BDO_grotesk/fonts/variable/BDOGrotesk-VF.ttf') ;
-
-  }
- 
-.App{
-position: relative;
-height: 100vh;
-max-width: 100vw;
-overflow: hidden;
-background-color: var(--color-primary);
-   
 }
-.all-content{
-  width:100vh;
+
+@font-face {
+  font-family: 'Geologica';
+  src: url('./assets/fonts/geologica/fonts/variable/Geologica[CRSV\,SHRP\,slnt\,wght].ttf');
+
+}
+
+@font-face {
+  font-family: 'Grotesk';
+  src: url('./assets/fonts/BDO_grotesk/fonts/variable/BDOGrotesk-VF.ttf');
+
+}
+
+.App {
+  position: relative;
+  height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+  background-color: var(--color-primary);
+
+}
+
+.all-content {
+  width: 100vh;
   height: 100vw;
- 
-   overflow-x: hidden;
-   
-   transform: rotate(-90deg) translateX(-100vh);
-   transform-origin:top left ;
-   -ms-overflow-style: none;
-   scrollbar-width: none;
-   font-family: "Madena";
+
+  overflow-x: hidden;
+
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  font-family: "Madena";
 
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
   display: none;
 }
-.slide{
+
+.slide {
   min-width: 100vw;
   height: 100vh;
   position: relative;
- 
+
 }
-.slides-container{
- position: relative;
+
+.slides-container {
+  position: relative;
   display: flex;
-    flex-direction: row; 
-    /* justify-content: center;*/
-    /* min-width: 300vw; */
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin:top left ;
-    
+  flex-direction: row;
+  /* justify-content: center;*/
+  /* min-width: 300vw; */
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
 
- 
+
+
 
 }
 
-.other{
+.other {
   display: none
 }
-.others-active{
+
+.others-active {
   display: flex;
   width: 600vw;
 }
@@ -78,112 +84,121 @@ background-color: var(--color-primary);
 
 @media screen and (max-width: 1280px) {
 
-  .App{
-    position: relative;
-    height: 100vh;
+  .App {
+
+    overflow: auto;
+
+
+  }
+
+  .all-content {
     min-width: 100vw;
-    overflow:auto;
-    background-color: var(--color-primary);
-       
-    }
-    .all-content{
-      min-width:100vw;
-      max-height: 100vh;
-     height: auto;
-       overflow-x:scroll;
-       overflow-y: hidden;
-       
-       transform: rotate(0) translateX(0);
-       transform-origin:none ;
-       -ms-overflow-style: none;
-       scrollbar-width:auto;
-       font-family: "Madena";
-    
-    }
-    ::-webkit-scrollbar{
-      display: none;
-    }
-    .slide{
-      min-width: 100vw;
-      height: 100vh;
-      position: relative;
-     
-    }
-    .slides-container{
-     position: relative;
-      display: flex;
-        flex-direction: row; 
-       
-        transform: rotate(0) translateY(0);
-        transform-origin:none ;
-        
-    
-     
-    
-    }
-    
-    .other{
-      display: none
-    }
-    .others-active{
-      display: flex;
-      width: 600vw;
-    }
-    
-    
-     
-    
+    max-height: 100vh;
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    transform: rotate(0) translateX(0);
+    /* transform-origin:none ;
+       -ms-overflow-style: none; */
+    scrollbar-width: auto;
+    /* font-family: "Madena"; */
+
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* 
+  .slide {
+    min-width: 100vw;
+    height: 100vh;
+    position: relative;
+
+  } */
+
+  .slides-container {
+    /* position: relative;
+    display: flex;
+    flex-direction: row; */
+
+    transform: rotate(0) translateY(0);
+    transform-origin: none;
+
+
+
+
+  }
+
+  .other {
+    display: none
+  }
+
+  /* .others-active {
+    display: flex;
+    width: 600vw;
+  } */
+
+
+
+
 
 }
+
 @media screen and (max-width: 950px) {
-  .App{
-    position: relative;
+  .App {
+    /* position: relative;
     min-height: 100vh;
-    max-width: 100vw;
+    max-width: 100vw; */
     overflow: hidden;
-       
-    }
-    .all-content{
-      width:100vw;
-      height: 100vh;
-      overflow-y: visible;
-     
-       overflow-x: hidden;
-       
-       transform: rotate(0deg) translateX(0);
+
+  }
+
+  .all-content {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: visible;
+    overflow-x: hidden;
+
+    /* transform: rotate(0deg) translateX(0);
        transform-origin:none ;
        -ms-overflow-style: none;
        scrollbar-width: none;
-       font-family: "Madena";
-    
-    }
-    .slide{
-      max-width: 100vw;
-      min-height: 100vh;
-      position: relative;
-     
-    }
-    .slides-container{
-     position: relative;
-      display: flex;
-        flex-direction: column; 
-        /* justify-content: center;*/
-        /* min-width: 300vw; */
-        transform: rotate(0deg) translateY(0);
-        transform-origin:none ;
-    }
-    .others-active{
-      display: flex;
-      flex-direction: column;
-      width: 100vh;
-      min-height: 600vh;
-    }
-        
-    
-     
-    
+       font-family: "Madena"; */
+
+  }
+
+  .slide {
+    max-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+
+  }
+
+  .slides-container {
+    /* position: relative;
+    display: flex; */
+    flex-direction: column;
+    /* justify-content: center;
+    min-width: 300vw;
+    transform: rotate(0deg) translateY(0);
+    transform-origin: none; */
+  }
+
+  .others-active {
+    /* display: flex; */
+    flex-direction: column;
+    width: 100vh;
+    min-height: 600vh;
+  }
+
+
+
+
 
 }
+
 /* @media screen and (max-width: 700px) {
   .App{
     position: relative;
@@ -231,4 +246,3 @@ background-color: var(--color-primary);
     
 
 } */
-

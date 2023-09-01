@@ -68,7 +68,7 @@ export default function WorksSlide2() {
       animGitHubLogo.current.classList.remove("bounceIn");
       animProjectImage.current.classList.add("slideInUp");
       animProjectDescription.current.classList.add("fadeIn");
-    }, 400);
+    }, 1000);
   };
   const handleActiveBtnProject = (e) => {
     const prevActiveButton = document.querySelector(".active-button-project");

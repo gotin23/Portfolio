@@ -25,6 +25,7 @@
   color: var(--color-primary);
   white-space: nowrap;
   letter-spacing: 5px;
+  user-select: none;
 
 
 }
@@ -61,7 +62,7 @@
 .span-title-slide2 {
   font-weight: 500;
 }
-
+/* 
 .about-me-spiky-container {
   display: flex;
   justify-content: center;
@@ -70,7 +71,7 @@
   min-width: 300px;
   margin-right: 30px;
 
-}
+} */
 
 /* .about-me-spiky-text {
   font-size: 40px;
@@ -115,6 +116,7 @@
   font-family: 'Grotesk';
   white-space: nowrap;
   transition: font-size 1.4s ease-in-out;
+  user-select: none;
 }
 
 @media screen and (max-width: 1680px) {

@@ -12,6 +12,7 @@
     font-weight: 300;
     transition: font-weight 0.4s ease-in;
     font-family: "Geologica";
+    user-select: none;
 }
 
 .works-slide2-span1,
@@ -76,6 +77,7 @@
     transform: translateY(50px);
     opacity: 0;
     transition: transform 0.4s ease-in, opacity 0.4s ease-in;
+    user-select: none;
 }
 
 .project-img-container {

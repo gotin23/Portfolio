@@ -33,11 +33,13 @@ footer{
 .social-network-logo{
     width: 50px;
     margin-top: 15px;
+    user-select: none;
 
 }
 .social-network-link{
     text-decoration: none;
     color: var(--color-secondary);
+    user-select: none;
 }
 
 
