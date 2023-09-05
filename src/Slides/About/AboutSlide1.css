@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-  
+
 
 }
 
@@ -103,8 +103,9 @@
     transition: width 0.4s ease-in-out, transform 0.8s ease-in-out;
     user-select: none;
 }
+
 .active-right-arrow {
-    transform: translateX(220px);  
+    transform: translateX(220px);
 }
 
 .about-lets-talk-container:hover .about-lets-talk-arrow {
@@ -120,11 +121,13 @@
     opacity: 1;
 
 }
-.animation-hide-title{
+
+.animation-hide-title {
     right: 100%;
-  }
-  @media screen and (max-width: 1680px) {
-   
+}
+
+@media screen and (max-width: 1680px) {
+
 
     .about-titles-container {
         width: 70%;
@@ -133,109 +136,117 @@
         justify-content: space-around;
         /* align-items: center; */
         padding-left: 10px;
-  
-    
-    
+
+
+
     }
-    
+
     .about-title-container {
         height: 23%;
         padding: 5px;
-        display: flex;
+        /* display: flex; */
         /* justify-content: center; */
         /* align-items: center; */
-      
+
     }
+
     .about-title {
         width: fit-content;
-        color: var(--color-primary);
+        /* color: var(--color-primary); */
         font-size: 140px;
-        font-weight: 100;
-        transition: font-weight 0.8s ease-in-out;
-        display: flex;
+        /* font-weight: 100; */
+        /* transition: font-weight 0.8s ease-in-out; */
+        /* display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center; */
         margin-top: 20px;
         padding: 0px;
-    
+
     }
+
     .about-lets-talk-container {
         width: 35%;
-        
+
         height: 50%;
-        display: flex;
+        /* display: flex; */
         /* background-color: antiquewhite; */
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
-        
+
         /* padding-top: 80px; */
     }
+
     .about-lets-talk-arrow {
         width: 40px;
         /* transform: rotate(90deg); */
-        
+
     }
-    
+
     .active-right-arrow {
-        transform: translateX(120px);  
+        transform: translateX(120px);
     }
+
     .about-lets-talk {
-        
+
         justify-content: center;
         align-items: center;
-        
+
     }
-       
-      
-  
-  }
-  @media screen and (max-width: 1280px) {
-   
+
+
+
+}
+
+@media screen and (max-width: 1280px) {
+
 
     .about-titles-container {
         width: 65%;
         height: 70%;
-
-        justify-content: space-around;
+        /* 
+        justify-content: space-around; */
         /* align-items: center; */
-        padding-left: 10px;
-  
-    
-    
+        /* padding-left: 10px; */
+
+
+
     }
-    
+
     .about-title-container {
         height: 25%;
         padding: 5px;
-        display: flex;
+        /* display: flex; */
         /* justify-content: center; */
         /* align-items: center; */
-      
+
     }
+
     .about-title {
         width: fit-content;
-        color: var(--color-primary);
+        /* color: var(--color-primary); */
         font-size: 120px;
-        font-weight: 100;
-        transition: font-weight 0.8s ease-in-out;
-        display: flex;
+        /* font-weight: 100; */
+        /* transition: font-weight 0.8s ease-in-out; */
+        /* display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center; */
         margin-top: 20px;
         padding: 0px;
-    
+
     }
+
     .about-lets-talk-container {
         width: 35%;
-        
+
         height: 50%;
-        display: flex;
+        /* display: flex; */
         /* background-color: antiquewhite; */
-        justify-content: center;
-        align-items: center;
-        
+        /* justify-content: center; */
+        /* align-items: center; */
+
         /* padding-top: 80px; */
     }
+
     .about-lets-talk {
         background-color: var(--color-secondary);
         height: 120px;
@@ -244,123 +255,133 @@
         display: flex;
         /* justify-content: center; */
         /* align-items: center; */
-      
+
     }
-    
+
     .about-lets-talk-content {
         font-size: 40px;
-        color: var(--color-primary);
+        /* color: var(--color-primary);
         transition: font-style, font-weight 0.4s ease-in-out;
-        font-weight: 200;
+        font-weight: 200; */
     }
+
     .about-lets-talk-arrow {
         width: 40px;
         /* transform: rotate(90deg); */
-        
+
     }
-    
+
     .active-right-arrow {
-        transform: translateX(120px);  
+        transform: translateX(120px);
     }
+
     .about-lets-talk {
         width: 80%;
-        justify-content: center;
-        align-items: center;
-        
+        /* justify-content: center;
+        align-items: center; */
+
     }
-       
-      
-  
-  }
 
 
-  @media screen and (max-width: 950px) {
-   
-          
+
+}
+
+
+@media screen and (max-width: 950px) {
+
+
     .about-slide1 {
-     
+
         flex-direction: column;
-      
-    
+
+
     }
+
     .about-titles-container {
         width: 100%;
         height: 50%;
 
         justify-content: space-around;
-     transform: translateY(100px);
+        transform: translateY(100px);
         padding-left: 10px;
         /* background-color: aqua; */
-    
-    
+
+
     }
-    
+
     .about-title-container {
         height: 23%;
         padding: 5px;
         display: flex;
         /* justify-content: center; */
         /* align-items: center; */
-      
+
     }
+
     .about-title {
-        width: fit-content;
-        color: var(--color-primary);
+        /* width: fit-content; */
+        /* color: var(--color-primary); */
         font-size: 130px;
-        font-weight: 100;
+        /* font-weight: 100;
         transition: font-weight 0.8s ease-in-out;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center; */
         margin-top: 20px;
         padding: 0px;
-    
+
     }
+
     .about-lets-talk-container {
         width: 100%;
-        
+
         height: 50%;
-        display: flex;
+        /* display: flex; */
         /* background-color: antiquewhite; */
-        justify-content: center;
-        align-items: center;
-     
-        
+        /* justify-content: center;
+        align-items: center; */
+
+
         /* padding-top: 80px; */
     }
+
     .about-lets-talk-arrow {
         width: 40px;
         transform: rotate(90deg);
-        
+
     }
+
     .about-lets-talk-content {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 40px;
     }
+
     /* .active-right-arrow {
         transform: translateX(0px);  
     } */
     .about-lets-talk {
         transform: translateY(100px);
-        justify-content: center;
-        align-items: center;
-        
+        /* justify-content: center;
+        align-items: center; */
+
     }
-       
-      
-  
-  }
-  @media screen and (max-width: 800px) {
-   
-          
+
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+
     .about-slide1 {
-     
+
         flex-direction: column;
-      
-    
+
+
     }
+
     .about-titles-container {
         width: 100%;
         height: 50%;
@@ -369,63 +390,68 @@
         /* align-items: center; */
         padding-left: 10px;
         /* background-color: aqua; */
-    
-    
+
+
     }
-    
+
     .about-title-container {
         height: 20%;
         padding: 5px;
         display: flex;
         /* justify-content: center; */
         /* align-items: center; */
-      
+
     }
+
     .about-title {
-        width: fit-content;
-        color: var(--color-primary);
+        /* width: fit-content;
+        color: var(--color-primary); */
         font-size: 60px;
-        font-weight: 100;
+        /* font-weight: 100;
         transition: font-weight 0.8s ease-in-out;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center; */
         margin-top: 20px;
         padding: 0px;
-    
+
     }
+
     .about-lets-talk-container {
         width: 100%;
-        
+
         height: 50%;
-        display: flex;
+        /* display: flex; */
         /* background-color: antiquewhite; */
-        justify-content: center;
-        align-items: center;
-        
+        /* justify-content: center;
+        align-items: center; */
+
         /* padding-top: 80px; */
     }
+
     .about-lets-talk-arrow {
         width: 40px;
         transform: rotate(90deg);
-        
+
     }
-    .about-lets-talk-content {
+
+    /* .about-lets-talk-content {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 40px;
-    }
+    } */
+
     /* .active-right-arrow {
         transform: translateX(0px);  
     } */
-    .about-lets-talk {
-        
+    /* .about-lets-talk {
+
         justify-content: center;
         align-items: center;
-        
-    }
-       
-      
-  
-  }
+
+    } */
+
+
+
+}
