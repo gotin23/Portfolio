@@ -62,6 +62,7 @@
 .span-title-slide2 {
   font-weight: 500;
 }
+
 /* 
 .about-me-spiky-container {
   display: flex;
@@ -104,10 +105,10 @@
 }
 
 .active-hide-about-me-content {
- 
+
   right: 100%;
-  
- 
+
+
 }
 
 .hide-about-me-content-title {
@@ -120,147 +121,158 @@
 }
 
 @media screen and (max-width: 1680px) {
-   
+
   .hide-about-me-content-title {
- 
+
     font-size: 100px;
-    
-  }       
+
+  }
+
   .about-me-container {
     max-width: 100vw;
     min-height: 100vh;
 
-    
- 
+
+
   }
-  
+
   .about-me-slide2-all-content {
     display: flex;
     justify-content: space-between;
     padding: 0px;
 
   }
-  
+
   .about-me-content-title {
 
     font-size: 180px;
-   
-  
-  
+
+
+
   }
-  
+
   .about-me-content-title-container {
 
-   margin-left: 0;
-   
-  
+    margin-left: 0;
+
+
   }
+
   .about-me-content-title-container:hover .about-me-content-title {
     font-weight: 200;
     font-size: 190px;
   }
+
   .about-me-content-title::before {
-    
+
     height: 2px;
 
-  
+
   }
 
-     
-    
+
+
 
 }
+
 @media screen and (max-width: 1280px) {
-   
+
   .hide-about-me-content-title {
- 
+
     font-size: 70px;
-    
-  }       
+
+  }
+
   .about-me-container {
     max-width: 100vw;
     min-height: 100vh;
 
-    
- 
+
+
   }
-  
+
   .about-me-slide2-all-content {
     display: flex;
     justify-content: space-between;
     padding: 0px;
 
   }
-  
+
   .about-me-content-title {
 
     font-size: 130px;
-   
-  
-  
+
+
+
   }
-  
+
   .about-me-content-title-container {
 
-   margin-left: 0;
-   
-  
+    margin-left: 0;
+
+
   }
+
   .about-me-content-title-container:hover .about-me-content-title {
     font-weight: 200;
     font-size: 140px;
   }
+
   .about-me-content-title::before {
-    
+
     height: 2px;
 
-  
+
   }
 
-     
-    
+
+
 
 }
+
 @media screen and (max-width: 950px) {
-   
+
   .hide-about-me-content-title {
- 
+
     font-size: 80px;
-    
-  }       
+
+  }
+
   .about-me-container {
     max-width: 100vw;
     min-height: 100vh;
 
-    
- 
+
+
   }
-  
+
   .about-me-slide2-all-content {
     display: flex;
     justify-content: space-between;
     padding: 0px;
 
   }
-  
+
   .about-me-content-title {
 
     font-size: 150px;
-   white-space: wrap;
-  
-  
+    white-space: wrap;
+
+
   }
-  
+
   .about-me-content-title-container {
 
-   margin-left: 0;
-   
-  
+    margin-left: 0;
+
+
   }
+
   .about-me-content-title-container:hover .about-me-content-title {
     font-weight: 200;
     font-size: 160px;
   }
+
   .about-me-content-title::before {
 
     bottom: 5px;
@@ -270,50 +282,54 @@
 
   }
 
-     
-    
+
+
 
 }
+
 @media screen and (max-width: 800px) {
-   
+
   .hide-about-me-content-title {
- 
+
     font-size: 50px;
-    
-  }       
+
+  }
+
   .about-me-container {
     max-width: 100vw;
     min-height: 100vh;
 
-    
- 
+
+
   }
-  
+
   .about-me-slide2-all-content {
     display: flex;
     justify-content: space-between;
     padding: 0px;
 
   }
-  
+
   .about-me-content-title {
 
     font-size: 40px;
-   
-  
-  
+
+
+
   }
-  
+
   .about-me-content-title-container {
 
-   margin-left: 0;
-   
-  
+    margin-left: 0;
+
+
   }
+
   .about-me-content-title-container:hover .about-me-content-title {
     font-weight: 200;
     font-size: 45px;
   }
+
   .about-me-content-title::before {
 
     bottom: 5px;
@@ -322,8 +338,5 @@
     height: 2px;
 
   }
-
-     
-    
 
 }

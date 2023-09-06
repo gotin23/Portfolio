@@ -172,9 +172,10 @@
     transform: scale(1.2);
 }
 
-.active-span-works-slide2{
+.active-span-works-slide2 {
     opacity: 1;
 }
+
 .active-scroll-animation {
     opacity: 1;
     transform: translate(0);
@@ -182,22 +183,20 @@
 
 @media screen and (max-width: 1650px) {
     .works-slide2-title {
-    
         font-size: 60px;
         /* margin-left: 10px; */
-       
+
     }
+
     .buttons-projects-container {
         width: 90%;
         margin-top: 40px;
         margin-bottom: 10px;
-        
-
     }
-    .button-project-name {
 
+    .button-project-name {
         font-size: 15px;
-       
+
     }
 
 
@@ -206,63 +205,61 @@
         width: 50%;
         padding: 5px;
         margin-top: 20px;
-    
-     
     }
+
     .project-description {
-  
         font-size: 20px;
         line-height: 22px;
-      letter-spacing: 1px;
-      margin-left: 5px;
+        letter-spacing: 1px;
+        margin-left: 5px;
     }
+
     .project-img-container {
         width: 430px;
         height: 270px;
-        
+
     }
-    
+
     .project-github-link {
-     
         width: 35px;
         bottom: 10px;
         right: 10px;
 
     }
+
     .visit-website-link {
-       
         font-size: 18px;
-      padding: 10px;
+        padding: 10px;
     }
-    
+
     .visit-website-link:hover {
         font-size: 20px;
     }
+
     .techno-logo {
         width: 20px;
         margin: 2px;
     }
-    
-  
+
+
 }
+
 @media screen and (max-width: 1279px) {
     .works-slide2-title {
-    
         font-size: 50px;
         /* margin-left: 10px; */
-       
+
     }
+
     .buttons-projects-container {
         width: 90%;
         margin-top: 30px;
         margin-bottom: 10px;
-        
-
     }
-    .button-project-name {
 
+    .button-project-name {
         font-size: 13px;
-       
+
     }
 
 
@@ -271,75 +268,76 @@
         width: 50%;
         padding: 0px;
         margin-top: 20px;
-    
-     
     }
+
     .project-description {
-  
         font-size: 13px;
         line-height: 20px;
-      letter-spacing: 0.5px;
-      margin-left: 5px;
-      
+        letter-spacing: 0.5px;
+        margin-left: 5px;
+
     }
+
     .project-img-container {
         width: 380px;
         height: 230px;
-        
+
     }
-    
+
     .project-github-link {
-     
         width: 35px;
         bottom: 10px;
         right: 10px;
 
     }
+
     .visit-website-link {
-       
         font-size: 18px;
-      padding: 10px;
+        padding: 10px;
     }
-    
+
     .visit-website-link:hover {
         font-size: 20px;
     }
+
     .techno-logo {
         width: 20px;
         margin: 2px;
     }
-    
-  
+
+
 }
 
 @media screen and (max-width: 950px) {
     .works-slide2-title {
-       text-align: center;
+        text-align: center;
         font-size: 55px;
         margin-left: 10px;
-       
+
     }
+
     .buttons-projects-container {
-        
         margin-top: 20px;
         margin-bottom: 20px;
-     
-       
-    }
-    .button-project-name {
 
-        font-size: 15px;
-       
+
     }
+
+    .button-project-name {
+        font-size: 15px;
+
+    }
+
     .all-projects-container {
         height: 67%;
         width: 90%;
         position: relative;
         margin-top: 0px;
         padding: 40px;
-      flex-direction: column;
-   
+        flex-direction: column;
+
     }
+
     .project-img-container {
         width: 550px;
         height: 400px;
@@ -349,52 +347,54 @@
         align-items: center;
         overflow: hidden;
     }
+
     .project-description-container {
         height: 70%;
         width: 100%;
         padding: 5px;
         margin-top: 0px;
-    
-     
     }
+
     .project-description {
-        color: var(--color-secondary);
-        font-family: "Geologica";
+        /* color: var(--color-secondary);
+        font-family: "Geologica"; */
         font-size: 25px;
         line-height: 30px;
-      letter-spacing: 1px;
+        letter-spacing: 1px;
     }
-    
+
     .project-github-link {
-     
         width: 30px;
         bottom: 10px;
         right: 10px;
 
     }
+
     .visit-website-link {
-       
         font-size: 18px;
-      padding: 10px;
+        padding: 10px;
     }
-    
+
     .visit-website-link:hover {
         font-size: 20px;
     }
+
     .techno-logo {
         width: 20px;
         margin: 2px;
     }
-    
-  
+
+
 }
+
 @media screen and (max-width: 800px) {
     .works-slide2-title {
-       text-align: center;
+        text-align: center;
         font-size: 40px;
         margin-left: 10px;
-       
+
     }
+
     .buttons-projects-container {
         width: 90%;
         margin-top: 0px;
@@ -405,22 +405,24 @@
         flex-wrap: wrap;
         transform: translateY(50px);
         opacity: 0;
-       
-    }
-    .button-project-name {
 
-        font-size: 15px;
-       
     }
+
+    .button-project-name {
+        font-size: 15px;
+
+    }
+
     .all-projects-container {
         height: 67%;
         width: 90%;
         position: relative;
         margin-top: 0px;
         padding: 40px;
-      flex-direction: column;
-   
+        flex-direction: column;
+
     }
+
     .project-img-container {
         width: 330px;
         height: 300px;
@@ -430,42 +432,42 @@
         align-items: center;
         overflow: hidden;
     }
+
     .project-description-container {
         height: 75%;
         width: 100%;
         padding: 5px;
         margin-top: 20px;
-    
-     
     }
+
     .project-description {
-        color: var(--color-secondary);
-        font-family: "Geologica";
+        /* color: var(--color-secondary);
+        font-family: "Geologica"; */
         font-size: 12px;
         line-height: 15px;
-      letter-spacing: 0.5px;
+        letter-spacing: 0.5px;
     }
-    
+
     .project-github-link {
-     
         width: 30px;
         bottom: 10px;
         right: 10px;
 
     }
+
     .visit-website-link {
-       
+
         font-size: 18px;
-      padding: 10px;
+        padding: 10px;
     }
-    
+
     .visit-website-link:hover {
         font-size: 20px;
     }
+
     .techno-logo {
         width: 20px;
         margin: 2px;
     }
-    
-  
+
 }
