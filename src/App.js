@@ -12,6 +12,7 @@ import Header from "./Components/Header/Header";
 import WorksSlide1 from "./Slides/Works/WorksSlide1";
 import WorksSlide2 from "./Slides/Works/WorksSlide2";
 import ContactSlide from "./Slides/Contact/ContactSlide";
+import HamburgerMenu from "./Components/HamburgerMenu/HamburgerMenu";
 
 function App() {
   const [activeHeader, setActiveHeader] = useState(false);
@@ -22,7 +23,8 @@ function App() {
 
   return (
     <div className="App">
-      {activeHeader && <Header />}
+      {/* {activeHeader && <Header />} */}
+      {activeHeader && <HamburgerMenu />}
       <CustomCursor />
       <div className="all-content">
         <div className="slides-container">

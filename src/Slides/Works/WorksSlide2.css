@@ -95,7 +95,11 @@
     height: 100%;
     object-fit: cover;
     transition: filter 0.4s ease-in, transform 0.4s ease-in;
+    /* display: none; */
 }
+/* .project-img-active {
+    display: block;
+} */
 
 .project-img-container:hover .project-img {
     filter: grayscale(100%);

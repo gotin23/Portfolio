@@ -102,6 +102,10 @@ export default function WorksSlide2() {
       <div className="all-projects-container" ref={activeContainerAllProjects}>
         <div className="project-img-container">
           <img src={activeProject.image} className="project-img" ref={animProjectImage} alt={activeProject.name} />
+          {/* {data.map((project) => (
+            <img src={project.image} className="project-img-active" ref={animProjectImage} alt={activeProject.name} />
+          ))} */}
+
           <a className="visit-website-link" href={activeProject.website ? activeProject.website : activeProject.github} target="_blank">
             {activeProject.website ? "Visit website" : "Visit github"}
           </a>

@@ -1,11 +1,11 @@
-.header{
+/* .header{
     position: fixed;
     
        right: 0%;
-   /* height: 40px; */
+
     min-width: 350px;
     z-index: 10;
-    /* transform: rotate(90deg); */
+
  
 
 }
@@ -17,11 +17,11 @@ margin-top: 20px;
 
 }
 nav li{
-/* margin-right: 30px; */
+
 
 
 list-style-type: none;
-/* background-color: green; */
+
 display: flex;
 justify-content: center;
 align-items: center;
@@ -36,7 +36,7 @@ font-weight: 500;
 font-family: "Grotesk";
 text-decoration: none;
 color: var(--color-tertiary);
-/* color: #ffe70d; */
+
 text-transform: uppercase;
 
 position: relative;
@@ -52,13 +52,13 @@ nav a::before {
     width: 0%; 
     height: 2px; 
     background-color:var(--color-tertiary);
-    /* background-color:  #ffe70d;  */
+
    
     transition: width 0.2s ease-in-out;
    
   }
   
-  /* Style pour afficher le soulignement lorsqu'on survole le lien */
+
   nav li:hover a::before {
      width: 100%;
     
@@ -132,4 +132,4 @@ white-space: nowrap;
  
  }
 
- 
+  */

@@ -129,10 +129,10 @@ export default function Contact() {
                 <input type="email" ref={emailInput} className="contact-inputs flipInX" value={emailValue} onChange={(e) => setEmailValue(e.target.value)} />
                 <p className="error-message">{errorMsg && errorMsg}</p>
                 <div className="contact-btns-container">
-                  <button className="contact-btns pulse" onClick={handleCancelForm}>
+                  <button className="contact-btns pulse" type="button" onClick={handleCancelForm}>
                     Cancel
                   </button>
-                  <button className="contact-btns pulse" onClick={handleFormEmail}>
+                  <button className="contact-btns pulse" type="submit" onClick={handleFormEmail}>
                     Next
                   </button>
                 </div>
@@ -146,10 +146,10 @@ export default function Contact() {
                 <input type="text" ref={nameInput} className="contact-inputs flipInX" id="name" value={nameValue} onChange={(e) => setNameValue(e.target.value)} />
                 <p className="error-message">{errorMsg && errorMsg}</p>
                 <div className="contact-btns-container">
-                  <button className="contact-btns pulse" onClick={() => setFormStep(1) + setErrorMsg("")}>
+                  <button className="contact-btns pulse" type="button" onClick={() => setFormStep(1) + setErrorMsg("")}>
                     Previous
                   </button>
-                  <button className="contact-btns pulse" onClick={handleFormName}>
+                  <button className="contact-btns pulse" type="submit" onClick={handleFormName}>
                     Next
                   </button>
                 </div>
@@ -164,10 +164,10 @@ export default function Contact() {
                 <textarea id="message" ref={messageInput} className="contact-inputs contact-message pulse" value={messageValue} onChange={(e) => setMessageValue(e.target.value)} />
                 <p className="error-message">{errorMsg && errorMsg}</p>
                 <div className="contact-btns-container">
-                  <button className="contact-btns pulse" onClick={() => setFormStep(2) + setErrorMsg("")}>
+                  <button className="contact-btns pulse" type="button" onClick={() => setFormStep(2) + setErrorMsg("")}>
                     Previous
                   </button>
-                  <button className="contact-btns pulse" onClick={handleSendEmail}>
+                  <button className="contact-btns pulse" type="submit" onClick={handleSendEmail}>
                     Send!
                   </button>
                 </div>
