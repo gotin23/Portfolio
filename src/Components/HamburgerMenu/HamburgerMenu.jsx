@@ -32,20 +32,20 @@ function Menu() {
         <span></span>
       </div>
       <nav className={isActive ? "menu-burger-active" : "menu-burger"}>
-        <a className="tt" href="#home">
-          <HackText state={{ content: `Home` }} />
+        <a className="tt" href="#home" onClick={toggleMenu}>
+          {isActive && <HackText state={{ content: `Home` }} />}
         </a>
 
-        <a href="#about-me">
-          <HackText state={{ content: `About me` }} />
+        <a href="#about-me" onClick={toggleMenu}>
+          {isActive && <HackText state={{ content: `About me` }} />}
         </a>
 
-        <a href="#works">
-          <HackText state={{ content: `Works` }} />
+        <a href="#works" onClick={toggleMenu}>
+          {isActive && <HackText state={{ content: `Works` }} />}
         </a>
 
-        <a href="#contact">
-          <HackText state={{ content: `Contact` }} />
+        <a href="#contact" onClick={toggleMenu}>
+          {isActive && <HackText state={{ content: `Contact` }} />}
         </a>
       </nav>
     </div>
