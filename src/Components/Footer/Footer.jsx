@@ -7,13 +7,13 @@ export default function Footer() {
   return (
     <footer>
       <div className="social-network">
-        <a href="" className="social-network-link">
+        <a href="https://github.com/gotin23" target="_blank" className="social-network-link">
           <div className="my-github-container">
             <img className="social-network-logo" src={GithubLogo} />
             Visit my Github
           </div>
         </a>
-        <a href="" className="social-network-link">
+        <a href="https://www.linkedin.com/in/hugo-gouzy-987166209/" target="_blank" className="social-network-link">
           <div className="my-linkedin-container">
             <img className="social-network-logo" src={LinkedinLogo} />
             Visit my Linkedin
