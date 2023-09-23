@@ -633,21 +633,29 @@
                   }
                   } 
                   .polygon1 {
-                    
-                    animation:polygon1 1s  ease-in-out;
-   
-                    }
-                  @keyframes polygon1 {
-                  0% {
-                 
-                  transform:translateX(-300px) translateY(380px) perspective(1000px) rotate(100deg) rotateY(0deg);
+                    -webkit-animation: polygon1 1s ease-in-out; /* Safari et Chrome */
+                    animation: polygon1 1s ease-in-out; /* Standard */
+                  }
                   
+                  @-webkit-keyframes polygon1 {
+                    0% {
+                      -webkit-transform: translateX(-300px) translateY(380px) perspective(1000px) rotate(100deg) rotateY(0deg);
+                      transform: translateX(-300px) translateY(380px) perspective(1000px) rotate(100deg) rotateY(0deg);
+                    }
+                    100% {
+                      -webkit-transform: translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg);
+                      transform: translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg);
+                    }
                   }
-                  100% {
-                    transform:translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg);
-                   
+                  
+                  @keyframes polygon1 {
+                    0% {
+                      transform: translateX(-300px) translateY(380px) perspective(1000px) rotate(100deg) rotateY(0deg);
+                    }
+                    100% {
+                      transform: translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg);
+                    }
                   }
-                }
                 /* @keyframes polygon1b {
                   0% {
                  

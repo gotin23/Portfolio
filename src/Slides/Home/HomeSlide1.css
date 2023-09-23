@@ -12,7 +12,7 @@
   color: var(--color-secondary);
   min-height: 100vh;
   min-width: 100vw;
-  font-stretch: extra-expanded;
+  /* font-stretch: extra-expanded; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -24,15 +24,16 @@
   margin-top: 280px;
   transition: font-size .7s ease-in-out, font-weight .7s ease-in-out;
   user-select: none;
+  font-family: "Madena",sans-serif;
 }
 
-.span-home-title {
+/* .span-home-title {
   transition: font-size 0.4s ease-in;
 }
 
 .span-home-title:hover {
   font-size: 250px;
-}
+} */
 
 .glitch {
   color: white;
