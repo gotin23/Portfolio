@@ -159,8 +159,8 @@
   }
 
   .about-me-content-title-container:hover .about-me-content-title {
-    font-weight: 200;
-    font-size: 190px;
+    /* font-weight: 200; */
+    font-size: 180px;
   }
 
   .about-me-content-title::before {
@@ -214,8 +214,8 @@
   }
 
   .about-me-content-title-container:hover .about-me-content-title {
-    font-weight: 200;
-    font-size: 140px;
+    /* font-weight: 200; */
+    font-size: 130px;
   }
 
   .about-me-content-title::before {
@@ -269,8 +269,8 @@
   }
 
   .about-me-content-title-container:hover .about-me-content-title {
-    font-weight: 200;
-    font-size: 160px;
+    /* font-weight: 200; */
+    font-size: 150px;
   }
 
   .about-me-content-title::before {
@@ -326,8 +326,8 @@
   }
 
   .about-me-content-title-container:hover .about-me-content-title {
-    font-weight: 200;
-    font-size: 45px;
+  
+    font-size: 40px;
   }
 
   .about-me-content-title::before {
