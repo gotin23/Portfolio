@@ -88,6 +88,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
 }
 
 .project-img {
@@ -96,6 +97,7 @@
     object-fit: cover;
     transition: filter 0.4s ease-in, transform 0.4s ease-in;
     /* display: none; */
+    z-index: 99;
 }
 /* .project-img-active {
     display: block;
@@ -120,6 +122,7 @@
     transition: opacity 0.4s ease-in, font-size 0.4s ease-in;
     text-decoration: none;
     text-transform: uppercase;
+    z-index: 99;
 }
 
 .visit-website-link:hover {
@@ -142,6 +145,7 @@
 .techno-logo {
     width: 30px;
     margin: 2px;
+    z-index: 99;
 }
 
 .project-description-container {
@@ -162,6 +166,9 @@
     line-height: 40px;
     font-weight: 200;
     letter-spacing: 1px;
+    background-color: var(--color-primary);
+    z-index: 99;
+
 }
 
 .project-github-link {
@@ -184,6 +191,59 @@
     opacity: 1;
     transform: translate(0);
 }
+
+
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #FFF #FFF transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: absolute;
+    z-index: 1;
+    
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent var(--color-tertiary) var(--color-tertiary);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+      
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+      
 
 @media screen and (max-width: 1650px) {
     .works-slide2-title {
@@ -275,7 +335,7 @@
     }
 
     .project-description {
-        font-size: 13px;
+        font-size: 16px;
         line-height: 20px;
         letter-spacing: 0.5px;
         margin-left: 5px;
@@ -447,8 +507,8 @@
     .project-description {
         /* color: var(--color-secondary);
         font-family: "Geologica"; */
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 15px;
+        /* line-height: 15px; */
         letter-spacing: 0.5px;
     }
 

@@ -632,22 +632,24 @@
                   transform: translateY(0);
                   }
                   } 
-                  .polygon1 {
-                    -webkit-animation: polygon1 1s ease-in-out; /* Safari et Chrome */
-                    animation: polygon1 1s ease-in-out; /* Standard */
+                  /* .polygon1 {
+                    -webkit-animation: polygon1 1s ease-in-out; 
+                    animation: polygon1 1s ease-in-out; 
                   }
                   
                   @-webkit-keyframes polygon1 {
                     0% {
                       -webkit-transform: translateX(-300px) translateY(380px) perspective(1000px) rotate(100deg) rotateY(0deg);
                       transform: translateX(-300px) translateY(380px) perspective(1000px) rotate(100deg) rotateY(0deg);
+                      visibility: hidden;
                     }
                     100% {
                       -webkit-transform: translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg);
                       transform: translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg);
+                      visibility: visible;
                     }
-                  }
-                  
+                  } */
+/*                   
                   @keyframes polygon1 {
                     0% {
                       transform: translateX(-300px) translateY(380px) perspective(1000px) rotate(100deg) rotateY(0deg);
@@ -655,7 +657,7 @@
                     100% {
                       transform: translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg);
                     }
-                  }
+                  } */
                 /* @keyframes polygon1b {
                   0% {
                  
@@ -675,7 +677,7 @@
                    
                   }
                   }  */
-                  .polygon2 {
+                  /* .polygon2 {
                     animation:polygon2 1.2s  ease-in-out;
                     }
                   @keyframes polygon2 {
@@ -745,7 +747,7 @@
                     transform:translateX(0) translateY(0) perspective(1000px) rotate(-60deg) rotateY(30deg);;
                    
                   }
-                  }
+                  } */
                   /* .box-container4 {
                     -webkit-animation-name: box-container4;
                     animation-name: box-container4;

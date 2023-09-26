@@ -2,8 +2,8 @@ import React from "react";
 import "./HomeSlide1.css";
 import HomePopup from "../../Components/HomePopup/HomePopup";
 import { useState, useRef } from "react";
-import RightArrow from "../../assets/icons/iconmonstr-arrow-down-thin.svg";
-import { useMediaQuery } from "react-responsive";
+// import RightArrow from "../../assets/icons/iconmonstr-arrow-down-thin.svg";
+// import { useMediaQuery } from "react-responsive";
 
 export default function HomeSlide1({ state }) {
   // const isMobile = useMediaQuery({ minWidth: 950 });
@@ -16,6 +16,11 @@ export default function HomeSlide1({ state }) {
   const [portfolioClass, setPortfolioClass] = useState("");
   const [polygons, setPolygons] = useState([false, false, false, false, false]);
   const activeHomeTitle = useRef();
+  const activePolygon1 = useRef();
+  const activePolygon2 = useRef();
+  const activePolygon3 = useRef();
+  const activePolygon4 = useRef();
+  const activePolygon5 = useRef();
   const handleAnimHeader = () => {
     // const newTitleStyle = { fontSize: "230px", fontWeight: "700" };
     // const styleMobile = { fontSize: "57px", fontWeight: "700" };
@@ -25,7 +30,7 @@ export default function HomeSlide1({ state }) {
     }, 2000);
     setTimeout(() => {
       setPortfolioClass("active-scroll-animation");
-    }, 3000);
+    }, 2500);
     setTimeout(() => {
       setActiveScrollLogo(true);
     }, 4000);
@@ -36,17 +41,32 @@ export default function HomeSlide1({ state }) {
 
     const timeouts = [];
 
-    for (let i = 0; i < 5; i++) {
-      timeouts.push(
-        setTimeout(() => {
-          setPolygons((prevPolygons) => {
-            const newPolygons = [...prevPolygons];
-            newPolygons[i] = true;
-            return newPolygons;
-          });
-        }, 1200 + i * 200)
-      );
-    }
+    // for (let i = 0; i < 5; i++) {
+    //   timeouts.push(
+    //     setTimeout(() => {
+    //       setPolygons((prevPolygons) => {
+    //         const newPolygons = [...prevPolygons];
+    //         newPolygons[i] = true;
+    //         return newPolygons;
+    //       });
+    //     }, 1200 + i * 200)
+    //   );
+    // }
+    setTimeout(() => {
+      activePolygon1.current.classList.add("polygon1-active");
+    }, 1600);
+    setTimeout(() => {
+      activePolygon2.current.classList.add("polygon2-active");
+    }, 1700);
+    setTimeout(() => {
+      activePolygon3.current.classList.add("polygon3-active");
+    }, 1800);
+    setTimeout(() => {
+      activePolygon4.current.classList.add("polygon4-active");
+    }, 1900);
+    setTimeout(() => {
+      activePolygon5.current.classList.add("polygon5-active");
+    }, 2000);
 
     setTimeout(() => {
       setPortfolioClass("active-scroll-animation glitch");
@@ -67,21 +87,26 @@ export default function HomeSlide1({ state }) {
     //   }, 300);
     // }
 
-    return () => {
-      timeouts.forEach((timeout) => clearTimeout(timeout));
-    };
+    // return () => {
+    //   timeouts.forEach((timeout) => clearTimeout(timeout));
+    // };
   };
 
   return (
     <div className="home-container slide" id="home">
       {/* <div className="home-scroll">{activeArrow && <img src={RightArrow} className="home-scroll-content flash" alt="logo arrow" />}</div> */}
 
-      {activeSrollLogo && <div class="icon-scroll"></div>}
+      {activeSrollLogo && <div class="icon-scroll fadeIn"></div>}
 
       <div className="home-content">
-        {polygons.map((polygon, index) => (
+        {/* {polygons.map((polygon, index) => (
           <div key={index} className={polygon ? `polygon${index + 1}` : ""} />
-        ))}
+        ))} */}
+        <div className="polygon1" ref={activePolygon1}></div>
+        <div className="polygon2" ref={activePolygon2}></div>
+        <div className="polygon3" ref={activePolygon3}></div>
+        <div className="polygon4" ref={activePolygon4}></div>
+        <div className="polygon5" ref={activePolygon5}></div>
         <h1 className="home-title" ref={activeHomeTitle}>
           {/* <span className="span-home-title ">D</span>
           <span className="span-home-title">e</span>

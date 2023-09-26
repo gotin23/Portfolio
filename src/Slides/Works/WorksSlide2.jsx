@@ -61,6 +61,9 @@ export default function WorksSlide2() {
     animProjectImage.current.classList.add("slideOutDown");
     animProjectDescription.current.classList.add("fadeOut");
     animGitHubLogo.current.classList.add("bounceIn");
+    setTimeout(() => {
+      setActiveProject(null);
+    }, 400);
 
     setTimeout(() => {
       animProjectImage.current.classList.remove("slideOutDown");
@@ -68,7 +71,7 @@ export default function WorksSlide2() {
       animGitHubLogo.current.classList.remove("bounceIn");
       animProjectImage.current.classList.add("slideInUp");
       animProjectDescription.current.classList.add("fadeIn");
-    }, 1000);
+    }, 600);
   };
   const handleActiveBtnProject = (e) => {
     const prevActiveButton = document.querySelector(".active-button-project");
@@ -101,6 +104,7 @@ export default function WorksSlide2() {
 
       <div className="all-projects-container" ref={activeContainerAllProjects}>
         <div className="project-img-container">
+          <span class="loader"></span>
           <img src={activeProject.image} className="project-img" ref={animProjectImage} alt={activeProject.name} />
           {/* {data.map((project) => (
             <img src={project.image} className="project-img-active" ref={animProjectImage} alt={activeProject.name} />
@@ -120,6 +124,8 @@ export default function WorksSlide2() {
           <p className="project-description" ref={animProjectDescription}>
             {activeProject.description}
           </p>
+
+          {/* <div className="loader"></div> */}
         </div>
         <a href={activeProject.github} target="_blank">
           <img src={GithubLogo} className="project-github-link" ref={animGitHubLogo} alt="github logo" />

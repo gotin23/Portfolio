@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.28d788c8.css",
+    "main.css": "/Portfolio/static/css/main.aa0604f6.css",
     "main.js": "/Portfolio/static/js/main.337dc68b.js",
     "static/media/debug77.png": "/Portfolio/static/media/debug77.9863b729582cac600b57.png",
     "static/media/Argent-Bank.png": "/Portfolio/static/media/Argent-Bank.0a7abff7671947b75b1e.png",
@@ -26,11 +26,11 @@
     "static/media/icons8-figma.svg": "/Portfolio/static/media/icons8-figma.2cf3967c30f84d8436d8e9029d29cd3d.svg",
     "static/media/iconmonstr-arrow-down-thin.svg": "/Portfolio/static/media/iconmonstr-arrow-down-thin.49faa658e3b5d5e6ed9602b02665eedb.svg",
     "static/media/iconmonstr-arrow-18.svg": "/Portfolio/static/media/iconmonstr-arrow-18.195956dec20448b6fc9a86e3ae8dcc27.svg",
-    "main.28d788c8.css.map": "/Portfolio/static/css/main.28d788c8.css.map",
+    "main.aa0604f6.css.map": "/Portfolio/static/css/main.aa0604f6.css.map",
     "main.337dc68b.js.map": "/Portfolio/static/js/main.337dc68b.js.map"
   },
   "entrypoints": [
-    "static/css/main.28d788c8.css",
+    "static/css/main.aa0604f6.css",
     "static/js/main.337dc68b.js"
   ]
 }

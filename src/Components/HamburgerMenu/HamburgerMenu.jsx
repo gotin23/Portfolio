@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./HamburgerMenu.css"; // Assurez-vous d'importer votre fichier CSS
 import HackText from "../HackText/HackText";
 import { useRef } from "react";
-
+import logoPortfolio from "../../assets/icons/logo-portfolio.svg";
 function Menu() {
   const [isActive, setIsActive] = useState(false);
   const activeMenu = useRef();
@@ -20,7 +20,7 @@ function Menu() {
       {/* <button className="show" onClick={toggleMenu}>
         Toggle Menu
       </button> */}
-      <div class="nav-icon-1" onClick={toggleMenu} ref={activeMenu}>
+      <div class="nav-icon-1 fadeIn" onClick={toggleMenu} ref={activeMenu}>
         <span></span>
         <span></span>
         <span></span>
@@ -32,6 +32,7 @@ function Menu() {
         <span></span>
       </div>
       <nav className={isActive ? "menu-burger-active" : "menu-burger"}>
+        {isActive && <img src={logoPortfolio} className="logo-menu fadeIn" />}
         <a className="tt" href="#home" onClick={toggleMenu}>
           {isActive && <HackText state={{ content: `Home` }} />}
         </a>
