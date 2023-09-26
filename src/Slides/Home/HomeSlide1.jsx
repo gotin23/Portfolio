@@ -14,7 +14,7 @@ export default function HomeSlide1({ state }) {
   const [activeSrollLogo, setActiveScrollLogo] = useState(false);
   // const [newStyle, setNewStyle] = useState({});
   const [portfolioClass, setPortfolioClass] = useState("");
-  const [polygons, setPolygons] = useState([false, false, false, false, false]);
+  // const [polygons, setPolygons] = useState([false, false, false, false, false]);
   const activeHomeTitle = useRef();
   const activePolygon1 = useRef();
   const activePolygon2 = useRef();
@@ -33,13 +33,11 @@ export default function HomeSlide1({ state }) {
     }, 2500);
     setTimeout(() => {
       setActiveScrollLogo(true);
-    }, 4000);
+    }, 3200);
 
     setTimeout(() => {
       state();
     }, 2800);
-
-    const timeouts = [];
 
     // for (let i = 0; i < 5; i++) {
     //   timeouts.push(
@@ -75,21 +73,6 @@ export default function HomeSlide1({ state }) {
     setTimeout(() => {
       activeHomeTitle.current.classList.add("active-home-title");
     }, 300);
-
-    // if (isSmallDesktop) {
-    //   setTimeout(() => {
-    //     setNewStyle(styleSmallDesktop);
-    //   }, 300);
-    // }
-    // if (isDesktop) {
-    //   setTimeout(() => {
-    //     setNewStyle(newTitleStyle);
-    //   }, 300);
-    // }
-
-    // return () => {
-    //   timeouts.forEach((timeout) => clearTimeout(timeout));
-    // };
   };
 
   return (
@@ -108,20 +91,9 @@ export default function HomeSlide1({ state }) {
         <div className="polygon4" ref={activePolygon4}></div>
         <div className="polygon5" ref={activePolygon5}></div>
         <h1 className="home-title" ref={activeHomeTitle}>
-          {/* <span className="span-home-title ">D</span>
-          <span className="span-home-title">e</span>
-          <span className="span-home-title">v</span>
-          <span className="span-home-title">e</span>
-          <span className="span-home-title">l</span>
-          <span className="span-home-title">o</span>
-          <span className="span-home-title">p</span>
-          <span className="span-home-title">e</span>
-          <span className="span-home-title">r</span> */}
           Developer
         </h1>
-
         {!animHomePopup && <HomePopup animHomeTitle={handleAnimHeader} />}
-
         {
           <h2 className={`home-portfolio ${portfolioClass}`} data-text="Portfolio">
             Portfolio

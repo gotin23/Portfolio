@@ -27,13 +27,7 @@
   font-family: "Madena",sans-serif;
 }
 
-/* .span-home-title {
-  transition: font-size 0.4s ease-in;
-}
 
-.span-home-title:hover {
-  font-size: 250px;
-} */
 
 .glitch {
   color: white;
@@ -267,12 +261,9 @@
   bottom: 180px;
   left: 210px;
   transform: perspective(1000px) rotate(150deg) rotateY(30deg) translateY(500px) translateX(500px) ;
-
   transition: transform 0.8s ease-in-out;
-  /* -webkit-transition: transform 1s ease-in-out; */
 }
 .polygon1-active{
-  /* -webkit-transform: translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg); */
                       transform: translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg);
 }
 
@@ -363,55 +354,79 @@
   transform: perspective(1000px) rotate(-55deg) rotateY(40deg);
 }
 
-.home-scroll {
 
-  position: absolute;
-  right: 0px;
-  transform: translate(-50%, -50%) rotate(-90deg);
-  top: 50%;
-
-
-}
 
 .active-home-title {
   font-weight: 700;
   font-size: 220px;
 }
 
-.home-scroll-content {
-  color: var(--color-secondary);
-  letter-spacing: 2px;
-
+.icon-scroll:before{
+  position: absolute;
+  left: 50%;
 }
 
-/* .active-scroll-animation {
-  transform: translateY(0);
-  opacity: 1;
+.icon-scroll{
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translate(-50%, -50%);
+}
 
-} */
+.icon-scroll:before{
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+.icon-scroll:after{
+  content: 'Scroll';
+ text-transform: uppercase;
+ font-weight: 100;
+ font-size: 13px;
+ font-family: "Grotesk";
+  top: 105%;
+  right: 50%;
+  transform: translate(50%, 50%);
+ position: absolute;
+ color: #fff;
+}
+
+@keyframes scroll{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
+
 
 
 @media screen and (max-width: 1680px) {
   .home-content {
-
-    /* overflow: hidden; */
-    /* color: var(--color-secondary); */
-    /* min-height: 100vh;
-    min-width: 100vw; */
-    /* font-stretch: extra-expanded;
-    display: flex;
-    align-items: center; */
     justify-content: center;
-    /* flex-direction: column; */
+
 
   }
 
   .home-title {
     margin-top: 0;
   }
-
-
-
 
   .active-home-title {
     font-weight: 700;
@@ -427,18 +442,6 @@
     margin-top: 40px;
 
   }
-
-  /* .home-scroll{
-  
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    top: 90%;
-    transform:  rotate(0deg);
-   
-   
-  
-  } */
   .home-scroll-content {
     width: 30px;
 
@@ -447,8 +450,6 @@
   .polygon1 {
     height: 90px;
     width: 130px;
-
-
     bottom: 140px;
     left: 80px;
 
@@ -457,7 +458,6 @@
   .polygon2 {
     height: 40px;
     width: 64px;
-
     bottom: 140px;
     left: 180px;
 
@@ -466,7 +466,6 @@
   .polygon3 {
     height: 150px;
     width: 150px;
-
     bottom: 120px;
     right: 120px;
 
@@ -475,7 +474,6 @@
   .polygon4 {
     height: 110px;
     width: 200px;
-
     top: 130px;
     left: 100px;
 
@@ -484,29 +482,19 @@
   .polygon5 {
     height: 80px;
     width: 120px;
-
     top: 170px;
     right: 100px;
-
-
   }
 
 
-
-
-
-
-
-
+ 
 }
 
 @media screen and (max-width: 1280px) {
 
-
   .home-title {
     margin-Top: 0px;
     font-size: 100px;
-
 
   }
 
@@ -521,28 +509,11 @@
 
   .home-portfolio {
     font-size: 70px;
-    /* font-family: 'Geologica'; */
-    /* color: var(--color-secondary); */
-    /* font-weight: 600; */
     margin-top: 80px;
-    /* letter-spacing: 7px; */
   }
 
-  /* .home-scroll{
-  
-    position: absolute;
-    left: 50%;
-    top: 90%;
-    transform:  rotate(0deg);
-   
-   
-  
-  }
-  .home-scroll-content{
-   width: 30px;
-    
-  } */
-  /* .polygon1 {
+ 
+  .polygon1 {
     height: 90px;
     width: 130px;
 
@@ -558,7 +529,7 @@
     bottom:140px;
     left: 180px;
   
-  } */
+  }
   .polygon3 {
     height: 130px;
     width: 130px;
@@ -572,7 +543,7 @@
     height: 90px;
     width: 172px;
 
-    top: 70px;
+    top: 110px;
     left: 50px;
 
   }
@@ -581,13 +552,13 @@
     height: 80px;
     width: 120px;
 
-    top: 90px;
+    top: 130px;
     right: 30px;
 
 
   }
 
-
+ 
 
 
 
@@ -618,43 +589,22 @@
     font-size: 75px;
 
   }
-
-  .home-scroll {
-
-    /* position: absolute; */
-    left: 50%;
-    right: 45%;
-    top: 90%;
-    transform: rotate(0deg);
-
-
-
+  .icon-scroll{
+   
+   
+    right: 50%;
+    transform: translate(50%, -50%);
+    top: 94%;
   }
-
-  /*
-  .home-scroll-content{
-   width: 30px;
-    
-  } */
-
-
-
-
-
-
 
 }
 
 @media screen and (max-width: 800px) {
 
 
-
-
   .home-title {
     margin-Top: 0px;
     font-size: 70px;
-
-
   }
 
   .active-home-title {
@@ -668,25 +618,8 @@
 
   .home-portfolio {
     font-size: 50px;
-    /* font-family: 'Geologica'; */
-    /* color: var(--color-secondary); */
-    /* font-weight: 600; */
-    margin-top: 80px;
-    /* letter-spacing: 7px; */
-  }
 
-  /* .home-scroll{
-  
-    left: 50%;
-    right: 45%;
-    bottom: 10%;
-    transform: translate(-50%, -50%);
-   
-   
-  
-  } */
-  .home-scroll-content {
-    width: 30px;
+    margin-top: 40px;
 
   }
 
@@ -770,28 +703,9 @@
 
   .home-portfolio {
     font-size: 50px;
-    /* font-family: 'Geologica';
-    color: var(--color-secondary);
-    font-weight: 600; */
     margin-top: 80px;
-    /* letter-spacing: 7px; */
   }
 
-  /* .home-scroll{
-
-    left: 50%;
-    right: 45%;
-    bottom: 10%;
-    transform: translate(-50%, -50%);
-  
-   
-   
-  
-  } */
-  .home-scroll-content {
-    width: 30px;
-
-  }
 
   .polygon1 {
     height: 45px;
@@ -840,55 +754,3 @@
 
 
 
-.icon-scroll:before{
-  position: absolute;
-  left: 50%;
-}
-
-.icon-scroll{
-  width: 40px;
-  height: 70px;
-  margin-left: -20px;
-  margin-top: -35px;
-  box-shadow: inset 0 0 0 1px #fff;
-  border-radius: 25px;
-  position: absolute;
-  top: 50%;
-  right: 2%;
-  transform: translate(-50%, -50%);
-}
-
-.icon-scroll:before{
-  content: '';
-  width: 8px;
-  height: 8px;
-  background: #fff;
-  margin-left: -4px;
-  top: 8px;
-  border-radius: 4px;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-name: scroll;
-}
-.icon-scroll:after{
-  content: 'Scroll';
- text-transform: uppercase;
- font-weight: 100;
- font-size: 13px;
- font-family: "Grotesk";
-  top: 105%;
-  right: 50%;
-  transform: translate(50%, 50%);
- position: absolute;
- color: #fff;
-}
-
-@keyframes scroll{
-  0%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-    transform: translateY(46px);
-  }
-}

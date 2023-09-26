@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.aa0604f6.css",
-    "main.js": "/Portfolio/static/js/main.337dc68b.js",
+    "main.css": "/Portfolio/static/css/main.0371da70.css",
+    "main.js": "/Portfolio/static/js/main.427aa50b.js",
     "static/media/debug77.png": "/Portfolio/static/media/debug77.9863b729582cac600b57.png",
     "static/media/Argent-Bank.png": "/Portfolio/static/media/Argent-Bank.0a7abff7671947b75b1e.png",
     "static/media/Geologica[CRSV,SHRP,slnt,wght].ttf": "/Portfolio/static/media/Geologica[CRSV,SHRP,slnt,wght].648066ca340f092deaae.ttf",
@@ -14,6 +14,7 @@
     "static/media/deal-svgrepo-com.svg": "/Portfolio/static/media/deal-svgrepo-com.1d572d1cf8ba11109ae3588e80ee653e.svg",
     "static/media/skills-svgrepo-com.svg": "/Portfolio/static/media/skills-svgrepo-com.8cf0846f0dd2412d2e9c62faa22375b9.svg",
     "static/media/icons8-redux.svg": "/Portfolio/static/media/icons8-redux.089adbf60bd872d96a7906a807b1afeb.svg",
+    "static/media/logo-portfolio.svg": "/Portfolio/static/media/logo-portfolio.6e60aa224b10dd6efc0ebeced45e6882.svg",
     "static/media/icons8-github-white.svg": "/Portfolio/static/media/icons8-github-white.ac4e81f71dc2e8a46eac19ea463ea931.svg",
     "static/media/icons8-github.svg": "/Portfolio/static/media/icons8-github.6aafde907a97ac05ed917ee181ba93ae.svg",
     "static/media/icons8-javascript.svg": "/Portfolio/static/media/icons8-javascript.027782a49392f3beeedbf7edf53050fd.svg",
@@ -26,11 +27,11 @@
     "static/media/icons8-figma.svg": "/Portfolio/static/media/icons8-figma.2cf3967c30f84d8436d8e9029d29cd3d.svg",
     "static/media/iconmonstr-arrow-down-thin.svg": "/Portfolio/static/media/iconmonstr-arrow-down-thin.49faa658e3b5d5e6ed9602b02665eedb.svg",
     "static/media/iconmonstr-arrow-18.svg": "/Portfolio/static/media/iconmonstr-arrow-18.195956dec20448b6fc9a86e3ae8dcc27.svg",
-    "main.aa0604f6.css.map": "/Portfolio/static/css/main.aa0604f6.css.map",
-    "main.337dc68b.js.map": "/Portfolio/static/js/main.337dc68b.js.map"
+    "main.0371da70.css.map": "/Portfolio/static/css/main.0371da70.css.map",
+    "main.427aa50b.js.map": "/Portfolio/static/js/main.427aa50b.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa0604f6.css",
-    "static/js/main.337dc68b.js"
+    "static/css/main.0371da70.css",
+    "static/js/main.427aa50b.js"
   ]
 }
