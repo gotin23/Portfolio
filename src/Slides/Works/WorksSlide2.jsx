@@ -41,9 +41,6 @@ export default function WorksSlide2() {
   const handleActiveProject = (e) => {
     // si le projet choisis est different du projet affiche
     if (e.target.id !== activeProject.id) {
-      setTimeout(() => {
-        setActiveProject(null);
-      }, 400);
       handleActiveBtnProject(e);
       animProjectElements();
       const newActiveProject = data.filter((el) => el.id === e.target.id);
@@ -58,6 +55,9 @@ export default function WorksSlide2() {
   };
 
   const animProjectElements = () => {
+    // setTimeout(() => {
+    //   setActiveProject(null);
+    // }, 400);
     // animation de l'image , de la description du projet...
     animProjectImage.current.classList.add("slideOutDown");
     animProjectDescription.current.classList.add("fadeOut");
@@ -69,7 +69,7 @@ export default function WorksSlide2() {
       animGitHubLogo.current.classList.remove("bounceIn");
       animProjectImage.current.classList.add("slideInUp");
       animProjectDescription.current.classList.add("fadeIn");
-    }, 800);
+    }, 1000);
   };
   const handleActiveBtnProject = (e) => {
     const prevActiveButton = document.querySelector(".active-button-project");
