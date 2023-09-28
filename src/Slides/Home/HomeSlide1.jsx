@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./HomeSlide1.css";
 import HomePopup from "../../Components/HomePopup/HomePopup";
 import { useState, useRef } from "react";
 // import RightArrow from "../../assets/icons/iconmonstr-arrow-down-thin.svg";
 // import { useMediaQuery } from "react-responsive";
+import HomeLoader from "../../Components/HomeLoader/HomeLoader";
 
 export default function HomeSlide1({ state }) {
   // const isMobile = useMediaQuery({ minWidth: 950 });
@@ -21,6 +22,11 @@ export default function HomeSlide1({ state }) {
   const activePolygon3 = useRef();
   const activePolygon4 = useRef();
   const activePolygon5 = useRef();
+  useEffect(() => {
+    setTimeout(() => {
+      handleAnimHeader();
+    }, 400);
+  }, []);
   const handleAnimHeader = () => {
     // const newTitleStyle = { fontSize: "230px", fontWeight: "700" };
     // const styleMobile = { fontSize: "57px", fontWeight: "700" };
@@ -77,6 +83,7 @@ export default function HomeSlide1({ state }) {
 
   return (
     <div className="home-container slide" id="home">
+      <HomeLoader />
       {/* <div className="home-scroll">{activeArrow && <img src={RightArrow} className="home-scroll-content flash" alt="logo arrow" />}</div> */}
 
       {activeSrollLogo && <div class="icon-scroll fadeIn"></div>}
@@ -93,7 +100,7 @@ export default function HomeSlide1({ state }) {
         <h1 className="home-title" ref={activeHomeTitle}>
           Developer
         </h1>
-        {!animHomePopup && <HomePopup animHomeTitle={handleAnimHeader} />}
+        {/* {!animHomePopup && <HomePopup animHomeTitle={handleAnimHeader} />} */}
         {
           <h2 className={`home-portfolio ${portfolioClass}`} data-text="Portfolio">
             Portfolio

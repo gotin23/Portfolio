@@ -1,0 +1,105 @@
+.home-loader-container{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.top-loader,.middle-loader,.bottom-loader {
+    width: 100%;
+    background-color: var(--color-secondary);
+}
+.middle-loader {
+   height: 34%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   
+}
+.top-loader,.bottom-loader {
+   height: 33%;
+}
+.logo-home-loader{
+    width: 100px;
+    animation: logoRotate 0.8s ease-in both ;
+    animation-delay:1.6s ;
+}
+.title-loader{
+    color: var(--color-tertiary);
+    font-size: 25px;
+    font-family: "Grotesk";
+    margin-top: 10px;
+    animation: titleLoader 0.8s ease-in-out both;
+    animation-delay:1.6s ;
+}
+.top-loader{
+    animation: openTop 0.4s ease-in-out both;
+    animation-delay: 1.5s;
+}
+.bottom-loader{
+    animation: openBottom 0.4s ease-in-out both;
+    animation-delay: 1.9s;
+}
+/* .top-loader{
+    animation: openTop 0.4s ease-in-out both;
+    animation-delay: 1.5s;
+} */
+.middle-loader{
+    animation: openMiddle 0.4s ease-in-out both;
+    animation-delay: 2.3s;
+  
+}
+@keyframes openTop {
+   0% {
+        transform: translateX(0%);
+    }
+   100% {
+        transform: translateX(-100%);
+    }
+    
+}
+@keyframes openBottom {
+   0% {
+        transform: translateX(0%);
+    }
+   100% {
+        transform: translateX(100%);
+    }
+    
+}
+@keyframes openMiddle {
+   0% {
+       width: 100%;
+    }
+   100% {
+        width:0%;
+    }
+    
+}
+@keyframes logoRotate {
+   0% {
+       transform: rotate(0deg) scale(1);
+       visibility: visible;
+     
+    }
+   100% {
+    transform: rotate(360deg) scale(1.2);
+    visibility: hidden;
+    }
+    
+}
+@keyframes titleLoader {
+   0% {
+       transform:  scale(1);
+       visibility: visible;
+     
+    }
+   100% {
+    transform:  scale(1.2);
+    visibility: hidden;
+    }
+    
+}
