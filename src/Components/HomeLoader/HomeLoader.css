@@ -32,7 +32,7 @@
     color: var(--color-tertiary);
     font-size: 25px;
     font-family: "Grotesk";
-    margin-top: 10px;
+    margin-top: 15px;
     animation: titleLoader 0.8s ease-in-out both;
     animation-delay:1.6s ;
 }

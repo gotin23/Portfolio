@@ -53,11 +53,11 @@ export const data = [
     techno: [ReactLogo, JestLogo],
     // logo: PokedexLogo,
   },
-  {
-    image: Pokedex,
-    name: "Pokedex",
-    description: "lorem di stel lo paser tyu huvi alireda estitulo",
-    techno: [ReactLogo, ReduxLogo],
-    // logo: PokedexLogo,
-  },
+  // {
+  //   image: Pokedex,
+  //   name: "Pokedex",
+  //   description: "lorem di stel lo paser tyu huvi alireda estitulo",
+  //   techno: [ReactLogo, ReduxLogo],
+  //   // logo: PokedexLogo,
+  // },
 ];
