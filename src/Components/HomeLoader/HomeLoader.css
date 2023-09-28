@@ -26,6 +26,7 @@
     width: 100px;
     animation: logoRotate 0.8s ease-in both ;
     animation-delay:1.6s ;
+    z-index: 999;
 }
 .title-loader{
     color: var(--color-tertiary);

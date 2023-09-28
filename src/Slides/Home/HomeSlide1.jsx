@@ -15,6 +15,7 @@ export default function HomeSlide1({ state }) {
   const [activeSrollLogo, setActiveScrollLogo] = useState(false);
   // const [newStyle, setNewStyle] = useState({});
   const [portfolioClass, setPortfolioClass] = useState("");
+  const [homeLoaderActive, setHomeLoaderActive] = useState(true);
   // const [polygons, setPolygons] = useState([false, false, false, false, false]);
   const activeHomeTitle = useRef();
   const activePolygon1 = useRef();
@@ -26,11 +27,12 @@ export default function HomeSlide1({ state }) {
     setTimeout(() => {
       handleAnimHeader();
     }, 400);
+    setTimeout(() => {
+      setHomeLoaderActive(false);
+    }, 2800);
   }, []);
+
   const handleAnimHeader = () => {
-    // const newTitleStyle = { fontSize: "230px", fontWeight: "700" };
-    // const styleMobile = { fontSize: "57px", fontWeight: "700" };
-    // const styleSmallDesktop = { fontSize: "180px", fontWeight: "700" };
     setTimeout(() => {
       setAnimHomePopup(!animHomePopup);
     }, 2000);
@@ -45,17 +47,6 @@ export default function HomeSlide1({ state }) {
       state();
     }, 2800);
 
-    // for (let i = 0; i < 5; i++) {
-    //   timeouts.push(
-    //     setTimeout(() => {
-    //       setPolygons((prevPolygons) => {
-    //         const newPolygons = [...prevPolygons];
-    //         newPolygons[i] = true;
-    //         return newPolygons;
-    //       });
-    //     }, 1200 + i * 200)
-    //   );
-    // }
     setTimeout(() => {
       activePolygon1.current.classList.add("polygon1-active");
     }, 1600);
@@ -83,7 +74,7 @@ export default function HomeSlide1({ state }) {
 
   return (
     <div className="home-container slide" id="home">
-      <HomeLoader />
+      {homeLoaderActive && <HomeLoader />}
       {/* <div className="home-scroll">{activeArrow && <img src={RightArrow} className="home-scroll-content flash" alt="logo arrow" />}</div> */}
 
       {activeSrollLogo && <div class="icon-scroll fadeIn"></div>}
