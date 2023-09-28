@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.5d528b44.css",
-    "main.js": "/Portfolio/static/js/main.cfd398e8.js",
+    "main.css": "/Portfolio/static/css/main.4adad784.css",
+    "main.js": "/Portfolio/static/js/main.c25f6bb2.js",
     "static/media/debug77.png": "/Portfolio/static/media/debug77.9863b729582cac600b57.png",
     "static/media/Argent-Bank.png": "/Portfolio/static/media/Argent-Bank.0a7abff7671947b75b1e.png",
     "static/media/Geologica[CRSV,SHRP,slnt,wght].ttf": "/Portfolio/static/media/Geologica[CRSV,SHRP,slnt,wght].648066ca340f092deaae.ttf",
@@ -12,6 +12,7 @@
     "static/media/icons8-react-native.svg": "/Portfolio/static/media/icons8-react-native.c099739d19ff38be3cbb1f025c310863.svg",
     "static/media/jest-svgrepo-com.svg": "/Portfolio/static/media/jest-svgrepo-com.f613c2ba03386dae779f4fe6bd37a31a.svg",
     "static/media/deal-svgrepo-com.svg": "/Portfolio/static/media/deal-svgrepo-com.1d572d1cf8ba11109ae3588e80ee653e.svg",
+    "static/media/logo-portfolio-color.svg": "/Portfolio/static/media/logo-portfolio-color.ae00fe3d672dc20e46bfc418b2917645.svg",
     "static/media/logo-portfolio.svg": "/Portfolio/static/media/logo-portfolio.3c54084c3c28f00767fa0a4701389d22.svg",
     "static/media/skills-svgrepo-com.svg": "/Portfolio/static/media/skills-svgrepo-com.8cf0846f0dd2412d2e9c62faa22375b9.svg",
     "static/media/icons8-redux.svg": "/Portfolio/static/media/icons8-redux.089adbf60bd872d96a7906a807b1afeb.svg",
@@ -27,11 +28,11 @@
     "static/media/icons8-figma.svg": "/Portfolio/static/media/icons8-figma.2cf3967c30f84d8436d8e9029d29cd3d.svg",
     "static/media/iconmonstr-arrow-down-thin.svg": "/Portfolio/static/media/iconmonstr-arrow-down-thin.49faa658e3b5d5e6ed9602b02665eedb.svg",
     "static/media/iconmonstr-arrow-18.svg": "/Portfolio/static/media/iconmonstr-arrow-18.195956dec20448b6fc9a86e3ae8dcc27.svg",
-    "main.5d528b44.css.map": "/Portfolio/static/css/main.5d528b44.css.map",
-    "main.cfd398e8.js.map": "/Portfolio/static/js/main.cfd398e8.js.map"
+    "main.4adad784.css.map": "/Portfolio/static/css/main.4adad784.css.map",
+    "main.c25f6bb2.js.map": "/Portfolio/static/js/main.c25f6bb2.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d528b44.css",
-    "static/js/main.cfd398e8.js"
+    "static/css/main.4adad784.css",
+    "static/js/main.c25f6bb2.js"
   ]
 }
