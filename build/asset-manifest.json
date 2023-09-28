@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.e7e29f8f.css",
-    "main.js": "/Portfolio/static/js/main.5a5c1f49.js",
+    "main.js": "/Portfolio/static/js/main.e4a598b2.js",
     "static/media/debug77.png": "/Portfolio/static/media/debug77.9863b729582cac600b57.png",
     "static/media/Argent-Bank.png": "/Portfolio/static/media/Argent-Bank.0a7abff7671947b75b1e.png",
     "static/media/Geologica[CRSV,SHRP,slnt,wght].ttf": "/Portfolio/static/media/Geologica[CRSV,SHRP,slnt,wght].648066ca340f092deaae.ttf",
@@ -29,10 +29,10 @@
     "static/media/iconmonstr-arrow-down-thin.svg": "/Portfolio/static/media/iconmonstr-arrow-down-thin.49faa658e3b5d5e6ed9602b02665eedb.svg",
     "static/media/iconmonstr-arrow-18.svg": "/Portfolio/static/media/iconmonstr-arrow-18.195956dec20448b6fc9a86e3ae8dcc27.svg",
     "main.e7e29f8f.css.map": "/Portfolio/static/css/main.e7e29f8f.css.map",
-    "main.5a5c1f49.js.map": "/Portfolio/static/js/main.5a5c1f49.js.map"
+    "main.e4a598b2.js.map": "/Portfolio/static/js/main.e4a598b2.js.map"
   },
   "entrypoints": [
     "static/css/main.e7e29f8f.css",
-    "static/js/main.5a5c1f49.js"
+    "static/js/main.e4a598b2.js"
   ]
 }
