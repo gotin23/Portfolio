@@ -2,7 +2,7 @@ import React from "react";
 import "./WorksSlide1.css";
 import useIntersectionObserver from "../../Hook/IntersectionObserver";
 import { useRef } from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import Welcome from "../../assets/icons/deal-svgrepo-com.svg";
 import Skill from "../../assets/icons/skills-svgrepo-com.svg";
@@ -34,6 +34,9 @@ export default function WorksSlide1() {
     }
     entry.target.classList.add("active-scroll-animation");
   };
+  // useEffect(()=>{
+
+  // },[setActiveBoxs])
 
   useIntersectionObserver([activeWorksTitle.current, activeCircle2.current, activeCircle3.current], { threshold: 0.97 }, callback);
 
@@ -130,7 +133,7 @@ export default function WorksSlide1() {
               </div>
             )}
             <div className="box">
-              {!contentTitleHide && <h2 className="works-slide1-box-title wst1 fadeIn">My Works</h2>}
+              {!contentTitleHide && <h2 className="works-slide1-box-title wst1 fadeIn">My Projects</h2>}
               {contentTitleHide && (
                 <p className="works-slide1-box-title wst2 fadeIn">
                   <span className="work-slide1-span span-hover1" onMouseEnter={handleSpansMouseEnter} onMouseLeave={handleSpansMouseLeave}>
@@ -174,14 +177,14 @@ export default function WorksSlide1() {
               <div className="circle circle3" style={styleCircle3}></div>
             </div>
           </div>
-          {activeBoxs && (
+          {/* {activeBoxs && (
             <div className="box-container4">
               <div className="box">
                 <img className="circle-img" src={Exceptional} alt="exceptional icon" />
                 <div className="circle circle4" style={styleCircle4}></div>
               </div>
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </div>

@@ -32,7 +32,9 @@ function Menu() {
         <span></span>
       </div>
       <nav className={isActive ? "menu-burger-active" : "menu-burger"}>
-        {isActive && <img src={logoPortfolio} className="logo-menu fadeIn" />}
+        {/* {isActive && <svg src={logoPortfolio} className="logo-menu fadeIn" />} */}
+        {isActive && <object data={logoPortfolio} type="image/svg+xml" className="logo-menu fadeIn"></object>}
+
         <a className="tt" href="#home" onClick={toggleMenu}>
           {isActive && <HackText state={{ content: `Home` }} />}
         </a>
@@ -42,7 +44,7 @@ function Menu() {
         </a>
 
         <a href="#works" onClick={toggleMenu}>
-          {isActive && <HackText state={{ content: `Works` }} />}
+          {isActive && <HackText state={{ content: `Projects` }} />}
         </a>
 
         <a href="#contact" onClick={toggleMenu}>

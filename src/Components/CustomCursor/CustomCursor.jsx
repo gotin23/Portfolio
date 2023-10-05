@@ -4,6 +4,8 @@ import "./CustomCursor.css"; // Créez ce fichier CSS pour personnaliser le curs
 
 const CustomCursor = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [cursorPosition2, setCursorPosition2] = useState({ x: 0, y: 0 });
+  const [cursorPosition3, setCursorPosition3] = useState({ x: 0, y: 0 });
   const isSmallScreen = useMediaQuery({ minWidth: 1280 });
   console.log(isSmallScreen);
 
@@ -12,6 +14,12 @@ const CustomCursor = () => {
     setTimeout(() => {
       setCursorPosition({ x: event.pageX, y: event.pageY });
     }, 50);
+    setTimeout(() => {
+      setCursorPosition2({ x: event.pageX, y: event.pageY });
+    }, 100);
+    setTimeout(() => {
+      setCursorPosition3({ x: event.pageX, y: event.pageY });
+    }, 150);
     // setCursorPosition({ x: event.pageX, y: event.pageY });
   };
 
@@ -27,7 +35,13 @@ const CustomCursor = () => {
     // Nettoyer l'écouteur lors du démontage du composant.
   }, []);
 
-  return <div className="custom-cursor" style={{ left: cursorPosition.x - 5, top: cursorPosition.y - 10 }}></div>;
+  return (
+    <>
+      <div className="custom-cursor" style={{ left: cursorPosition.x - 5, top: cursorPosition.y - 10 }}></div>
+      <div className="custom-cursor-second" style={{ left: cursorPosition2.x - 5, top: cursorPosition2.y - 10 }}></div>
+      <div className="custom-cursor-third" style={{ left: cursorPosition3.x - 5, top: cursorPosition3.y - 10 }}></div>
+    </>
+  );
 };
 
 export default CustomCursor;

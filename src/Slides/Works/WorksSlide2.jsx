@@ -29,10 +29,10 @@ export default function WorksSlide2() {
       entry.target.classList.add("active-span-works-slide2");
       setTimeout(() => {
         activeButtonsProjects.current.classList.add("active-scroll-animation");
-      }, 400);
+      }, 200);
       setTimeout(() => {
         activeContainerAllProjects.current.classList.add("active-scroll-animation");
-      }, 800);
+      }, 400);
     }
   };
 
@@ -81,13 +81,13 @@ export default function WorksSlide2() {
     <div className="works-slide2 slide">
       <h1 className="works-slide2-title">
         <span className="works-slide2-span1" ref={activeSpan1}>
-          Take a
+          Take look
         </span>{" "}
         <span className="works-slide2-span2" ref={activeSpan2}>
-          look about
+          at my
         </span>{" "}
         <span className="works-slide2-span3" ref={activeSpan3}>
-          my works
+          projects
         </span>
       </h1>
       <div className="buttons-projects-container" ref={activeButtonsProjects}>

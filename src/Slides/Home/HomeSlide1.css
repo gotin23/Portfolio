@@ -262,6 +262,7 @@
   left: 210px;
   transform: perspective(1000px) rotate(150deg) rotateY(30deg) translateY(500px) translateX(500px) ;
   transition: transform 0.8s ease-in-out;
+  z-index: 2;
 }
 .polygon1-active{
                       transform: translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg);

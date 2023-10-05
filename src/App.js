@@ -30,13 +30,23 @@ function App() {
         <div className="slides-container">
           <HomeSlide1 state={handleActiveHeader} />
           <div className={activeHeader ? "others-active" : "other"}>
+            {/* <AboutSlide1 />
+            <AboutSlide1 /> */}
             <AboutSlide1 />
             <AboutSlides2 />
             <AboutSlide3 />
+
             <WorksSlide1 />
             <WorksSlide2 />
             <ContactSlide />
           </div>
+          {/* <HomeSlide1 state={handleActiveHeader} />
+          <AboutSlide1 />
+          <AboutSlides2 />
+          <AboutSlide3 />
+          <WorksSlide1 />
+          <WorksSlide2 />
+          <ContactSlide /> */}
         </div>
       </div>
     </div>

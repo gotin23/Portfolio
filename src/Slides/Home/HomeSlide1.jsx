@@ -33,9 +33,9 @@ export default function HomeSlide1({ state }) {
   }, []);
 
   const handleAnimHeader = () => {
-    setTimeout(() => {
-      setAnimHomePopup(!animHomePopup);
-    }, 2000);
+    // setTimeout(() => {
+    //   setAnimHomePopup(!animHomePopup);
+    // }, 2000);
     setTimeout(() => {
       setPortfolioClass("active-scroll-animation");
     }, 2500);

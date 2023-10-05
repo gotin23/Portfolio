@@ -17,8 +17,8 @@ export default function AboutSlide1() {
     const classValue = entry.target.classList.value;
 
     switch (classValue) {
+      // case "about-titles-container":
       case "about-lets-talk":
-      case "about-titles-container":
         entry.target.classList.add("active-scroll-animation");
         break;
 
@@ -43,7 +43,7 @@ export default function AboutSlide1() {
 
   return (
     <div className="about-slide1 slide" ref={activeRightArrow} id="about-me">
-      <div className="about-titles-container" ref={activeAboutTitles}>
+      <div className="about-titles-container active-scroll-animation" ref={activeAboutTitles}>
         <div className="about-title-container">
           <h2 className="about-title">I'M</h2>
           <div className="hide-about-title1" ref={activeAboutTitleHide1}></div>

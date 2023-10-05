@@ -3,6 +3,7 @@
   --color-secondary: #ffffff;
   --color-tertiary: hsl(324, 80%, 50%);
 
+
 }
 
 @font-face {
@@ -41,6 +42,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
   font-family: "Madena";
+  scroll-snap-type: y mandatory;
 }
 
 ::-webkit-scrollbar {
@@ -51,6 +53,8 @@
   min-width: 100vw;
   height: 100vh;
   position: relative;
+  scroll-snap-align:center;
+ 
 }
 
 .slides-container {
@@ -59,6 +63,8 @@
   flex-direction: row;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
+ 
+    /* scroll-snap-type: y mandatory; */
 }
 
 .other {
@@ -68,6 +74,7 @@
 .others-active {
   display: flex;
   width: 600vw;
+    /* scroll-snap-type: y mandatory; */
 }
 
 

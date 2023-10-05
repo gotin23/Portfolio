@@ -99,11 +99,11 @@ export default function AboutSlide3() {
     <div className="about-slide3 slide">
       <div className="about-slide3-titles-container" ref={activeAboutTitlesSlide3}>
         <div className="about-slide3-title-container">
-          <h2 className="about-slide3-title">I'm</h2>
+          <h2 className="about-slide3-title">My</h2>
           <div className="hide-about-slide3-title1" ref={activeAboutTitleHide1}></div>
         </div>
         <div className="about-slide3-title-container">
-          <h2 className="about-slide3-title">Loving these</h2>
+          <h2 className="about-slide3-title">Favorite</h2>
           <div className="hide-about-slide3-title2" ref={activeAboutTitleHide2}></div>
         </div>
         <div className="about-slide3-title-container">
