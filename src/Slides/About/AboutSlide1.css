@@ -15,8 +15,8 @@
     flex-direction: column;
     justify-content: space-around;
     position: relative;
-    transform: translateY(-100px);
-    opacity: 0;
+    /* transform: translateY(-100px); */
+    /* opacity: 1; */
     transition:
         transform 0.8s ease-in-out,
         opacity 0.8s ease-in-out;

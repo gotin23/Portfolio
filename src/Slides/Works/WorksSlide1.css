@@ -186,24 +186,24 @@
 
 .circle1 {
     padding-top: 640px;
-    animation: 4s linear infinite spinning;
+    animation: 6s linear infinite spinning;
 }
 
 .circle2 {
     padding-top: 220px;
-    animation: 4s linear infinite spinning;
+    animation: 6s linear infinite spinning;
     animation-delay: 1s;
 }
 
 .circle3 {
     padding-top: 170px;
-    animation: 4s linear infinite spinning;
+    animation: 6s linear infinite spinning;
     animation-delay: 1.8s;
 }
 
 .circle4 {
     padding-top: 48px;
-    animation: 4s linear infinite spinning;
+    animation: 6s linear infinite spinning;
     animation-delay: 0.8s;
 }
 
@@ -211,7 +211,7 @@
 
 .circle5 {
     padding-top: 37px;
-    animation: 4s linear infinite spinning;
+    animation: 6s linear infinite spinning;
     animation-delay: 0.4s;
 }
 

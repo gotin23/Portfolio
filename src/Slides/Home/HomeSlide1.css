@@ -265,12 +265,28 @@
   z-index: 2;
 }
 .polygon1-active{
-                      transform: translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg);
+ transform: translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg);
+ animation: animpoly1 4s infinite ease-in-out;
+ animation-delay: 1s;
+}
+@keyframes animpoly1 {
+  0%{
+    transform: translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg);
+  }
+  50%{
+    transform: perspective(1000px) rotate(145deg) rotateY(35deg);
+
+  }
+  100%{
+    transform: translateX(0) translateY(0) perspective(1000px) rotate(150deg) rotateY(30deg);
+  }
+
+  
 }
 
-.polygon1:hover {
+/* .polygon1:hover {
   transform: perspective(1000px) rotate(145deg) rotateY(35deg);
-}
+} */
 
 .polygon2 {
   height: 50px;
@@ -286,14 +302,30 @@
 }
 .polygon2-active{
   transform:translateX(0) translateY(0) perspective(1000px) rotate(100deg) rotateY(30deg);
+  animation: animpoly2 3s infinite ease-in-out;
+  animation-delay: 1.5s;
+}
+@keyframes animpoly2 {
+  0%{
+    transform:translateX(0) translateY(0) perspective(1000px) rotate(100deg) rotateY(30deg);
+  }
+  50%{
+    transform: perspective(1000px) rotate(95deg) rotateY(35deg);
+
+  }
+  100%{
+    transform:translateX(0) translateY(0) perspective(1000px) rotate(100deg) rotateY(30deg);
+  }
+
+  
 }
 
-.polygon2:hover {
+/* .polygon2:hover {
 
   transform: perspective(1000px) rotate(95deg) rotateY(35deg);
 
 
-}
+} */
 
 .polygon3 {
   height: 150px;
@@ -308,11 +340,27 @@
 }
 .polygon3-active{
   transform:translateX(0) translateY(0) perspective(1000px) rotate(-80deg) rotateY(30deg);
+  animation: animpoly3 4s infinite ease-in-out;
+  animation-delay: 1.6s;
+}
+@keyframes animpoly3 {
+  0%{
+    transform:translateX(0) translateY(0) perspective(1000px) rotate(-80deg) rotateY(30deg);
+  }
+  50%{
+    transform: perspective(1000px) rotate(-80deg) rotateY(15deg);
+
+  }
+  100%{
+    transform:translateX(0) translateY(0) perspective(1000px) rotate(-80deg) rotateY(30deg);
+  }
+
+  
 }
 
-.polygon3:hover {
+/* .polygon3:hover {
   transform: perspective(1000px) rotate(-80deg) rotateY(15deg);
-}
+} */
 
 .polygon4 {
   height: 110px;
@@ -327,12 +375,28 @@
 }
 .polygon4-active{
   transform:translateX(0) translateY(0) perspective(1000px) rotate(-20deg) rotateY(30deg);
+  animation: animpoly4 3s infinite ease-in-out;
+  animation-delay: 1.8s;
+}
+@keyframes animpoly4 {
+  0%{
+    transform:translateX(0) translateY(0) perspective(1000px) rotate(-20deg) rotateY(30deg);
+  }
+  50%{
+    transform: perspective(1000px) rotate(-25deg) rotateY(35deg);
+
+  }
+  100%{
+    transform:translateX(0) translateY(0) perspective(1000px) rotate(-20deg) rotateY(30deg);
+  }
+
+  
 }
 
-.polygon4:hover {
+/* .polygon4:hover {
   transform: perspective(1000px) rotate(-25deg) rotateY(35deg);
 
-}
+} */
 
 .polygon5 {
   height: 85px;
@@ -342,18 +406,33 @@
   position: absolute;
   top: 150px;
   right: 400px;
-
   transform: perspective(1000px) rotate(-60deg) rotateY(30deg) translateX(400px) translateY(100px);
   transition: transform 0.8s ease-in-out;
 
 }
 .polygon5-active{
   transform:translateX(0) translateY(0) perspective(1000px) rotate(-60deg) rotateY(30deg);
+  animation: animpoly5 4s infinite ease-in-out;
+  animation-delay: 1.8s;
+}
+@keyframes animpoly5 {
+  0%{
+    transform:translateX(0) translateY(0) perspective(1000px) rotate(-60deg) rotateY(30deg);
+  }
+  50%{
+    transform: perspective(1000px) rotate(-55deg) rotateY(40deg);
+
+  }
+  100%{
+    transform:translateX(0) translateY(0) perspective(1000px) rotate(-60deg) rotateY(30deg);
+  }
+
+  
 }
 
-.polygon5:hover {
+/* .polygon5:hover {
   transform: perspective(1000px) rotate(-55deg) rotateY(40deg);
-}
+} */
 
 
 
