@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.fab31fd2.css",
-    "main.js": "/Portfolio/static/js/main.70887b7e.js",
+    "main.css": "/Portfolio/static/css/main.35836c83.css",
+    "main.js": "/Portfolio/static/js/main.67fbc53b.js",
     "static/media/debug77.png": "/Portfolio/static/media/debug77.9863b729582cac600b57.png",
     "static/media/Argent-Bank.png": "/Portfolio/static/media/Argent-Bank.0a7abff7671947b75b1e.png",
     "static/media/Geologica[CRSV,SHRP,slnt,wght].ttf": "/Portfolio/static/media/Geologica[CRSV,SHRP,slnt,wght].648066ca340f092deaae.ttf",
@@ -9,11 +9,11 @@
     "static/media/cssgenerator.png": "/Portfolio/static/media/cssgenerator.98d6b28c106fe6a4b43a.png",
     "static/media/pokedex.png": "/Portfolio/static/media/pokedex.48e3b6daba883134ab9f.png",
     "static/media/Merchant-VF.ttf": "/Portfolio/static/media/Merchant-VF.b4af22dc918277fe2e00.ttf",
+    "static/media/logo-portfolio-color.svg": "/Portfolio/static/media/logo-portfolio-color.23ed93ea275a44cfe0cccb8f69f470f9.svg",
+    "static/media/logo-portfolio.svg": "/Portfolio/static/media/logo-portfolio.e3103d6e4b2ab99aeeb9b46b0b321c01.svg",
     "static/media/icons8-react-native.svg": "/Portfolio/static/media/icons8-react-native.c099739d19ff38be3cbb1f025c310863.svg",
     "static/media/jest-svgrepo-com.svg": "/Portfolio/static/media/jest-svgrepo-com.f613c2ba03386dae779f4fe6bd37a31a.svg",
     "static/media/deal-svgrepo-com.svg": "/Portfolio/static/media/deal-svgrepo-com.1d572d1cf8ba11109ae3588e80ee653e.svg",
-    "static/media/logo-portfolio-color.svg": "/Portfolio/static/media/logo-portfolio-color.ae00fe3d672dc20e46bfc418b2917645.svg",
-    "static/media/logo-portfolio.svg": "/Portfolio/static/media/logo-portfolio.3c54084c3c28f00767fa0a4701389d22.svg",
     "static/media/skills-svgrepo-com.svg": "/Portfolio/static/media/skills-svgrepo-com.8cf0846f0dd2412d2e9c62faa22375b9.svg",
     "static/media/icons8-redux.svg": "/Portfolio/static/media/icons8-redux.089adbf60bd872d96a7906a807b1afeb.svg",
     "static/media/icons8-github-white.svg": "/Portfolio/static/media/icons8-github-white.ac4e81f71dc2e8a46eac19ea463ea931.svg",
@@ -28,11 +28,11 @@
     "static/media/icons8-figma.svg": "/Portfolio/static/media/icons8-figma.2cf3967c30f84d8436d8e9029d29cd3d.svg",
     "static/media/iconmonstr-arrow-down-thin.svg": "/Portfolio/static/media/iconmonstr-arrow-down-thin.49faa658e3b5d5e6ed9602b02665eedb.svg",
     "static/media/iconmonstr-arrow-18.svg": "/Portfolio/static/media/iconmonstr-arrow-18.195956dec20448b6fc9a86e3ae8dcc27.svg",
-    "main.fab31fd2.css.map": "/Portfolio/static/css/main.fab31fd2.css.map",
-    "main.70887b7e.js.map": "/Portfolio/static/js/main.70887b7e.js.map"
+    "main.35836c83.css.map": "/Portfolio/static/css/main.35836c83.css.map",
+    "main.67fbc53b.js.map": "/Portfolio/static/js/main.67fbc53b.js.map"
   },
   "entrypoints": [
-    "static/css/main.fab31fd2.css",
-    "static/js/main.70887b7e.js"
+    "static/css/main.35836c83.css",
+    "static/js/main.67fbc53b.js"
   ]
 }
