@@ -92,6 +92,7 @@
     overflow-y: hidden;
     transform: rotate(0) translateX(0);
     scrollbar-width: auto;
+    scroll-snap-type: x mandatory;
   }
 
   ::-webkit-scrollbar {
@@ -121,6 +122,7 @@
     height: 100vh;
     overflow-y: visible;
     overflow-x: hidden;
+    scroll-snap-type: y mandatory;
   }
 
   .slide {

@@ -37,9 +37,9 @@ const CustomCursor = () => {
 
   return (
     <>
-      <div className="custom-cursor" style={{ left: cursorPosition.x - 5, top: cursorPosition.y - 10 }}></div>
+      <div className="custom-cursor" style={{ left: cursorPosition.x - 6, top: cursorPosition.y - 10 }}></div>
       <div className="custom-cursor-second" style={{ left: cursorPosition2.x - 5, top: cursorPosition2.y - 10 }}></div>
-      <div className="custom-cursor-third" style={{ left: cursorPosition3.x - 5, top: cursorPosition3.y - 10 }}></div>
+      <div className="custom-cursor-third" style={{ left: cursorPosition3.x - 3, top: cursorPosition3.y - 8 }}></div>
     </>
   );
 };

@@ -65,11 +65,11 @@ export default function HomeSlide1({ state }) {
 
     setTimeout(() => {
       setPortfolioClass("active-scroll-animation glitch");
-    }, 6100);
+    }, 5100);
 
-    setTimeout(() => {
-      activeHomeTitle.current.classList.add("active-home-title");
-    }, 300);
+    // setTimeout(() => {
+    //   activeHomeTitle.current.classList.add("active-home-title");
+    // }, 300);
   };
 
   return (

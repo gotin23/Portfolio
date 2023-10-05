@@ -282,6 +282,13 @@
         align-items: center; */
 
     }
+    .about-lets-talk-container:hover .about-lets-talk-arrow {
+        width: 50px;
+    }
+    
+    .about-lets-talk-container:hover .about-lets-talk-content {
+        font-weight: 300;
+    }
 
 
 
