@@ -313,7 +313,8 @@
 
     .project-img-container {
         width: 380px;
-        height: 230px
+        height: 230px;
+        margin-left: 20px;
     }
 
     .project-github-link {

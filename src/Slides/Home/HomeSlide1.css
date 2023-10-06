@@ -10,7 +10,8 @@
 .home-container {
   display: flex;
   flex-direction: row;
-  background-color: var(--color-primary)
+  background-color: var(--color-primary);
+  max-width: 100vw;
 }
 
 .home-content {

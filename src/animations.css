@@ -767,7 +767,7 @@
                    
                   }
                   } */
-                  .box-container4 {
+                  /* .box-container4 {
                     -webkit-animation-name: box-container4;
                     animation-name: box-container4;
                     -webkit-animation-duration: 1.6s;
@@ -785,9 +785,9 @@
                     transform:translateX(0) translateY(0px) ;
                    
                   }
-                  } 
+                  }  */
                   
-                  .box-container5 {
+                  /* .box-container5 {
                     -webkit-animation-name: box-container5;
                     animation-name: box-container5;
                     -webkit-animation-duration: 0.8s;
@@ -805,15 +805,15 @@
                     transform:translateX(0) translateY(0) ;
                    
                   }
-                  }  
-                  .box-container6 {
+                  }   */
+                  /* .box-container6 {
                     -webkit-animation-name: box-container6;
                     animation-name: box-container6;
                     -webkit-animation-duration: 1s;
                     animation-duration: 1s;
                     -webkit-animation-fill-mode: ease-in-out;
                     animation-fill-mode: ease-in-out;
-                    /* animation-delay: 0.2s; */
+                  
                     }
                   @keyframes box-container6 {
                   0% {
@@ -825,29 +825,29 @@
                     transform:translateX(0) translateY(0) ;
                    
                   }
-                  } 
-                  .box-container7 {
+                  }  */
+                  /* .box-container7 {
                     -webkit-animation-name: box-container7;
                     animation-name: box-container7;
                     -webkit-animation-duration: 1.2s;
                     animation-duration: 1.2s;
                     -webkit-animation-fill-mode: ease-in-out;
                     animation-fill-mode: ease-in-out;
-                    /* animation-delay: 0.4s; */
+                
                     }
                   @keyframes box-container7 {
                   0% {
                  
                     transform:translateX(-800px) translateY(600px)  ;
-                    /* opacity: 0; */
+              
                   
                   }
                   100% {
                     transform:translateX(0) translateY(0) ;
-                    /* opacity: 1; */
+             
                    
                   }
-                  } 
+                  }  */
                   .slideInDown {
                     -webkit-animation-name: slideInDown;
                     animation-name: slideInDown;

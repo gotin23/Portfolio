@@ -27,12 +27,10 @@ export default function WorksSlide2() {
     }
     if (entry.target.classList.value === "works-slide2-span3") {
       entry.target.classList.add("active-span-works-slide2");
-      setTimeout(() => {
-        activeButtonsProjects.current.classList.add("active-scroll-animation");
-      }, 200);
+      activeButtonsProjects.current.classList.add("active-scroll-animation");
       setTimeout(() => {
         activeContainerAllProjects.current.classList.add("active-scroll-animation");
-      }, 400);
+      }, 200);
     }
   };
 

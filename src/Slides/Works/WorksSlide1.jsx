@@ -17,7 +17,7 @@ export default function WorksSlide1() {
   const activeCircle3 = useRef();
 
   const [contentTitleHide, setContentTitleHide] = useState(false);
-  const [activeBoxs, setActiveBoxs] = useState(false);
+  // const [activeBoxs, setActiveBoxs] = useState(false);
 
   const [styleCircle2, setStyleCircle2] = useState({});
   const [styleCircle3, setStyleCircle3] = useState({});
@@ -28,27 +28,20 @@ export default function WorksSlide1() {
 
   const callback = (entry) => {
     if (entry.target.classList.value === "box-container") {
-      setTimeout(() => {
-        setActiveBoxs(true);
-      }, 1000);
+      // setTimeout(() => {
+      //   setActiveBoxs(true);
+      // }, 1000);
     }
     entry.target.classList.add("active-scroll-animation");
   };
-  // useEffect(()=>{
-
-  // },[setActiveBoxs])
 
   useIntersectionObserver([activeWorksTitle.current, activeCircle2.current, activeCircle3.current], { threshold: 0.97 }, callback);
 
   const handleTitleMouseIn = () => {
-    setTimeout(() => {
-      setContentTitleHide(true);
-    }, 200);
+    setContentTitleHide(true);
   };
   const handleTitleMouseOut = () => {
-    setTimeout(() => {
-      setContentTitleHide(false);
-    }, 200);
+    setContentTitleHide(false);
   };
 
   const handleSpansMouseEnter = (e) => {
@@ -108,30 +101,27 @@ export default function WorksSlide1() {
         </div>
         <div className="work-slide1-container">
           <div className="box-container" ref={activeWorksTitle} onMouseEnter={handleTitleMouseIn} onMouseLeave={handleTitleMouseOut}>
-            {activeBoxs && (
-              <div className="box-container5">
-                <div className="box">
-                  <img className="circle-img" src={Coding} alt="coding icon" />
-                  <div className="circle circle5" style={styleCircle5}></div>
-                </div>
+            <div className="box-container5">
+              <div className="box">
+                <img className="circle-img" src={Coding} alt="coding icon" />
+                <div className="circle circle5" style={styleCircle5}></div>
               </div>
-            )}
-            {activeBoxs && (
-              <div className="box-container6">
-                <div className="box">
-                  <img className="circle-img" src={Project} alt="project icon" />
-                  <div className="circle circle6" style={styleCircle6}></div>
-                </div>
+            </div>
+
+            <div className="box-container6">
+              <div className="box">
+                <img className="circle-img" src={Project} alt="project icon" />
+                <div className="circle circle6" style={styleCircle6}></div>
               </div>
-            )}
-            {activeBoxs && (
-              <div className="box-container7">
-                <div className="box">
-                  <img className="circle-img" src={Developer} alt="developer icon" />
-                  <div className="circle circle7" style={styleCircle7}></div>
-                </div>
+            </div>
+
+            <div className="box-container7">
+              <div className="box">
+                <img className="circle-img" src={Developer} alt="developer icon" />
+                <div className="circle circle7" style={styleCircle7}></div>
               </div>
-            )}
+            </div>
+
             <div className="box">
               {!contentTitleHide && <h2 className="works-slide1-box-title wst1 fadeIn">My Projects</h2>}
               {contentTitleHide && (
@@ -177,14 +167,13 @@ export default function WorksSlide1() {
               <div className="circle circle3" style={styleCircle3}></div>
             </div>
           </div>
-          {activeBoxs && (
-            <div className="box-container4">
-              <div className="box">
-                <img className="circle-img" src={Exceptional} alt="exceptional icon" />
-                <div className="circle circle4" style={styleCircle4}></div>
-              </div>
+
+          <div className="box-container4">
+            <div className="box">
+              <img className="circle-img" src={Exceptional} alt="exceptional icon" />
+              <div className="circle circle4" style={styleCircle4}></div>
             </div>
-          )}
+          </div>
         </div>
       </div>
     </div>
