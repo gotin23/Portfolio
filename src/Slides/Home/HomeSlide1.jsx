@@ -2,9 +2,11 @@ import React, { useEffect } from "react";
 import "./HomeSlide1.css";
 import { useState, useRef } from "react";
 import HomeLoader from "../../Components/HomeLoader/HomeLoader";
+import LogoPortfolio from "../../assets/icons/logo-portfolio-color.svg";
 
 export default function HomeSlide1({ state }) {
   const [activeSrollLogo, setActiveScrollLogo] = useState(false);
+  const [activePortfolioLogo, setActivePortfolioLogo] = useState(false);
   const [portfolioClass, setPortfolioClass] = useState("");
   const [homeLoaderActive, setHomeLoaderActive] = useState(true);
 
@@ -31,6 +33,9 @@ export default function HomeSlide1({ state }) {
     }, 2500);
     setTimeout(() => {
       setActiveScrollLogo(true);
+    }, 3200);
+    setTimeout(() => {
+      setActivePortfolioLogo(true);
     }, 3200);
     // je set le menu burger
     setTimeout(() => {
@@ -76,6 +81,7 @@ export default function HomeSlide1({ state }) {
             Portfolio
           </h2>
         }
+        {activePortfolioLogo && <img src={LogoPortfolio} alt="" className="logo-portfolio-small rubberBand" />}
       </div>
     </div>
   );

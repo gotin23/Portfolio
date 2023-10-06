@@ -24,7 +24,8 @@
     flex-direction: column;
     justify-content: space-around;
     position: relative;
-    transition: transform .8s ease-in-out, opacity .8s ease-in-out
+    transition: transform .8s ease-in-out, opacity .8s ease-in-out;
+    z-index: 3;
 }
 
 .about-title-container {
@@ -79,7 +80,9 @@
     flex-direction: column;
     transform: translateY(-100px);
     opacity: 0;
-    transition: transform .8s ease-in-out, opacity .4s ease-in-out
+    transition: transform .8s ease-in-out, opacity .4s ease-in-out;
+    background-color:var(--color-secondary);
+    z-index: 3;
 }
 
 .about-lets-talk-content {
@@ -113,6 +116,48 @@
 
 .animation-hide-title {
     right: 100%
+}
+.bubble{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border :3px solid var(--color-tertiary);
+    position:absolute;
+    bottom: -10vh;
+    right: 140px;
+    animation: bubble infinite 10s ease-in-out;
+}
+.bubble-second{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border :3px solid var(--color-tertiary);
+    position:absolute;
+    bottom: -10vh;
+    right: 230px;
+    animation: bubble infinite 10s linear;
+    animation-delay: 0.2s;
+}
+.bubble-third{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border :3px solid var(--color-tertiary);
+    position:absolute;
+    bottom: -10vh;
+    right: 270px;
+    animation: bubble infinite 10s ease-in;
+    animation-delay: 0.2s;
+}
+@keyframes bubble {
+    from{
+        transform: translateY(0);
+    }
+to{
+        transform: translateY(-110vh);
+    }
+
+    
 }
 
 @media screen and (max-width:1680px) {
@@ -208,8 +253,10 @@
 }
 
 @media screen and (max-width:950px) {
+    
     .about-slide1 {
-        flex-direction: column
+        flex-direction: column;
+        overflow: hidden;
     }
 
     .about-titles-container {
@@ -255,7 +302,7 @@
 }
 
 @media screen and (max-width:800px) {
-    .about-slide1 {
+    .about-slide1,.about-title {
         flex-direction: column
     }
 

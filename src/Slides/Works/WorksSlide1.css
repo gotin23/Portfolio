@@ -197,14 +197,15 @@
 
 .circle3 {
     padding-top: 170px;
-    animation: 6s linear infinite spinning;
+    animation: 7s linear infinite spinning;
     animation-delay: 1.8s;
 }
 
 .circle4 {
     padding-top: 48px;
-    animation: 6s linear infinite spinning;
+    animation: 7s linear infinite spinning;
     animation-delay: 0.8s;
+    border: 3px solid var(--color-tertiary);
 }
 
 
@@ -213,6 +214,7 @@
     padding-top: 37px;
     animation: 6s linear infinite spinning;
     animation-delay: 0.4s;
+    border: 3px solid var(--color-tertiary);
 }
 
 .circle6 {
@@ -391,6 +393,9 @@ right: 220px;
     .works-slide1-box-title {
         font-size: 40px;
 
+    }
+    .wst2{
+        font-size: 12px;
     }
 
     .circle1 {

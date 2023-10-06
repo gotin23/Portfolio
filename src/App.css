@@ -77,6 +77,14 @@
   max-width: 600vw;
     /* scroll-snap-type: y mandatory; */
 }
+.logo-portfolio-small{
+  position: absolute;
+
+  width: 60px;
+  bottom: 40px;
+  right: 40px;
+
+}
 
 
 @media screen and (max-width: 1280px) {
