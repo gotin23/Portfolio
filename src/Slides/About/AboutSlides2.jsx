@@ -1,18 +1,14 @@
 import React from "react";
 import "./AboutSlide2.css";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import useIntersectionObserver from "../../Hook/IntersectionObserver";
 
 export default function AboutSlides2({ state }) {
   const activeAboutMeHide = useRef();
-  const [showHide, setShowHide] = useState(true);
 
   const callback = (entry) => {
     if (entry.target.classList.value === "hide-about-me-content") {
       entry.target.classList.add("active-hide-about-me-content");
-      // setTimeout(() => {
-      //   setShowHide(false);
-      // }, 800);
     }
   };
 

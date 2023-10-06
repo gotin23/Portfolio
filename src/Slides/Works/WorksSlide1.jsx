@@ -177,14 +177,14 @@ export default function WorksSlide1() {
               <div className="circle circle3" style={styleCircle3}></div>
             </div>
           </div>
-          {/* {activeBoxs && (
+          {activeBoxs && (
             <div className="box-container4">
               <div className="box">
                 <img className="circle-img" src={Exceptional} alt="exceptional icon" />
                 <div className="circle circle4" style={styleCircle4}></div>
               </div>
             </div>
-          )} */}
+          )}
         </div>
       </div>
     </div>

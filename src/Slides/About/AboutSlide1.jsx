@@ -5,19 +5,17 @@ import useIntersectionObserver from "../../Hook/IntersectionObserver";
 import RightArrow from "../../assets/icons/iconmonstr-arrow-18.svg";
 
 export default function AboutSlide1() {
-  const activeAboutTitles = useRef();
   const activeAboutTitleHide1 = useRef();
   const activeAboutTitleHide2 = useRef();
   const activeAboutTitleHide3 = useRef();
   const activeLetsTalk = useRef();
   const activeRightArrow = useRef();
   const rightArrowAnim = useRef();
-  console.log(rightArrowAnim.current, "tt");
+
   const callback = (entry) => {
     const classValue = entry.target.classList.value;
 
     switch (classValue) {
-      // case "about-titles-container":
       case "about-lets-talk":
         entry.target.classList.add("active-scroll-animation");
         break;
@@ -38,12 +36,12 @@ export default function AboutSlide1() {
     }
   };
 
-  useIntersectionObserver([activeAboutTitles.current, activeLetsTalk.current], { threshold: 0.1 }, callback);
+  useIntersectionObserver([activeLetsTalk.current], { threshold: 0.1 }, callback);
   useIntersectionObserver([activeAboutTitleHide1.current, activeAboutTitleHide2.current, activeAboutTitleHide3.current, activeRightArrow.current], { threshold: 0.9 }, callback);
 
   return (
     <div className="about-slide1 slide" ref={activeRightArrow} id="about-me">
-      <div className="about-titles-container" ref={activeAboutTitles}>
+      <div className="about-titles-container">
         <div className="about-title-container">
           <h2 className="about-title">I'M</h2>
           <div className="hide-about-title1" ref={activeAboutTitleHide1}></div>

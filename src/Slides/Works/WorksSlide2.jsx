@@ -55,9 +55,6 @@ export default function WorksSlide2() {
   };
 
   const animProjectElements = () => {
-    // setTimeout(() => {
-    //   setActiveProject(null);
-    // }, 400);
     // animation de l'image , de la description du projet...
     animProjectImage.current.classList.add("slideOutDown");
     animProjectDescription.current.classList.add("fadeOut");
@@ -104,14 +101,9 @@ export default function WorksSlide2() {
         <div className="project-img-container">
           <span class="loader"></span>
           <img src={activeProject.image} className="project-img" ref={animProjectImage} alt={activeProject.name} />
-          {/* {data.map((project) => (
-            <img src={project.image} className="project-img-active" ref={animProjectImage} alt={activeProject.name} />
-          ))} */}
-
-          <a className="visit-website-link" href={activeProject.website ? activeProject.website : activeProject.github} target="_blank">
+          <a className="visit-website-link" href={activeProject.website ? activeProject.website : activeProject.github} target="_blank" rel="noreferrer">
             {activeProject.website ? "Visit website" : "Visit github"}
           </a>
-
           <div className="techno-container">
             {activeProject.techno.map((tec, index) => (
               <img src={tec} key={index} className="techno-logo" alt="technologie" />
@@ -122,10 +114,8 @@ export default function WorksSlide2() {
           <p className="project-description" ref={animProjectDescription}>
             {activeProject.description}
           </p>
-
-          {/* <div className="loader"></div> */}
         </div>
-        <a href={activeProject.github} target="_blank">
+        <a href={activeProject.github} target="_blank" rel="noreferrer">
           <img src={GithubLogo} className="project-github-link" ref={animGitHubLogo} alt="github logo" />
         </a>
       </div>

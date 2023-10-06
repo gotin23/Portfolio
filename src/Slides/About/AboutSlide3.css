@@ -3,8 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-
+    flex-wrap: wrap
 }
 
 .about-slide3-titles-container {
@@ -15,19 +14,9 @@
     flex-direction: column;
     opacity: 0;
     transform: translateY(200px);
-    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
-    position: relative;
+    transition: opacity .8s ease-in-out, transform .8s ease-in-out;
+    position: relative
 }
-
-/* .about-slide3-arrow-logo {
-    position: absolute;
-    opacity: 0;
-    width: 50px;
-    bottom: 40px;
-    right: 40px;
-    transform: translateY(-150px);
-    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out
-} */
 
 .about-slide3-img-container {
     width: 26%;
@@ -36,7 +25,7 @@
     padding-right: 50px;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
 .about-slide3-title-container {
@@ -44,7 +33,7 @@
     position: relative;
     padding: 10px;
     margin: 10px;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary)
 }
 
 .about-slide3-title {
@@ -55,13 +44,13 @@
     font-stretch: condensed;
     font-variation-settings: "wdth" 94;
     letter-spacing: 10px;
-    transition: font-variation-settings 0.8s ease-in-out, font-weight 0.8s ease-in-out;
-    user-select: none;
+    transition: font-variation-settings .8s ease-in-out, font-weight .8s ease-in-out;
+    user-select: none
 }
 
 .about-slide3-title-container:hover .about-slide3-title {
     font-weight: 300;
-    font-variation-settings: "wdth" 100;
+    font-variation-settings: "wdth" 100
 }
 
 .hide-about-slide3-title1,
@@ -70,215 +59,164 @@
     position: absolute;
     inset: 0;
     background-color: var(--color-primary);
-    transition: right 0.8s ease-in-out;
+    transition: right .8s ease-in-out
+}
+
+.icon-skill,
+.moving-text-about-slide3 {
+    opacity: 0;
+    transition: transform .4s ease-in-out, opacity .4s ease-in-out
 }
 
 .icon-skill {
     width: 130px;
-    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
-    opacity: 0;
-    user-select: none;
+    user-select: none
 }
 
 .icon-skill:hover {
-    transform: scale(1.05);
+    transform: scale(1.05)
 }
 
-.html-icon,
 .css-icon,
+.html-icon,
 .typescript-icon {
-    transform: translateY(-100px);
+    transform: translateY(-100px)
 }
 
 .react-icon {
-    transform: translateX(-100px);
+    transform: translateX(-100px)
 }
 
 .next-icon {
-    transform: translateX(100px);
+    transform: translateX(100px)
 }
 
-.redux-icon,
 .figma-icon,
-.github-icon {
-    transform: translateY(100px);
+.github-icon,
+.redux-icon {
+    transform: translateY(100px)
 }
-
 
 .moving-text-about-slide3 {
-    opacity: 0;
     width: 100%;
-    /* background-color: var(--color-primary); */
-    padding: 3px;
-    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    padding: 3px
 }
 
 .active-hide-about-title {
-    right: 100%;
+    right: 100%
 }
 
 .active-scroll-animation {
     transform: translate(0);
-    opacity: 1;
-
+    opacity: 1
 }
 
-
-@media screen and (max-width: 1650px) {
-
+@media screen and (max-width:1650px) {
     .about-slide3-title {
-
-        font-size: 90px;
-
+        font-size: 90px
     }
 
     .icon-skill {
         width: 90px;
-        transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
-        opacity: 0;
+        transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+        opacity: 0
     }
-
 }
 
-@media screen and (max-width: 1279px) {
-
+@media screen and (max-width:1279px) {
     .about-slide3-title {
-
-        font-size: 60px;
-
+        font-size: 60px
     }
 
     .icon-skill {
-        width: 60px;
-
+        width: 60px
     }
-
 }
 
-@media screen and (max-width: 950px) {
-
+@media screen and (max-width:950px) {
     .about-slide3-titles-container {
         width: 100%;
-        height: 50%;
-
+        height: 50%
     }
-
 
     .about-slide3-img-container {
         width: 100%;
         height: 40%;
         display: flex;
-        padding-right: 0px;
+        padding-right: 0;
         justify-content: space-around;
         align-items: center;
-        flex-wrap: wrap;
-
-
-
+        flex-wrap: wrap
     }
 
     .about-slide3-title-container {
-
         padding: 10px;
         margin: 10px;
-        background-color: var(--color-primary);
+        background-color: var(--color-primary)
     }
 
     .about-slide3-title {
         font-weight: 100;
         font-size: 80px;
-        margin-top: 10px;
-
+        margin-top: 10px
     }
-
 
     .icon-skill {
-        width: 90px;
-
+        width: 90px
     }
 
-    .html-icon,
     .css-icon,
-    .typescript-icon {
-        transform: translateY(50px);
-    }
-
-    .react-icon {
-        transform: translateY(50px);
-    }
-
-    .next-icon {
-        transform: translateY(50px);
-    }
-
-    .redux-icon,
     .figma-icon,
-    .github-icon {
-        transform: translateY(50px);
+    .github-icon,
+    .html-icon,
+    .next-icon,
+    .react-icon,
+    .redux-icon,
+    .typescript-icon {
+        transform: translateY(50px)
     }
-
 }
 
-@media screen and (max-width: 800px) {
-
+@media screen and (max-width:800px) {
     .about-slide3-titles-container {
         width: 100%;
-        height: 50%;
-
+        height: 50%
     }
-
 
     .about-slide3-img-container {
         width: 100%;
         height: 40%;
         display: flex;
-        padding-right: 0px;
+        padding-right: 0;
         justify-content: space-around;
         align-items: center;
-        flex-wrap: wrap;
-
-
-
+        flex-wrap: wrap
     }
 
     .about-slide3-title-container {
-
         padding: 10px;
         margin: 10px;
-        background-color: var(--color-primary);
+        background-color: var(--color-primary)
     }
 
     .about-slide3-title {
         font-weight: 100;
         font-size: 30px;
-        margin-top: 10px;
-
+        margin-top: 10px
     }
-
 
     .icon-skill {
-        width: 70px;
-
+        width: 70px
     }
 
-    .html-icon,
     .css-icon,
-    .typescript-icon {
-        transform: translateY(50px);
-    }
-
-    .react-icon {
-        transform: translateY(50px);
-    }
-
-    .next-icon {
-        transform: translateY(50px);
-    }
-
-    .redux-icon,
     .figma-icon,
-    .github-icon {
-        transform: translateY(50px);
+    .github-icon,
+    .html-icon,
+    .next-icon,
+    .react-icon,
+    .redux-icon,
+    .typescript-icon {
+        transform: translateY(50px)
     }
-
 }

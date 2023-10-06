@@ -33,7 +33,6 @@
     align-items: center;
     width: 50%;
     margin-top: 10px;
-
 }
 
 .contact-btn-send {
@@ -109,7 +108,7 @@ form {
     font-size: 30px;
     padding: 15px;
     border-radius: 10px;
-    
+
 
 }
 
@@ -138,13 +137,11 @@ form {
 .active-scroll-animation {
     transform: translate(0);
     opacity: 1;
-
 }
 
 @media screen and (max-width: 1650px) {
     .contact-btn-send {
         font-size: 15px;
-
     }
 
 
@@ -159,8 +156,6 @@ form {
     .contact-form-container {
         display: flex;
         width: 100%;
-
-
     }
 
     form {
@@ -305,7 +300,6 @@ form {
 
     .error-message {
         font-size: 14px;
-
     }
 
     .contact-message {
