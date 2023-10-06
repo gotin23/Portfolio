@@ -42,7 +42,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
   font-family: "Madena";
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 ::-webkit-scrollbar {
@@ -73,7 +73,7 @@
 
 .others-active {
   display: flex;
-  width: 600vw;
+  max-width: 600vw;
     /* scroll-snap-type: y mandatory; */
 }
 
@@ -139,7 +139,7 @@
 
     flex-direction: column;
     width: 100vh;
-    min-height: 600vh;
+    max-height: 600vh;
   }
   
 }
