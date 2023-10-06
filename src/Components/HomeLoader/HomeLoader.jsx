@@ -10,7 +10,6 @@ export default function HomeLoader() {
         <img src={logoPortfolio} alt="logo porfolio" className="logo-home-loader" />
         <h3 className="title-loader">Portfolio</h3>
       </div>
-
       <div className="bottom-loader"></div>
     </div>
   );
