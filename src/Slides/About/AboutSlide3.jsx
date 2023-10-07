@@ -97,7 +97,7 @@ export default function AboutSlide3() {
   useIntersectionObserver([activeAboutTitlesSlide3.current, activeNextIcon.current], { threshold: 0.1 }, callback);
   return (
     <div className="about-slide3 slide">
-      <div className="ball-moove"></div>
+      {/* <div className="ball-moove"></div> */}
       <div className="about-slide3-titles-container" ref={activeAboutTitlesSlide3}>
         <div className="about-slide3-title-container">
           <h2 className="about-slide3-title">My</h2>
