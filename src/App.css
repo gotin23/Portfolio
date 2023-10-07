@@ -43,6 +43,7 @@
   scrollbar-width: none;
   font-family: "Madena";
   scroll-snap-type: y mandatory;
+  /* scroll-snap-points-y: repeat(100vh); */
 
 }
 

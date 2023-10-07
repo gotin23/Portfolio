@@ -33,7 +33,7 @@ function Menu() {
       </div>
       <nav className={isActive ? "menu-burger-active" : "menu-burger"}>
         {/* {isActive && <svg src={logoPortfolio} className="logo-menu fadeIn" />} */}
-        {isActive && <object data={logoPortfolio} type="image/svg+xml" className="logo-menu fadeIn"></object>}
+        {isActive && <img src={logoPortfolio} className="logo-menu fadeIn" />}
 
         <a className="tt" href="#home" onClick={toggleMenu}>
           {isActive && <HackText state={{ content: `Home` }} />}
