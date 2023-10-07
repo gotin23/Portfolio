@@ -34,7 +34,7 @@
 }
 
 .all-content {
-  max-width: 100vh;
+  /* max-width: 100vh; */
   height: 100vw;
   overflow-x: hidden;
   transform: rotate(-90deg) translateX(-100vh);
