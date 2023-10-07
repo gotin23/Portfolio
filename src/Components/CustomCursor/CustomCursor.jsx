@@ -36,9 +36,9 @@ const CustomCursor = () => {
     <>
       {isSmallScreen && (
         <>
-          <div className="custom-cursor" style={{ left: cursorPosition.x - 6, top: cursorPosition.y - 10 }}></div>
-          <div className="custom-cursor-second" style={{ left: cursorPosition2.x - 5, top: cursorPosition2.y - 10 }}></div>
-          <div className="custom-cursor-third" style={{ left: cursorPosition3.x - 3, top: cursorPosition3.y - 8 }}></div>
+          <div className="custom-cursor" style={{ left: cursorPosition.x - 25, top: cursorPosition.y - 25 }}></div>
+          <div className="custom-cursor-second" style={{ left: cursorPosition2.x - 20, top: cursorPosition2.y - 20 }}></div>
+          <div className="custom-cursor-third" style={{ left: cursorPosition3.x - 20, top: cursorPosition3.y - 20 }}></div>
         </>
       )}
     </>

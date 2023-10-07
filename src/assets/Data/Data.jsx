@@ -1,7 +1,7 @@
 import CssGenerator from "../../assets/image/cssgenerator.png";
 import Pokedex from "../../assets/image/pokedex.png";
-import ArgentBank from "../../assets/image/Argent-Bank.png";
-import Debug77 from "../../assets/image/debug77.png";
+import ArgentBank from "../../assets/image/Argent-Bank_11zon.jpg";
+import Debug77 from "../../assets/image/debug77_11zon.jpg";
 // import CssLogo from "../../assets/icons/icons8-nextjs.svg";
 // import PokedexLogo from "../../assets/icons/skills-svgrepo-com.svg";
 import ReactLogo from "../../assets/icons/icons8-react-native.svg";
