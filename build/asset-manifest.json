@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.16e9326c.css",
-    "main.js": "/Portfolio/static/js/main.000a0953.js",
+    "main.css": "/Portfolio/static/css/main.850f04da.css",
+    "main.js": "/Portfolio/static/js/main.c2aa7f01.js",
     "static/media/Geologica[CRSV,SHRP,slnt,wght].ttf": "/Portfolio/static/media/Geologica[CRSV,SHRP,slnt,wght].648066ca340f092deaae.ttf",
     "static/media/BDOGrotesk-VF.ttf": "/Portfolio/static/media/BDOGrotesk-VF.bfa882bfca7ea6b4fce6.ttf",
     "static/media/cssgenerator.png": "/Portfolio/static/media/cssgenerator.98d6b28c106fe6a4b43a.png",
@@ -27,11 +27,11 @@
     "static/media/icons8-css.svg": "/Portfolio/static/media/icons8-css.02c8db2a8b493cdc872fa8e77df3f720.svg",
     "static/media/icons8-figma.svg": "/Portfolio/static/media/icons8-figma.2cf3967c30f84d8436d8e9029d29cd3d.svg",
     "static/media/iconmonstr-arrow-18.svg": "/Portfolio/static/media/iconmonstr-arrow-18.195956dec20448b6fc9a86e3ae8dcc27.svg",
-    "main.16e9326c.css.map": "/Portfolio/static/css/main.16e9326c.css.map",
-    "main.000a0953.js.map": "/Portfolio/static/js/main.000a0953.js.map"
+    "main.850f04da.css.map": "/Portfolio/static/css/main.850f04da.css.map",
+    "main.c2aa7f01.js.map": "/Portfolio/static/js/main.c2aa7f01.js.map"
   },
   "entrypoints": [
-    "static/css/main.16e9326c.css",
-    "static/js/main.000a0953.js"
+    "static/css/main.850f04da.css",
+    "static/js/main.c2aa7f01.js"
   ]
 }

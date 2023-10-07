@@ -6,6 +6,7 @@
     align-items: center;
     flex-direction: column;
  overflow-x: hidden;
+ max-height: 100vh;
    
 }
 .top-loader,.middle-loader,.bottom-loader {
