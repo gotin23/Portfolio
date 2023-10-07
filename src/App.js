@@ -29,6 +29,8 @@ function App() {
             <AboutSlide1 />
             <AboutSlides2 />
             <AboutSlide3 />
+            {/* <AboutSlide3 />
+            <WorksSlide1 /> */}
             <WorksSlide1 />
             <WorksSlide2 />
             <ContactSlide />

@@ -42,7 +42,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
   font-family: "Madena";
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 ::-webkit-scrollbar {
