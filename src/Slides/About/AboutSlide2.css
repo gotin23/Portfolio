@@ -108,7 +108,7 @@
   top:-5vh;
   left: 50%;
   animation: rainPolygon ease-in-out 9s infinite ;
-  /* animation: rotatePolygon  linear 8s infinite; */
+
 }
 .polygon-rain-third{
   width:40px;
@@ -118,7 +118,7 @@
   top:-5vh;
   left: 60%;
   animation: rainPolygon ease-in-out 8s infinite ;
-  /* animation: rotatePolygon  linear 8s infinite; */
+ 
 }
 .polygon-rain-four{
   width:40px;
@@ -129,7 +129,16 @@
   left: 10%;
   animation: rainPolygon ease-in-out 9s infinite ;
   animation-delay: 3s;
-  /* animation: rotatePolygon  linear 8s infinite; */
+}
+.polygon-rain-five{
+  width:40px;
+  height:30px;
+  position: absolute;
+  background: linear-gradient(146deg, rgba(39, 35, 35, 0) 50%, var(--color-tertiary) 50%);
+  top:-5vh;
+  left: 80%;
+  animation: rainPolygon ease-in 9s infinite ;
+  animation-delay: 4s;
 }
 
 @keyframes rainPolygon {

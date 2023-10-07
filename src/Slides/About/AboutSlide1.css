@@ -145,7 +145,7 @@
     border :3px solid var(--color-tertiary);
     position:absolute;
     bottom: -10vh;
-    right: 270px;
+    right: 280px;
     animation: bubble infinite 10s ease-in;
     animation-delay: 0.2s;
 }

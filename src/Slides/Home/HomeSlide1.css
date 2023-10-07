@@ -406,6 +406,14 @@
   position: absolute;
   color: #fff
 }
+.logo-portfolio-small{
+  position: absolute;
+
+  width: 40px;
+  bottom: 40px;
+  right: 40px;
+
+}
 
 @keyframes scroll {
   0% {
@@ -645,5 +653,11 @@
     width: 60px;
     top: 170px;
     right: 50px
+  }
+  .logo-portfolio-small{
+    width: 40px;
+    left: 30px;
+    top:30px;
+  
   }
 }

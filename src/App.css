@@ -30,12 +30,11 @@
   max-width: 100vw;
   overflow: hidden;
   background-color: var(--color-primary);
-  /* z-index: 1; */
 
 }
 
 .all-content {
-  width: 100vh;
+  max-width: 100vh;
   height: 100vw;
   overflow-x: hidden;
   transform: rotate(-90deg) translateX(-100vh);
@@ -51,7 +50,7 @@
 }
 
 .slide {
-  min-width: 100vw;
+  width: 100vw;
   height: 100vh;
   position: relative;
   scroll-snap-align:center;
@@ -64,7 +63,7 @@
   flex-direction: row;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
- 
+  /* max-width: 600vw; */
     /* scroll-snap-type: y mandatory; */
 }
 
@@ -80,7 +79,7 @@
 .logo-portfolio-small{
   position: absolute;
 
-  width: 60px;
+  width: 0px;
   bottom: 40px;
   right: 40px;
 

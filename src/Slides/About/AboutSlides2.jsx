@@ -47,6 +47,7 @@ export default function AboutSlides2({ state }) {
       <div className="polygon-rain-second"></div>
       <div className="polygon-rain-third"></div>
       <div className="polygon-rain-four"></div>
+      <div className="polygon-rain-five"></div>
     </div>
   );
 }
