@@ -66,9 +66,15 @@ export default function AboutSlide1() {
           <img className="about-lets-talk-arrow" ref={rightArrowAnim} src={RightArrow} alt="right-arrow" />
         </div>
       </div>
-      <div className="bubble"></div>
-      <div className="bubble-second"></div>
-      <div className="bubble-third"></div>
+      <div className="bubble">
+        <div className="bubble-detail"></div>
+      </div>
+      <div className="bubble-second">
+        <div className="bubble-detail-second"></div>
+      </div>
+      <div className="bubble-third">
+        <div className="bubble-detail-third"></div>
+      </div>
     </div>
   );
 }

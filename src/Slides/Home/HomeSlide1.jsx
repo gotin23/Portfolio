@@ -66,7 +66,7 @@ export default function HomeSlide1({ state }) {
   return (
     <div className="home-container slide" id="home">
       {homeLoaderActive && <HomeLoader />}
-      {activeSrollLogo && <div class="icon-scroll fadeIn"></div>}
+      {activeSrollLogo && <div className="icon-scroll fadeIn"></div>}
       <div className="home-content">
         <div className="polygon1" ref={activePolygon1}></div>
         <div className="polygon2" ref={activePolygon2}></div>

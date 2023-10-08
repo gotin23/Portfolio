@@ -126,7 +126,7 @@ export default function Contact() {
                 <label htmlFor="email" className="contact-labels">
                   Enter your adress email
                 </label>
-                <input type="email" ref={emailInput} className="contact-inputs flipInX" value={emailValue} onChange={(e) => setEmailValue(e.target.value)} />
+                <input type="email" ref={emailInput} className="contact-inputs flipInX" id="email" value={emailValue} onChange={(e) => setEmailValue(e.target.value)} />
                 <p className="error-message">{errorMsg && errorMsg}</p>
                 <div className="contact-btns-container">
                   <button className="contact-btns pulse" type="button" onClick={handleCancelForm}>

@@ -20,7 +20,7 @@ function Menu() {
       {/* <button className="show" onClick={toggleMenu}>
         Toggle Menu
       </button> */}
-      <div class="nav-icon-1 fadeIn" onClick={toggleMenu} ref={activeMenu}>
+      <div className="nav-icon-1 fadeIn" onClick={toggleMenu} ref={activeMenu}>
         <span></span>
         <span></span>
         <span></span>

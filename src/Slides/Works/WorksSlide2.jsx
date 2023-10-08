@@ -97,7 +97,7 @@ export default function WorksSlide2() {
 
       <div className="all-projects-container" ref={activeContainerAllProjects}>
         <div className="project-img-container">
-          <span class="loader"></span>
+          <span className="loader"></span>
           <img src={activeProject.image} className="project-img" ref={animProjectImage} alt={activeProject.name} />
           <a className="visit-website-link" href={activeProject.website ? activeProject.website : activeProject.github} target="_blank" rel="noreferrer">
             {activeProject.website ? "Visit website" : "Visit github"}
