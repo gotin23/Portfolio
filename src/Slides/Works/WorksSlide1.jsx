@@ -6,10 +6,10 @@ import { useState } from "react";
 
 import Welcome from "../../assets/icons/deal-svgrepo-com.svg";
 import Skill from "../../assets/icons/skills-svgrepo-com.svg";
-import Coding from "../../assets/icons/icons8-code-24.png";
-import Project from "../../assets/icons/icons8-projet-24.png";
-import Developer from "../../assets/icons/icons8-ordinateur-24.png";
-import Exceptional from "../../assets/icons/icons8-étoile-30.png";
+import Coding from "../../assets/icons/1608639_code_icon.svg";
+import Project from "../../assets/icons/3643772_folder_archive_open_archives_document_icon.svg";
+import Developer from "../../assets/icons/4213465_freelancer_computer_working_internet_work_icon.svg";
+import Exceptional from "../../assets/icons/1467339654.svg";
 
 export default function WorksSlide1() {
   const activeWorksTitle = useRef();
@@ -17,7 +17,6 @@ export default function WorksSlide1() {
   const activeCircle3 = useRef();
 
   const [contentTitleHide, setContentTitleHide] = useState(false);
-  // const [activeBoxs, setActiveBoxs] = useState(false);
 
   const [styleCircle2, setStyleCircle2] = useState({});
   const [styleCircle3, setStyleCircle3] = useState({});
@@ -27,11 +26,6 @@ export default function WorksSlide1() {
   const [styleCircle7, setStyleCircle7] = useState({});
 
   const callback = (entry) => {
-    if (entry.target.classList.value === "box-container") {
-      // setTimeout(() => {
-      //   setActiveBoxs(true);
-      // }, 1000);
-    }
     entry.target.classList.add("active-scroll-animation");
   };
 
@@ -67,7 +61,7 @@ export default function WorksSlide1() {
   };
   const handleSpansMouseLeave = (e) => {
     const newStyle = { backgroundColor: "var(--color-primary)" };
-    // setStyleCircle3(newStyle);
+
     if (e.target.classList.contains("span-hover1")) {
       setStyleCircle2(newStyle);
     }
@@ -103,7 +97,7 @@ export default function WorksSlide1() {
           <div className="box-container" ref={activeWorksTitle} onMouseEnter={handleTitleMouseIn} onMouseLeave={handleTitleMouseOut}>
             <div className="box-container5">
               <div className="box">
-                <img className="circle-img" src={Coding} alt="coding icon" />
+                <img className="circle-img coding-img" src={Coding} alt="coding icon" />
                 <div className="circle circle5" style={styleCircle5}></div>
               </div>
             </div>
@@ -130,28 +124,30 @@ export default function WorksSlide1() {
                     Welcome{" "}
                   </span>
                   <br />
-                  to my collection of{" "}
+                  to my collection of <br />
                   <span className="work-slide1-span span-hover2" onMouseEnter={handleSpansMouseEnter} onMouseLeave={handleSpansMouseLeave}>
                     web development
                   </span>{" "}
                   <br />
-                  projects. Each project is a unique showcase of my{" "}
+                  projects. Each project is a unique showcase <br />
                   <span className="work-slide1-span span-hover3" onMouseEnter={handleSpansMouseEnter} onMouseLeave={handleSpansMouseLeave}>
-                    skills
+                    of my skills
                   </span>
-                  , creativity, and passion for building exceptional
+                  <br />
+                  creativity, and passion for building exceptional
                   <br />
                   <span className="work-slide1-span span-hover4" onMouseEnter={handleSpansMouseEnter} onMouseLeave={handleSpansMouseLeave}>
                     web experiences
                   </span>{" "}
+                  <br />
                   Explore the diverse range of <br />{" "}
                   <span className="work-slide1-span span-hover5" onMouseEnter={handleSpansMouseEnter} onMouseLeave={handleSpansMouseLeave}>
                     projects
-                  </span>{" "}
-                  below to
-                  <br /> get a glimpse of my journey as a web{" "}
+                  </span>
+                  <br />
+                  below to get a glimpse of my journey as a <br />
                   <span className="work-slide1-span span-hover6" onMouseEnter={handleSpansMouseEnter} onMouseLeave={handleSpansMouseLeave}>
-                    developer
+                    web developer
                   </span>
                   .
                 </p>

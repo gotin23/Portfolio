@@ -48,7 +48,8 @@
     font-variation-settings: "wdth" 94;
     letter-spacing: 10px;
     transition: font-variation-settings .8s ease-in-out, font-weight .8s ease-in-out;
-    user-select: none
+    user-select: none;
+
 }
 
 .about-slide3-title-container:hover .about-slide3-title {

@@ -133,7 +133,9 @@
     transform: translate(-50%, -50%);
     z-index: 5;
 }
-
+.coding-img{
+    width: 25px;
+}
 .welcome-img {
     width: 100px;
     user-select: none;
@@ -155,12 +157,12 @@
 
 .wst2 {
     padding: 20px;
-    font-size: 25px;
+    font-size: 23px;
     color: var(--color-primary);
     font-weight: 300;
     transition: transform 0.4s ease-in-out, font-size 0.4s ease-in-out;
     overflow: hidden;
-    min-width: 60%;
+    min-width: 70%;
 }
 
 .work-slide1-span {
