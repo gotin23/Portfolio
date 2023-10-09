@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 import "./CustomCursor.css";
 
@@ -8,9 +8,10 @@ const CustomCursor = () => {
   const [cursorPosition3, setCursorPosition3] = useState({ x: 0, y: 0 });
   const isSmallScreen = useMediaQuery({ minWidth: 1280 });
 
+  const animCursorThird = useRef();
+
   // Gérer le mouvement de la souris.
   const handleMouseMove = (event) => {
-    console.log(isSmallScreen);
     setTimeout(() => {
       setCursorPosition({ x: event.pageX, y: event.pageY });
     }, 50);
@@ -36,9 +37,9 @@ const CustomCursor = () => {
     <>
       {isSmallScreen && (
         <>
-          <div className="custom-cursor" style={{ left: cursorPosition.x - 25, top: cursorPosition.y - 25 }}></div>
-          <div className="custom-cursor-second" style={{ left: cursorPosition2.x - 20, top: cursorPosition2.y - 20 }}></div>
-          <div className="custom-cursor-third" style={{ left: cursorPosition3.x - 20, top: cursorPosition3.y - 20 }}></div>
+          <div className="custom-cursor" style={{ left: cursorPosition.x - 10, top: cursorPosition.y - 10 }}></div>
+          <div className="custom-cursor-second" style={{ left: cursorPosition2.x, top: cursorPosition2.y }}></div>
+          <div className="custom-cursor-third" ref={animCursorThird} style={{ left: cursorPosition3.x, top: cursorPosition3.y }}></div>
         </>
       )}
     </>

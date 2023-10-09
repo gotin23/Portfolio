@@ -29,7 +29,7 @@
 .progress-steps-container .step-number{
     width: 50px;
     height: 50px;
-    border: 3px solid rgba(125, 124, 124, 0.818);
+    border: 3px solid rgba(79, 79, 79, 0.818);
     border-radius: 50%;
     font-size: 16px;
     font-family: "Geologica";
@@ -40,7 +40,7 @@
     background-color: var(--color-tertiary);
     z-index: 1;
     transition: border 0.4s ease-in, color 0.4s ease-in;
-    color:  rgba(125, 124, 124, 0.873);
+    color:   rgba(79, 79, 79, 0.818);
    
  
 }
@@ -94,25 +94,25 @@
     }
     
 }
-/* @media screen and (max-width: 950px) {
+@media screen and (max-width: 320px) {
 
     .progress-bar-title{
    
-        font-size: 25px;
+        font-size: 20px;
        
     }
     .progress-steps-container{
       
-        width: 360px;
+        width: 260px;
       
        
        
     }
     .progress-steps-container .step-number{
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         
      
     }
     
-} */
+}

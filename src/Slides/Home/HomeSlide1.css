@@ -221,7 +221,7 @@
   bottom: 180px;
   left: 210px;
   transform: perspective(1000px) rotate(150deg) rotateY(30deg) translateY(500px) translateX(500px);
-  transition: transform .8s ease-in-out
+  transition: transform .8s ease-in-out;
 }
 
 .polygon1-active {
@@ -659,5 +659,11 @@
     left: 30px;
     top:30px;
   
+  }
+}
+
+@media screen and (max-width:320px) {
+  .home-title {
+    font-size: 45px
   }
 }

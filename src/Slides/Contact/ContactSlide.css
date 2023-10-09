@@ -308,3 +308,13 @@ form {
     }
 
 }
+@media screen and (max-width: 310px) {
+
+    .contact-title {
+        font-size: 35px;
+    
+    }
+
+
+
+}

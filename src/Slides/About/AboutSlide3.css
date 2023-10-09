@@ -175,7 +175,7 @@
     }
 
     .icon-skill {
-        width: 60px
+        width: 90px
     }
 }
 
@@ -266,3 +266,9 @@
         transform: translateY(50px)
     }
 }
+@media screen and (max-width:320px) {
+    .about-slide3-title {
+        font-size: 20px;
+    }
+  
+  }
