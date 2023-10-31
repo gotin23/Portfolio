@@ -2,26 +2,40 @@ import CssGenerator from "../../assets/image/cssgenerator.png";
 import Pokedex from "../../assets/image/pokedex.png";
 import ArgentBank from "../../assets/image/Argent-Bank_11zon.jpg";
 import Debug77 from "../../assets/image/debug77_11zon.jpg";
+import ExpenseMate from "../../assets/image/expense.png";
 // import CssLogo from "../../assets/icons/icons8-nextjs.svg";
 // import PokedexLogo from "../../assets/icons/skills-svgrepo-com.svg";
 import ReactLogo from "../../assets/icons/icons8-react-native.svg";
 import ReduxLogo from "../../assets/icons/icons8-redux.svg";
 import JestLogo from "../../assets/icons/jest-svgrepo-com.svg";
+import NextLogo from "../../assets/icons/icons8-nextjs.svg";
+import TypescriptLogo from "../../assets/icons/icons8-typescript.svg";
 
 export const data = [
   {
     id: "1",
+    image: ExpenseMate,
+    name: "Expense-Mate",
+    description:
+      "Expense Mate streamlines shared expenses effortlessly. Built with Next.js, TypeScript, and Redux, this user-friendly app tracks, organizes, and fairly distributes costs among friends. Experience hassle-free financial management!",
+    techno: [NextLogo, TypescriptLogo, ReduxLogo],
+    github: "https://github.com/gotin23/Expense-mate",
+    website: "https://expense-mate.vercel.app/",
+    // logo: CssLogo,
+  },
+  {
+    id: "2",
     image: CssGenerator,
     name: "Css generator",
     description:
       "My initial project marks a significant milestone as it represents my introduction to React. In this project, I developed a tool that serves as a CSS code generator. It simplifies the process of creating CSS code snippets for styling purposes, making it a valuable resource for web development and design.",
     techno: [ReactLogo, ReduxLogo],
-    github: "https://github.com/gotin23/css-tools-generator",
+    github: "https://github.com/gotin23/generator-css",
     website: "https://gotin23.github.io/css-tools-generator/",
     // logo: CssLogo,
   },
   {
-    id: "2",
+    id: "3",
     image: Pokedex,
     name: "Pokedex",
     description:
@@ -32,7 +46,7 @@ export const data = [
     // logo: PokedexLogo,
   },
   {
-    id: "3",
+    id: "4",
     image: ArgentBank,
     name: "Argent Bank",
     description:
@@ -43,7 +57,7 @@ export const data = [
     // logo: PokedexLogo,
   },
   {
-    id: "4",
+    id: "5",
     image: Debug77,
     name: "77event Debug",
     description:

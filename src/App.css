@@ -80,8 +80,8 @@
 }
 
 
-
-@media screen and (max-width: 1280px) {
+/* 
+ @media screen and (max-width: 1280px) {
 
   .App {
     overflow: auto;
@@ -111,7 +111,7 @@
     display: none
   }
 
-}
+}  */
 
 @media screen and (max-width: 950px) {
   .App {
@@ -120,6 +120,8 @@
   }
 
   .all-content {
+    
+    transform: rotate(0) translateX(0);
     width: 100vw;
     height: 100vh;
     overflow-y: visible;
@@ -135,8 +137,12 @@
 
   .slides-container {
     flex-direction: column;
+    transform: rotate(0) translateY(0);
+    transform-origin: none;
   }
-
+ .other{
+  display: none;
+ }
   .others-active {
 
     flex-direction: column;
@@ -145,81 +151,4 @@
   }
   
 }
- /* :root {
-  --color-primary: #030514;
-  --color-secondary: #ffffff;
-  --color-tertiary: hsl(324, 80%, 50%);
-
-
-}
-
-@font-face {
-  font-family: 'Madena';
-  src: url('./assets/fonts/Merchant/Variable-TT/Merchant-VF.ttf');
-
-}
-
-@font-face {
-  font-family: 'Geologica';
-  src: url('./assets/fonts/geologica/fonts/variable/Geologica[CRSV\,SHRP\,slnt\,wght].ttf');
-
-}
-
-@font-face {
-  font-family: 'Grotesk';
-  src: url('./assets/fonts/BDO_grotesk/fonts/variable/BDOGrotesk-VF.ttf');
-
-}
-
-.App {
-  height: 100vw;
-  
-  overflow-x: hidden;
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  font-family: "Madena";
-  scroll-snap-type: y mandatory;
-  background-color: var(--color-primary);
-
-}
-
-.all-content {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-
-
-
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-.slide {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  scroll-snap-align:start;
-
  
-}
-
-
-
-.other {
-  display: none
-}
-
-.others-active {
-  display: flex;
-  max-width: 600vw;
-
-} */
-
-
-
