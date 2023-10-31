@@ -71,7 +71,7 @@ export default function WorksSlide2() {
     prevActiveButton.classList.remove("active-button-project");
     e.target.classList.add("active-button-project");
   };
-
+  console.log(activeProject.techno);
   return (
     <div className="works-slide2 slide">
       <h1 className="works-slide2-title">
@@ -88,7 +88,7 @@ export default function WorksSlide2() {
       <div className="buttons-projects-container" ref={activeButtonsProjects}>
         {data.map((el, index) => (
           <div className={`button-project`} key={index}>
-            <p className={`button-project-name ${el.name === "Css generator" && "active-button-project"}`} onClick={handleActiveProject} id={index + 1}>
+            <p className={`button-project-name ${el.name === "Expense-Mate" && "active-button-project"}`} onClick={handleActiveProject} id={index + 1}>
               {el.name}
             </p>
           </div>
@@ -104,7 +104,10 @@ export default function WorksSlide2() {
           </a>
           <div className="techno-container">
             {activeProject.techno.map((tec, index) => (
-              <img src={tec} key={index} className="techno-logo" alt="technologie" />
+              <div className="techno-img-description">
+                <p>{tec.name}</p>
+                <img src={tec.image} key={index} className="techno-logo" alt="technologie" />
+              </div>
             ))}
           </div>
         </div>
@@ -114,7 +117,10 @@ export default function WorksSlide2() {
           </p>
         </div>
         <a href={activeProject.github} target="_blank" rel="noreferrer">
-          <img src={GithubLogo} className="project-github-link" ref={animGitHubLogo} alt="github logo" />
+          <div className="container-github-link">
+            <p>Github</p>
+            <img src={GithubLogo} className="project-github-link" ref={animGitHubLogo} alt="github logo" />
+          </div>
         </a>
       </div>
     </div>
