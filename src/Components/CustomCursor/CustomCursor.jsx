@@ -10,7 +10,6 @@ const CustomCursor = () => {
 
   const animCursorThird = useRef();
 
-  // Gérer le mouvement de la souris.
   const handleMouseMove = (event) => {
     setTimeout(() => {
       setCursorPosition({ x: event.pageX, y: event.pageY });
@@ -21,7 +20,6 @@ const CustomCursor = () => {
     setTimeout(() => {
       setCursorPosition3({ x: event.pageX, y: event.pageY });
     }, 150);
-    // setCursorPosition({ x: event.pageX, y: event.pageY });
   };
 
   useEffect(() => {

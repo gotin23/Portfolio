@@ -1,6 +1,7 @@
-.about-slide2{
+.about-slide2 {
   overflow: hidden;
 }
+
 .about-me-container {
   min-width: 100vw;
   height: 100vh;
@@ -90,64 +91,69 @@
   user-select: none
 }
 
-.polygon-rain{
-  width:40px;
-  height:30px;
+.polygon-rain {
+  width: 40px;
+  height: 30px;
   position: absolute;
   background: linear-gradient(146deg, rgba(39, 35, 35, 0) 50%, var(--color-tertiary) 50%);
-  top:-5vh;
+  top: -5vh;
   left: 30%;
-  animation: rainPolygon ease-in 8s infinite ;
+  animation: rainPolygon ease-in 8s infinite;
 
 }
-.polygon-rain-second{
-  width:40px;
-  height:30px;
+
+.polygon-rain-second {
+  width: 40px;
+  height: 30px;
   position: absolute;
   background: linear-gradient(146deg, rgba(39, 35, 35, 0) 50%, var(--color-tertiary) 50%);
-  top:-5vh;
+  top: -5vh;
   left: 50%;
-  animation: rainPolygon ease-in-out 9s infinite ;
+  animation: rainPolygon ease-in-out 9s infinite;
 
 }
-.polygon-rain-third{
-  width:40px;
-  height:30px;
+
+.polygon-rain-third {
+  width: 40px;
+  height: 30px;
   position: absolute;
   background: linear-gradient(146deg, rgba(39, 35, 35, 0) 50%, var(--color-tertiary) 50%);
-  top:-5vh;
+  top: -5vh;
   left: 60%;
-  animation: rainPolygon ease-in-out 8s infinite ;
- 
+  animation: rainPolygon ease-in-out 8s infinite;
+
 }
-.polygon-rain-four{
-  width:40px;
-  height:30px;
+
+.polygon-rain-four {
+  width: 40px;
+  height: 30px;
   position: absolute;
   background: linear-gradient(146deg, rgba(39, 35, 35, 0) 50%, var(--color-tertiary) 50%);
-  top:-5vh;
+  top: -5vh;
   left: 10%;
-  animation: rainPolygon ease-in-out 9s infinite ;
+  animation: rainPolygon ease-in-out 9s infinite;
   animation-delay: 3s;
 }
-.polygon-rain-five{
-  width:40px;
-  height:30px;
+
+.polygon-rain-five {
+  width: 40px;
+  height: 30px;
   position: absolute;
   background: linear-gradient(146deg, rgba(39, 35, 35, 0) 50%, var(--color-tertiary) 50%);
-  top:-5vh;
+  top: -5vh;
   left: 80%;
-  animation: rainPolygon ease-in 9s infinite ;
+  animation: rainPolygon ease-in 9s infinite;
   animation-delay: 4s;
 }
 
 @keyframes rainPolygon {
-  from{
+  from {
     transform: translateY(-5vh) rotate(0);
-  
+
   }
-  to{
-    transform: translateY(105vh) rotate(360deg) ;
+
+  to {
+    transform: translateY(105vh) rotate(360deg);
 
   }
 }
@@ -281,6 +287,7 @@
     height: 2px
   }
 }
+
 @media screen and (max-width:320px) {
 
   .about-me-content-title,

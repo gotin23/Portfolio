@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./HomeSlide1.css";
 import { useState, useRef } from "react";
 import HomeLoader from "../../Components/HomeLoader/HomeLoader";
-import LogoPortfolio from "../../assets/icons/logo-portfolio-color.svg";
+import LogoPortfolio from "../../assets/icons/HG1-V.svg";
 
 export default function HomeSlide1({ state }) {
   const [activeSrollLogo, setActiveScrollLogo] = useState(false);

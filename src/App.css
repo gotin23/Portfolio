@@ -1,7 +1,7 @@
 :root {
   --color-primary: #030514;
   --color-secondary: #ffffff;
-  --color-tertiary: hsl(324, 80%, 50%);
+  --color-tertiary: hsl(324, 77%, 47%);
 
 
 }
@@ -80,16 +80,16 @@
 }
 
 
-/* 
+
  @media screen and (max-width: 1280px) {
 
-  .App {
-    overflow: auto;
-  }
+  /* .App {
+    overflow: hidden;;
+  } */
 
   .all-content {
 
-    height:auto;
+    /* height:100vh; */
     overflow-x: scroll;
     overflow-y: hidden;
     transform: rotate(0) translateX(0);
@@ -111,9 +111,9 @@
     display: none
   }
 
-}  */
+} 
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1050px) {
   .App {
     overflow: hidden;
 
@@ -137,8 +137,8 @@
 
   .slides-container {
     flex-direction: column;
-    transform: rotate(0) translateY(0);
-    transform-origin: none;
+    /* transform: rotate(0) translateY(0);
+    transform-origin: none; */
   }
  .other{
   display: none;

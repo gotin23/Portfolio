@@ -1,9 +1,9 @@
-import React from "react";
+// import React from "react";
 import { useState, useEffect } from "react";
 
 export default function HackText({ state }) {
   const arr = ["a", "1", "&", "2", "e", "f", "3", "4", "5", "6", "$", "7", "8", "o", "9", "%", "r", "*", "0", "u", "v", "w", "x", "y", "z"];
-  // const arr = ["1","2","3",4,"5","6","a","b","c","d","e","f"];
+
   const text = state.content;
   const [displayText, setDisplayText] = useState(text);
 

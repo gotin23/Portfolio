@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomeLoader.css";
-import logoPortfolio from "../../assets/icons/logo-portfolio-color.svg";
+import logoPortfolio from "../../assets/icons/HG1-V.svg";
 
 export default function HomeLoader() {
   return (

@@ -71,7 +71,7 @@ export default function WorksSlide2() {
     prevActiveButton.classList.remove("active-button-project");
     e.target.classList.add("active-button-project");
   };
-  console.log(activeProject.techno);
+
   return (
     <div className="works-slide2 slide">
       <h1 className="works-slide2-title">
@@ -104,10 +104,7 @@ export default function WorksSlide2() {
           </a>
           <div className="techno-container">
             {activeProject.techno.map((tec, index) => (
-              <div className="techno-img-description">
-                <p>{tec.name}</p>
-                <img src={tec.image} key={index} className="techno-logo" alt="technologie" />
-              </div>
+              <img src={tec} key={index} className="techno-logo" alt="technologie" />
             ))}
           </div>
         </div>

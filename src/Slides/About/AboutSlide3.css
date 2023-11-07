@@ -116,45 +116,47 @@
     opacity: 1
 }
 
-.ball-moove{
+.ball-moove {
     width: 30px;
     height: 30px;
     background-color: var(--color-tertiary);
     border-radius: 50%;
     animation: ballMoove 12s linear infinite;
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 0;
 }
 
 @keyframes ballMoove {
 
-        0% {
-          top: 50%;
-          right: 0;
-        }
-        30% {
-          top: 0;
-          left: 50%;
-        }
-        50% {
-         top:50%;
-          left: 100%;
-        }
-        80% {
-         
-          left: 50%;
-          top:100%;
-        }
-        100% {
-         
-          right: 0;
-          top:50%;
-        }
+    0% {
+        top: 50%;
+        right: 0;
+    }
 
-      }
- 
-    
+    30% {
+        top: 0;
+        left: 50%;
+    }
+
+    50% {
+        top: 50%;
+        left: 100%;
+    }
+
+    80% {
+        left: 50%;
+        top: 100%;
+    }
+
+    100% {
+        right: 0;
+        top: 50%;
+    }
+
+}
+
+
 
 
 @media screen and (max-width:1650px) {
@@ -266,9 +268,10 @@
         transform: translateY(50px)
     }
 }
+
 @media screen and (max-width:320px) {
     .about-slide3-title {
         font-size: 20px;
     }
-  
-  }
+
+}

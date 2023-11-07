@@ -1,42 +1,37 @@
-footer{
-    /* background-color: aqua; */
+footer {
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-family: "Geologica";
-  
-
 }
-.social-network{
+
+.social-network {
     display: flex;
     justify-content: space-between;
     width: 30%;
     margin-bottom: 20px;
-
-
 }
-.my-linkedin-container, .my-github-container{
-    display:flex;
+
+.my-linkedin-container,
+.my-github-container {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
-
     border-radius: 10px;
     padding: 20px;
     white-space: nowrap;
-
-
-
 }
-.social-network-logo{
+
+.social-network-logo {
     width: 50px;
     margin-top: 15px;
     user-select: none;
-
 }
-.social-network-link{
+
+.social-network-link {
     text-decoration: none;
     color: var(--color-secondary);
     user-select: none;
@@ -45,29 +40,21 @@ footer{
 
 @media screen and (max-width: 950px) {
 
- 
-    .social-network{
- 
-        justify-content:center;
-   
-    
-    
+    .social-network {
+        justify-content: center;
     }
-    .my-linkedin-container, .my-github-container{
-        
+
+    .my-linkedin-container,
+    .my-github-container {
         padding: 10px;
-    
-    
-    
     }
-    .social-network-logo{
+
+    .social-network-logo {
         width: 40px;
         margin-top: 10px;
-    
     }
-    .social-network-link{
-     
-        font-size: 15px;
 
+    .social-network-link {
+        font-size: 15px;
     }
 }

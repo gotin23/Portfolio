@@ -81,7 +81,7 @@
     transform: translateY(-100px);
     opacity: 0;
     transition: transform .8s ease-in-out, opacity .4s ease-in-out;
-    background-color:var(--color-secondary);
+    background-color: var(--color-secondary);
     z-index: 3;
 }
 
@@ -117,23 +117,25 @@
 .animation-hide-title {
     right: 100%
 }
-.bubble{
+
+.bubble {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border :3px solid var(--color-tertiary);
-    position:absolute;
+    border: 3px solid var(--color-tertiary);
+    position: absolute;
     bottom: -10vh;
     right: 140px;
     animation: bubble infinite 10s linear;
     background-color: rgba(246, 13, 168, 0.105);
 }
-.bubble-second{
+
+.bubble-second {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border :3px solid var(--color-tertiary);
-    position:absolute;
+    border: 3px solid var(--color-tertiary);
+    position: absolute;
     bottom: -10vh;
     right: 230px;
     animation: bubble infinite 8s linear;
@@ -141,102 +143,95 @@
     background-color: rgba(246, 13, 168, 0.105);
 
 }
-.bubble-third{
+
+.bubble-third {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border :3px solid var(--color-tertiary);
-    position:absolute;
+    border: 3px solid var(--color-tertiary);
+    position: absolute;
     bottom: -10vh;
     right: 280px;
     animation: bubble infinite 10s linear;
     animation-delay: 0.2s;
     background-color: rgba(246, 13, 168, 0.105);
 }
-.bubble-detail{
+
+.bubble-detail {
     position: absolute;
     width: 15px;
     height: 3px;
     background-color: var(--color-tertiary);
-    top:8px;
+    top: 8px;
     left: 12px;
     transform: rotate(-40deg) skew(30deg);
     border-radius: 50%;
 
 }
-.bubble-detail-second{
+
+.bubble-detail-second {
     position: absolute;
     width: 10px;
     height: 3px;
     background-color: var(--color-tertiary);
-    top:5px;
+    top: 5px;
     left: 5px;
     transform: rotate(-40deg) skew(30deg);
     border-radius: 50%;
 
 }
-.bubble-detail-third{
+
+.bubble-detail-third {
     position: absolute;
     width: 6px;
     height: 2px;
     background-color: var(--color-tertiary);
-    top:3px;
+    top: 3px;
     left: 3px;
     transform: rotate(-40deg) skew(20deg);
     border-radius: 50%;
 
 }
+
 @keyframes bubble {
-    0%{
+    0% {
         transform: translateY(-10vh) skew(0);
-     
+
     }
-    25%{
+
+    25% {
         transform: translateY(-27vh) skew(15deg);
-     
+
     }
-    50%{
+
+    50% {
         transform: translateY(-55vh) skew(0deg);
-     
+
     }
-    75%{
+
+    75% {
         transform: translateY(-82vh) skew(20deg);
-     
     }
 
 
-100%{
-        transform: translateY(-110vh)skew(0) ;
-        
+    100% {
+        transform: translateY(-110vh)skew(0);
+
     }
 
-    
 }
+
 @keyframes bubble2 {
-    from{
-     
+    from {
         transform: skew(0);
     }
-to{
-    transform: skew(50deg);
-        
-    }
 
-    
+    to {
+        transform: skew(50deg);
+    }
 }
-/* @keyframes bubble {
-   
-  
-    50%{
-            transform: translateY(-55vh) skew(15deg );
-            
-        }
-    100%{
-            transform: translateY(-110vh) skew(15deg );
-            
-        }
-    
-    }  */
+
+
 
 @media screen and (max-width:1680px) {
     .about-titles-container {
@@ -331,7 +326,7 @@ to{
 }
 
 @media screen and (max-width:950px) {
-    
+
     .about-slide1 {
         flex-direction: column;
         overflow: hidden;
@@ -380,7 +375,9 @@ to{
 }
 
 @media screen and (max-width:800px) {
-    .about-slide1,.about-title {
+
+    .about-slide1,
+    .about-title {
         flex-direction: column
     }
 
@@ -413,6 +410,7 @@ to{
         transform: rotate(90deg)
     }
 }
+
 @media screen and (max-width:320px) {
 
     .about-title {
@@ -420,5 +418,5 @@ to{
         margin-top: 20px;
         padding: 0
     }
-  
-  }
+
+}

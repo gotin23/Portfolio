@@ -132,22 +132,20 @@
     bottom: 5px;
     left: 5px;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center
 }
-.techno-container p{
-   color: var(--color-primary);
-   z-index: 999;
-   font-size: 15px;
-   font-weight: "Grotesk";
-}
-.techno-img-description{
+
+
+.techno-img-description {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
     margin-right: 8px;
 }
+
 .techno-logo {
     width: 25px;
     margin: 2px;
@@ -185,17 +183,18 @@
     bottom: 20px;
     right: 20px;
     color: var(--color-secondary);
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-font-family: "Madena";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Madena";
 
 
 }
-.container-github-link p{
-   font-size: 20px;
-   margin-bottom: 10px;
+
+.container-github-link p {
+    font-size: 20px;
+    margin-bottom: 10px;
 
 
 }
@@ -424,19 +423,21 @@ font-family: "Madena";
         bottom: 10px;
         right: 10px
     }
+
     .container-github-link {
-    
+
         bottom: 10px;
         right: 10px;
-      
-    
-    
+
+
+
     }
-    .container-github-link p{
-       font-size: 15px;
-       margin-bottom: 5px;
-    
-    
+
+    .container-github-link p {
+        font-size: 15px;
+        margin-bottom: 5px;
+
+
     }
 
     .visit-website-link {
