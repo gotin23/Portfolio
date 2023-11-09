@@ -88,7 +88,7 @@ export default function WorksSlide2() {
       <div className="buttons-projects-container" ref={activeButtonsProjects}>
         {data.map((el, index) => (
           <div className={`button-project`} key={index}>
-            <p className={`button-project-name ${el.name === "Expense-Mate" && "active-button-project"}`} onClick={handleActiveProject} id={index + 1}>
+            <p className={`button-project-name ${el.name === "Css generator" && "active-button-project"}`} onClick={handleActiveProject} id={index + 1}>
               {el.name}
             </p>
           </div>

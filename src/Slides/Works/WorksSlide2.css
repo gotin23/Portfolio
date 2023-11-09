@@ -326,7 +326,7 @@
     }
 
     .button-project-name {
-        font-size: 13px
+        font-size: 17px
     }
 
     .project-description-container {
@@ -378,12 +378,13 @@
     }
 
     .buttons-projects-container {
-        margin-top: 20px;
-        margin-bottom: 20px
+        margin-top: 10px;
+        margin-bottom: 0px
     }
 
     .button-project-name {
-        font-size: 15px
+        font-size: 15px;
+        line-height: 10px;
     }
 
     .all-projects-container {
@@ -420,8 +421,8 @@
 
     .project-github-link {
         width: 30px;
-        bottom: 10px;
-        right: 10px
+        bottom: 5px;
+        right: 5px
     }
 
     .container-github-link {
@@ -434,8 +435,7 @@
     }
 
     .container-github-link p {
-        font-size: 15px;
-        margin-bottom: 5px;
+      display: none;
 
 
     }
