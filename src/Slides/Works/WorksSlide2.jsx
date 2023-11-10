@@ -16,6 +16,7 @@ export default function WorksSlide2() {
   const animProjectDescription = useRef();
   const animGitHubLogo = useRef();
 
+  // ici le projet actif
   const [activeProject, setActiveProject] = useState(data[0]);
 
   const callback = (entry) => {
@@ -39,8 +40,11 @@ export default function WorksSlide2() {
   const handleActiveProject = (e) => {
     // si le projet choisis est different du projet affiche
     if (e.target.id !== activeProject.id) {
+      // fonction pour rendre actif le btn du projet affiche
       handleActiveBtnProject(e);
+      // fonction pour les animations
       animProjectElements();
+      // un constante pour le filtrer le projet voulu grace a l'id
       const newActiveProject = data.filter((el) => el.id === e.target.id);
       setTimeout(() => {
         //Je set le projet actif
@@ -86,6 +90,7 @@ export default function WorksSlide2() {
         </span>
       </h1>
       <div className="buttons-projects-container" ref={activeButtonsProjects}>
+        {/* Je map sur ma data pour afficher le btn */}
         {data.map((el, index) => (
           <div className={`button-project`} key={index}>
             <p className={`button-project-name ${el.name === "Css generator" && "active-button-project"}`} onClick={handleActiveProject} id={index + 1}>
