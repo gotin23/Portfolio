@@ -79,6 +79,7 @@ export default function Contact() {
         setFormStep(1);
         setForm(false);
       }, 3000);
+
       setTimeout(() => {
         activeButtonSend.current.classList.add("active-scroll-animation");
         setEmailValue("");

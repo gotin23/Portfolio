@@ -5,21 +5,13 @@ import Debug77 from "../../assets/image/debug77_11zon.jpg";
 import ReactLogo from "../../assets/icons/icons8-react-native.svg";
 import ReduxLogo from "../../assets/icons/icons8-redux.svg";
 import JestLogo from "../../assets/icons/jest-svgrepo-com.svg";
-// import ExpenseMate from "../../assets/image/expense.png";
-// import NextLogo from "../../assets/icons/icons8-nextjs.svg";
-// import TypescriptLogo from "../../assets/icons/icons8-typescript.svg";
+import ExpenseMate from "../../assets/image/expense.jpg";
+import NextLogo from "../../assets/icons/icons8-nextjs.svg";
+import TypescriptLogo from "../../assets/icons/icons8-typescript.svg";
 
 export const data = [
   // {
-  //   id: "1",
-  //   image: ExpenseMate,
-  //   name: "Expense-Mate",
-  //   description:
-  //     "Expense Mate streamlines shared expenses effortlessly. Built with Next.js, TypeScript, and Redux, this user-friendly app tracks, organizes, and fairly distributes costs among friends. Experience hassle-free financial management!",
-  //   techno: [NextLogo, ReduxLogo, TypescriptLogo],
-  //   github: "https://github.com/gotin23/Expense-mate",
-  //   website: "https://expense-mate.vercel.app/",
-  // },
+
   {
     id: "1",
     image: CssGenerator,
@@ -33,14 +25,16 @@ export const data = [
   },
   {
     id: "2",
-    image: Pokedex,
-    name: "Pokedex",
+    image: ExpenseMate,
+    name: "Expense Mate",
     description:
-      "Pokedex is a React-based project utilizing the Pokemon API and React Redux. This application allows users to explore various Pokemon and their characteristics. With seamless integration of the Pokedex API and React Redux, users can efficiently browse and access comprehensive information about different Pokemon, providing an immersive and interactive experience.",
-    techno: [ReactLogo, ReduxLogo],
-    github: "https://github.com/gotin23/pokedex-api-react",
-    website: "https://gotin.netlify.app/",
+      "Using TypeScript and Next.js, I crafted a unique expense tracker for shared living or travel. Similar to Tricount but with a personalized twist, this app simplifies collaborative expense tracking. Explore the seamless interface and real-time updates for efficient shared financial management.",
+
+    techno: [NextLogo, TypescriptLogo],
+    github: "https://github.com/gotin23/Expense-mate",
+    website: "https://expense-mate.vercel.app/",
   },
+
   {
     id: "3",
     image: ArgentBank,
@@ -60,5 +54,15 @@ export const data = [
     github: "https://github.com/gotin23/77event-debug",
     website: "",
     techno: [ReactLogo, JestLogo],
+  },
+  {
+    id: "5",
+    image: Pokedex,
+    name: "Pokedex",
+    description:
+      "Pokedex is a React-based project utilizing the Pokemon API and React Redux. This application allows users to explore various Pokemon and their characteristics. With seamless integration of the Pokedex API and React Redux, users can efficiently browse and access comprehensive information about different Pokemon, providing an immersive and interactive experience.",
+    techno: [ReactLogo, ReduxLogo],
+    github: "https://github.com/gotin23/pokedex-api-react",
+    website: "https://gotin.netlify.app/",
   },
 ];
